@@ -5,7 +5,7 @@
 // 
 // Create Date: 11/17/2022 05:06:40 PM
 // Design Name: 
-// Module Name: MemoryBank
+// Module Name: memory_bank
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 

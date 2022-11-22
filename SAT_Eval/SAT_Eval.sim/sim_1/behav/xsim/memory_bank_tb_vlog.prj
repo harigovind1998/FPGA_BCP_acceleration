@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
-"../../../../SAT_Eval.srcs/sources_1/new/MemoryBank.sv" \
-"../../../../SAT_Eval.srcs/sim_1/new/SAT_eval_tb.sv" \
+"../../../../SAT_Eval.srcs/sources_1/new/memory_bank.sv" \
+"../../../../SAT_Eval.srcs/sim_1/new/memory_bank_tb.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

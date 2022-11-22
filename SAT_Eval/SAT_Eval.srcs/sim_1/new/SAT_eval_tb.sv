@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
+// Company: Carleton University
 // Engineer: Hari Govind 
 // 
 // Create Date: 11/22/2022 05:37:25 AM
 // Design Name: 
-// Module Name: SAT_eval_tb
+// Module Name: sat_eval_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 

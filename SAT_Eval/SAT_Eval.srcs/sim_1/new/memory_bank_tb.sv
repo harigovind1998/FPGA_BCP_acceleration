@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
+// Company: Carleton University
 // Engineer: Hari Govind 
 // 
 // Create Date: 11/22/2022 05:37:25 AM

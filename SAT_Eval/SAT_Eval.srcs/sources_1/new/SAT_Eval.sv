@@ -5,7 +5,7 @@
 // 
 // Create Date:
 // Design Name: 
-// Module Name: SAT_Eval
+// Module Name: sat_eval
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
