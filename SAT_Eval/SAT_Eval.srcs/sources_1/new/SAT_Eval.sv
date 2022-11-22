@@ -20,15 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SAT_Eval #(
-    parameter CLAUSE_VARIABLES = 3
+module sat_eval #(
+    parameter VARIABLES = 3
 )(
-    input [(CLAUSE_VARIABLES * 2) -1 :0] SAT_Assignments,
-    input [(CLAUSE_VARIABLES * 2) -1 :0] Clause,
-    output SAT,
-    output out
+    input [(VARIABLES * 2) -1 :0] assignments_in,
+    input [(VARIABLES * 2) -1 :0] clause_in,
+    output sat
     );
     
-    assign SAT = 1'b1 && (SAT_Assignments & Clause);  
+    assign SAT = 1'b1 && (SAT_Assignments & Clause);
     
 endmodule

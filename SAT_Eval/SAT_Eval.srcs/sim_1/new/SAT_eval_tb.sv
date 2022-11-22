@@ -20,37 +20,71 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SAT_eval_tb();
+module sat_eval_tb();
 
+    // Constants
+    integer variables = 3;
+    
     // Inputs
-    reg [7:0]   data_w  ;
-    reg [11:0]  addr    ;
-    reg         we      ;
-    reg         clk     ;
+    reg [(variables*2)-1:0] assignments;
+    reg [(variables*2)-1:0] clause;
 
     // Outputs
-    wire [7:0]  data_r  ;
+    wire sat;
 
-    MemoryBank mem_DUT(
-        .clk_in(clk),
-        .we_in(we),
-        .addr_in(addr),
-        .data_in(data_w),
-        .data_out(data_r)
+    sat_eval #(.VARIABLES(variables)) DUT(
+        .assignments_in(assignments),
+        .clause_in(clause),
+        .sat(sat)
     );
 
     always begin
-        data_w  = 8'h2a     ;
-        addr    = 12'h000   ;
-        we      = 0         ;
-        clk     = 0         ;
+        clause = 6'b011001;
+        assignments = 6'b000000;
 
         #5;
-        we  = 1;
-        clk = 1;
+        assignments = 6'b000000;
         #5;
-        clk = 0;
+        assignments = 6'b000001;
         #5;
-        clk = 1;
+        assignments = 6'b000010;
+        #5;
+        assignments = 6'b000100;
+        #5;
+        assignments = 6'b001000;
+        #5;
+        assignments = 6'b010000;
+        #5;
+        assignments = 6'b100000;
+        #5;
+        assignments = 6'b000101;
+        #5;
+        assignments = 6'b000110;
+        #5;
+        assignments = 6'b001001;
+        #5;
+        assignments = 6'b001010;
+        #5;
+        assignments = 6'b010000;
+        #5;
+        assignments = 6'b010001;
+        #5;
+        assignments = 6'b010010;
+        #5;
+        assignments = 6'b010100;
+        #5;
+        assignments = 6'b011000;
+        #5;
+        assignments = 6'b100000;
+        #5;
+        assignments = 6'b100001;
+        #5;
+        assignments = 6'b100010;
+        #5;
+        assignments = 6'b100100;
+        #5;
+        assignments = 6'b101000;
+        #5;
+        
     end
 endmodule

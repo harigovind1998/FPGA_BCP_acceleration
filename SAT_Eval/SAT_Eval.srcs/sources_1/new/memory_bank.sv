@@ -34,16 +34,14 @@ module memory_bank #(
     
     logic [WIDTH-1:0] memory [DEPTH];
     
-    always @ (posedge clk_in)
-    begin
+    always @(posedge clk_in) begin
        if(we_in) begin
            memory[addr_in] <= data_in;
        end
        data_out <= memory[addr_in];
     end
     
-    initial 
-    begin
+    initial begin
         integer mem_loc;
         for(mem_loc = 0; mem_loc< DEPTH; mem_loc ++)
             memory[mem_loc] = $urandom();
