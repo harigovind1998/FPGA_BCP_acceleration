@@ -42,9 +42,14 @@ module memory_bank #(
     end
     
     initial begin
-        integer mem_loc;
-        for(mem_loc = 0; mem_loc< DEPTH; mem_loc ++)
-            memory[mem_loc] = $urandom();
-        $writememh("memory_hex.txt", memory);
+        // TESTING MEMORY WRITE
+
+        // integer mem_loc;
+        // for(mem_loc = 0; mem_loc< DEPTH; mem_loc ++)
+        //     memory[mem_loc] = $urandom();
+        // $writememh("memory_hex.txt", memory);
+
+        // TESTING MEMORY INITILIZATION
+        $readmemh("memory_hex.txt", memory);
     end
 endmodule
