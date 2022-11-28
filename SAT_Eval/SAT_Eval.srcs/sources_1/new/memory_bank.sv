@@ -33,12 +33,13 @@ module memory_bank #(
     );
     
     logic [WIDTH-1:0] memory [DEPTH];
+    assign data_out = memory[addr_in];
     
     always @(posedge clk_in) begin
        if(we_in) begin
            memory[addr_in] <= data_in;
        end
-       data_out <= memory[addr_in];
+//       data_out <= memory[addr_in];
     end
     
     initial begin
@@ -50,6 +51,6 @@ module memory_bank #(
         // $writememh("memory_hex.txt", memory);
 
         // TESTING MEMORY INITILIZATION
-        $readmemh("memory_hex.txt", memory);
+        $readmemh("memory_hex_4var4clause.txt", memory);
     end
 endmodule

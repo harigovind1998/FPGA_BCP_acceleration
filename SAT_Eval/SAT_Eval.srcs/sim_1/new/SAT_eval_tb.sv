@@ -23,16 +23,16 @@
 module sat_eval_tb();
 
     // Constants
-    integer variables = 3;
+    parameter VARIABLES = 3;
     
     // Inputs
-    reg [(variables*2)-1:0] assignments;
-    reg [(variables*2)-1:0] clause;
+    reg [(VARIABLES*2)-1:0] assignments;
+    reg [(VARIABLES*2)-1:0] clause;
 
     // Outputs
     wire sat;
 
-    sat_eval #(.VARIABLES(variables)) DUT(
+    sat_eval #(.VARIABLES(VARIABLES)) DUT(
         .assignments_in(assignments),
         .clause_in(clause),
         .sat(sat)

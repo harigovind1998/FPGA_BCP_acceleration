@@ -30,11 +30,55 @@ module processing_engine #(
         input wire logic [(OFFSET_BITS-1):0] offset_in,
         input wire logic [ADDRW-1:0] base_in,
         input wire logic [WIDTH-1:0] data_in,
+        input wire logic clk_in,
         output wire logic [ADDRW-1:0] addr_out,
         output sat
     );
     
-    reg  [ADDRW-1:0] temp_addr = 10'h002;
-    assign addr_out = temp_addr;
+    enum logic [2:0] {IDLE, READ_CLAUSE, READ_ASSIGNMENT, EVALUATE} state = IDLE;
+
+    reg  [ADDRW-1:0] addr;
+    assign addr_out = addr;
+
+    reg [WIDTH-1:0] clause;
+    reg [WIDTH-1:0] assignments;
+
+    wire sat_in;
+
+    reg satt = 0;
+
+    wire [WIDTH-1:0] assignments_out;
+    assign assignments_out = assignments;
+    wire [WIDTH-1:0] clause_out;
+    assign clause_out = clause;
+
+    sat_eval #(
+        .VARIABLES(VARIABLES)
+    ) sat_eval(
+        .assignments_in(assignments_out),
+        .clause_in(clause_out),
+        .sat_out(sat_in)
+    );
+
+    always @(posedge clk_in) begin
+        case(state) 
+            IDLE: begin
+                addr <= base_in;
+                state <= READ_CLAUSE;
+            end
+            READ_CLAUSE: begin
+                clause <= data_in;
+                addr <= addr-1;
+                state <= READ_ASSIGNMENT;
+            end
+            READ_ASSIGNMENT: begin
+                assignments <= data_in;
+                state <= EVALUATE;
+            end
+            EVALUATE: begin
+                satt <= sat_in;
+            end
+        endcase 
+    end
     
 endmodule

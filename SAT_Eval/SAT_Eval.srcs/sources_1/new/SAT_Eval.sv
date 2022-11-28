@@ -25,9 +25,9 @@ module sat_eval #(
 )(
     input [(VARIABLES * 2) -1 :0] assignments_in,
     input [(VARIABLES * 2) -1 :0] clause_in,
-    output sat
+    output sat_out
     );
     
-    assign SAT = 1'b1 && (SAT_Assignments & Clause);
+    assign sat_out = 1'b1 && (assignments_in & clause_in);
     
 endmodule

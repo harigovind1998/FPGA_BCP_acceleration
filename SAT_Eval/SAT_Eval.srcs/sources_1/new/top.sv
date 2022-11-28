@@ -24,8 +24,11 @@ module top #(
     parameter WIDTH = 8,
     parameter DEPTH = 1024,
     parameter ADDRW = $clog2(DEPTH),
-    parameter VARIABLES = WIDTH/2
+    parameter VARIABLES = WIDTH/2,
+    parameter OFFSET_BITS = $clog2(VARIABLES)
 )(
+    input wire logic [ADDRW-1:0] base_in,
+    input wire logic [(OFFSET_BITS-1):0] offset_in,
     input wire logic clk_in,
     output wire sat_out
 );
@@ -37,10 +40,12 @@ module top #(
         .DEPTH(DEPTH),
         .ADDRW(ADDRW)
     )processing_engine(
-        .offset_in(),
-        .base_in(0),
+        .offset_in(offset_in),
+        .base_in(base_in),
         .data_in(data),
-        .addr_out(addr)
+        .clk_in(clk_in),
+        .addr_out(addr),
+        .sat()
     );
 
     memory_bank #(
