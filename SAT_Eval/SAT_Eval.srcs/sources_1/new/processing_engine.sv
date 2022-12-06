@@ -83,7 +83,7 @@ module processing_engine #(
             end
             READ_ASSIGNMENT: begin
                 assignments <= mem_data_in;
-                addr        <= addr+1+offset;
+                addr        <= addr+1+offset+1;
                 state       <= EVALUATE;
             end
             EVALUATE: begin
@@ -91,7 +91,7 @@ module processing_engine #(
                 addr <= mem_data_in[5:2];
                 offset <= mem_data_in[1:0];
                 sat <= sat_in;
-                state <= is_initial? IDLE : READ_ASSIGNMENT;  
+                state <= is_initial? IDLE : READ_CLAUSE;  
             end
         endcase 
     end

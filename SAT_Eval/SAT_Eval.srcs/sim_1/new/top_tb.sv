@@ -47,7 +47,7 @@ module top_tb();
     
     initial begin
         base = 0'h01;
-        offset = 0'b00;
+        offset = 0'b10;
         clk = 0;
         start = 1;
         #5;
