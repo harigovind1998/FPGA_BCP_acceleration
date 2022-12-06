@@ -27,10 +27,11 @@ module top #(
     parameter VARIABLES = WIDTH/2,
     parameter OFFSET_BITS = $clog2(VARIABLES)
 )(
-    input wire logic [ADDRW-1:0] base_in,
-    input wire logic [(OFFSET_BITS-1):0] offset_in,
-    input wire logic clk_in,
-    output wire sat_out
+    input   wire logic         [ADDRW-1:0] base_in,
+    input   wire logic [(OFFSET_BITS-1):0] offset_in,
+    input   wire logic                     start_in,
+    input   wire logic                     clk_in,
+    output  wire                           sat_out
 );
     wire [ADDRW-1:0] addr;
     wire [WIDTH-1:0] data;
@@ -42,10 +43,12 @@ module top #(
     )processing_engine(
         .offset_in(offset_in),
         .base_in(base_in),
-        .data_in(data),
+        .offset_assignment_in(),
+        .mem_data_in(data),
+        .start_in(start_in),
         .clk_in(clk_in),
         .addr_out(addr),
-        .sat()
+        .sat_out()
     );
 
     memory_bank #(

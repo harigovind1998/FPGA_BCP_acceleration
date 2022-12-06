@@ -24,34 +24,41 @@ module processing_engine #(
     parameter WIDTH = 8,
     parameter DEPTH = 1024,
     parameter ADDRW = $clog2(DEPTH),
-    parameter VARIABLES = WIDTH/2,
-    parameter OFFSET_BITS = $clog2(VARIABLES)
+    parameter VARIABLES = WIDTH/2, // Each variable assignment {Unassigned, True, False} and clause variable {unused, positive literal, negative literal}represented using two bits {Unassigned, True, False}
+    parameter OFFSET_BITS = $clog2(VARIABLES) // Offset in next clause
 )(
-        input wire logic [(OFFSET_BITS-1):0] offset_in,
-        input wire logic [ADDRW-1:0] base_in,
-        input wire logic [WIDTH-1:0] data_in,
-        input wire logic clk_in,
-        output wire logic [ADDRW-1:0] addr_out,
-        output sat
+        input   wire logic [(OFFSET_BITS-1):0] offset_in,
+        input   wire logic         [ADDRW-1:0] base_in,
+        input   wire logic               [1:0] offset_assignment_in,
+        input   wire logic         [WIDTH-1:0] mem_data_in,
+        input   wire logic                     start_in,
+        input   wire logic                     clk_in,
+        output  wire logic         [ADDRW-1:0] addr_out,
+        output                                 sat_out
     );
     
+    // Finite state machine... Needs improvement
     enum logic [2:0] {IDLE, READ_CLAUSE, READ_ASSIGNMENT, EVALUATE} state = IDLE;
 
-    reg  [ADDRW-1:0] addr;
+    // Registers
+    reg [ADDRW-1:0] initial_addr, addr;
+    reg [WIDTH-1:0] clause, assignments;
+    reg       [1:0] offset;
+    reg             sat = 0;
+
+    // Wires
+    wire sat_in;
+    wire [WIDTH-1:0] assignments_out, clause_out;
+
+    reg [WIDTH-1:0] next_addr;
+    wire             is_initial = mem_data_in[5:2] == initial_addr;
+    
+    // Assignments
+    assign assignments_out = assignments;
+    assign clause_out = clause;
     assign addr_out = addr;
 
-    reg [WIDTH-1:0] clause;
-    reg [WIDTH-1:0] assignments;
-
-    wire sat_in;
-
-    reg satt = 0;
-
-    wire [WIDTH-1:0] assignments_out;
-    assign assignments_out = assignments;
-    wire [WIDTH-1:0] clause_out;
-    assign clause_out = clause;
-
+    // Subcomponents
     sat_eval #(
         .VARIABLES(VARIABLES)
     ) sat_eval(
@@ -60,23 +67,31 @@ module processing_engine #(
         .sat_out(sat_in)
     );
 
+    // Clk_in latched sequential circuitry
     always @(posedge clk_in) begin
-        case(state) 
+        case(state)
             IDLE: begin
-                addr <= base_in;
-                state <= READ_CLAUSE;
+                initial_addr <= base_in;
+                addr         <= base_in;
+                offset       <= offset_in;
+                state        <= start_in? READ_CLAUSE : IDLE;
             end
             READ_CLAUSE: begin
-                clause <= data_in;
-                addr <= addr-1;
-                state <= READ_ASSIGNMENT;
+                clause <= mem_data_in;
+                addr   <= addr-1; // Assignment stored one entry before base address
+                state  <= READ_ASSIGNMENT;
             end
             READ_ASSIGNMENT: begin
-                assignments <= data_in;
-                state <= EVALUATE;
+                assignments <= mem_data_in;
+                addr        <= addr+1+offset;
+                state       <= EVALUATE;
             end
             EVALUATE: begin
-                satt <= sat_in;
+                next_addr <= mem_data_in;
+                addr <= mem_data_in[5:2];
+                offset <= mem_data_in[1:0];
+                sat <= sat_in;
+                state <= is_initial? IDLE : READ_ASSIGNMENT;  
             end
         endcase 
     end

@@ -33,12 +33,14 @@ module top_tb();
     reg clk;
     reg [ADDRW-1:0] base;
     reg [OFFSET_BITS-1:0 ]offset;
+    reg start;
 
     // Outputs
     wire out;
     top DUT(
         .base_in(base),
         .offset_in(offset),
+        .start_in(start),
         .clk_in(clk),
         .sat_out(out)
     );
@@ -47,9 +49,13 @@ module top_tb();
         base = 0'h01;
         offset = 0'b00;
         clk = 0;
+        start = 1;
         #5;
-        for(ticks = 0; ticks < 10; ticks++) begin
+        #5 clk = !clk;
+        #5 clk = !clk;
+        for(ticks = 0; ticks < 1000; ticks++) begin
             #5 clk = !clk;
+            start = 0;
         end
         
     
