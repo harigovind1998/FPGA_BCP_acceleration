@@ -8,7 +8,7 @@ Memory = 8 wide OR holds 4 variables at a time
 4 bits required addressing => depth = 6 => log2(16) = 4
 						Adr(x)	Adr(b)	Value		
 Clause 1:									
-Assignments 	= 00000000			0x00	0000	0x00		0x00
+Assignments 	= 00000000			0x00	0000	0x00		0x00	-> 	01000000	40
 base 		= 01010101			0x01	0001	0x55		0x55
 Offset 1	= {Clause 2 Base, Offset 1}	0x02 	0010	{0111,00}	0x1c
 Offset 2	= {Clause 4 Base, Offset 1}	0x03	0011	{1101,00}	0x34

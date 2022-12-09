@@ -67,7 +67,7 @@ module processing_engine #(
         .sat_out(sat_in)
     );
 
-    // Clk_in latched sequential circuitry
+    // Clk_in latched sequential logic 
     always @(posedge clk_in) begin
         case(state)
             IDLE: begin

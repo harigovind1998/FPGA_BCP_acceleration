@@ -51,6 +51,6 @@ module memory_bank #(
         // $writememh("memory_hex.txt", memory);
 
         // TESTING MEMORY INITILIZATION
-        $readmemh("memory_hex_4var4clause.txt", memory);
+        $readmemh("memory_hex_4var4clause.mem", memory);
     end
 endmodule
