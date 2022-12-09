@@ -29,7 +29,7 @@ module processing_engine #(
 )(
         input   wire logic [(OFFSET_BITS-1):0] offset_in,
         input   wire logic         [ADDRW-1:0] base_in,
-        input   wire logic               [1:0] offset_assignment_in,
+        input   wire logic               [1:0] assignment_in,
         input   wire logic         [WIDTH-1:0] mem_data_in,
         input   wire logic                     start_in,
         input   wire logic                     clk_in,
@@ -53,6 +53,12 @@ module processing_engine #(
     reg [WIDTH-1:0] next_addr;
     wire             is_initial = mem_data_in[5:2] == initial_addr;
     
+    wire [WIDTH-1:0] temp_assignment;
+    assign temp_assignment [1:0] = offset_in == 0? assignment_in: mem_data_in[1:0];
+    assign temp_assignment [3:2] = offset_in == 1? assignment_in: mem_data_in[3:2];
+    assign temp_assignment [5:4] = offset_in == 2? assignment_in: mem_data_in[5:4];
+    assign temp_assignment [7:6] = offset_in == 3? assignment_in: mem_data_in[7:6];
+    
     // Assignments
     assign assignments_out = assignments;
     assign clause_out = clause;
@@ -66,6 +72,7 @@ module processing_engine #(
         .clause_in(clause_out),
         .sat_out(sat_in)
     );
+    
 
     // Clk_in latched sequential logic 
     always @(posedge clk_in) begin
@@ -82,7 +89,8 @@ module processing_engine #(
                 state  <= READ_ASSIGNMENT;
             end
             READ_ASSIGNMENT: begin
-                assignments <= mem_data_in;
+                assignments <= temp_assignment;
+
                 addr        <= addr+1+offset+1;
                 state       <= EVALUATE;
             end

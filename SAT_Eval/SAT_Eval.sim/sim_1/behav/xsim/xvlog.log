@@ -8,5 +8,5 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hari-admin/Documents
 INFO: [VRFC 10-311] analyzing module top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sim_1/new/top_tb.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_tb
-WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sim_1/new/top_tb.sv:49]
-WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sim_1/new/top_tb.sv:50]
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sim_1/new/top_tb.sv:51]
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sim_1/new/top_tb.sv:52]

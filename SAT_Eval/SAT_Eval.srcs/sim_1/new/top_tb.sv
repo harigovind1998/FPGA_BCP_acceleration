@@ -31,6 +31,7 @@ module top_tb();
     
     // Inputs
     reg clk;
+    reg [1:0] assignment;
     reg [ADDRW-1:0] base;
     reg [OFFSET_BITS-1:0 ]offset;
     reg start;
@@ -40,6 +41,7 @@ module top_tb();
     top DUT(
         .base_in(base),
         .offset_in(offset),
+        .assignment_in(assignment),
         .start_in(start),
         .clk_in(clk),
         .sat_out(out)
@@ -50,6 +52,7 @@ module top_tb();
         offset = 0'b10;
         clk = 0;
         start = 1;
+        assignment = 01;
         #5;
         #5 clk = !clk;
         #5 clk = !clk;

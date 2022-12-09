@@ -29,6 +29,7 @@ module top #(
 )(
     input   wire logic         [ADDRW-1:0] base_in,
     input   wire logic [(OFFSET_BITS-1):0] offset_in,
+    input   wire logic               [1:0] assignment_in,
     input   wire logic                     start_in,
     input   wire logic                     clk_in,
     output  wire                           sat_out
@@ -43,7 +44,7 @@ module top #(
     )processing_engine(
         .offset_in(offset_in),
         .base_in(base_in),
-        .offset_assignment_in(),
+        .assignment_in(assignment_in),
         .mem_data_in(data),
         .start_in(start_in),
         .clk_in(clk_in),
