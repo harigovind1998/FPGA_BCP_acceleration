@@ -60,11 +60,12 @@ module processing_engine #(
     // Assignments
     assign assignments_out = assignments;
     assign clause_out = clause;
+    assign sat_out = sat;
 
     // Addresses
     assign addr_out = addr;
-    assign offset_addr = base + 1 + offset;
-    assign assignment_addr = base - 1;
+    assign offset_addr = base_addr + 1 + offset; // Offset {0..VARIABLES}, need to add 1 to base address since offset 0 is one address above base
+    assign assignment_addr = base_addr - 1; // Assignment stored one addr space before base address
 
     // Subcomponents
     sat_eval #(
