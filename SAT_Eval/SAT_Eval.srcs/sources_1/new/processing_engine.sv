@@ -41,7 +41,7 @@ module processing_engine #(
     enum logic [2:0] {IDLE, READ_CLAUSE, READ_ASSIGNMENT, EVALUATE} state = IDLE;
 
     // Registers
-    reg [ADDRW-1:0] initial_addr, addr;
+    reg [ADDRW-1:0] initial_addr, base_addr, offset_addr, assignment_addr, addr;
     reg [WIDTH-1:0] clause, assignments;
     reg       [1:0] offset;
     reg             sat = 0;
@@ -49,8 +49,6 @@ module processing_engine #(
     // Wires
     wire sat_in;
     wire [WIDTH-1:0] assignments_out, clause_out;
-
-    reg [WIDTH-1:0] next_addr;
     wire             is_initial = mem_data_in[5:2] == initial_addr;
     
     wire [WIDTH-1:0] temp_assignment;
@@ -62,7 +60,11 @@ module processing_engine #(
     // Assignments
     assign assignments_out = assignments;
     assign clause_out = clause;
+
+    // Addresses
     assign addr_out = addr;
+    assign offset_addr = base + 1 + offset;
+    assign assignment_addr = base - 1;
 
     // Subcomponents
     sat_eval #(
@@ -80,23 +82,25 @@ module processing_engine #(
             IDLE: begin
                 initial_addr <= base_in;
                 addr         <= base_in;
+                base_addr    <= base_in;
                 offset       <= offset_in;
                 state        <= start_in? READ_CLAUSE : IDLE;
             end
             READ_CLAUSE: begin
                 clause <= mem_data_in;
-                addr   <= addr-1; // Assignment stored one entry before base address
+                // addr   <= addr-1; // Assignment stored one entry before base address
+                addr   <= assignment_addr;
                 state  <= READ_ASSIGNMENT;
             end
             READ_ASSIGNMENT: begin
                 assignments <= temp_assignment;
-
-                addr        <= addr+1+offset+1;
+                addr        <= offset_addr;
+                // addr        <= addr+1+offset+1;
                 state       <= EVALUATE;
             end
             EVALUATE: begin
-                next_addr <= mem_data_in;
                 addr <= mem_data_in[5:2];
+                base_addr <= mem_data_in[5:2];
                 offset <= mem_data_in[1:0];
                 sat <= sat_in;
                 state <= is_initial? IDLE : READ_CLAUSE;  
