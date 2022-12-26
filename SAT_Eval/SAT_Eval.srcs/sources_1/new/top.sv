@@ -35,7 +35,8 @@ module top #(
     output  wire                           sat_out
 );
     wire [ADDRW-1:0] addr;
-    wire [WIDTH-1:0] data;
+    wire [WIDTH-1:0] data_read, data_write;
+    wire             data_write_en;
 
     processing_engine #(
         .WIDTH(WIDTH),
@@ -45,9 +46,11 @@ module top #(
         .offset_in(offset_in),
         .base_in(base_in),
         .assignment_in(assignment_in),
-        .mem_data_in(data),
+        .mem_data_in(data_read),
         .start_in(start_in),
         .clk_in(clk_in),
+        .write_data_out(data_write),
+        .write_en_out(data_write_en),
         .addr_out(addr),
         .sat_out()
     );
@@ -58,10 +61,10 @@ module top #(
         .ADDRW(ADDRW)
     )memory_bank(
         .clk_in(clk_in),
-        .we_in(),
+        .we_in(data_write_en),
         .addr_in(addr),
-        .data_in(),
-        .data_out(data)
+        .data_in(data_write),
+        .data_out(data_read)
     );
     
 endmodule
