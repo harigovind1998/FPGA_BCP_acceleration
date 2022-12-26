@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.sim/sim_1/synth/func/xsim/top_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_bank
+INFO: [VRFC 10-311] analyzing module processing_engine
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module glbl

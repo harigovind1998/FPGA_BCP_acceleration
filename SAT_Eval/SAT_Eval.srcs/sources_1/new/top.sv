@@ -52,7 +52,7 @@ module top #(
         .write_data_out(data_write),
         .write_en_out(data_write_en),
         .addr_out(addr),
-        .sat_out()
+        .sat_out(sat_out)
     );
 
     memory_bank #(
