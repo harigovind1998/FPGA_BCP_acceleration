@@ -77,7 +77,7 @@ module processing_engine #(
     sat_eval #(
         .VARIABLES(VARIABLES)
     ) sat_eval(
-        .assignments_in(assignment_out),
+        .assignment_in(assignment_out),
         .clause_in(clause_out),
         .sat_out(eval_sat)
     );

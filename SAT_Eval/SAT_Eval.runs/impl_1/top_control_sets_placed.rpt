@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Mon Dec 26 13:00:37 2022
+| Date         : Mon Dec 26 14:26:05 2022
 | Host         : inm-10 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -77,14 +77,14 @@ Table of Contents
 |  clk_in_IBUF_BUFG | processing_engine/base_addr[9]_i_2_n_0    |                                        |                1 |              4 |         4.00 |
 |  clk_in_IBUF_BUFG |                                           |                                        |                3 |              6 |         2.00 |
 |  clk_in_IBUF_BUFG | processing_engine/base_addr[9]_i_2_n_0    | processing_engine/base_addr[9]_i_1_n_0 |                2 |              6 |         3.00 |
-|  clk_in_IBUF_BUFG | processing_engine/clause                  |                                        |                2 |              8 |         4.00 |
 |  clk_in_IBUF_BUFG | processing_engine/assignment              |                                        |                2 |              8 |         4.00 |
-|  clk_in_IBUF_BUFG | processing_engine/state[1]                |                                        |                7 |             10 |         1.43 |
+|  clk_in_IBUF_BUFG | processing_engine/clause                  |                                        |                2 |              8 |         4.00 |
 |  clk_in_IBUF_BUFG | processing_engine/initial_addr[9]_i_1_n_0 |                                        |                3 |             10 |         3.33 |
-|  clk_in_IBUF_BUFG | processing_engine/write_en_reg_0          |                                        |                8 |             32 |         4.00 |
-|  clk_in_IBUF_BUFG | processing_engine/write_en_reg_1          |                                        |                8 |             32 |         4.00 |
+|  clk_in_IBUF_BUFG | processing_engine/state[1]                |                                        |                7 |             10 |         1.43 |
 |  clk_in_IBUF_BUFG | processing_engine/addr_reg[9]_0           |                                        |                8 |             32 |         4.00 |
 |  clk_in_IBUF_BUFG | processing_engine/addr_reg[8]_0           |                                        |                8 |             32 |         4.00 |
+|  clk_in_IBUF_BUFG | processing_engine/write_en_reg_1          |                                        |                8 |             32 |         4.00 |
+|  clk_in_IBUF_BUFG | processing_engine/write_en_reg_0          |                                        |                8 |             32 |         4.00 |
 +-------------------+-------------------------------------------+----------------------------------------+------------------+----------------+--------------+
 
 

@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="667.001 ns"></ZoomEndTime>
-      <Cursor1Time time="150.000 ns"></Cursor1Time>
+      <ZoomEndTime time="844.449 ns"></ZoomEndTime>
+      <Cursor1Time time="70.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="245"></NameColumnWidth>
-      <ValueColumnWidth column_width="119"></ValueColumnWidth>
+      <ValueColumnWidth column_width="115"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="25" />
+   <WVObjectSize size="32" />
    <wvobject fp_name="group45" type="group">
       <obj_property name="label">DUT</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -147,5 +147,33 @@
    <wvobject fp_name="/top_tb/DUT/memory_bank/memory[15]" type="array">
       <obj_property name="ElementShortName">[15][7:0]</obj_property>
       <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider33">
+      <obj_property name="label">SAT eval</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_literal" type="logic">
+      <obj_property name="ElementShortName">unit_literal</obj_property>
+      <obj_property name="ObjectShortName">unit_literal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/sat_out" type="logic">
+      <obj_property name="ElementShortName">sat_out</obj_property>
+      <obj_property name="ObjectShortName">sat_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/vars" type="array">
+      <obj_property name="ElementShortName">vars[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vars[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/Unassigned" type="array">
+      <obj_property name="ElementShortName">Unassigned[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Unassigned[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/assignment_in" type="array">
+      <obj_property name="ElementShortName">assignment_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">assignment_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/clause_in" type="array">
+      <obj_property name="ElementShortName">clause_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">clause_in[7:0]</obj_property>
    </wvobject>
 </wave_config>
