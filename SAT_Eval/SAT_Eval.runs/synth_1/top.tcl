@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k70tfbg484-2
 
@@ -87,6 +88,7 @@ OPTRACE "Adding files" START { }
 read_mem C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.sim/sim_1/behav/xsim/memory_hex_4var4clause.mem
 read_verilog -library xil_defaultlib -sv {
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/SAT_Eval.sv
+  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/bcp_pkg.sv
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/memory_bank.sv
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv

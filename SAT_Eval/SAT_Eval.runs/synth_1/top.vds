@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Feb  7 10:39:27 2023
-# Process ID: 16368
+# Start of session at: Tue Feb  7 12:55:11 2023
+# Process ID: 19292
 # Current directory: C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.runs/synth_1/top.vds
@@ -11,7 +11,7 @@
 # Running On: inm-10, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 4, Host memory: 34240 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1394.137 ; gain = 119.836
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1393.199 ; gain = 120.473
 Command: read_checkpoint -auto_incremental -incremental C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/utils_1/imports/synth_1/top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -24,12 +24,12 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18452
+INFO: [Synth 8-7075] Helper process launched with PID 18416
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2205.207 ; gain = 409.125
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2205.754 ; gain = 410.652
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/top.sv:24]
 INFO: [Synth 8-6157] synthesizing module 'processing_engine' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:23]
 	Parameter WIDTH bound to: 8 - type: integer 
 	Parameter DEPTH bound to: 1024 - type: integer 
@@ -39,16 +39,16 @@ INFO: [Synth 8-6157] synthesizing module 'sat_eval' [C:/Users/hari-admin/Documen
 INFO: [Synth 8-6157] synthesizing module 'unit_clause_finder' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv:23]
 	Parameter VARIABLES bound to: 4 - type: integer 
 	Parameter OFFSET_BITS bound to: 2 - type: integer 
-WARNING: [Synth 8-151] case item 4'b0010 is unreachable [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv:49]
-WARNING: [Synth 8-151] case item 4'b0100 is unreachable [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv:50]
-WARNING: [Synth 8-151] case item 4'b1000 is unreachable [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv:51]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv:47]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'unit_clause_finder' (0#1) [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv:23]
+WARNING: [Synth 8-7071] port 'unit_assignment_out' of module 'unit_clause_finder' is unconnected for instance 'unit_clause_finder' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/SAT_Eval.sv:38]
+WARNING: [Synth 8-7023] instance 'unit_clause_finder' of module 'unit_clause_finder' has 5 connections declared, but only 4 given [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/SAT_Eval.sv:38]
 INFO: [Synth 8-6155] done synthesizing module 'sat_eval' (0#1) [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/SAT_Eval.sv:23]
-WARNING: [Synth 8-7071] port 'unit_literal_offset_out' of module 'sat_eval' is unconnected for instance 'sat_eval' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:79]
-WARNING: [Synth 8-7071] port 'unit_literal' of module 'sat_eval' is unconnected for instance 'sat_eval' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:79]
-WARNING: [Synth 8-7023] instance 'sat_eval' of module 'sat_eval' has 5 connections declared, but only 3 given [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:79]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:88]
+WARNING: [Synth 8-7071] port 'unit_literal_offset_out' of module 'sat_eval' is unconnected for instance 'sat_eval' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:86]
+WARNING: [Synth 8-7071] port 'is_unit' of module 'sat_eval' is unconnected for instance 'sat_eval' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:86]
+WARNING: [Synth 8-7071] port 'unit_assignmnet_out' of module 'sat_eval' is unconnected for instance 'sat_eval' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:86]
+WARNING: [Synth 8-7023] instance 'sat_eval' of module 'sat_eval' has 6 connections declared, but only 3 given [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:86]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:95]
 INFO: [Synth 8-6155] done synthesizing module 'processing_engine' (0#1) [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'memory_bank' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/memory_bank.sv:23]
 	Parameter WIDTH bound to: 8 - type: integer 
@@ -56,9 +56,12 @@ INFO: [Synth 8-6157] synthesizing module 'memory_bank' [C:/Users/hari-admin/Docu
 	Parameter ADDRW bound to: 10 - type: integer 
 INFO: [Synth 8-3876] $readmem data file 'memory_hex_4var4clause.mem' is read successfully [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/memory_bank.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'memory_bank' (0#1) [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/memory_bank.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/top.sv:23]
-WARNING: [Synth 8-3848] Net unit_clause in module/entity top does not have driver. [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/top.sv:36]
-WARNING: [Synth 8-3848] Net offset_out in module/entity top does not have driver. [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/top.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/top.sv:24]
+WARNING: [Synth 8-3848] Net unit_assignmnet_out in module/entity sat_eval does not have driver. [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/SAT_Eval.sv:31]
+WARNING: [Synth 8-3848] Net unit_clause in module/entity top does not have driver. [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/top.sv:37]
+WARNING: [Synth 8-3848] Net offset_out in module/entity top does not have driver. [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/top.sv:38]
+WARNING: [Synth 8-7129] Port unit_assignmnet_out[1] in module sat_eval is either unconnected or has no load
+WARNING: [Synth 8-7129] Port unit_assignmnet_out[0] in module sat_eval is either unconnected or has no load
 WARNING: [Synth 8-7129] Port unit_clause in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port offset_out[1] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port offset_out[0] in module top is either unconnected or has no load
@@ -73,18 +76,18 @@ WARNING: [Synth 8-7129] Port base_out[2] in module top is either unconnected or 
 WARNING: [Synth 8-7129] Port base_out[1] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port base_out[0] in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2296.129 ; gain = 500.047
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2296.070 ; gain = 500.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2314.062 ; gain = 517.980
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2296.070 ; gain = 500.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2314.062 ; gain = 517.980
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2296.070 ; gain = 500.969
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2314.062 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2296.070 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -95,29 +98,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2426.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2359.609 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2426.746 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2359.609 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'processing_engine'
 ---------------------------------------------------------------------------------------------------
@@ -132,7 +135,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'proce
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'processing_engine'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -150,6 +153,7 @@ Detailed RTL Component Info :
 	   6 Input   10 Bit        Muxes := 2     
 	   6 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
 	   6 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 4     
 	   6 Input    1 Bit        Muxes := 9     
@@ -183,7 +187,7 @@ WARNING: [Synth 8-7129] Port base_out[2] in module top is either unconnected or 
 WARNING: [Synth 8-7129] Port base_out[1] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port base_out[0] in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -204,13 +208,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -230,7 +234,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -248,37 +252,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -309,27 +313,27 @@ Report Cell Usage:
 |13    |OBUFT     |     3|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2359.609 ; gain = 564.508
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 2426.746 ; gain = 517.980
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2426.746 ; gain = 630.664
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 2359.609 ; gain = 500.969
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2359.609 ; gain = 564.508
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2426.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2359.609 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2426.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2359.609 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
 
-Synth Design complete, checksum: 8bf5543e
+Synth Design complete, checksum: 15e61c64
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+38 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 2426.746 ; gain = 1008.742
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 2359.609 ; gain = 941.547
 INFO: [Common 17-1381] The checkpoint 'C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb  7 10:40:41 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  7 12:56:22 2023...
