@@ -49,7 +49,7 @@ module top_tb();
     
     initial begin
         base = 0'h01;
-        offset = 0'b10;
+        offset = 0'b00;
         clk = 0;
         start = 1;
         assignment = 01;
@@ -61,6 +61,5 @@ module top_tb();
             start = 0;
         end
         
-    
     end
 endmodule

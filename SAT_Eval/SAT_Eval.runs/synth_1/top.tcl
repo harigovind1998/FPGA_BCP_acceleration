@@ -89,6 +89,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/SAT_Eval.sv
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/memory_bank.sv
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/processing_engine.sv
+  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sources_1/new/top.sv
 }
 OPTRACE "Adding files" END { }

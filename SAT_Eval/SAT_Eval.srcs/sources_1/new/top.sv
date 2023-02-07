@@ -32,7 +32,10 @@ module top #(
     input   wire logic               [1:0] assignment_in,
     input   wire logic                     start_in,
     input   wire logic                     clk_in,
-    output  wire                           sat_out
+    output  wire                           sat_out,
+    output  wire                           unit_clause, // High if there is a unit clause is identified
+    output  wire logic [(OFFSET_BITS-1):0] offset_out,  // Variable that can be turned into unit clause
+    input   wire logic         [ADDRW-1:0] base_out     // Clause where the unit Variable was found. THESE theree pieces of info can be used by SW to determine which is the unit clause
 );
     wire [ADDRW-1:0] addr;
     wire [WIDTH-1:0] data_read, data_write;
@@ -54,7 +57,7 @@ module top #(
         .addr_out(addr),
         .sat_out(sat_out)
     );
-
+ 
     memory_bank #(
         .WIDTH(WIDTH),
         .DEPTH(DEPTH),

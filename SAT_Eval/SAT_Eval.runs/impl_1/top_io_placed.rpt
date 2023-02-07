@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date                      : Mon Dec 26 14:26:05 2022
+| Date                      : Tue Feb  7 10:41:51 2023
 | Host                      : inm-10 running 64-bit major release  (build 9200)
 | Command                   : report_io -file top_io_placed.rpt
 | Design                    : top
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            17 |
+|            30 |
 +---------------+
 
 
@@ -44,8 +44,8 @@ Table of Contents
 | A7         |                  |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | A8         |                  | High Range       | IO_L21N_T3_DQS_16            | User IO       |             |      16 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | A9         |                  | High Range       | IO_L21P_T3_DQS_16            | User IO       |             |      16 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
-| A10        |                  | High Range       | IO_L23N_T3_16                | User IO       |             |      16 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
-| A11        |                  | High Range       | IO_L23P_T3_16                | User IO       |             |      16 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
+| A10        | offset_out[1]    | High Range       | IO_L23N_T3_16                | TRISTATE      | LVCMOS18*   |      16 |         12 | SLOW |                     |            FP_VTT_50 |           | UNFIXED    |           |          |      | NONE             |              |                   |              |
+| A11        | unit_clause      | High Range       | IO_L23P_T3_16                | TRISTATE      | LVCMOS18*   |      16 |         12 | SLOW |                     |            FP_VTT_50 |           | UNFIXED    |           |          |      | NONE             |              |                   |              |
 | A12        |                  |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | A13        |                  | High Range       | IO_L4P_T0_AD9P_15            | User IO       |             |      15 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | A14        |                  | High Range       | IO_L4N_T0_AD9N_15            | User IO       |             |      15 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
@@ -174,7 +174,7 @@ Table of Contents
 | E5         |                  |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | E6         |                  |                  | MGTAVCC                      | Gigabit Power |             |         |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | E7         |                  |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
-| E8         |                  | High Range       | IO_24_T3_16                  | User IO       |             |      16 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
+| E8         | offset_out[0]    | High Range       | IO_24_T3_16                  | TRISTATE      | LVCMOS18*   |      16 |         12 | SLOW |                     |            FP_VTT_50 |           | UNFIXED    |           |          |      | NONE             |              |                   |              |
 | E9         | base_in[9]       | High Range       | IO_L15N_T2_DQS_16            | INPUT         | LVCMOS18*   |      16 |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | E10        |                  |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | E11        | base_in[4]       | High Range       | IO_L12P_T1_MRCC_16           | INPUT         | LVCMOS18*   |      16 |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
