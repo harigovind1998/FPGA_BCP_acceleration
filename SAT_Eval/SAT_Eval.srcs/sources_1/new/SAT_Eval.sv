@@ -36,6 +36,7 @@ module sat_eval #(
       .VARIABLES  (VARIABLES),
       .OFFSET_BITS(OFFSET_BITS)
   ) unit_clause_finder (
+      .sat_in(sat_out),
       .assignment_in(assignment_in),
       .clause_in(clause_in),
       .unit_literal_offset_out(unit_literal_offset_out),

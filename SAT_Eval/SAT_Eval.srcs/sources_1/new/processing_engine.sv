@@ -62,6 +62,7 @@ module processing_engine #(
   wire is_initial = mem_data_in[5:2] == initial_addr;
   wire [ADDRW-1:0] offset_addr, assignment_addr;
 
+  // Update saved literal with new assignment
   wire [WIDTH-1:0] temp_assignment;
   assign temp_assignment[1:0] = offset_in == 3 ? assignment_in : mem_data_in[1:0];
   assign temp_assignment[3:2] = offset_in == 2 ? assignment_in : mem_data_in[3:2];

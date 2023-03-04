@@ -52,7 +52,7 @@ module top_tb ();
     offset = 0'b00;
     clk = 0;
     start = 1;
-    assignment = 01;
+    assignment = 10;
     #5;
     #5 clk = !clk;
     #5 clk = !clk;
