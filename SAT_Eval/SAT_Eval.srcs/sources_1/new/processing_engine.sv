@@ -28,26 +28,26 @@ module processing_engine #(
     parameter OFFSET_BITS = $clog2(VARIABLES)  // Offset in next clause
 ) (
     // Control Signals in
-    input  wire logic                     clk_i,
-    input  wire logic                     start_i,
-    
+    input wire logic clk_i,
+    input wire logic start_i,
+
     // Stored clause and variable addressing
-    input  wire logic [(OFFSET_BITS-1):0] offset_i,
-    input  wire logic [        ADDRW-1:0] base_i,
-    input  wire logic [              1:0] assignment_i,
-    
+    input wire logic [(OFFSET_BITS-1):0] offset_i,
+    input wire logic [        ADDRW-1:0] base_i,
+    input wire logic [              1:0] assignment_i,
+
     // Memory bank interface
-    input  wire logic [        WIDTH-1:0] mem_data_i,
-    output wire logic [        WIDTH-1:0] mem_wr_data_o,
-    output wire logic                     mem_wr_en_o,
-    output wire logic [        ADDRW-1:0] mem_addr_o,
+    input  wire logic [WIDTH-1:0] mem_data_i,
+    output wire logic [WIDTH-1:0] mem_wr_data_o,
+    output wire logic             mem_wr_en_o,
+    output wire logic [ADDRW-1:0] mem_addr_o,
 
     // FIFO bank interface
-    input wire logic  [        ADDRW-1:0] FIFO_base_adr_i,
-    input wire logic  [(OFFSET_BITS-1):0] FIFO_offset_i,
-    input wire logic  [              1:0] FIFO_assignment_i,
-    input wire logic                      FIFO_empty_i,
-    input wire logic                      FIFO_full_i,
+    input  wire logic [        ADDRW-1:0] FIFO_base_adr_i,
+    input  wire logic [(OFFSET_BITS-1):0] FIFO_offset_i,
+    input  wire logic [              1:0] FIFO_assignment_i,
+    input  wire logic                     FIFO_empty_i,
+    input  wire logic                     FIFO_full_i,
     output wire logic [        ADDRW-1:0] FIFO_base_adr_o,
     output wire logic [(OFFSET_BITS-1):0] FIFO_offset_o,
     output wire logic [              1:0] FIFO_assignment_o,
@@ -55,7 +55,7 @@ module processing_engine #(
     output wire logic                     FIFO_rd_en_o,
 
     // Not used yet
-    output                                sat_o
+    output sat_o
 );
 
   // Finite state machine... Needs improvement
@@ -84,7 +84,7 @@ module processing_engine #(
   // Wires for Unit Clause
   wire is_unit;
   wire [1:0] unit_assignment;
-  wire [OFFSET_BITS -1 :0] unit_literal_offset;
+  wire [OFFSET_BITS -1 : 0] unit_literal_offset;
   assign FIFO_assignment_o = unit_assignment;
   assign FIFO_offset_o = unit_literal_offset;
   assign FIFO_wr_en_o = is_unit;
@@ -121,42 +121,40 @@ module processing_engine #(
   wire unit_clause_en = state == START_WRITE_ASSIGNMENT; // Clause and assignment in correct registers at the this state
 
   unit_clause_finder #(
-    .VARIABLES(VARIABLES),
-    .OFFSET_BITS(OFFSET_BITS)
-  ) unit_clause_flider(
-    .en_i(unit_clause_en),
-    .sat_i(eval_sat),
-    .assignment_i(temp_assignment),
-    .clause_i(clause),
-    .unit_literal_offset_o(unit_literal_offset),
-    .is_unit_o(is_unit),
-    .unit_assignment_o(unit_assignment)
+      .VARIABLES  (VARIABLES),
+      .OFFSET_BITS(OFFSET_BITS)
+  ) unit_clause_flider (
+      .en_i(unit_clause_en),
+      .sat_i(eval_sat),
+      .assignment_i(temp_assignment),
+      .clause_i(clause),
+      .unit_literal_offset_o(unit_literal_offset),
+      .is_unit_o(is_unit),
+      .unit_assignment_o(unit_assignment)
   );
 
   // Unit Assignment Buffer
   unit_assignment_FIFOBuffer #(
-    .VARIABLES(VARIABLES),
-    .WIDTH(WIDTH),
-    .DEPTH(DEPTH),
-    .ADDRW(ADDRW),
-    .BUFFER_SIZE(20)
-  )
-  
-  unit_assignment_FIFOBuffer(
-    .clk_in(clk_i),
-    .base_address_in(base_addr),
-    .offset_in(unit_literal_offset),
-    .assignment_in(unit_assignment),
-    .r_in(is_unit),
-    .w_in(),
-    .en_in(1'b1),
-    .rst_in(1'b0),
+      .VARIABLES(VARIABLES),
+      .WIDTH(WIDTH),
+      .DEPTH(DEPTH),
+      .ADDRW(ADDRW),
+      .BUFFER_SIZE(20)
+  ) unit_assignment_FIFOBuffer (
+      .clk_in(clk_i),
+      .base_address_in(base_addr),
+      .offset_in(unit_literal_offset),
+      .assignment_in(unit_assignment),
+      .r_in(is_unit),
+      .w_in(),
+      .en_in(1'b1),
+      .rst_in(1'b0),
 
-    .base_address_out(),
-    .offset_out(),
-    .assignment_out(),
-    .empty_out(),
-    .full_out()
+      .base_address_out(),
+      .offset_out(),
+      .assignment_out(),
+      .empty_out(),
+      .full_out()
   );
 
 

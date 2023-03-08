@@ -38,6 +38,8 @@ module top #(
     output  wire logic [(OFFSET_BITS-1):0] offset_out,  // Variable that can be turned into unit clause
     input   wire logic         [ADDRW-1:0] base_out     // Clause where the unit Variable was found. THESE theree pieces of info can be used by SW to determine which is the unit clause
 );
+
+  // Connect PE to Memory bank
   wire [ADDRW-1:0] addr;
   wire [WIDTH-1:0] data_read, data_write;
   wire data_write_en;
@@ -62,6 +64,8 @@ module top #(
       .mem_wr_en_o(data_write_en),
       .mem_addr_o(addr),
 
+      // FIFO Interface
+
       .sat_o(sat_out)
   );
 
@@ -76,5 +80,19 @@ module top #(
       .data_in(data_write),
       .data_out(data_read)
   );
+
+  unit_assignment_FIFOBuffer #(
+      .VARIABLES(VARIABLES),
+      .WIDTH(WIDTH),
+      .DEPTH(DEPTH),
+      .ADDRW(ADDRW),
+      .BUFFER_SIZE(20)
+  ) unit_assignment_FIFOBuffer (
+    .clk_i(clk_in),
+    .en_i(1'b1),
+    .base_address_in()
+
+  );
+
 
 endmodule
