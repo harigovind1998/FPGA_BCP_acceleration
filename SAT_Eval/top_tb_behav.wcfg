@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="233.805 ns"></ZoomEndTime>
-      <Cursor1Time time="20.000 ns"></Cursor1Time>
+      <ZoomEndTime time="254.186 ns"></ZoomEndTime>
+      <Cursor1Time time="56.204 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="245"></NameColumnWidth>
-      <ValueColumnWidth column_width="100"></ValueColumnWidth>
+      <ValueColumnWidth column_width="95"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="11" />
    <wvobject fp_name="/top_tb/clk" type="logic">
@@ -181,6 +181,38 @@
       <obj_property name="label">Unit Evaluator</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_clause_flider/sat_i" type="logic">
+         <obj_property name="ElementShortName">sat_i</obj_property>
+         <obj_property name="ObjectShortName">sat_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_clause_flider/assignment_i" type="array">
+         <obj_property name="ElementShortName">assignment_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">assignment_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_clause_flider/clause_i" type="array">
+         <obj_property name="ElementShortName">clause_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">clause_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_clause_flider/unit_literal_offset_o" type="array">
+         <obj_property name="ElementShortName">unit_literal_offset_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">unit_literal_offset_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_clause_flider/is_unit_o" type="logic">
+         <obj_property name="ElementShortName">is_unit_o</obj_property>
+         <obj_property name="ObjectShortName">is_unit_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_clause_flider/unit_assignment_o" type="array">
+         <obj_property name="ElementShortName">unit_assignment_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">unit_assignment_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_clause_flider/is_lit" type="array">
+         <obj_property name="ElementShortName">is_lit[3:0]</obj_property>
+         <obj_property name="ObjectShortName">is_lit[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_clause_flider/is_unassigned" type="array">
+         <obj_property name="ElementShortName">is_unassigned[3:0]</obj_property>
+         <obj_property name="ObjectShortName">is_unassigned[3:0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject type="divider" fp_name="divider96">
       <obj_property name="label">FIFO Buffer</obj_property>

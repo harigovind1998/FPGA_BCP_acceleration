@@ -141,6 +141,7 @@ module processing_engine #(
     .ADDRW(ADDRW),
     .BUFFER_SIZE(20)
   )
+  
   unit_assignment_FIFOBuffer(
     .clk_in(clk_i),
     .base_address_in(base_addr),
