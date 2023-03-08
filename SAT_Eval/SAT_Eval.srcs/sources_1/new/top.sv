@@ -47,16 +47,22 @@ module top #(
       .DEPTH(DEPTH),
       .ADDRW(ADDRW)
   ) processing_engine (
-      .offset_in(offset_in),
-      .base_in(base_in),
-      .assignment_in(assignment_in),
-      .mem_data_in(data_read),
-      .start_in(start_in),
-      .clk_in(clk_in),
-      .write_data_out(data_write),
-      .write_en_out(data_write_en),
-      .addr_out(addr),
-      .sat_out(sat_out)
+      // Control Signals
+      .clk_i  (clk_in),
+      .start_i(start_in),
+
+      // Stored clause and variable addressing
+      .offset_i(offset_in),
+      .base_i(base_in),
+      .assignment_i(assignment_in),
+
+      // Memory bank interface
+      .mem_data_i(data_read),
+      .mem_wr_data_o(data_write),
+      .mem_wr_en_o(data_write_en),
+      .mem_addr_o(addr),
+
+      .sat_o(sat_out)
   );
 
   memory_bank #(

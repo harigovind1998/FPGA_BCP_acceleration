@@ -11,18 +11,22 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="14.600 ns"></ZoomStartTime>
-      <ZoomEndTime time="230.195 ns"></ZoomEndTime>
-      <Cursor1Time time="71.574 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="233.805 ns"></ZoomEndTime>
+      <Cursor1Time time="20.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="245"></NameColumnWidth>
-      <ValueColumnWidth column_width="105"></ValueColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/top_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
    </wvobject>
    <wvobject fp_name="group45" type="group">
       <obj_property name="label">DUT</obj_property>
@@ -64,6 +68,10 @@
       <obj_property name="label">PE</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/clk_i" type="logic">
+         <obj_property name="ElementShortName">clk_i</obj_property>
+         <obj_property name="ObjectShortName">clk_i</obj_property>
+      </wvobject>
       <wvobject fp_name="/top_tb/DUT/processing_engine/state" type="array">
          <obj_property name="ElementShortName">state[2:0]</obj_property>
          <obj_property name="ObjectShortName">state[2:0]</obj_property>
@@ -164,46 +172,6 @@
          <obj_property name="label">SAT eval</obj_property>
          <obj_property name="DisplayName">label</obj_property>
       </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/sat_out" type="logic">
-         <obj_property name="ElementShortName">sat_out</obj_property>
-         <obj_property name="ObjectShortName">sat_out</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/assignment_in" type="array">
-         <obj_property name="ElementShortName">assignment_in[7:0]</obj_property>
-         <obj_property name="ObjectShortName">assignment_in[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/clause_in" type="array">
-         <obj_property name="ElementShortName">clause_in[7:0]</obj_property>
-         <obj_property name="ObjectShortName">clause_in[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/is_unit_out" type="logic">
-         <obj_property name="ElementShortName">is_unit_out</obj_property>
-         <obj_property name="ObjectShortName">is_unit_out</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/assignment_in" type="array">
-         <obj_property name="ElementShortName">assignment_in[7:0]</obj_property>
-         <obj_property name="ObjectShortName">assignment_in[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/clause_in" type="array">
-         <obj_property name="ElementShortName">clause_in[7:0]</obj_property>
-         <obj_property name="ObjectShortName">clause_in[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/unit_literal_offset_out" type="array">
-         <obj_property name="ElementShortName">unit_literal_offset_out[1:0]</obj_property>
-         <obj_property name="ObjectShortName">unit_literal_offset_out[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/unit_assignment_out" type="array">
-         <obj_property name="ElementShortName">unit_assignment_out[1:0]</obj_property>
-         <obj_property name="ObjectShortName">unit_assignment_out[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/is_lit" type="array">
-         <obj_property name="ElementShortName">is_lit[3:0]</obj_property>
-         <obj_property name="ObjectShortName">is_lit[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/is_unassigned" type="array">
-         <obj_property name="ElementShortName">is_unassigned[3:0]</obj_property>
-         <obj_property name="ObjectShortName">is_unassigned[3:0]</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject type="divider" fp_name="divider94">
       <obj_property name="label">Unit Clause</obj_property>
@@ -213,35 +181,6 @@
       <obj_property name="label">Unit Evaluator</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/sat_in" type="logic">
-         <obj_property name="ElementShortName">sat_in</obj_property>
-         <obj_property name="ObjectShortName">sat_in</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/assignment_in" type="array">
-         <obj_property name="ElementShortName">assignment_in[7:0]</obj_property>
-         <obj_property name="ObjectShortName">assignment_in[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/clause_in" type="array">
-         <obj_property name="ElementShortName">clause_in[7:0]</obj_property>
-         <obj_property name="ObjectShortName">clause_in[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/unit_literal_offset_out" type="array">
-         <obj_property name="ElementShortName">unit_literal_offset_out[1:0]</obj_property>
-         <obj_property name="ObjectShortName">unit_literal_offset_out[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/is_unit_out" type="logic">
-         <obj_property name="ElementShortName">is_unit_out</obj_property>
-         <obj_property name="ObjectShortName">is_unit_out</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/unit_assignment_out" type="array">
-         <obj_property name="ElementShortName">unit_assignment_out[1:0]</obj_property>
-         <obj_property name="ObjectShortName">unit_assignment_out[1:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/DUT/processing_engine/sat_eval/unit_clause_finder/is_lit" type="array">
-         <obj_property name="ElementShortName">is_lit[3:0]</obj_property>
-         <obj_property name="ObjectShortName">is_lit[3:0]</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject type="divider" fp_name="divider96">
       <obj_property name="label">FIFO Buffer</obj_property>

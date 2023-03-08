@@ -24,35 +24,36 @@ module unit_clause_finder #(
     parameter VARIABLES   = 4,
     parameter OFFSET_BITS = $clog2(VARIABLES)
 ) (
-    input sat_in, 
-    input [(VARIABLES * 2) -1 : 0] assignment_in,
-    input [(VARIABLES * 2) -1 : 0] clause_in,
-    output [OFFSET_BITS - 1 : 0] unit_literal_offset_out,
-    output is_unit_out,
-    output [1:0] unit_assignment_out
+    input en_i,
+    input sat_i,
+    input [(VARIABLES * 2) -1 : 0] assignment_i,
+    input [(VARIABLES * 2) -1 : 0] clause_i,
+    output [OFFSET_BITS - 1 : 0] unit_literal_offset_o,
+    output is_unit_o,
+    output [1:0] unit_assignment_o
 );
 
   wire [3:0] is_lit;
-  assign is_lit[0] = clause_in[1:0] != 0;
-  assign is_lit[1] = clause_in[3:2] != 0;
-  assign is_lit[2] = clause_in[5:4] != 0;
-  assign is_lit[3] = clause_in[7:6] != 0;
+  assign is_lit[0] = clause_i[1:0] != 0;
+  assign is_lit[1] = clause_i[3:2] != 0;
+  assign is_lit[2] = clause_i[5:4] != 0;
+  assign is_lit[3] = clause_i[7:6] != 0;
 
   wire [3:0] is_unassigned;
-  assign is_unassigned[0] = (assignment_in[1:0] == 0) & is_lit[0];
-  assign is_unassigned[1] = (assignment_in[3:2] == 0) & is_lit[1];
-  assign is_unassigned[2] = (assignment_in[5:4] == 0) & is_lit[2];
-  assign is_unassigned[3] = (assignment_in[7:6] == 0) & is_lit[3];
+  assign is_unassigned[0] = (assignment_i[1:0] == 0) & is_lit[0];
+  assign is_unassigned[1] = (assignment_i[3:2] == 0) & is_lit[1];
+  assign is_unassigned[2] = (assignment_i[5:4] == 0) & is_lit[2];
+  assign is_unassigned[3] = (assignment_i[7:6] == 0) & is_lit[3];
   
-  assign is_unit_out = (is_unassigned == 4'b0001 || is_unassigned == 4'b0010 || is_unassigned == 4'b0100 || is_unassigned == 4'b1000) & ~sat_in;
+  assign is_unit_o = (is_unassigned == 4'b0001 || is_unassigned == 4'b0010 || is_unassigned == 4'b0100 || is_unassigned == 4'b1000) & ~sat_i & en_i;
 
-  assign unit_assignment_out =    (is_unassigned == 4'b0001) ? clause_in[1:0] :
-                                    (is_unassigned == 4'b0010) ? clause_in[3:2] :   
-                                    (is_unassigned == 4'b0100) ? clause_in[5:4] :
-                                    (is_unassigned == 4'b1000) ? clause_in[7:6] :
-                                                                          2'b00 ;
+  assign unit_assignment_o =  (is_unassigned == 4'b0001) ? clause_i[1:0]  :
+                              (is_unassigned == 4'b0010) ? clause_i[3:2]  :   
+                              (is_unassigned == 4'b0100) ? clause_i[5:4]  :
+                              (is_unassigned == 4'b1000) ? clause_i[7:6]  :
+                                                                    2'b00 ;
 
-  assign unit_literal_offset_out = determine_offset(is_unassigned);
+  assign unit_literal_offset_o = determine_offset(is_unassigned);
 
   function [OFFSET_BITS-1:0] determine_offset(input [3:0] is_unassigned);
     case (is_unassigned)

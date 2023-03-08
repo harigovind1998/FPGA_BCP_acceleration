@@ -38,7 +38,7 @@ module processing_engine #(
     
     // Memory bank interface
     input  wire logic [        WIDTH-1:0] mem_data_i,
-    output wire logic [        WIDTH-1:0] mem_write_data_o,
+    output wire logic [        WIDTH-1:0] mem_wr_data_o,
     output wire logic                     mem_wr_en_o,
     output wire logic [        ADDRW-1:0] mem_addr_o,
 
@@ -53,7 +53,7 @@ module processing_engine #(
     output wire logic [              1:0] FIFO_assignment_o,
     output wire logic                     FIFO_wr_en_o,
     output wire logic                     FIFO_rd_en_o,
-    
+
     // Not used yet
     output                                sat_o
 );
@@ -83,8 +83,12 @@ module processing_engine #(
 
   // Wires for Unit Clause
   wire is_unit;
-  wire [1:0] unit_assignment_out;
-  wire [OFFSET_BITS -1 :0] unit_literal_offset_out;
+  wire [1:0] unit_assignment;
+  wire [OFFSET_BITS -1 :0] unit_literal_offset;
+  assign FIFO_assignment_o = unit_assignment;
+  assign FIFO_offset_o = unit_literal_offset;
+  assign FIFO_wr_en_o = is_unit;
+  assign FIFO_base_adr_o = base_addr;
 
   // Update saved literal with new assignment
   wire [WIDTH-1:0] temp_assignment;
@@ -95,7 +99,7 @@ module processing_engine #(
 
   // Assignments
   assign assignment_out = assignment;
-  assign mem_write_data_o = assignment;
+  assign mem_wr_data_o = assignment;
   assign clause_out = clause;
   assign sat_o = sat;
   assign mem_wr_en_o = write_en;
@@ -110,11 +114,23 @@ module processing_engine #(
       .VARIABLES(VARIABLES)
   ) sat_eval (
       .assignment_i(assignment_out),
-      .clause_in(clause_out),
-      .sat_o(eval_sat),
-      .unit_literal_offset_out(unit_literal_offset_out),
-      .is_unit(is_unit),
-      .unit_assignment_out(unit_assignment_out)
+      .clause_i(clause_out),
+      .sat_o(eval_sat)
+  );
+
+  wire unit_clause_en = state == START_WRITE_ASSIGNMENT; // Clause and assignment in correct registers at the this state
+
+  unit_clause_finder #(
+    .VARIABLES(VARIABLES),
+    .OFFSET_BITS(OFFSET_BITS)
+  ) unit_clause_flider(
+    .en_i(unit_clause_en),
+    .sat_i(eval_sat),
+    .assignment_i(temp_assignment),
+    .clause_i(clause),
+    .unit_literal_offset_o(unit_literal_offset),
+    .is_unit_o(is_unit),
+    .unit_assignment_o(unit_assignment)
   );
 
   // Unit Assignment Buffer
@@ -126,10 +142,10 @@ module processing_engine #(
     .BUFFER_SIZE(20)
   )
   unit_assignment_FIFOBuffer(
-    .clk_i(clk_i),
+    .clk_in(clk_i),
     .base_address_in(base_addr),
-    .offset_i(unit_literal_offset_out),
-    .assignment_i(unit_assignment_out),
+    .offset_in(unit_literal_offset),
+    .assignment_in(unit_assignment),
     .r_in(is_unit),
     .w_in(),
     .en_in(1'b1),
