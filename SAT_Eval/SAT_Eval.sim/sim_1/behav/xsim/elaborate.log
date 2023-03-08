@@ -6,14 +6,4 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-5021] port 'base_out' is not connected on this instance [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sim_1/new/top_tb.sv:41]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.unit_clause_finder(OFFSET_BITS=2...
-Compiling module xil_defaultlib.sat_eval_default
-Compiling module xil_defaultlib.processing_engine(ADDRW=10)
-Compiling module xil_defaultlib.memory_bank(ADDRW=10)
-Compiling module xil_defaultlib.top_default
-Compiling module xil_defaultlib.top_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot top_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

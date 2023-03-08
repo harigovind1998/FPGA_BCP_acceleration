@@ -27,16 +27,35 @@ module processing_engine #(
     parameter VARIABLES = WIDTH/2, // Each variable assignment {Unassigned, True, False} and clause variable {unused, positive literal, negative literal}represented using two bits {Unassigned, True, False}
     parameter OFFSET_BITS = $clog2(VARIABLES)  // Offset in next clause
 ) (
-    input  wire logic [(OFFSET_BITS-1):0] offset_in,
-    input  wire logic [        ADDRW-1:0] base_in,
-    input  wire logic [              1:0] assignment_in,
-    input  wire logic [        WIDTH-1:0] mem_data_in,
-    input  wire logic                     start_in,
-    input  wire logic                     clk_in,
-    output wire logic [        WIDTH-1:0] write_data_out,
-    output wire logic                     write_en_out,
-    output wire logic [        ADDRW-1:0] addr_out,
-    output                                sat_out
+    // Control Signals in
+    input  wire logic                     clk_i,
+    input  wire logic                     start_i,
+    
+    // Stored clause and variable addressing
+    input  wire logic [(OFFSET_BITS-1):0] offset_i,
+    input  wire logic [        ADDRW-1:0] base_i,
+    input  wire logic [              1:0] assignment_i,
+    
+    // Memory bank interface
+    input  wire logic [        WIDTH-1:0] mem_data_i,
+    output wire logic [        WIDTH-1:0] mem_write_data_o,
+    output wire logic                     mem_wr_en_o,
+    output wire logic [        ADDRW-1:0] mem_addr_o,
+
+    // FIFO bank interface
+    input wire logic  [        ADDRW-1:0] FIFO_base_adr_i,
+    input wire logic  [(OFFSET_BITS-1):0] FIFO_offset_i,
+    input wire logic  [              1:0] FIFO_assignment_i,
+    input wire logic                      FIFO_empty_i,
+    input wire logic                      FIFO_full_i,
+    output wire logic [        ADDRW-1:0] FIFO_base_adr_o,
+    output wire logic [(OFFSET_BITS-1):0] FIFO_offset_o,
+    output wire logic [              1:0] FIFO_assignment_o,
+    output wire logic                     FIFO_wr_en_o,
+    output wire logic                     FIFO_rd_en_o,
+    
+    // Not used yet
+    output                                sat_o
 );
 
   // Finite state machine... Needs improvement
@@ -59,25 +78,30 @@ module processing_engine #(
   // Wires
   wire       eval_sat;
   wire [WIDTH-1:0] assignment_out, clause_out;
-  wire is_initial = mem_data_in[5:2] == initial_addr;
+  wire is_initial = mem_data_i[5:2] == initial_addr;
   wire [ADDRW-1:0] offset_addr, assignment_addr;
+
+  // Wires for Unit Clause
+  wire is_unit;
+  wire [1:0] unit_assignment_out;
+  wire [OFFSET_BITS -1 :0] unit_literal_offset_out;
 
   // Update saved literal with new assignment
   wire [WIDTH-1:0] temp_assignment;
-  assign temp_assignment[1:0] = offset_in == 3 ? assignment_in : mem_data_in[1:0];
-  assign temp_assignment[3:2] = offset_in == 2 ? assignment_in : mem_data_in[3:2];
-  assign temp_assignment[5:4] = offset_in == 1 ? assignment_in : mem_data_in[5:4];
-  assign temp_assignment[7:6] = offset_in == 0 ? assignment_in : mem_data_in[7:6];
+  assign temp_assignment[1:0] = offset_i == 3 ? assignment_i : mem_data_i[1:0];
+  assign temp_assignment[3:2] = offset_i == 2 ? assignment_i : mem_data_i[3:2];
+  assign temp_assignment[5:4] = offset_i == 1 ? assignment_i : mem_data_i[5:4];
+  assign temp_assignment[7:6] = offset_i == 0 ? assignment_i : mem_data_i[7:6];
 
   // Assignments
   assign assignment_out = assignment;
-  assign write_data_out = assignment;
+  assign mem_write_data_o = assignment;
   assign clause_out = clause;
-  assign sat_out = sat;
-  assign write_en_out = write_en;
+  assign sat_o = sat;
+  assign mem_wr_en_o = write_en;
 
   // Addresses
-  assign addr_out = addr;
+  assign mem_addr_o = addr;
   assign offset_addr = base_addr + 1 + offset; // Offset {0..VARIABLES}, need to add 1 to base address since offset 0 is one address above base
   assign assignment_addr = base_addr - 1;  // Assignment stored one addr space before base address
 
@@ -85,24 +109,52 @@ module processing_engine #(
   sat_eval #(
       .VARIABLES(VARIABLES)
   ) sat_eval (
-      .assignment_in(assignment_out),
+      .assignment_i(assignment_out),
       .clause_in(clause_out),
-      .sat_out(eval_sat)
+      .sat_o(eval_sat),
+      .unit_literal_offset_out(unit_literal_offset_out),
+      .is_unit(is_unit),
+      .unit_assignment_out(unit_assignment_out)
+  );
+
+  // Unit Assignment Buffer
+  unit_assignment_FIFOBuffer #(
+    .VARIABLES(VARIABLES),
+    .WIDTH(WIDTH),
+    .DEPTH(DEPTH),
+    .ADDRW(ADDRW),
+    .BUFFER_SIZE(20)
+  )
+  unit_assignment_FIFOBuffer(
+    .clk_i(clk_i),
+    .base_address_in(base_addr),
+    .offset_i(unit_literal_offset_out),
+    .assignment_i(unit_assignment_out),
+    .r_in(is_unit),
+    .w_in(),
+    .en_in(1'b1),
+    .rst_in(1'b0),
+
+    .base_address_out(),
+    .offset_out(),
+    .assignment_out(),
+    .empty_out(),
+    .full_out()
   );
 
 
   // Clk_in latched sequential logic 
-  always @(posedge clk_in) begin
+  always @(posedge clk_i) begin
     case (state)
       IDLE: begin
-        initial_addr <= base_in;
-        addr         <= base_in;
-        base_addr    <= base_in;
-        offset       <= offset_in;
-        state        <= start_in ? READ_CLAUSE : IDLE;
+        initial_addr <= base_i;
+        addr         <= base_i;
+        base_addr    <= base_i;
+        offset       <= offset_i;
+        state        <= start_i ? READ_CLAUSE : IDLE;
       end
       READ_CLAUSE: begin
-        clause <= mem_data_in;
+        clause <= mem_data_i;
         addr   <= assignment_addr;
         state  <= READ_ASSIGNMENT;
       end
@@ -120,9 +172,9 @@ module processing_engine #(
         state    <= EVALUATE;
       end
       EVALUATE: begin
-        addr <= mem_data_in[5:2];
-        base_addr <= mem_data_in[5:2];
-        offset <= mem_data_in[1:0];
+        addr <= mem_data_i[5:2];
+        base_addr <= mem_data_i[5:2];
+        offset <= mem_data_i[1:0];
         sat <= eval_sat;
         state <= is_initial ? IDLE : READ_CLAUSE;
       end

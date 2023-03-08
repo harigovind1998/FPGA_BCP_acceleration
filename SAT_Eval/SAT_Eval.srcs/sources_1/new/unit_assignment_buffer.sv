@@ -20,7 +20,7 @@ import bcp_pkg::*;
 // Based off of https://esrd2014.blogspot.com/p/first-in-first-out-buffer.html
 //////////////////////////////////////////////////////////////////////////////////
 
-module unit_assignment_FIFObuffer #(
+module unit_assignment_FIFOBuffer #(
     parameter WIDTH = 8,
     parameter DEPTH = 1024,
     parameter ADDRW = $clog2(DEPTH),
