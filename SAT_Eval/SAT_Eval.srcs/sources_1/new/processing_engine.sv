@@ -43,16 +43,18 @@ module processing_engine #(
     output wire logic [ADDRW-1:0] mem_addr_o,
 
     // FIFO bank interface
+    input  wire logic                     FIFO_empty_i,
+    input  wire logic                     FIFO_full_i,
+    output wire logic                     FIFO_wr_en_o,
+    output wire logic                     FIFO_rd_en_o,
+    // Read from FIFO
     input  wire logic [        ADDRW-1:0] FIFO_base_adr_i,
     input  wire logic [(OFFSET_BITS-1):0] FIFO_offset_i,
     input  wire logic [              1:0] FIFO_assignment_i,
-    input  wire logic                     FIFO_empty_i,
-    input  wire logic                     FIFO_full_i,
+    // Write to FIFO
     output wire logic [        ADDRW-1:0] FIFO_base_adr_o,
     output wire logic [(OFFSET_BITS-1):0] FIFO_offset_o,
     output wire logic [              1:0] FIFO_assignment_o,
-    output wire logic                     FIFO_wr_en_o,
-    output wire logic                     FIFO_rd_en_o,
 
     // Not used yet
     output sat_o
@@ -133,32 +135,7 @@ module processing_engine #(
       .unit_assignment_o(unit_assignment)
   );
 
-  // Unit Assignment Buffer
-  unit_assignment_FIFOBuffer #(
-      .VARIABLES(VARIABLES),
-      .WIDTH(WIDTH),
-      .DEPTH(DEPTH),
-      .ADDRW(ADDRW),
-      .BUFFER_SIZE(20)
-  ) unit_assignment_FIFOBuffer (
-      .clk_in(clk_i),
-      .base_address_in(base_addr),
-      .offset_in(unit_literal_offset),
-      .assignment_in(unit_assignment),
-      .r_in(is_unit),
-      .w_in(),
-      .en_in(1'b1),
-      .rst_in(1'b0),
-
-      .base_address_out(),
-      .offset_out(),
-      .assignment_out(),
-      .empty_out(),
-      .full_out()
-  );
-
-
-  // Clk_in latched sequential logic 
+  // Clk_in latched sequential logic
   always @(posedge clk_i) begin
     case (state)
       IDLE: begin
