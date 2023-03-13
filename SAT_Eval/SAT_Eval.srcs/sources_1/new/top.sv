@@ -48,7 +48,7 @@ module top #(
   wire [        ADDRW-1:0] FIFO_wr_base_addr, FIFO_rd_base_addr;
   wire [(OFFSET_BITS-1):0] FIFO_wr_offset, FIFO_rd_offset;
   wire [              1:0] FIFO_wr_assignment, FIFO_rd_assignment;
-  wire                     FIFO_wr_en, FIFO_rd_en;
+  wire                     FIFO_wr_en, FIFO_rd_en, FIFO_empty, FIFO_full;
 
   processing_engine #(
       .WIDTH(WIDTH),
@@ -70,11 +70,21 @@ module top #(
       .mem_wr_en_o(data_write_en),
       .mem_addr_o(addr),
 
-      // FIFO Read Interface
+      //FIFO Interface
+      .FIFO_empty_i(FIFO_empty),
+      .FIFO_full_i(FIFO_full),
+
+      // FIFO Write Interface
       .FIFO_base_adr_o(FIFO_wr_base_addr),
       .FIFO_offset_o(FIFO_wr_offset),
       .FIFO_assignment_o(FIFO_wr_assignment),
       .FIFO_wr_en_o(FIFO_wr_en),
+
+      //FIFO Read Interface
+      .FIFO_base_adr_i(FIFO_rd_base_addr),
+      .FIFO_offset_i(FIFO_rd_offset),
+      .FIFO_assignment_i(FIFO_rd_assignment),
+      .FIFO_rd_en_o(FIFO_rd_en),
 
       .sat_o(sat_out)
   );
@@ -102,14 +112,20 @@ module top #(
     .en_i(1'b1),
     .rst_i(1'b0),
 
-    .empty_o(),
+    .empty_o(FIFO_empty),
     .full_o(),
 
+    // Write
     .base_addr_i(FIFO_wr_base_addr),
     .offset_i(FIFO_wr_offset),
     .assignment_i(FIFO_wr_assignment),
-    .wr_i(FIFO_wr_en)
+    .wr_i(FIFO_wr_en),
 
+    // Read
+    .base_addr_o(FIFO_rd_base_addr),
+    .offset_o(FIFO_rd_offset),
+    .assignment_o(FIFO_rd_assignment),
+    .rd_i(FIFO_rd_en)
   );
 
 

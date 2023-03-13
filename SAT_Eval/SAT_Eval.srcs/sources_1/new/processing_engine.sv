@@ -67,21 +67,24 @@ module processing_engine #(
     READ_ASSIGNMENT,
     START_WRITE_ASSIGNMENT,
     END_WRITE_ASSIGNMENT,
-    EVALUATE
+    EVALUATE,
+    DELAY
   } state = IDLE;
 
   // Registers
-  reg [ADDRW-1:0] initial_addr, base_addr, addr;
+  reg [ADDRW-1:0] initial_addr, base_addr, mem_rd_addr;
   reg [WIDTH-1:0] clause, assignment;
-  reg  [1:0] offset;
-  reg        sat = 0;
-  reg        write_en = 0;
+  reg       [1:0] offset;
+  reg             sat = 0;
+  reg             mem_wr_en = 0;
+  reg             FIFO_rd_en = 0;
+  reg             use_FIFO = 0;
 
   // Wires
-  wire       eval_sat;
-  wire [WIDTH-1:0] assignment_out, clause_out;
-  wire is_initial = mem_data_i[5:2] == initial_addr;
-  wire [ADDRW-1:0] offset_addr, assignment_addr;
+  wire                               clause_is_sat;
+  wire [WIDTH-1:0] sat_eval_assignment, sat_eval_clause;
+  wire                             is_initial = mem_data_i[5:2] == initial_addr;
+  wire [ADDRW-1:0] next_base_addr, assignment_addr;
 
   // Wires for Unit Clause
   wire is_unit;
@@ -92,6 +95,9 @@ module processing_engine #(
   assign FIFO_wr_en_o = is_unit;
   assign FIFO_base_adr_o = base_addr;
 
+  // Wires for reading FIFO Buffer
+  assign FIFO_rd_en_o = FIFO_rd_en;
+
   // Update saved literal with new assignment
   wire [WIDTH-1:0] temp_assignment;
   assign temp_assignment[1:0] = offset_i == 3 ? assignment_i : mem_data_i[1:0];
@@ -100,24 +106,24 @@ module processing_engine #(
   assign temp_assignment[7:6] = offset_i == 0 ? assignment_i : mem_data_i[7:6];
 
   // Assignments
-  assign assignment_out = assignment;
+  assign sat_eval_assignment = assignment;
   assign mem_wr_data_o = assignment;
-  assign clause_out = clause;
+  assign sat_eval_clause = clause;
   assign sat_o = sat;
-  assign mem_wr_en_o = write_en;
+  assign mem_wr_en_o = mem_wr_en;
 
   // Addresses
-  assign mem_addr_o = addr;
-  assign offset_addr = base_addr + 1 + offset; // Offset {0..VARIABLES}, need to add 1 to base address since offset 0 is one address above base
-  assign assignment_addr = base_addr - 1;  // Assignment stored one addr space before base address
+  assign mem_addr_o      = mem_rd_addr;
+  assign next_base_addr  = base_addr + 1 + offset; // Offset {0..VARIABLES}, need to add 1 to base address since offset 0 is one address above base
+  assign assignment_addr = base_addr - 1;  // Assignment stored one mem_rd_addr space before base address
 
   // Subcomponents
   sat_eval #(
       .VARIABLES(VARIABLES)
   ) sat_eval (
-      .assignment_i(assignment_out),
-      .clause_i(clause_out),
-      .sat_o(eval_sat)
+      .assignment_i(sat_eval_assignment),
+      .clause_i(sat_eval_clause),
+      .sat_o(clause_is_sat)
   );
 
   wire unit_clause_en = state == START_WRITE_ASSIGNMENT; // Clause and assignment in correct registers at the this state
@@ -127,7 +133,7 @@ module processing_engine #(
       .OFFSET_BITS(OFFSET_BITS)
   ) unit_clause_flider (
       .en_i(unit_clause_en),
-      .sat_i(eval_sat),
+      .sat_i(clause_is_sat),
       .assignment_i(temp_assignment),
       .clause_i(clause),
       .unit_literal_offset_o(unit_literal_offset),
@@ -135,40 +141,54 @@ module processing_engine #(
       .unit_assignment_o(unit_assignment)
   );
 
+  always_comb begin
+    
+  end
+
   // Clk_in latched sequential logic
   always @(posedge clk_i) begin
     case (state)
       IDLE: begin
-        initial_addr <= base_i;
-        addr         <= base_i;
-        base_addr    <= base_i;
-        offset       <= offset_i;
-        state        <= start_i ? READ_CLAUSE : IDLE;
+        initial_addr <= FIFO_empty_i ? base_i : FIFO_base_adr_i;
+        mem_rd_addr  <= FIFO_empty_i ? base_i : FIFO_base_adr_i;
+        base_addr    <= FIFO_empty_i ? base_i : FIFO_base_adr_i;
+        offset       <= FIFO_empty_i ? offset_i : FIFO_offset_i;
+        if(FIFO_empty_i) begin
+          state      <= start_i ? READ_CLAUSE : IDLE;
+        end else begin
+          state      <= READ_CLAUSE;
+        end
       end
       READ_CLAUSE: begin
-        clause <= mem_data_i;
-        addr   <= assignment_addr;
-        state  <= READ_ASSIGNMENT;
+        clause      <= mem_data_i;
+        mem_rd_addr <= assignment_addr;
+        state       <= READ_ASSIGNMENT;
       end
       READ_ASSIGNMENT: begin
         assignment <= temp_assignment;
         state      <= START_WRITE_ASSIGNMENT;
       end
       START_WRITE_ASSIGNMENT: begin
-        write_en <= 1;
-        state    <= END_WRITE_ASSIGNMENT;
+        mem_wr_en <= 1;
+        state     <= END_WRITE_ASSIGNMENT;
       end
       END_WRITE_ASSIGNMENT: begin
-        write_en <= 0;
-        addr     <= offset_addr;
-        state    <= EVALUATE;
+        mem_wr_en   <= 0;
+        mem_rd_addr <= next_base_addr;
+        state       <= EVALUATE;
       end
       EVALUATE: begin
-        addr <= mem_data_i[5:2];
+        mem_rd_addr <= mem_data_i[5:2];
         base_addr <= mem_data_i[5:2];
         offset <= mem_data_i[1:0];
-        sat <= eval_sat;
-        state <= is_initial ? IDLE : READ_CLAUSE;
+        sat <= clause_is_sat;
+        state <= is_initial ? (FIFO_empty_i ? IDLE : DELAY) : READ_CLAUSE;
+        use_FIFO <= is_initial & ~FIFO_empty_i;
+        FIFO_rd_en <= is_initial & ~FIFO_empty_i;
+      end
+      DELAY: begin
+        state <= IDLE;
+        FIFO_rd_en <= 1'b0;
       end
     endcase
   end

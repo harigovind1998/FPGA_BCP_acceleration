@@ -40,13 +40,13 @@ module unit_assignment_FIFOBuffer #(
     input [ADDRW-1 : 0] base_addr_i,
     input [OFFSET_BITS-1 : 0] offset_i,
     input [1:0] assignment_i,
-    input rd_i,
+    input wr_i,
 
     // Read Signals
     output [ADDRW-1 : 0] base_addr_o,
     output [OFFSET_BITS-1 : 0] offset_o,
     output [1:0] assignment_o,
-    input wr_i
+    input rd_i
 );
 
   wire [ADDRW + OFFSET_BITS + 1:0] data;
@@ -68,7 +68,7 @@ module unit_assignment_FIFOBuffer #(
 
   assign full_o  = (count == 8) ? 1'b1 : 1'b0;
 
-  assign 
+  // assign
 
   always @(posedge clk_i) begin
     if (en_i == 0);

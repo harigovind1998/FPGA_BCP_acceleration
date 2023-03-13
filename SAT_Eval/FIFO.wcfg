@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="162.281 ns"></ZoomEndTime>
+      <Cursor1Time time="115.156 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="245"></NameColumnWidth>
+      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/en_i" type="logic">
+      <obj_property name="ElementShortName">en_i</obj_property>
+      <obj_property name="ObjectShortName">en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/rst_i" type="logic">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/empty_o" type="logic">
+      <obj_property name="ElementShortName">empty_o</obj_property>
+      <obj_property name="ObjectShortName">empty_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/full_o" type="logic">
+      <obj_property name="ElementShortName">full_o</obj_property>
+      <obj_property name="ObjectShortName">full_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/base_addr_i" type="array">
+      <obj_property name="ElementShortName">base_addr_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">base_addr_i[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/offset_i" type="array">
+      <obj_property name="ElementShortName">offset_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">offset_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/assignment_i" type="array">
+      <obj_property name="ElementShortName">assignment_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">assignment_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/rd_i" type="logic">
+      <obj_property name="ElementShortName">rd_i</obj_property>
+      <obj_property name="ObjectShortName">rd_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/base_addr_o" type="array">
+      <obj_property name="ElementShortName">base_addr_o[9:0]</obj_property>
+      <obj_property name="ObjectShortName">base_addr_o[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/offset_o" type="array">
+      <obj_property name="ElementShortName">offset_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">offset_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/assignment_o" type="array">
+      <obj_property name="ElementShortName">assignment_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">assignment_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/wr_i" type="logic">
+      <obj_property name="ElementShortName">wr_i</obj_property>
+      <obj_property name="ObjectShortName">wr_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/data" type="array">
+      <obj_property name="ElementShortName">data[13:0]</obj_property>
+      <obj_property name="ObjectShortName">data[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/count" type="array">
+      <obj_property name="ElementShortName">count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">count[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/FIFO" type="array">
+      <obj_property name="ElementShortName">FIFO[0:7][13:0]</obj_property>
+      <obj_property name="ObjectShortName">FIFO[0:7][13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/readCounter" type="array">
+      <obj_property name="ElementShortName">readCounter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">readCounter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/writeCounter" type="array">
+      <obj_property name="ElementShortName">writeCounter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">writeCounter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/WIDTH" type="array">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/DEPTH" type="array">
+      <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/ADDRW" type="array">
+      <obj_property name="ElementShortName">ADDRW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDRW[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/VARIABLES" type="array">
+      <obj_property name="ElementShortName">VARIABLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VARIABLES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/OFFSET_BITS" type="array">
+      <obj_property name="ElementShortName">OFFSET_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/BUFFER_SIZE" type="array">
+      <obj_property name="ElementShortName">BUFFER_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BUFFER_SIZE[31:0]</obj_property>
+   </wvobject>
+</wave_config>
