@@ -26,7 +26,7 @@ module FIFO_tb();
     reg en = 1'b1;
     reg rst = 1'b0;
     
-    reg [8:0] base_addr_wr = 9'b111111111;
+    reg [9:0] base_addr_wr = 10'b1111111111;
     reg [1:0] offset_wr = 2'b11;
     reg [1:0] assignment_wr = 2'b10; // false
     
@@ -57,8 +57,9 @@ module FIFO_tb();
     );
     
     always begin
-       
-        clk     = 0         ;
+       rd_en = 0;
+       wr_en = 0;
+       clk     = 0         ;
 
         #5;
         wr_en  = 1;
@@ -66,6 +67,20 @@ module FIFO_tb();
         #5;
         clk = 0;
         wr_en = 0;
+        #5;
+        clk = 1;
+        #5;
+        clk = 0 ;
+        #5;
+        clk = 1;
+        #5;
+        clk = 0 ;
+        rd_en = 1;
+        #5;
+        clk = 1;
+        #5;
+        clk = 0;
+        rd_en = 0;
         #5;
         clk = 1;
         #5;

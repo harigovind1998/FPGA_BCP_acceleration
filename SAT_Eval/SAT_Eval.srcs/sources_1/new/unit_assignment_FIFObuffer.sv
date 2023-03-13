@@ -87,7 +87,7 @@ module unit_assignment_FIFOBuffer #(
     if (writeCounter == 8) writeCounter <= 0;
     else if (readCounter == 8) readCounter <= 0;
     else;
-    if (readCounter > writeCounter) begin
+    if (readCounter >= writeCounter) begin
       count <= readCounter - writeCounter;
     end else if (writeCounter > readCounter) count <= writeCounter - readCounter;
     else;

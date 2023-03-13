@@ -4,7 +4,6 @@ Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 10 for port 'base_addr_i' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sim_1/new/FIFO_tb.sv:49]
 WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 10 for port 'base_addr_o' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sim_1/new/FIFO_tb.sv:53]
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'assignment_o' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/SAT_Eval/SAT_Eval.srcs/sim_1/new/FIFO_tb.sv:55]
 Completed static elaboration
