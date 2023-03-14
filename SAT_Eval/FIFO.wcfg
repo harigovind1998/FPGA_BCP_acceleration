@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="820.113 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,035.978 ns"></ZoomEndTime>
-      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="215.865 ns"></ZoomEndTime>
+      <Cursor1Time time="76.241 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="245"></NameColumnWidth>
       <ValueColumnWidth column_width="81"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="25" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/FIFO_tb/DUT/clk_i" type="logic">
       <obj_property name="ElementShortName">clk_i</obj_property>
       <obj_property name="ObjectShortName">clk_i</obj_property>
@@ -95,29 +95,5 @@
    <wvobject fp_name="/FIFO_tb/DUT/writeCounter" type="array">
       <obj_property name="ElementShortName">writeCounter[2:0]</obj_property>
       <obj_property name="ObjectShortName">writeCounter[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FIFO_tb/DUT/WIDTH" type="array">
-      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FIFO_tb/DUT/DEPTH" type="array">
-      <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FIFO_tb/DUT/ADDRW" type="array">
-      <obj_property name="ElementShortName">ADDRW[31:0]</obj_property>
-      <obj_property name="ObjectShortName">ADDRW[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FIFO_tb/DUT/VARIABLES" type="array">
-      <obj_property name="ElementShortName">VARIABLES[31:0]</obj_property>
-      <obj_property name="ObjectShortName">VARIABLES[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FIFO_tb/DUT/OFFSET_BITS" type="array">
-      <obj_property name="ElementShortName">OFFSET_BITS[31:0]</obj_property>
-      <obj_property name="ObjectShortName">OFFSET_BITS[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FIFO_tb/DUT/BUFFER_SIZE" type="array">
-      <obj_property name="ElementShortName">BUFFER_SIZE[31:0]</obj_property>
-      <obj_property name="ObjectShortName">BUFFER_SIZE[31:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="133.906 ns"></ZoomEndTime>
-      <Cursor1Time time="52.846 ns"></Cursor1Time>
+      <ZoomStartTime time="78.770 ns"></ZoomStartTime>
+      <ZoomEndTime time="235.171 ns"></ZoomEndTime>
+      <Cursor1Time time="145.370 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="245"></NameColumnWidth>
-      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="11" />
    <wvobject fp_name="/top_tb/clk" type="logic">
@@ -112,6 +112,30 @@
          <obj_property name="ElementShortName">empty_o</obj_property>
          <obj_property name="ObjectShortName">empty_o</obj_property>
       </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/FIFO_empty_i" type="logic">
+         <obj_property name="ElementShortName">FIFO_empty_i</obj_property>
+         <obj_property name="ObjectShortName">FIFO_empty_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/is_initial" type="logic">
+         <obj_property name="ElementShortName">is_initial</obj_property>
+         <obj_property name="ObjectShortName">is_initial</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/offset" type="array">
+         <obj_property name="ElementShortName">offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_assignment" type="array">
+         <obj_property name="ElementShortName">unit_assignment[1:0]</obj_property>
+         <obj_property name="ObjectShortName">unit_assignment[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/unit_literal_offset" type="array">
+         <obj_property name="ElementShortName">unit_literal_offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">unit_literal_offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/DUT/processing_engine/temp_assignment" type="array">
+         <obj_property name="ElementShortName">temp_assignment[7:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_assignment[7:0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject type="divider" fp_name="divider49">
       <obj_property name="label">Memory </obj_property>
@@ -156,6 +180,7 @@
       <wvobject fp_name="/top_tb/DUT/memory_bank/memory[4]" type="array">
          <obj_property name="ElementShortName">[4][7:0]</obj_property>
          <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="/top_tb/DUT/memory_bank/memory[5]" type="array">
          <obj_property name="ElementShortName">[5][7:0]</obj_property>
@@ -213,6 +238,7 @@
    <wvobject fp_name="group111" type="group">
       <obj_property name="label">Unit Evaluator</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/top_tb/DUT/processing_engine/unit_clause_flider/sat_i" type="logic">
          <obj_property name="ElementShortName">sat_i</obj_property>
          <obj_property name="ObjectShortName">sat_i</obj_property>

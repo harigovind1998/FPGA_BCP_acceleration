@@ -100,10 +100,10 @@ module processing_engine #(
 
   // Update saved literal with new assignment
   wire [WIDTH-1:0] temp_assignment;
-  assign temp_assignment[1:0] = offset_i == 3 ? assignment_i : mem_data_i[1:0];
-  assign temp_assignment[3:2] = offset_i == 2 ? assignment_i : mem_data_i[3:2];
-  assign temp_assignment[5:4] = offset_i == 1 ? assignment_i : mem_data_i[5:4];
-  assign temp_assignment[7:6] = offset_i == 0 ? assignment_i : mem_data_i[7:6];
+  assign temp_assignment[1:0] = offset == 3 ? assignment_i : mem_data_i[1:0];
+  assign temp_assignment[3:2] = offset == 2 ? assignment_i : mem_data_i[3:2];
+  assign temp_assignment[5:4] = offset == 1 ? assignment_i : mem_data_i[5:4];
+  assign temp_assignment[7:6] = offset == 0 ? assignment_i : mem_data_i[7:6];
 
   // Assignments
   assign sat_eval_assignment = assignment;
@@ -140,10 +140,6 @@ module processing_engine #(
       .is_unit_o(is_unit),
       .unit_assignment_o(unit_assignment)
   );
-
-  always_comb begin
-    
-  end
 
   // Clk_in latched sequential logic
   always @(posedge clk_i) begin
