@@ -11,7 +11,7 @@ Offset set starts from msb: offset 1 = [7:6], offset 2 = [5:4], offset 3 = [3:2]
 Clause 1:									
 Assignments 	= 00000000			0x00	0000	0x00		0x00	-> 	01000000	40
 base 		= 01100000			0x01	0001	0x60		0x60
-Offset 1	= {Clause 2 Base, Offset 3}	0x02 	0010	{0101,11}	0x16
+Offset 1	= {Clause 2 Base, Offset 3}	0x02 	0010	{0101,10}	0x16
 Offset 2	= {Clause 2 Base, Offset 2}	0x03	0011	{0101,01}	0x15
 
 Clause 2:
