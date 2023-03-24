@@ -100,10 +100,14 @@ module processing_engine #(
 
   // Update saved literal with new assignment
   wire [WIDTH-1:0] temp_assignment;
-  assign temp_assignment[1:0] = offset == 3 ? assignment_i : mem_data_i[1:0];
-  assign temp_assignment[3:2] = offset == 2 ? assignment_i : mem_data_i[3:2];
-  assign temp_assignment[5:4] = offset == 1 ? assignment_i : mem_data_i[5:4];
-  assign temp_assignment[7:6] = offset == 0 ? assignment_i : mem_data_i[7:6];
+
+   genvar i;
+   generate
+     for(i=0; i < VARIABLES; i++)begin
+       assign temp_assignment[(i*2) +: 2] = ( (VARIABLES-1 - offset)== i) ? assignment_i : mem_data_i[(i*2) +: 2];
+     end
+   endgenerate
+
 
   // Assignments
   assign sat_eval_assignment = assignment;
