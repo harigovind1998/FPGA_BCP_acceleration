@@ -34,18 +34,33 @@ module unit_clause_finder #(
 );
 
   wire [3:0] is_lit;
-  assign is_lit[0] = clause_i[1:0] != 0;
-  assign is_lit[1] = clause_i[3:2] != 0;
-  assign is_lit[2] = clause_i[5:4] != 0;
-  assign is_lit[3] = clause_i[7:6] != 0;
-
   wire [3:0] is_unassigned;
-  assign is_unassigned[0] = (assignment_i[1:0] == 0) & is_lit[0];
-  assign is_unassigned[1] = (assignment_i[3:2] == 0) & is_lit[1];
-  assign is_unassigned[2] = (assignment_i[5:4] == 0) & is_lit[2];
-  assign is_unassigned[3] = (assignment_i[7:6] == 0) & is_lit[3];
+
+  wire [3:0]is_unit_test;
+
+  genvar is_lit_gen;
+  generate
+    for(is_lit_gen =0; is_lit_gen < VARIABLES; is_lit_gen++) begin
+      assign is_lit[is_lit_gen] = clause_i[(is_lit_gen*2) +: 2] != 0;
+      assign is_unassigned[is_lit_gen] = (assignment_i[(is_lit_gen*2) +: 2 ] == 0) & is_lit[is_lit_gen];
+      assign is_unit_test[is_lit_gen] = ((is_unassigned >> is_lit_gen) == 1) & ~sat_i & en_i;
+    end
+  endgenerate
+
+  // assign is_lit[0] = clause_i[1:0] != 0;
+  // assign is_lit[1] = clause_i[3:2] != 0;
+  // assign is_lit[2] = clause_i[5:4] != 0;
+  // assign is_lit[3] = clause_i[7:6] != 0;
+
+  // assign is_unassigned[0] = (assignment_i[1:0] == 0) & is_lit[0];
+  // assign is_unassigned[1] = (assignment_i[3:2] == 0) & is_lit[1];
+  // assign is_unassigned[2] = (assignment_i[5:4] == 0) & is_lit[2];
+  // assign is_unassigned[3] = (assignment_i[7:6] == 0) & is_lit[3];
+
+
   
-  assign is_unit_o = (is_unassigned == 4'b0001 || is_unassigned == 4'b0010 || is_unassigned == 4'b0100 || is_unassigned == 4'b1000) & ~sat_i & en_i;
+  // assign is_unit_o = (is_unassigned == 4'b0001 || is_unassigned == 4'b0010 || is_unassigned == 4'b0100 || is_unassigned == 4'b1000) & ~sat_i & en_i;
+  assign is_unit_o = is_unit_test != 0;
 
   assign unit_assignment_o =  (is_unassigned == 4'b0001) ? clause_i[1:0]  :
                               (is_unassigned == 4'b0010) ? clause_i[3:2]  :   
