@@ -104,7 +104,7 @@ module processing_engine #(
    genvar i;
    generate
      for(i=0; i < VARIABLES; i++)begin
-       assign temp_assignment[(i*2) +: 2] = ( (VARIABLES-1 - offset)== i) ? assignment_i : mem_data_i[(i*2) +: 2];
+       assign temp_assignment[(i*2) +: 2] = ( (VARIABLES - offset - 1)== i) ? assignment_i : mem_data_i[(i*2) +: 2];
      end
    endgenerate
 
@@ -138,6 +138,7 @@ module processing_engine #(
   ) unit_clause_flider (
       .en_i(unit_clause_en),
       .sat_i(clause_is_sat),
+      .clk_i(clk_i),
       .assignment_i(temp_assignment),
       .clause_i(clause),
       .unit_literal_offset_o(unit_literal_offset),
