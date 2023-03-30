@@ -42,9 +42,9 @@ module unit_clause_finder #(
   genvar literal_gen;
   generate
     for (literal_gen = 0; literal_gen < VARIABLES; literal_gen++) begin
-      assign is_literal[literal_gen]              = clause_i[(literal_gen*2)+:2] != 0;
-      assign is_literal_unassigned[literal_gen]   = (assignment_i[(literal_gen*2) +: 2 ] == 0) & is_literal[literal_gen]; // Unassigned literal if not assigned and is a literal
-      assign is_unit_test[literal_gen]            = ( ((is_literal_unassigned >> literal_gen) | (is_literal_unassigned << 4-literal_gen))== 4'b0001) & ~sat_i & en_i; // Circular shift to ensure only one literal is unassigned
+      assign is_literal[literal_gen] = clause_i[(literal_gen*2)+:2] != 0;
+      assign is_literal_unassigned[literal_gen] = (assignment_i[(literal_gen*2) +: 2 ] == 0) & is_literal[literal_gen]; // Unassigned literal if not assigned and is a literal
+      assign is_unit_test[literal_gen] = ( ((is_literal_unassigned >> literal_gen) | (is_literal_unassigned << 4-literal_gen))== 4'b0001) & ~sat_i & en_i; // Circular shift to ensure only one literal is unassigned
     end
   endgenerate
 
@@ -52,7 +52,7 @@ module unit_clause_finder #(
 
   reg [VARIABLES-1:0] unit_pos = 0;
   assign unit_literal_offset_o = VARIABLES - unit_pos - 1;
-  assign unit_assignment_o     = (is_unit_o) ? clause_i[unit_pos*2+:2] : 2'b00;
+  assign unit_assignment_o = (is_unit_o) ? clause_i[unit_pos*2+:2] : 2'b00;
 
   always_comb begin
     if (is_unit_o) begin

@@ -29,21 +29,21 @@ module sat_eval #(
     output sat_o
 );
 
-    // output [OFFSET_BITS - 1 : 0] unit_literal_offset_o,
-    // output is_unit,
-    // output [1:0] unit_assignment_out,
+  // output [OFFSET_BITS - 1 : 0] unit_literal_offset_o,
+  // output is_unit,
+  // output [1:0] unit_assignment_out,
 
-//   unit_clause_finder #(
-//       .VARIABLES  (VARIABLES),
-//       .OFFSET_BITS(OFFSET_BITS)
-//   ) unit_clause_finder (
-//       .sat_in(sat_out),
-//       .assignment_in(assignment_in),
-//       .clause_in(clause_in),
-//       .unit_literal_offset_out(unit_literal_offset_out),
-//       .is_unit_out(is_unit),
-//       .unit_assignment_out(unit_assignment_out)
-//   );
+  //   unit_clause_finder #(
+  //       .VARIABLES  (VARIABLES),
+  //       .OFFSET_BITS(OFFSET_BITS)
+  //   ) unit_clause_finder (
+  //       .sat_in(sat_out),
+  //       .assignment_in(assignment_in),
+  //       .clause_in(clause_in),
+  //       .unit_literal_offset_out(unit_literal_offset_out),
+  //       .is_unit_out(is_unit),
+  //       .unit_assignment_out(unit_assignment_out)
+  //   );
 
   assign sat_o = 1'b1 && (assignment_i & clause_i);
 

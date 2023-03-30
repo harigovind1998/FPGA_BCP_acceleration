@@ -74,16 +74,16 @@ module processing_engine #(
   // Registers
   reg [ADDRW-1:0] initial_addr, base_addr, mem_rd_addr;
   reg [WIDTH-1:0] clause, assignment;
-  reg       [1:0] offset;
-  reg             sat = 0;
-  reg             mem_wr_en = 0;
-  reg             FIFO_rd_en = 0;
-  reg             use_FIFO = 0;
+  reg  [1:0] offset;
+  reg        sat = 0;
+  reg        mem_wr_en = 0;
+  reg        FIFO_rd_en = 0;
+  reg        use_FIFO = 0;
 
   // Wires
-  wire                               clause_is_sat;
+  wire       clause_is_sat;
   wire [WIDTH-1:0] sat_eval_assignment, sat_eval_clause;
-  wire                             is_initial = mem_data_i[5:2] == initial_addr;
+  wire is_initial = mem_data_i[5:2] == initial_addr;
   wire [ADDRW-1:0] next_base_addr, assignment_addr;
 
   // Wires for Unit Clause
@@ -101,12 +101,12 @@ module processing_engine #(
   // Update saved literal with new assignment
   wire [WIDTH-1:0] temp_assignment;
 
-   genvar i;
-   generate
-     for(i=0; i < VARIABLES; i++)begin
-       assign temp_assignment[(i*2) +: 2] = ( (VARIABLES - offset - 1)== i) ? assignment_i : mem_data_i[(i*2) +: 2];
-     end
-   endgenerate
+  genvar i;
+  generate
+    for (i = 0; i < VARIABLES; i++) begin
+      assign temp_assignment[(i*2) +: 2] = ( (VARIABLES - offset - 1)== i) ? assignment_i : mem_data_i[(i*2) +: 2];
+    end
+  endgenerate
 
 
   // Assignments
@@ -117,7 +117,7 @@ module processing_engine #(
   assign mem_wr_en_o = mem_wr_en;
 
   // Addresses
-  assign mem_addr_o      = mem_rd_addr;
+  assign mem_addr_o = mem_rd_addr;
   assign next_base_addr  = base_addr + 1 + offset; // Offset {0..VARIABLES}, need to add 1 to base address since offset 0 is one address above base
   assign assignment_addr = base_addr - 1;  // Assignment stored one mem_rd_addr space before base address
 
@@ -154,10 +154,10 @@ module processing_engine #(
         mem_rd_addr  <= FIFO_empty_i ? base_i : FIFO_base_adr_i;
         base_addr    <= FIFO_empty_i ? base_i : FIFO_base_adr_i;
         offset       <= FIFO_empty_i ? offset_i : FIFO_offset_i;
-        if(FIFO_empty_i) begin
-          state      <= start_i ? READ_CLAUSE : IDLE;
+        if (FIFO_empty_i) begin
+          state <= start_i ? READ_CLAUSE : IDLE;
         end else begin
-          state      <= READ_CLAUSE;
+          state <= READ_CLAUSE;
         end
       end
       READ_CLAUSE: begin
