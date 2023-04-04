@@ -121,12 +121,14 @@ module processing_engine #(
   assign next_base_addr  = base_addr + 1 + offset; // Offset {0..VARIABLES}, need to add 1 to base address since offset 0 is one address above base
   assign assignment_addr = base_addr - 1;  // Assignment stored one mem_rd_addr space before base address
 
+  wire sat_eval_en = state == START_WRITE_ASSIGNMENT; 
   // Subcomponents
   sat_eval #(
       .VARIABLES(VARIABLES)
   ) sat_eval (
       .assignment_i(sat_eval_assignment),
       .clause_i(sat_eval_clause),
+      .en_i(sat_eval_en),
       .sat_o(clause_is_sat)
   );
 
