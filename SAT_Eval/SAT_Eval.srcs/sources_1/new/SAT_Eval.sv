@@ -10,7 +10,11 @@
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 
+// 3 possible outcomes for each BCP:
+// Conflict
+// Satisfied
+// Unresolved
+//
 // Dependencies: 
 // 
 // Revision:
