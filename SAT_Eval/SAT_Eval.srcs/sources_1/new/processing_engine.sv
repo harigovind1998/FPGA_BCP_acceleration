@@ -81,7 +81,7 @@ module processing_engine #(
   reg        use_FIFO = 0;
 
   // Wires
-  wire       clause_is_sat;
+  wire       clause_is_sat, clause_in_conflict, clause_is_indetermined;
   wire [WIDTH-1:0] sat_eval_assignment, sat_eval_clause;
   wire is_initial = mem_data_i[5:2] == initial_addr;
   wire [ADDRW-1:0] next_base_addr, assignment_addr;
@@ -129,7 +129,9 @@ module processing_engine #(
       .assignment_i(sat_eval_assignment),
       .clause_i(sat_eval_clause),
       .en_i(sat_eval_en),
-      .sat_o(clause_is_sat)
+      .sat_o(clause_is_sat),
+      .conflict_o(clause_in_conflict),
+      .indetermined_o(clause_is_indetermined)
   );
 
   wire unit_clause_en = state == START_WRITE_ASSIGNMENT; // Clause and assignment in correct registers at the this state
@@ -137,7 +139,7 @@ module processing_engine #(
   unit_clause_finder #(
       .VARIABLES  (VARIABLES),
       .OFFSET_BITS(OFFSET_BITS)
-  ) unit_clause_flider (
+  ) unit_clause_finder (
       .en_i(unit_clause_en),
       .sat_i(clause_is_sat),
       .clk_i(clk_i),

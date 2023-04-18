@@ -30,17 +30,20 @@ module sat_eval_tb();
     reg [(VARIABLES*2)-1:0] clause;
 
     // Outputs
-    wire sat;
+    wire sat, conflict, indetermined;
 
     sat_eval #(.VARIABLES(VARIABLES)) DUT(
-        .assignments_in(assignments),
-        .clause_in(clause),
-        .sat(sat)
+        .assignment_i(assignments),
+        .clause_i(clause),
+        .en_i(1'b1),
+        .sat_o(sat),
+        .conflict_o(conflict),
+        .indetermined_o(indetermined)
     );
 
     always begin
         clause = 6'b011001;
-        assignments = 6'b000000;
+        assignments = 6'b000000; // Conflict = 100110
 
         #5;
         assignments = 6'b000000;
@@ -85,6 +88,11 @@ module sat_eval_tb();
         #5;
         assignments = 6'b101000;
         #5;
+        assignments = 6'b101010;
+        #5;
+        assignments = 6'b100110;
+        #5;
+        
         
     end
 endmodule
