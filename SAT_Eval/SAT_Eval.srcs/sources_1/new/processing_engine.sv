@@ -191,7 +191,7 @@ module processing_engine #(
         use_FIFO <= is_initial & ~FIFO_empty_i;
         FIFO_rd_en <= is_initial & ~FIFO_empty_i;
       end
-      DELAY: begin
+      DELAY: begin // Wait to read FIFO block
         state <= IDLE;
         FIFO_rd_en <= 1'b0;
       end

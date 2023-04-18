@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../SAT_Eval.srcs/sources_1/new/SAT_Eval.sv" \
+"../../../../SAT_Eval.srcs/sources_1/new/bcp_pkg.sv" \
+"../../../../SAT_Eval.srcs/sources_1/new/memory_bank.sv" \
+"../../../../SAT_Eval.srcs/sources_1/new/processing_engine.sv" \
+"../../../../SAT_Eval.srcs/sources_1/new/top.sv" \
+"../../../../SAT_Eval.srcs/sources_1/new/unit_assignment_FIFObuffer.sv" \
+"../../../../SAT_Eval.srcs/sources_1/new/unit_clause_finder.sv" \
+"../../../../SAT_Eval.srcs/sim_1/new/top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

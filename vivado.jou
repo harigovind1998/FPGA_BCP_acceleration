@@ -41,3 +41,52 @@ relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/top_tb_behav.wcfg
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everythin.wcfg
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/FIFO.wcfg
+source top_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/top_tb_behav.wcfg
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everythin.wcfg
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/FIFO.wcfg
+source top_tb.tcl
+close_sim
+compile_simlib -simulator vcs -family all -language all -library all -dir {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/SAT_Eval.cache/compile_simlib/vcs}
+launch_simulation
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/top_tb_behav.wcfg
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everythin.wcfg
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/FIFO.wcfg
+source top_tb.tcl
+close_sim
+compile_simlib -simulator modelsim -family all -language all -library all -dir {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/SAT_Eval.cache/compile_simlib/modelsim}
+launch_simulation
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/top_tb_behav.wcfg
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everythin.wcfg
+open_wave_config /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/FIFO.wcfg
+source top_tb.tcl
+relaunch_sim
+save_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/top_tb_behav.wcfg}
+open_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everythin.wcfg}
+open_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everything.wcfg}
+relaunch_sim
+save_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everything.wcfg}
+save_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everything.wcfg}
+relaunch_sim
+save_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everything.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everything.wcfg}
+relaunch_sim
