@@ -90,3 +90,5 @@ relaunch_sim
 relaunch_sim
 save_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everything.wcfg}
 relaunch_sim
+save_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everything.wcfg}
+close_sim

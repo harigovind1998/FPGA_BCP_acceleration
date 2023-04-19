@@ -1198,3 +1198,8 @@ Completed static elaboration
 INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 Time resolution is 1 ps
+save_wave_config {/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SAT_Eval/everything.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 15:03:12 2023...

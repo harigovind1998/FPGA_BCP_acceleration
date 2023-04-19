@@ -188,7 +188,7 @@ module processing_engine #(
         offset <= mem_data_i[1:0];
         sat <= clause_is_sat;
         state <= is_initial ? (FIFO_empty_i ? IDLE : DELAY) : READ_CLAUSE;
-        use_FIFO <= is_initial & ~FIFO_empty_i;
+        use_FIFO <= is_initial & ~FIFO_empty_i; 
         FIFO_rd_en <= is_initial & ~FIFO_empty_i;
       end
       DELAY: begin // Wait to read FIFO block

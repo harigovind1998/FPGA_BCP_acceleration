@@ -19,7 +19,7 @@
       <NameColumnWidth column_width="245"></NameColumnWidth>
       <ValueColumnWidth column_width="68"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="21" />
    <wvobject fp_name="divider151" type="divider">
       <obj_property name="label">Test Bench</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -63,6 +63,18 @@
    <wvobject type="array" fp_name="/top_tb/DUT/processing_engine/state">
       <obj_property name="ElementShortName">state[2:0]</obj_property>
       <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/DUT/processing_engine/sat_o">
+      <obj_property name="ElementShortName">sat_o</obj_property>
+      <obj_property name="ObjectShortName">sat_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/DUT/processing_engine/sat">
+      <obj_property name="ElementShortName">sat</obj_property>
+      <obj_property name="ObjectShortName">sat</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/DUT/processing_engine/clause_is_sat">
+      <obj_property name="ElementShortName">clause_is_sat</obj_property>
+      <obj_property name="ObjectShortName">clause_is_sat</obj_property>
    </wvobject>
    <wvobject type="group" fp_name="group174">
       <obj_property name="label">Processing Engine</obj_property>
@@ -238,5 +250,18 @@
    <wvobject fp_name="divider120" type="divider">
       <obj_property name="label">FIFO</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/FIFO[0]">
+      <obj_property name="ElementShortName">[0][13:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/assignment_o">
+      <obj_property name="ElementShortName">assignment_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">assignment_o[1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/DUT/unit_assignment_FIFOBuffer/base_addr_o">
+      <obj_property name="ElementShortName">base_addr_o[9:0]</obj_property>
+      <obj_property name="ObjectShortName">base_addr_o[9:0]</obj_property>
    </wvobject>
 </wave_config>
