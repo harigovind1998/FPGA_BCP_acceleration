@@ -104,7 +104,7 @@ module processing_engine #(
   genvar i;
   generate
     for (i = 0; i < VARIABLES; i++) begin
-      assign temp_assignment[(i*2) +: 2] = ( (VARIABLES - offset - 1)== i) ? assignment_i : mem_data_i[(i*2) +: 2];
+      assign temp_assignment[(i*2) +: 2] = ( (VARIABLES - offset - 1)== i) ? assignment_i : (use_FIFO? FIFO_offset_i:mem_data_i[(i*2) +: 2]); //mem_data_i carries assignments and clause
     end
   endgenerate
 
