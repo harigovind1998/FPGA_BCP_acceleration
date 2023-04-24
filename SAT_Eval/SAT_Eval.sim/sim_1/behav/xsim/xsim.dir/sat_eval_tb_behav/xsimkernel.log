@@ -1,0 +1,7 @@
+Running: xsim.dir/sat_eval_tb_behav/xsimk -simmode gui -wdb sat_eval_tb_behav.wdb -simrunnum 0 -socket 58903
+Design successfully loaded
+Design Loading Memory Usage: 29124 KB (Peak: 29696 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 110860 KB (Peak: 168392 KB)
+Simulation CPU Usage: 10 ms
