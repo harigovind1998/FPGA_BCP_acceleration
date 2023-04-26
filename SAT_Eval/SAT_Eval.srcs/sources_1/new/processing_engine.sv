@@ -32,6 +32,7 @@ module processing_engine #(
     input wire logic start_i,
 
     // Stored clause and variable addressing
+    input wire logic                     unassign_i,
     input wire logic [(OFFSET_BITS-1):0] offset_i,
     input wire logic [        ADDRW-1:0] base_i,
     input wire logic [              1:0] assignment_i,
@@ -83,7 +84,7 @@ module processing_engine #(
   // Wires
   wire       clause_is_sat, clause_in_conflict, clause_is_indetermined;
   wire [WIDTH-1:0] sat_eval_assignment, sat_eval_clause;
-  wire is_initial = mem_data_i[5:2] == initial_addr;
+  wire is_initial = mem_data_i[5:2] == initial_addr; // There is going to be a bug. Also check state
   wire [ADDRW-1:0] next_base_addr, assignment_addr;
 
   // Wires for Unit Clause
@@ -92,7 +93,7 @@ module processing_engine #(
   wire [OFFSET_BITS -1 : 0] unit_literal_offset;
   assign FIFO_assignment_o = unit_assignment;
   assign FIFO_offset_o = unit_literal_offset;
-  assign FIFO_wr_en_o = is_unit;
+  assign FIFO_wr_en_o = is_unit & ~unassign_i; // Don't perform unit clause detection when unassigning
   assign FIFO_base_adr_o = base_addr;
 
   // Wires for reading FIFO Buffer
