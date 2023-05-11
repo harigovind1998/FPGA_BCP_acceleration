@@ -39,6 +39,7 @@ module top_tb ();
   // Outputs
   wire out;
   top DUT (
+      .unassign_in(1'b0),
       .base_in(base),
       .offset_in(offset),
       .assignment_in(assignment),
