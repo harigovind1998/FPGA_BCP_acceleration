@@ -28,35 +28,42 @@ module ClauseModule#(
 )(
     input wire clk_i,
     input wire rst_i,
+    // update clause
+    input wire update_clause_i,
     input wire clause_to_set_i,
     input wire [(VARIABLE_ENCODING_LEN*3-1):0]set_variable_id_i,
     input wire [(VARIABLE_ASSIGNMENT_LEN*3-1):0]set_variable_polarity_i,
-    input wire update_clause_i,
+    // Decision variable
     input wire [(VARIABLE_ENCODING_LEN-1):0] decision_variable_id_i,
-    input wire [(VARIABLE_ASSIGNMENT_LEN-1):0] decision_assignment_i,
+    input wire decision_assignment_i,
+    // Status signals
     output wire clause_SAT_o,
-    output wire conflict_o
+    output wire conflict_o,
+    output wire unit_o,
+    output wire [(VARIABLE_ENCODING_LEN-1): 0] implication_variable_id_o,
+    output wire implication_assignment_o
     );
     
-    // Test x1 ^ ~x2 ^ x3 
+    // Hardcoded test clause : x1 ^ ~x2 ^ x3
     reg [(VARIABLE_ENCODING_LEN-1):0] variable_1_id = 2'b00;
     reg [(VARIABLE_ENCODING_LEN-1):0] variable_2_id = 2'b01;
     reg [(VARIABLE_ENCODING_LEN-1):0] variable_3_id = 2'b10;
-    
-    // bit[1] = assigned
-    // bit[0] == 0 => Assigned False;
-    // bit[0] == 1 => Assigned True;
-    reg [(VARIABLE_ASSIGNMENT_LEN-1):0] variable_1_assignment = 2'b00;
-    reg [(VARIABLE_ASSIGNMENT_LEN-1):0] variable_2_assignment = 2'b00;
-    reg [(VARIABLE_ASSIGNMENT_LEN-1):0] variable_3_assignment = 2'b00;
-    
-    wire all_assigned = variable_1_assignment[1] & variable_2_assignment[1] & variable_3_assignment[1];
-    
+        
     // 1'b0 = negative polarity
     // 1'b1 = positive polarity
     reg variable_1_polarity = 1'b0;
     reg variable_2_polarity = 1'b1;
     reg variable_3_polarity = 1'b0;
+    
+    // bit[1] == 0 => unassigned
+    // bit[1] == 1 => assigned
+    // bit[0] == 0 => False
+    // bit[0] == 1 => True
+    reg [(VARIABLE_ASSIGNMENT_LEN-1):0] variable_1_assignment = 2'b00;
+    reg [(VARIABLE_ASSIGNMENT_LEN-1):0] variable_2_assignment = 2'b00;
+    reg [(VARIABLE_ASSIGNMENT_LEN-1):0] variable_3_assignment = 2'b00;
+    
+    wire all_assigned = variable_1_assignment[1] & variable_2_assignment[1] & variable_3_assignment[1];
     
     wire var_1_eval = variable_1_assignment[1]? (variable_1_polarity == variable_1_assignment[0])
                                                : 1'b0;
@@ -74,15 +81,22 @@ module ClauseModule#(
     wire [2:0] assigned_vars = {variable_1_assignment[1], variable_2_assignment[1], variable_3_assignment[1]};
     wire is_unit = (assigned_vars == 3'b001) ||(assigned_vars == 3'b010) || (assigned_vars == 3'b100);
     
+    assign unit_o = is_unit;
+    
+    
     wire [(VARIABLE_ENCODING_LEN-1):0] unit_variable_id = (assigned_vars == 3'b001)? variable_1_id
                                                          :(assigned_vars == 3'b010)? variable_2_id
                                                          :(assigned_vars == 3'b100)? variable_3_id
                                                          :2'b00;
-                                                         
-    wire [(VARIABLE_ASSIGNMENT_LEN-1):0] unit_variable_assignment = (assigned_vars == 3'b001)? variable_1_assignment
-                                                                    :(assigned_vars == 3'b010)? variable_2_assignment
-                                                                    :(assigned_vars == 3'b100)? variable_3_assignment
-                                                                    :2'b00;
+    
+    assign implication_variable_id_o = unit_variable_id;
+                                                             
+    wire unit_variable_assignment = (assigned_vars == 3'b001)? variable_1_assignment[0]
+                                    :(assigned_vars == 3'b010)? variable_2_assignment[0]
+                                    :(assigned_vars == 3'b100)? variable_3_assignment[0]
+                                    :1'b0;
+                                    
+    assign implication_assignment_o = unit_variable_assignment;
     
     always @(posedge clk_i) begin
         if(rst_i) begin
@@ -98,18 +112,18 @@ module ClauseModule#(
                 variable_1_polarity = set_variable_polarity_i[(0*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
                 variable_2_polarity = set_variable_polarity_i[(1*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
                 variable_3_polarity = set_variable_polarity_i[(3*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
-
-                variable_1_assignment <= 2'b00;
-                variable_2_assignment <= 2'b00;
-                variable_3_assignment <= 2'b00;
             end
-
+            
+            // If clause contains decision variable, update local assignment
             if(variable_1_id == decision_variable_id_i) begin
-                variable_1_assignment <= decision_assignment_i;
+                variable_1_assignment[0] <= decision_assignment_i;
+                variable_1_assignment[1] <= 1'b1;
             end else if(variable_2_id == decision_variable_id_i) begin
-                variable_2_assignment <= decision_assignment_i;
+                variable_2_assignment[0] <= decision_assignment_i;
+                variable_1_assignment[0] <= 1'b1;
             end else if(variable_3_id == decision_variable_id_i) begin
-                variable_3_assignment <= decision_assignment_i;
+                variable_3_assignment[0] <= decision_assignment_i;
+                variable_1_assignment[0] <= 1'b1;
             end
         end
     end
