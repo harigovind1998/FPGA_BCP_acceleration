@@ -16,6 +16,14 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
+// TODO:
+// - Instanciate multiple variables
+// - AXI interface for PS connection
+//      - Figure out how to do this with existing designs
+//      - Needed information
+//          clause update
+//          descision
+//          backtrack
 // 
 //////////////////////////////////////////////////////////////////////////////////
 

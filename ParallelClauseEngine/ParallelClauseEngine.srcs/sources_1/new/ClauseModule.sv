@@ -16,6 +16,8 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
+// TODO:
+// - Backtrack -> change assignment of variables
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -24,13 +26,15 @@ module ClauseModule#(
     parameter FORMULA_MAX_VARIABLE = 4,
     parameter VARIABLE_ENCODING_LEN = $clog2(FORMULA_MAX_VARIABLE),
     parameter VARIABLE_ASSIGNMENT_LEN = 2,
-    parameter CLAUSE_ID = -1
+    parameter MAX_CLAUSE = 16,
+    parameter CLAUSE_ID = -1,
+    parameter CLAUSE_ID_LEN = $clog2(MAX_CLAUSE)
 )(
     input wire clk_i,
     input wire rst_i,
     // update clause
     input wire update_clause_i,
-    input wire clause_to_set_i,
+    input wire [(CLAUSE_ID_LEN-1):0] clause_id_to_set_i,
     input wire [(VARIABLE_ENCODING_LEN*3-1):0]set_variable_id_i,
     input wire [(VARIABLE_ASSIGNMENT_LEN*3-1):0]set_variable_polarity_i,
     // Decision variable
@@ -79,21 +83,21 @@ module ClauseModule#(
     assign conflict_o = ~SAT && all_assigned;
     
     wire [2:0] assigned_vars = {variable_1_assignment[1], variable_2_assignment[1], variable_3_assignment[1]};
-    wire is_unit = (assigned_vars == 3'b001) ||(assigned_vars == 3'b010) || (assigned_vars == 3'b100);
+    wire is_unit = (assigned_vars == 3'b110) ||(assigned_vars == 3'b101) || (assigned_vars == 3'b011); // One unassigned variable
     
     assign unit_o = is_unit;
     
     
-    wire [(VARIABLE_ENCODING_LEN-1):0] unit_variable_id = (assigned_vars == 3'b001)? variable_1_id
-                                                         :(assigned_vars == 3'b010)? variable_2_id
-                                                         :(assigned_vars == 3'b100)? variable_3_id
+    wire [(VARIABLE_ENCODING_LEN-1):0] unit_variable_id = (assigned_vars == 3'b110)? variable_1_id
+                                                         :(assigned_vars == 3'b101)? variable_2_id
+                                                         :(assigned_vars == 3'b011)? variable_3_id
                                                          :2'b00;
     
     assign implication_variable_id_o = unit_variable_id;
                                                              
-    wire unit_variable_assignment = (assigned_vars == 3'b001)? variable_1_assignment[0]
-                                    :(assigned_vars == 3'b010)? variable_2_assignment[0]
-                                    :(assigned_vars == 3'b100)? variable_3_assignment[0]
+    wire unit_variable_assignment = (assigned_vars == 3'b110)? variable_1_assignment[0]
+                                    :(assigned_vars == 3'b101)? variable_2_assignment[0]
+                                    :(assigned_vars == 3'b011)? variable_3_assignment[0]
                                     :1'b0;
                                     
     assign implication_assignment_o = unit_variable_assignment;
@@ -104,7 +108,7 @@ module ClauseModule#(
             variable_2_assignment <= 2'b00;
             variable_3_assignment <= 2'b00;
         end else begin
-            if(update_clause_i && (clause_to_set_i == CLAUSE_ID))begin
+            if(update_clause_i && (clause_id_to_set_i == CLAUSE_ID))begin
                 variable_1_id = set_variable_id_i[(0*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
                 variable_2_id = set_variable_id_i[(1*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
                 variable_3_id = set_variable_id_i[(2*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
