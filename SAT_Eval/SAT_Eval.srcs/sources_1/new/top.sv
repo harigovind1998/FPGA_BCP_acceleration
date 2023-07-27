@@ -28,6 +28,7 @@ module top #(
     parameter VARIABLES = WIDTH / 2,
     parameter OFFSET_BITS = $clog2(VARIABLES)
 ) (
+    input wire logic             unassign_in,
     input wire logic [ADDRW-1:0] base_in,
     input wire logic [(OFFSET_BITS-1):0] offset_in,
     input wire logic [1:0] assignment_in,
@@ -60,6 +61,7 @@ module top #(
       .start_i(start_in),
 
       // Stored clause and variable addressing
+      .unassign_i(unassign_in),
       .offset_i(offset_in),
       .base_i(base_in),
       .assignment_i(assignment_in),
