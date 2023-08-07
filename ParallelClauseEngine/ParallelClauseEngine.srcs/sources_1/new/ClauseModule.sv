@@ -115,7 +115,7 @@ module ClauseModule#(
 
                 variable_1_polarity = set_variable_polarity_i[(0*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
                 variable_2_polarity = set_variable_polarity_i[(1*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
-                variable_3_polarity = set_variable_polarity_i[(3*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
+                variable_3_polarity = set_variable_polarity_i[(2*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN];
             end
             
             // If clause contains decision variable, update local assignment

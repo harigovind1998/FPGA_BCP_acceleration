@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 07/27/2023 04:02:18 PM
+// Create Date: 08/07/2023 01:03:38 PM
 // Design Name: 
-// Module Name: BCP_accelerator_consuctor
+// Module Name: ImplicationSelector
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module BCP_accelerator_consuctor#(
+module ImplicationSelector#(    
     parameter FORMULA_MAX_VARIABLE = 4,
     parameter VARIABLE_ENCODING_LEN = $clog2(FORMULA_MAX_VARIABLE),
     parameter VARIABLE_ASSIGNMENT_LEN = 2,

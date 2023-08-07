@@ -71,8 +71,7 @@
 		.S_AXI_RREADY(s00_axi_rready)
 	);
 
-	// Add user logic here
-
+	// Add user logic here 
 	// User logic ends
 
 	endmodule

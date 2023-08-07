@@ -3,7 +3,7 @@
   <spirit:vendor>carleton.ca</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>BCP_optimized_accelerator</spirit:name>
-  <spirit:version>1.0</spirit:version>
+  <spirit:version>1.1</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>S00_AXI</spirit:name>
@@ -169,7 +169,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>WIZ_DATA_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_ea018de4">32</spirit:value>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>WIZ_NUM_REG</spirit:name>
@@ -263,6 +263,12 @@
         <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>5b329cd4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
       </spirit:view>
       <spirit:view>
         <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
@@ -273,6 +279,12 @@
         <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>5b329cd4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
       </spirit:view>
       <spirit:view>
         <spirit:name>xilinx_softwaredriver</spirit:name>
@@ -281,6 +293,12 @@
         <spirit:fileSetRef>
           <spirit:localName>xilinx_softwaredriver_view_fileset</spirit:localName>
         </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>a3421f95</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
       </spirit:view>
       <spirit:view>
         <spirit:name>xilinx_xpgui</spirit:name>
@@ -289,6 +307,12 @@
         <spirit:fileSetRef>
           <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
         </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>0e5443b4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
       </spirit:view>
       <spirit:view>
         <spirit:name>bd_tcl</spirit:name>
@@ -297,6 +321,12 @@
         <spirit:fileSetRef>
           <spirit:localName>bd_tcl_view_fileset</spirit:localName>
         </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
       </spirit:view>
     </spirit:views>
     <spirit:ports>
@@ -627,7 +657,7 @@
   </spirit:model>
   <spirit:choices>
     <spirit:choice>
-      <spirit:name>choice_list_ea018de4</spirit:name>
+      <spirit:name>choice_list_6fc15197</spirit:name>
       <spirit:enumeration>32</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
@@ -644,9 +674,13 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>src/BCP_accelerator_consuctor.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/BCP_optimized_accelerator_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_05982437</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_56d48ed1</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -654,6 +688,10 @@
       <spirit:file>
         <spirit:name>hdl/BCP_optimized_accelerator_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/BCP_accelerator_consuctor.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/BCP_optimized_accelerator_v1_0.v</spirit:name>
@@ -695,7 +733,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/BCP_optimized_accelerator_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/BCP_optimized_accelerator_v1_1.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_0e5443b4</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -715,7 +753,7 @@
       <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
       <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
       <spirit:description>Width of S_AXI data bus</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_ea018de4" spirit:order="3">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -774,12 +812,21 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>BCP_optimized_accelerator_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-07-27T20:00:23Z</xilinx:coreCreationDateTime>
+      <xilinx:displayName>BCP_optimized_accelerator_v1.1</xilinx:displayName>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>carleton.ca:user:BCP_optimized_accelerator:1.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2023-08-01T18:49:15Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4bbea738"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5424b0ef"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="68cee0a1"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="e7b50784"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="46b6c95e"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

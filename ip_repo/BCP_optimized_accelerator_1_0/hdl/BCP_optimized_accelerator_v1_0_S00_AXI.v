@@ -464,7 +464,11 @@
 	end    
 
 	// Add user logic here
-
+    BCP_accelerator_consuctor #(
+    .FORMULA_MAX_VARIABLE(4),
+    .VARIABLE_ASSIGNMENT_LEN(2),
+    .MAX_CLAUSE(16),
+    .CLAUSE_ID(-1))BCP_accelerator_consuctor();
 	// User logic ends
 
 	endmodule
