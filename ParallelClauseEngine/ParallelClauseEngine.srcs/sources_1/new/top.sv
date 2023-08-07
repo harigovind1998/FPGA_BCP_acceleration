@@ -71,7 +71,8 @@ module top#(
         end
     endgenerate
 
-
+    
+    ImplicationSelector implicationSelector();
 
 
 
