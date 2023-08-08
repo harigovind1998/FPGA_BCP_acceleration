@@ -170,45 +170,7 @@ module ClauseModule_tb#(
         #5;
         clk = 0 ;
         #5;
-        clk = 1;
-        
-        
-        //
-        
-//        #5;
-//        clk = 0 ;
-//        variable_id <= 2'b00;
-//        new_assignment <= 2'b10; // Should be SAT here
-//        #5;
-//        clk = 1;
-//        #5;
-//        clk = 0 ;
-//        #5;
-//        clk = 1;
-//        #5;
-//        clk = 0 ;
-//        variable_id <= 2'b00;
-//        new_assignment <= 2'b11; // Back to not SAT, not conflict should = 0. Unit clasuse should be high
-//        #5;
-//        clk = 1;
-//        #5;
-//        clk = 0 ;
-//        #5;
-//        clk = 1;
-//        #5;
-//        clk = 0 ;
-//        variable_id <= 2'b01;
-//        new_assignment <= 2'b10;
-//        #5;
-//        clk = 1;
-//        #5;
-//        clk = 0 ;
-//        #5;
-//        clk = 1;
-//        #5;
-//        clk = 0 ;
-//        variable_id <= 2'b01;
-//        new_assignment <= 2'b10;        
+        clk = 1;    
      end
     
     
