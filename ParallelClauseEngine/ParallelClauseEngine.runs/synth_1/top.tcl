@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1
 
@@ -89,6 +88,8 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sources_1/new/ClauseModule.sv
+  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sources_1/new/ImplicationFIFO.sv
+  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sources_1/new/ImplicationSelector.sv
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sources_1/new/top.sv
 }
 OPTRACE "Adding files" END { }

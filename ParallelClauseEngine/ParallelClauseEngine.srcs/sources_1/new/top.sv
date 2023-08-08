@@ -66,7 +66,7 @@ module top#(
                 // Implication
                 .unit_o(is_unit[clauseModules]),
                 .implication_variable_id_o(implication_variable_ids[ (clauseModules*VARIABLE_ENCODING_LEN) +: VARIABLE_ENCODING_LEN]),
-                .implication_assignment_o(implication_assignments[(clauseModules*VARIABLE_ASSIGNMENT_LEN) +: VARIABLE_ASSIGNMENT_LEN])
+                .implication_assignment_o(implication_assignments[(clauseModules*VARIABLE_ASSIGNMENT_LEN) +: 1]) // Each implication assignment is only one bit, not two. TODO change len of implication_assignments
             );
         end
     endgenerate
