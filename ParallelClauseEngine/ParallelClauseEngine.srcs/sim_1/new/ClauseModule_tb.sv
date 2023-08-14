@@ -68,7 +68,7 @@ module ClauseModule_tb#(
      always begin
         // Test update clause
         clk = 0;
-        #5
+        #5;
         clk = 1;
         #5;
         clk = 0;

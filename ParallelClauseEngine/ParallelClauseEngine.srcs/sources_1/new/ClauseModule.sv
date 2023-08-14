@@ -23,10 +23,9 @@
 
 
 module ClauseModule#(
-    parameter FORMULA_MAX_VARIABLE = 4,
-    parameter VARIABLE_ENCODING_LEN = $clog2(FORMULA_MAX_VARIABLE+1),
+    parameter MAX_VARIABLE_ID = 4,
+    parameter VARIABLE_ENCODING_LEN = $clog2(MAX_VARIABLE_ID+1),
     parameter MAX_CLAUSE_SIZE = 3,
-    parameter VARIABLE_ASSIGNMENT_LEN = 2,
     parameter MAX_CLAUSE = 16,
     parameter CLAUSE_ID = -1,
     parameter CLAUSE_ID_LEN = $clog2(MAX_CLAUSE)
@@ -66,9 +65,9 @@ module ClauseModule#(
     // bit[1] == 1 => assigned
     // bit[0] == 0 => False
     // bit[0] == 1 => True
-    reg [(VARIABLE_ASSIGNMENT_LEN-1):0] variable_1_assignment = 2'b00;
-    reg [(VARIABLE_ASSIGNMENT_LEN-1):0] variable_2_assignment = 2'b00;
-    reg [(VARIABLE_ASSIGNMENT_LEN-1):0] variable_3_assignment = 2'b00;
+    reg [1:0] variable_1_assignment = 2'b00;
+    reg [1:0] variable_2_assignment = 2'b00;
+    reg [1:0] variable_3_assignment = 2'b00;
     
     wire all_assigned = variable_1_assignment[1] & variable_2_assignment[1] & variable_3_assignment[1];
     

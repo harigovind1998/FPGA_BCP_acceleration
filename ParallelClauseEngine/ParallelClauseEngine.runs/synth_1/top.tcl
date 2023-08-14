@@ -88,7 +88,6 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sources_1/new/ClauseModule.sv
-  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sources_1/new/ImplicationFIFO.sv
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sources_1/new/ImplicationSelector.sv
   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sources_1/new/top.sv
 }
