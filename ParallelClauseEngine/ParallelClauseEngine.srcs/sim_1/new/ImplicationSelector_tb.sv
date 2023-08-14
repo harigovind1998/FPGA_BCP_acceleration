@@ -42,7 +42,7 @@ module ImplicationSelector_tb #(
 
   ImplicationSelector #() DUT (
       .clk_i(clk),
-      .rst_i(),
+      .rst_i(rst),
       .start_find_impl_i(start_find_impl),
       // Inputs
       .is_unit_i(is_unit),
@@ -69,8 +69,8 @@ module ImplicationSelector_tb #(
     clk = 0;
     #5;
     clk = 1;
-    start_find_impl <= 1;
     rst <= 0;
+    start_find_impl <= 1;
     #5;
     clk = 0;
     #5;
@@ -88,17 +88,122 @@ module ImplicationSelector_tb #(
     clk = 0;
     #5;
     clk = 1;
-    rst <= 0;
+    #5;
+    clk = 0;
+    rst <= 1;
+    start_find_impl <= 0;
+    #5;
+    clk = 1;
     #5;
     clk = 0;
     #5;
     clk = 1;
+    #5;
+    clk = 0;
+    rst <= 0;
+    #5;
+    clk = 1;
+    start_find_impl <= 1;
     // Test one unit clause at end
-
-
+    is_unit <= is_unit | 4'b1000;
+    implication_variable_ids <= implication_variable_ids | 12'b100000000000;
+    implication_assignments <= implication_assignments | 4'b1000;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    rst <= 1;
+    start_find_impl <= 0;
     // Test multiple unit clauses
-
-
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    rst <= 0;
+    #5;
+    clk = 1;
+    start_find_impl <= 1;
+    is_unit <= is_unit | 4'b0010;
+    implication_variable_ids <= implication_variable_ids | 12'b000000010000;
+    implication_assignments <= implication_assignments | 4'b1010;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    #5;
+    clk = 1;
+    #5;
+    clk = 0;
+    rst <= 1;
+    start_find_impl <= 0;
   end
 
 
