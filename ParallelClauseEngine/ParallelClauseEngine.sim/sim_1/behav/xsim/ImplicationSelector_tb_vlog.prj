@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
-"../../../../ParallelClauseEngine.srcs/sources_1/new/ClauseModule.sv" \
-"../../../../ParallelClauseEngine.srcs/sim_1/new/ClauseModule_tb.sv" \
+"../../../../ParallelClauseEngine.srcs/sources_1/new/ImplicationSelector.sv" \
+"../../../../ParallelClauseEngine.srcs/sim_1/new/ImplicationSelector_tb.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

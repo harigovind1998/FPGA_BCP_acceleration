@@ -11,45 +11,97 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="29.940 ns"></ZoomStartTime>
-      <ZoomEndTime time="48.601 ns"></ZoomEndTime>
-      <Cursor1Time time="36.420 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,464.001 ns"></ZoomEndTime>
+      <Cursor1Time time="195.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="235"></NameColumnWidth>
-      <ValueColumnWidth column_width="68"></ValueColumnWidth>
+      <ValueColumnWidth column_width="64"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="8" />
-   <wvobject type="logic" fp_name="/ClauseModule_tb/clk">
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/ClauseModule_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ClauseModule_tb/rst">
+   <wvobject fp_name="/ClauseModule_tb/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ClauseModule_tb/variable_id">
-      <obj_property name="ElementShortName">variable_id[1:0]</obj_property>
-      <obj_property name="ObjectShortName">variable_id[1:0]</obj_property>
+   <wvobject fp_name="/ClauseModule_tb/clause_id_to_set" type="array">
+      <obj_property name="ElementShortName">clause_id_to_set[3:0]</obj_property>
+      <obj_property name="ObjectShortName">clause_id_to_set[3:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ClauseModule_tb/new_assignment">
-      <obj_property name="ElementShortName">new_assignment[1:0]</obj_property>
-      <obj_property name="ObjectShortName">new_assignment[1:0]</obj_property>
+   <wvobject fp_name="/ClauseModule_tb/set_variable_id" type="array">
+      <obj_property name="ElementShortName">set_variable_id[8:0]</obj_property>
+      <obj_property name="ObjectShortName">set_variable_id[8:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ClauseModule_tb/clause_is_SAT">
+   <wvobject fp_name="/ClauseModule_tb/clause_is_SAT" type="logic">
       <obj_property name="ElementShortName">clause_is_SAT</obj_property>
       <obj_property name="ObjectShortName">clause_is_SAT</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ClauseModule_tb/clause_is_conflict">
+   <wvobject fp_name="/ClauseModule_tb/clause_is_conflict" type="logic">
       <obj_property name="ElementShortName">clause_is_conflict</obj_property>
       <obj_property name="ObjectShortName">clause_is_conflict</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ClauseModule_tb/DUT/is_unit">
+   <wvobject fp_name="/ClauseModule_tb/polarity" type="array">
+      <obj_property name="ElementShortName">polarity[2:0]</obj_property>
+      <obj_property name="ObjectShortName">polarity[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/update_clause" type="logic">
+      <obj_property name="ElementShortName">update_clause</obj_property>
+      <obj_property name="ObjectShortName">update_clause</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/variable_id" type="array">
+      <obj_property name="ElementShortName">variable_id[2:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_id[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/DUT/variable_1_id" type="array">
+      <obj_property name="ElementShortName">variable_1_id[2:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_1_id[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/DUT/variable_2_id" type="array">
+      <obj_property name="ElementShortName">variable_2_id[2:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_2_id[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/DUT/variable_3_id" type="array">
+      <obj_property name="ElementShortName">variable_3_id[2:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_3_id[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/DUT/variable_1_polarity" type="logic">
+      <obj_property name="ElementShortName">variable_1_polarity</obj_property>
+      <obj_property name="ObjectShortName">variable_1_polarity</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/DUT/variable_2_polarity" type="logic">
+      <obj_property name="ElementShortName">variable_2_polarity</obj_property>
+      <obj_property name="ObjectShortName">variable_2_polarity</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/DUT/variable_3_polarity" type="logic">
+      <obj_property name="ElementShortName">variable_3_polarity</obj_property>
+      <obj_property name="ObjectShortName">variable_3_polarity</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/DUT/variable_1_assignment" type="array">
+      <obj_property name="ElementShortName">variable_1_assignment[1:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_1_assignment[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/DUT/variable_2_assignment" type="array">
+      <obj_property name="ElementShortName">variable_2_assignment[1:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_2_assignment[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/DUT/variable_3_assignment" type="array">
+      <obj_property name="ElementShortName">variable_3_assignment[1:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_3_assignment[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/is_unit" type="logic">
       <obj_property name="ElementShortName">is_unit</obj_property>
       <obj_property name="ObjectShortName">is_unit</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ClauseModule_tb/DUT/unit_variable_id">
-      <obj_property name="ElementShortName">unit_variable_id[1:0]</obj_property>
-      <obj_property name="ObjectShortName">unit_variable_id[1:0]</obj_property>
+   <wvobject fp_name="/ClauseModule_tb/implication_variable_id" type="array">
+      <obj_property name="ElementShortName">implication_variable_id[2:0]</obj_property>
+      <obj_property name="ObjectShortName">implication_variable_id[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ClauseModule_tb/implication_assignment" type="logic">
+      <obj_property name="ElementShortName">implication_assignment</obj_property>
+      <obj_property name="ObjectShortName">implication_assignment</obj_property>
    </wvobject>
 </wave_config>
