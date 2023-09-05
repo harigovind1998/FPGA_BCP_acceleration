@@ -1,0 +1,1 @@
+blackboard_ps_preset.tcl -> when importing the zynq ps in the block design, use this to import the XPS settings.

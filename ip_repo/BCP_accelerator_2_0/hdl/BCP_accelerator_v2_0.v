@@ -99,7 +99,9 @@
 		output wire [C_S01_AXI_DATA_WIDTH-1 : 0] s01_axi_rdata,
 		output wire [1 : 0] s01_axi_rresp,
 		output wire  s01_axi_rvalid,
-		input wire  s01_axi_rready
+		input wire  s01_axi_rready,
+		
+		output wire led_on_indicator
 	);
 // Instantiation of Axi Bus Interface S00_AXI
 	BCP_accelerator_v2_0_S00_AXI # ( 
@@ -189,7 +191,7 @@
 	);
 
 	// Add user logic here
-
+    assign led_on_indicator = 1'b1;
 	// User logic ends
 
 	endmodule
