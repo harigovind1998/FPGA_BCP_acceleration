@@ -49,10 +49,10 @@ module top #(
     input wire rst_i,
 
     // AXI Inputs
-    input reg [31:0] axi_reg0_i,
-    input reg [31:0] axi_reg1_i,
-    input reg [31:0] axi_reg2_i,
-    input reg [31:0] axi_reg3_i,
+    input wire [31:0] axi_reg0_i,
+    input wire [31:0] axi_reg1_i,
+    input wire [31:0] axi_reg2_i,
+    input wire [31:0] axi_reg3_i,
 
     // AXI Outputs
     output reg [31:0] axi_reg4_o,
