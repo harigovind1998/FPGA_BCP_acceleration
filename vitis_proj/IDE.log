@@ -12,3 +12,14 @@
 20:53:18 WARN  : An unexpected exception occurred in the module 'platform project logging'
 20:53:22 INFO  : Platform 'BCP_accelerator_V2_0' is added to custom repositories.
 20:53:35 INFO  : Platform 'BCP_accelerator_V2_0' is added to custom repositories.
+16:37:22 INFO  : Result from executing command 'removePlatformRepo': 
+16:38:12 INFO  : Checking for BSP changes to sync application flags for project 'custom_DPLL_SoC'...
+16:38:12 ERROR : Failed to get platform details for the project 'custom_DPLL_SoC'. Cannot sync application flags.
+16:39:32 INFO  : No changes in MSS file content so sources will not be generated.
+16:39:53 INFO  : No changes in MSS file content so sources will not be generated.
+16:42:56 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_0;BCP_accelerator_V2_1
+16:42:57 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+16:43:06 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_0;BCP_accelerator_V2_1;RemoteSystemsTempFiles;custom_DPLL_SoC;custom_DPLL_SoC_system
+16:43:06 ERROR : Failed to openhw "C:/Users/HARI-A~1/AppData/Local/Temp/hwspec_BCP_accelerator_V2_05955605790100024584/BCP_accelerator_V2_0.xsa"
+Reason: C:/Users/HARI-A~1/AppData/Local/Temp/hwspec_BCP_accelerator_V2_05955605790100024584/BCP_accelerator_V2_0.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace

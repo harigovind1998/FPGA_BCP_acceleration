@@ -19,3 +19,15 @@ platform active {BCP_accelerator_V2_0}
 domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
+platform clean
+domain active {zynq_fsbl}
+bsp reload
+bsp reload
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+bsp reload
+bsp config stdin "ps7_uart_1"
+bsp config stdout "ps7_uart_1"
+bsp write
+bsp reload
+catch {bsp regenerate}
