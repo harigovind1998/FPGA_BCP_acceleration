@@ -1,0 +1,1423 @@
+TRACE::2023-09-07.20:52:50::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:50::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:50::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:50::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:52:50::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:52:50::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-09-07.20:52:53::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2023-09-07.20:52:53::SCWWriter::formatted JSON is {
+	"platformName":	"BCP_accelerator_V2_0",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"BCP_accelerator_V2_0",
+	"platHandOff":	"C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_files/BCP_accelerator_V2.0.xsa",
+	"platIntHandOff":	"<platformDir>/hw/BCP_accelerator_V2.0.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2023-09-07.20:52:53::SCWWriter::formatted JSON is {
+	"platformName":	"BCP_accelerator_V2_0",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"BCP_accelerator_V2_0",
+	"platHandOff":	"C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_files/BCP_accelerator_V2.0.xsa",
+	"platIntHandOff":	"<platformDir>/hw/BCP_accelerator_V2.0.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"BCP_accelerator_V2_0",
+	"systems":	[{
+			"systemName":	"BCP_accelerator_V2_0",
+			"systemDesc":	"BCP_accelerator_V2_0",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"BCP_accelerator_V2_0"
+		}]
+}
+TRACE::2023-09-07.20:52:53::SCWPlatform::Boot application domains not present, creating them
+TRACE::2023-09-07.20:52:53::SCWDomain::checking for install qemu data   : 
+TRACE::2023-09-07.20:52:53::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2023-09-07.20:52:53::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2023-09-07.20:52:53::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:52:53::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:52:53::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:52:53::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:52:53::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:52:53::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:52:53::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2023-09-07.20:52:53::SCWPlatform::Generating the sources  .
+TRACE::2023-09-07.20:52:53::SCWBDomain::Generating boot domain sources.
+TRACE::2023-09-07.20:52:53::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2023-09-07.20:52:53::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:52:53::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:52:53::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:52:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:52:53::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:52:53::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2023-09-07.20:52:53::SCWMssOS::No sw design opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:52:53::SCWMssOS::mss does not exists at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:52:53::SCWMssOS::Creating sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:52:53::SCWMssOS::Adding the swdes entry, created swdb C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:52:53::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:52:53::SCWMssOS::Writing mss at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:52:53::SCWMssOS::Completed writing the mss file at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2023-09-07.20:52:53::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2023-09-07.20:52:53::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2023-09-07.20:52:53::SCWBDomain::Completed writing the mss file at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2023-09-07.20:53:10::SCWPlatform::Generating sources Done.
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:10::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2023-09-07.20:53:10::SCWMssOS::No sw design opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::mss exists loading the mss file  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::Opened the sw design from mss  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::Adding the swdes entry C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2023-09-07.20:53:10::SCWMssOS::updating the scw layer about changes
+TRACE::2023-09-07.20:53:10::SCWMssOS::Opened the sw design.  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:10::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:10::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:10::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:10::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:10::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:10::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:10::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:10::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWWriter::formatted JSON is {
+	"platformName":	"BCP_accelerator_V2_0",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"BCP_accelerator_V2_0",
+	"platHandOff":	"C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_files/BCP_accelerator_V2.0.xsa",
+	"platIntHandOff":	"<platformDir>/hw/BCP_accelerator_V2.0.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"BCP_accelerator_V2_0",
+	"systems":	[{
+			"systemName":	"BCP_accelerator_V2_0",
+			"systemDesc":	"BCP_accelerator_V2_0",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"BCP_accelerator_V2_0",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"9d9da72ad63e75a6794a1fc0b795d237",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.8", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-09-07.20:53:10::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:10::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:10::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:10::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:10::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:10::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:10::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:10::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:10::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:10::SCWWriter::formatted JSON is {
+	"platformName":	"BCP_accelerator_V2_0",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"BCP_accelerator_V2_0",
+	"platHandOff":	"C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_files/BCP_accelerator_V2.0.xsa",
+	"platIntHandOff":	"<platformDir>/hw/BCP_accelerator_V2.0.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"BCP_accelerator_V2_0",
+	"systems":	[{
+			"systemName":	"BCP_accelerator_V2_0",
+			"systemDesc":	"BCP_accelerator_V2_0",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"BCP_accelerator_V2_0",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"9d9da72ad63e75a6794a1fc0b795d237",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.8", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:11::SCWDomain::checking for install qemu data   : 
+TRACE::2023-09-07.20:53:11::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2023-09-07.20:53:11::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2023-09-07.20:53:11::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:11::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:11::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:11::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:11::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:11::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:11::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:11::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:11::SCWDomain::Qemu Directory name is changed from "" to "qemu"
+TRACE::2023-09-07.20:53:11::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:11::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:11::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:11::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:11::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:11::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:11::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:11::SCWMssOS::No sw design opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:11::SCWMssOS::mss does not exists at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:11::SCWMssOS::Creating sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:11::SCWMssOS::Adding the swdes entry, created swdb C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:11::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:11::SCWMssOS::Writing mss at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:11::SCWMssOS::Completed writing the mss file at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-09-07.20:53:11::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2023-09-07.20:53:11::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2023-09-07.20:53:11::SCWMssOS::Completed writing the mss file at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-09-07.20:53:11::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2023-09-07.20:53:15::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:15::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:15::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:15::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2023-09-07.20:53:15::SCWMssOS::Writing the mss file completed C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:15::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:15::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:15::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:15::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:15::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:15::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:15::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:15::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:15::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:15::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:15::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:15::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWWriter::formatted JSON is {
+	"platformName":	"BCP_accelerator_V2_0",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"BCP_accelerator_V2_0",
+	"platHandOff":	"C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_files/BCP_accelerator_V2.0.xsa",
+	"platIntHandOff":	"<platformDir>/hw/BCP_accelerator_V2.0.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"BCP_accelerator_V2_0",
+	"systems":	[{
+			"systemName":	"BCP_accelerator_V2_0",
+			"systemDesc":	"BCP_accelerator_V2_0",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"BCP_accelerator_V2_0",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"9d9da72ad63e75a6794a1fc0b795d237",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.8", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"5e845c8a2c65d49aa8c34b4158fd854e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2023-09-07.20:53:15::SCWPlatform::Started generating the artifacts platform BCP_accelerator_V2_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-09-07.20:53:15::SCWPlatform::Started generating the artifacts for system configuration BCP_accelerator_V2_0
+LOG::2023-09-07.20:53:15::SCWSystem::Checking the domain zynq_fsbl
+LOG::2023-09-07.20:53:15::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2023-09-07.20:53:15::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2023-09-07.20:53:15::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2023-09-07.20:53:15::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2023-09-07.20:53:15::SCWSystem::Not a boot domain 
+LOG::2023-09-07.20:53:15::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2023-09-07.20:53:15::SCWDomain::Generating domain artifcats
+TRACE::2023-09-07.20:53:15::SCWMssOS::Generating standalone artifcats
+TRACE::2023-09-07.20:53:15::SCWMssOS::Copying the qemu file from  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/export/BCP_accelerator_V2_0/sw/BCP_accelerator_V2_0/qemu/
+TRACE::2023-09-07.20:53:15::SCWMssOS::Copying the qemu file from  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/export/BCP_accelerator_V2_0/sw/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu/
+TRACE::2023-09-07.20:53:15::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:15::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:15::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::Completed writing the mss file at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-09-07.20:53:15::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:15::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-09-07.20:53:15::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-09-07.20:53:15::SCWDomain::Skipping the build for domain :  standalone_ps7_cortexa9_0
+TRACE::2023-09-07.20:53:15::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-09-07.20:53:15::SCWMssOS::Copying to export directory.
+TRACE::2023-09-07.20:53:15::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-09-07.20:53:15::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2023-09-07.20:53:15::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2023-09-07.20:53:15::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2023-09-07.20:53:15::SCWSystem::Completed Processing the sysconfig BCP_accelerator_V2_0
+LOG::2023-09-07.20:53:15::SCWPlatform::Completed generating the artifacts for system configuration BCP_accelerator_V2_0
+TRACE::2023-09-07.20:53:15::SCWPlatform::Started preparing the platform 
+TRACE::2023-09-07.20:53:15::SCWSystem::Writing the bif file for system config BCP_accelerator_V2_0
+TRACE::2023-09-07.20:53:15::SCWSystem::dir created 
+TRACE::2023-09-07.20:53:15::SCWSystem::Writing the bif 
+TRACE::2023-09-07.20:53:15::SCWPlatform::Started writing the spfm file 
+TRACE::2023-09-07.20:53:15::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-09-07.20:53:16::SCWPlatform::Completed generating the platform
+TRACE::2023-09-07.20:53:16::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:16::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:16::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:16::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:16::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:16::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:16::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:16::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:16::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:16::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:16::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:16::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:16::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:16::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:16::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:16::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:16::SCWWriter::formatted JSON is {
+	"platformName":	"BCP_accelerator_V2_0",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"BCP_accelerator_V2_0",
+	"platHandOff":	"C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_files/BCP_accelerator_V2.0.xsa",
+	"platIntHandOff":	"<platformDir>/hw/BCP_accelerator_V2.0.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"BCP_accelerator_V2_0",
+	"systems":	[{
+			"systemName":	"BCP_accelerator_V2_0",
+			"systemDesc":	"BCP_accelerator_V2_0",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"BCP_accelerator_V2_0",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"9d9da72ad63e75a6794a1fc0b795d237",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.8", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"5e845c8a2c65d49aa8c34b4158fd854e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-09-07.20:53:16::SCWPlatform::updated the xpfm file.
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWWriter::formatted JSON is {
+	"platformName":	"BCP_accelerator_V2_0",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"BCP_accelerator_V2_0",
+	"platHandOff":	"C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_files/BCP_accelerator_V2.0.xsa",
+	"platIntHandOff":	"<platformDir>/hw/BCP_accelerator_V2.0.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"BCP_accelerator_V2_0",
+	"systems":	[{
+			"systemName":	"BCP_accelerator_V2_0",
+			"systemDesc":	"BCP_accelerator_V2_0",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"BCP_accelerator_V2_0",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"9d9da72ad63e75a6794a1fc0b795d237",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.8", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"5e845c8a2c65d49aa8c34b4158fd854e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:18::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:18::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:18::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:18::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:19::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:19::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:19::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:19::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:19::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:19::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:19::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:19::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWWriter::formatted JSON is {
+	"platformName":	"BCP_accelerator_V2_0",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"BCP_accelerator_V2_0",
+	"platHandOff":	"C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_files/BCP_accelerator_V2.0.xsa",
+	"platIntHandOff":	"<platformDir>/hw/BCP_accelerator_V2.0.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"BCP_accelerator_V2_0",
+	"systems":	[{
+			"systemName":	"BCP_accelerator_V2_0",
+			"systemDesc":	"BCP_accelerator_V2_0",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"BCP_accelerator_V2_0",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"9d9da72ad63e75a6794a1fc0b795d237",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.8", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"5e845c8a2c65d49aa8c34b4158fd854e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2023-09-07.20:53:19::SCWPlatform::Started generating the artifacts platform BCP_accelerator_V2_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-09-07.20:53:19::SCWPlatform::Started generating the artifacts for system configuration BCP_accelerator_V2_0
+LOG::2023-09-07.20:53:19::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2023-09-07.20:53:19::SCWDomain::Generating domain artifcats
+TRACE::2023-09-07.20:53:19::SCWMssOS::Generating standalone artifcats
+TRACE::2023-09-07.20:53:19::SCWMssOS::Copying the qemu file from  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/export/BCP_accelerator_V2_0/sw/BCP_accelerator_V2_0/qemu/
+TRACE::2023-09-07.20:53:19::SCWMssOS::Copying the qemu file from  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/export/BCP_accelerator_V2_0/sw/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu/
+TRACE::2023-09-07.20:53:19::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:19::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:19::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::Completed writing the mss file at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-09-07.20:53:19::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-09-07.20:53:19::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-09-07.20:53:19::SCWDomain::Building the domain as part of full build :  standalone_ps7_cortexa9_0
+TRACE::2023-09-07.20:53:19::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-09-07.20:53:19::SCWMssOS::Copying to export directory.
+TRACE::2023-09-07.20:53:19::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-09-07.20:53:19::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2023-09-07.20:53:19::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2023-09-07.20:53:19::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2023-09-07.20:53:19::SCWSystem::Completed Processing the sysconfig BCP_accelerator_V2_0
+LOG::2023-09-07.20:53:19::SCWPlatform::Completed generating the artifacts for system configuration BCP_accelerator_V2_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Started preparing the platform 
+TRACE::2023-09-07.20:53:19::SCWSystem::Writing the bif file for system config BCP_accelerator_V2_0
+TRACE::2023-09-07.20:53:19::SCWSystem::dir created 
+TRACE::2023-09-07.20:53:19::SCWSystem::Writing the bif 
+TRACE::2023-09-07.20:53:19::SCWPlatform::Started writing the spfm file 
+TRACE::2023-09-07.20:53:19::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-09-07.20:53:19::SCWPlatform::Completed generating the platform
+TRACE::2023-09-07.20:53:19::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:19::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:19::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:19::SCWMssOS::Saving the mss changes C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-07.20:53:19::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-07.20:53:19::SCWMssOS::Commit changes completed.
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:19::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:19::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:19::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:19::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:20::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:20::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:20::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:20::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-07.20:53:20::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:20::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:20::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:20::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:20::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:20::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:20::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:20::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:20::SCWPlatform::Trying to open the hw design at C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA given C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA absoulate path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform::DSA directory C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw
+TRACE::2023-09-07.20:53:20::SCWPlatform:: Platform Path C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/hw/BCP_accelerator_V2.0.xsa
+TRACE::2023-09-07.20:53:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2023-09-07.20:53:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-07.20:53:20::SCWMssOS::Checking the sw design at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-07.20:53:20::SCWMssOS::Sw design exists and opened at  C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_accelerator_V2_0/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-07.20:53:20::SCWWriter::formatted JSON is {
+	"platformName":	"BCP_accelerator_V2_0",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"BCP_accelerator_V2_0",
+	"platHandOff":	"C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/BCP_files/BCP_accelerator_V2.0.xsa",
+	"platIntHandOff":	"<platformDir>/hw/BCP_accelerator_V2.0.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"BCP_accelerator_V2_0",
+	"systems":	[{
+			"systemName":	"BCP_accelerator_V2_0",
+			"systemDesc":	"BCP_accelerator_V2_0",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"BCP_accelerator_V2_0",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"9d9da72ad63e75a6794a1fc0b795d237",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.8", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/BCP_accelerator_V2_0/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"5e845c8a2c65d49aa8c34b4158fd854e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-09-07.20:53:20::SCWPlatform::updated the xpfm file.

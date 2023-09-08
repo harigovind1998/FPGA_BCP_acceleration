@@ -28,17 +28,6 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
-  "../../../bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S00_AXI.v" \
-  "../../../bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S01_AXI.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_1/ipshared/480f/hdl/ClauseModule.sv" \
-  "../../../bd/design_1/ipshared/480f/hdl/ImplicationSelector.sv" \
-  "../../../bd/design_1/ipshared/480f/hdl/top.sv" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0.v" \
-  "../../../bd/design_1/ip/design_1_BCP_accelerator_0_0/sim/design_1_BCP_accelerator_0_0.v" \
   "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
 -endlib
 -makelib xcelium_lib/xlconstant_v1_1_7 \
@@ -135,6 +124,17 @@
   "../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S00_AXI.v" \
+  "../../../bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S01_AXI.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/design_1/ipshared/198e/hdl/ClauseModule.sv" \
+  "../../../bd/design_1/ipshared/198e/hdl/ImplicationSelector.sv" \
+  "../../../bd/design_1/ipshared/198e/hdl/top.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0.v" \
+  "../../../bd/design_1/ip/design_1_BCP_accelerator_0_0/sim/design_1_BCP_accelerator_0_0.v" \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

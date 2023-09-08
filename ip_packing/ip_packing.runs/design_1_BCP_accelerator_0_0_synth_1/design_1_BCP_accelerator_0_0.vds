@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Sep  6 16:22:40 2023
-# Process ID: 4280
+# Start of session at: Thu Sep  7 20:36:47 2023
+# Process ID: 12988
 # Current directory: C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.runs/design_1_BCP_accelerator_0_0_synth_1
 # Command line: vivado.exe -log design_1_BCP_accelerator_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_BCP_accelerator_0_0.tcl
 # Log file: C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.runs/design_1_BCP_accelerator_0_0_synth_1/design_1_BCP_accelerator_0_0.vds
@@ -11,7 +11,7 @@
 # Running On: inm-10, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 4, Host memory: 34240 MB
 #-----------------------------------------------------------
 source design_1_BCP_accelerator_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1394.000 ; gain = 121.359
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1394.473 ; gain = 121.605
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_repo/BCP_accelerator_2_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_repo/BCP_accelerator_1_0'.
@@ -26,68 +26,218 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4644
+INFO: [Synth 8-7075] Helper process launched with PID 21344
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-INFO: [Synth 8-11241] undeclared symbol 'rst', assumed default net type 'wire' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/top.sv:164]
-WARNING: [Synth 8-1958] event expressions must result in a singular type [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S00_AXI.v:598]
+INFO: [Synth 8-11241] undeclared symbol 'rst', assumed default net type 'wire' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/top.sv:166]
+WARNING: [Synth 8-1958] event expressions must result in a singular type [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S00_AXI.v:598]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2213.246 ; gain = 409.020
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2215.434 ; gain = 407.715
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_BCP_accelerator_0_0' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ip/design_1_BCP_accelerator_0_0/synth/design_1_BCP_accelerator_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0.v:4]
-INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S00_AXI' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S00_AXI' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S01_AXI' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'top' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/top.sv:34]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized0' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized0' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized1' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized1' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized2' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized2' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized3' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized3' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized4' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized4' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized5' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized5' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized6' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized6' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized7' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized7' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized8' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized8' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized9' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized9' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized10' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized10' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized11' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized11' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized12' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized12' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized13' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized13' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized14' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized14' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ClauseModule.sv:25]
-INFO: [Synth 8-6157] synthesizing module 'ImplicationSelector' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ImplicationSelector.sv:26]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ImplicationSelector.sv:100]
-INFO: [Synth 8-6155] done synthesizing module 'ImplicationSelector' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ImplicationSelector.sv:26]
-WARNING: [Synth 8-689] width (1) of port connection 'implication_variable_id_o' does not match port width (3) of module 'ImplicationSelector' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/top.sv:171]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/top.sv:181]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/top.sv:34]
-WARNING: [Synth 8-689] width (32) of port connection 'axi_reg5_o' does not match port width (4) of module 'top' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S01_AXI.v:463]
-INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S01_AXI' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S00_AXI' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S00_AXI' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S01_AXI' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'top' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/top.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized0' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized0' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized1' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized1' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized2' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized2' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized3' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized3' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized4' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized4' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized5' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized5' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized6' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized6' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized7' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized7' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized8' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized8' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized9' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized9' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized10' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized10' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized11' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized11' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized12' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized12' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized13' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized13' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized14' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized14' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized15' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized15' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized16' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized16' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized17' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized17' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized18' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized18' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized19' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized19' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized20' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized20' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized21' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized21' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized22' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized22' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized23' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized23' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized24' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized24' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized25' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized25' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized26' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized26' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized27' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized27' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized28' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized28' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized29' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized29' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized30' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized30' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized31' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized31' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized32' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized32' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized33' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized33' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized34' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized34' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized35' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized35' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized36' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized36' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized37' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized37' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized38' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized38' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized39' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized39' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized40' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized40' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized41' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized41' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized42' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized42' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized43' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized43' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized44' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized44' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized45' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized45' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized46' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized46' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized47' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized47' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized48' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized48' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized49' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized49' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized50' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized50' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized51' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized51' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized52' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized52' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized53' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized53' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized54' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized54' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized55' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized55' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized56' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized56' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized57' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized57' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized58' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized58' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized59' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized59' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized60' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized60' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized61' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized61' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized62' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized62' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized63' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized63' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized64' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized64' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized65' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized65' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized66' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized66' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized67' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized67' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized68' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized68' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized69' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized69' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized70' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized70' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized71' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized71' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized72' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized72' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized73' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized73' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized74' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized74' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized75' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized75' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized76' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized76' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized77' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized77' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized78' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized78' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized79' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized79' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized80' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized80' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized81' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized81' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized82' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized82' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized83' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized83' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized84' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized84' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized85' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized85' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized86' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized86' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized87' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized87' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized88' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized88' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized89' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized89' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ClauseModule.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ImplicationSelector' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ImplicationSelector.sv:26]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ImplicationSelector.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'ImplicationSelector' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/ImplicationSelector.sv:26]
+WARNING: [Synth 8-689] width (1) of port connection 'implication_variable_id_o' does not match port width (5) of module 'ImplicationSelector' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/top.sv:173]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/top.sv:183]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/top.sv:34]
+WARNING: [Synth 8-689] width (32) of port connection 'axi_reg5_o' does not match port width (6) of module 'top' [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S01_AXI.v:463]
+INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S01_AXI' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_BCP_accelerator_0_0' (0#1) [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ip/design_1_BCP_accelerator_0_0/synth/design_1_BCP_accelerator_0_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element CPU_OP_Code_reg was removed.  [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/top.sv:184]
-WARNING: [Synth 8-6014] Unused sequential element propgate_state_reg was removed.  [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/top.sv:196]
-WARNING: [Synth 8-3848] Net rst in module/entity top does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/top.sv:164]
-WARNING: [Synth 8-3848] Net reg0_data in module/entity BCP_accelerator_v2_0_S01_AXI does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S01_AXI.v:121]
-WARNING: [Synth 8-3848] Net reg1_data in module/entity BCP_accelerator_v2_0_S01_AXI does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S01_AXI.v:122]
-WARNING: [Synth 8-3848] Net reg2_data in module/entity BCP_accelerator_v2_0_S01_AXI does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S01_AXI.v:123]
-WARNING: [Synth 8-3848] Net reg3_data in module/entity BCP_accelerator_v2_0_S01_AXI does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S01_AXI.v:124]
+WARNING: [Synth 8-6014] Unused sequential element CPU_OP_Code_reg was removed.  [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/top.sv:186]
+WARNING: [Synth 8-6014] Unused sequential element propgate_state_reg was removed.  [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/top.sv:198]
+WARNING: [Synth 8-3848] Net rst in module/entity top does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/top.sv:166]
+WARNING: [Synth 8-3848] Net reg0_data in module/entity BCP_accelerator_v2_0_S01_AXI does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S01_AXI.v:121]
+WARNING: [Synth 8-3848] Net reg1_data in module/entity BCP_accelerator_v2_0_S01_AXI does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S01_AXI.v:122]
+WARNING: [Synth 8-3848] Net reg2_data in module/entity BCP_accelerator_v2_0_S01_AXI does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S01_AXI.v:123]
+WARNING: [Synth 8-3848] Net reg3_data in module/entity BCP_accelerator_v2_0_S01_AXI does not have driver. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S01_AXI.v:124]
 WARNING: [Synth 8-7129] Port axi_reg0_i[31] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg0_i[30] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg0_i[29] in module top is either unconnected or has no load
@@ -111,9 +261,6 @@ WARNING: [Synth 8-7129] Port axi_reg0_i[12] in module top is either unconnected 
 WARNING: [Synth 8-7129] Port axi_reg0_i[11] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg0_i[10] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg0_i[9] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_reg0_i[8] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_reg0_i[7] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_reg0_i[6] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg1_i[31] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg1_i[30] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg1_i[29] in module top is either unconnected or has no load
@@ -140,8 +287,6 @@ WARNING: [Synth 8-7129] Port axi_reg1_i[9] in module top is either unconnected o
 WARNING: [Synth 8-7129] Port axi_reg1_i[8] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg1_i[7] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg1_i[6] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_reg1_i[5] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_reg1_i[4] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg2_i[31] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg2_i[30] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg2_i[29] in module top is either unconnected or has no load
@@ -168,8 +313,6 @@ WARNING: [Synth 8-7129] Port axi_reg2_i[9] in module top is either unconnected o
 WARNING: [Synth 8-7129] Port axi_reg2_i[8] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg2_i[7] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg2_i[6] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_reg2_i[5] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axi_reg2_i[4] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg3_i[31] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg3_i[30] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg3_i[29] in module top is either unconnected or has no load
@@ -188,48 +331,55 @@ WARNING: [Synth 8-7129] Port axi_reg3_i[17] in module top is either unconnected 
 WARNING: [Synth 8-7129] Port axi_reg3_i[16] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg3_i[15] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg3_i[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[8] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[7] in module top is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2332.211 ; gain = 527.984
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2417.336 ; gain = 609.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2350.133 ; gain = 545.906
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2435.219 ; gain = 627.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2350.133 ; gain = 545.906
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2435.219 ; gain = 627.500
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 2350.133 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 2435.219 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2462.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2547.910 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2462.805 ; gain = 0.043
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.189 . Memory (MB): peak = 2547.957 ; gain = 0.047
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ImplicationSelector'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
@@ -253,7 +403,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -261,18 +411,18 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
 	   3 Input    6 Bit       Adders := 2     
 	   2 Input    5 Bit       Adders := 2     
-	   2 Input    4 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
 +---Registers : 
 	               32 Bit    Registers := 9     
 	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 2     
-	                5 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 49    
-	                2 Bit    Registers := 56    
-	                1 Bit    Registers := 67    
+	                5 Bit    Registers := 276   
+	                2 Bit    Registers := 281   
+	                1 Bit    Registers := 383   
 +---RAMs : 
 	              128 Bit	(16 X 8 bit)          RAMs := 4     
 +---Muxes : 
@@ -281,14 +431,14 @@ Detailed RTL Component Info :
 	   8 Input   32 Bit        Muxes := 5     
 	   2 Input    6 Bit        Muxes := 4     
 	   4 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 546   
+	   4 Input    5 Bit        Muxes := 91    
 	   2 Input    4 Bit        Muxes := 2     
-	   2 Input    3 Bit        Muxes := 99    
-	   4 Input    3 Bit        Muxes := 16    
+	   2 Input    3 Bit        Muxes := 3     
 	   7 Input    3 Bit        Muxes := 1     
 	   3 Input    3 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 82    
-	   4 Input    1 Bit        Muxes := 19    
-	   3 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 308   
+	   4 Input    1 Bit        Muxes := 94    
 	   7 Input    1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -306,11 +456,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'implicationSelector/implication_variable_id_reg' and it is trimmed from '3' to '1' bits. [c:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/480f/hdl/ImplicationSelector.sv:67]
 INFO: [Synth 8-3917] design design_1_BCP_accelerator_0_0 has port led_on_indicator driven by constant 1
-INFO: [Synth 8-3332] Sequential element (inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/implicationSelector/FSM_sequential_state_reg) is unused and will be removed from module design_1_BCP_accelerator_0_0.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg) is unused and will be removed from module ImplicationSelector.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -334,13 +483,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -363,7 +512,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -381,37 +530,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -431,38 +580,38 @@ Report Cell Usage:
 |2     |LUT1     |     6|
 |3     |LUT2     |    43|
 |4     |LUT3     |    20|
-|5     |LUT4     |    39|
-|6     |LUT5     |    63|
-|7     |LUT6     |    70|
+|5     |LUT4     |    41|
+|6     |LUT5     |    64|
+|7     |LUT6     |    67|
 |8     |RAM16X1S |    32|
-|9     |FDRE     |   297|
+|9     |FDRE     |   296|
 |10    |FDSE     |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2547.957 ; gain = 740.238
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 158 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 2462.805 ; gain = 545.906
-Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2462.805 ; gain = 658.578
+Synthesis finished with 0 errors, 0 critical warnings and 151 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:58 . Memory (MB): peak = 2547.957 ; gain = 627.500
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 2547.957 ; gain = 740.238
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2462.805 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2547.957 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2462.805 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2547.957 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   RAM16X1S => RAM32X1S (RAMS32): 32 instances
 
-Synth Design complete, checksum: 2d500549
+Synth Design complete, checksum: ce309488
 INFO: [Common 17-83] Releasing license: Synthesis
-76 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+225 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 2462.805 ; gain = 1030.754
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 2547.957 ; gain = 1115.793
 INFO: [Common 17-1381] The checkpoint 'C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.runs/design_1_BCP_accelerator_0_0_synth_1/design_1_BCP_accelerator_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_BCP_accelerator_0_0, cache-ID = 8e7f668fab2c5520
-INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_BCP_accelerator_0_0, cache-ID = 125022b091af1620
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ip_packing/ip_packing.runs/design_1_BCP_accelerator_0_0_synth_1/design_1_BCP_accelerator_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_BCP_accelerator_0_0_utilization_synth.rpt -pb design_1_BCP_accelerator_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Sep  6 16:24:16 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  7 20:38:19 2023...

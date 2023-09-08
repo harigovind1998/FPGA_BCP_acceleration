@@ -1,16 +1,5 @@
 verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ee60/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog" \
 "../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
-"../../../bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S00_AXI.v" \
-"../../../bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0_S01_AXI.v" \
-
-sv xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ee60/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog" \
-"../../../bd/design_1/ipshared/480f/hdl/ClauseModule.sv" \
-"../../../bd/design_1/ipshared/480f/hdl/ImplicationSelector.sv" \
-"../../../bd/design_1/ipshared/480f/hdl/top.sv" \
-
-verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ee60/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog" \
-"../../../bd/design_1/ipshared/480f/hdl/BCP_accelerator_v2_0.v" \
-"../../../bd/design_1/ip/design_1_BCP_accelerator_0_0/sim/design_1_BCP_accelerator_0_0.v" \
 "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
 "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/sim/bd_afc3_one_0.v" \
 
@@ -46,6 +35,17 @@ sv xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --
 
 verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ee60/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog" \
 "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
+"../../../bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S00_AXI.v" \
+"../../../bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0_S01_AXI.v" \
+
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ee60/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog" \
+"../../../bd/design_1/ipshared/198e/hdl/ClauseModule.sv" \
+"../../../bd/design_1/ipshared/198e/hdl/ImplicationSelector.sv" \
+"../../../bd/design_1/ipshared/198e/hdl/top.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/ee60/hdl" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../ip_packing.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog" \
+"../../../bd/design_1/ipshared/198e/hdl/BCP_accelerator_v2_0.v" \
+"../../../bd/design_1/ip/design_1_BCP_accelerator_0_0/sim/design_1_BCP_accelerator_0_0.v" \
 "../../../bd/design_1/sim/design_1.v" \
 
 verilog xil_defaultlib "glbl.v"

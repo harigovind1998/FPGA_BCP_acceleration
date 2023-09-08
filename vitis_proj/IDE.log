@@ -1,0 +1,14 @@
+20:50:45 DEBUG : Logs will be stored at 'C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/IDE.log'.
+20:50:50 INFO  : Registering command handlers for Vitis TCF services
+20:50:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hari-admin\Documents\Dev\Thesis\BCP_acceleration\vitis_proj\temp_xsdb_launch_script.tcl
+20:50:52 INFO  : Platform repository initialization has completed.
+20:50:54 INFO  : XSCT server has started successfully.
+20:50:57 INFO  : plnx-install-location is set to ''
+20:50:57 INFO  : Successfully done setting XSCT server connection channel  
+20:50:57 INFO  : Successfully done query RDI_DATADIR 
+20:50:57 INFO  : Successfully done setting workspace for the tool. 
+20:53:16 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_0
+20:53:16 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:53:18 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:53:22 INFO  : Platform 'BCP_accelerator_V2_0' is added to custom repositories.
+20:53:35 INFO  : Platform 'BCP_accelerator_V2_0' is added to custom repositories.
