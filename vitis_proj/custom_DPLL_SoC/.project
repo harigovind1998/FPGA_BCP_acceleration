@@ -3,7 +3,7 @@
 	<name>custom_DPLL_SoC</name>
 	<comment>Created by Vitis v2022.2</comment>
 	<projects>
-		<project>BCP_accelerator_V2_0</project>
+		<project>base_blackboard_hw_proj</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

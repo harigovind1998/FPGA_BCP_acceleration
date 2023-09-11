@@ -23,3 +23,37 @@
 16:43:06 ERROR : Failed to openhw "C:/Users/HARI-A~1/AppData/Local/Temp/hwspec_BCP_accelerator_V2_05955605790100024584/BCP_accelerator_V2_0.xsa"
 Reason: C:/Users/HARI-A~1/AppData/Local/Temp/hwspec_BCP_accelerator_V2_05955605790100024584/BCP_accelerator_V2_0.xsa is not available in the current workspace
 use 'getprojects' command to see list of available projects in current workspace
+13:30:37 DEBUG : Logs will be stored at 'C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/IDE.log'.
+13:30:38 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hari-admin\Documents\Dev\Thesis\BCP_acceleration\vitis_proj\temp_xsdb_launch_script.tcl
+13:30:43 INFO  : Registering command handlers for Vitis TCF services
+13:30:43 INFO  : XSCT server has started successfully.
+13:30:43 INFO  : Successfully done setting XSCT server connection channel  
+13:30:45 INFO  : plnx-install-location is set to ''
+13:30:45 INFO  : Successfully done setting workspace for the tool. 
+13:30:45 INFO  : Successfully done query RDI_DATADIR 
+13:30:45 INFO  : Platform repository initialization has completed.
+13:32:48 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_0;BCP_accelerator_V2_1
+13:32:48 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+13:34:28 ERROR : (XSDB Server)rm: cannot lstat `*.o': Invalid argument
+
+13:34:28 ERROR : (XSDB Server)make: *** [Makefile:42: clean] Error 1
+
+13:34:54 INFO  : Result from executing command 'removePlatformRepo': 
+13:37:05 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_0;BCP_accelerator_V2_1;base_blackboard_hw_proj
+13:37:05 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+13:39:52 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_0;BCP_accelerator_V2_1;base_blackboard_hw_proj
+13:39:52 INFO  : Result from executing command 'getPlatforms': base_blackboard_hw_proj|C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/base_blackboard_hw_proj/export/base_blackboard_hw_proj/base_blackboard_hw_proj.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+14:00:49 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_2;base_blackboard_hw_proj
+14:00:49 INFO  : Result from executing command 'getPlatforms': base_blackboard_hw_proj|C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/vitis_proj/base_blackboard_hw_proj/export/base_blackboard_hw_proj/base_blackboard_hw_proj.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+14:02:53 ERROR : Failed to compute checksum of hardware specification file used by project 'custom_DPLL_SoC'
+14:04:28 INFO  : Checking for BSP changes to sync application flags for project 'custom_DPLL_SoC'...
+14:04:28 ERROR : Failed to get platform details for the project 'custom_DPLL_SoC'. Cannot sync application flags.
+14:04:29 ERROR : Failed to compute checksum of hardware specification file used by project 'custom_DPLL_SoC'
+14:10:40 INFO  : The hardware specification used by project 'custom_DPLL_SoC' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+14:10:43 INFO  : The file 'C:\Users\hari-admin\Documents\Dev\Thesis\BCP_acceleration\vitis_proj\custom_DPLL_SoC\_ide\bitstream\BCP_accelerator_V2.0.bit' stored in project is removed.
+14:10:43 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\hari-admin\Documents\Dev\Thesis\BCP_acceleration\vitis_proj\custom_DPLL_SoC\_ide\bitstream' in project 'custom_DPLL_SoC'.
+14:10:43 INFO  : The file 'C:\Users\hari-admin\Documents\Dev\Thesis\BCP_acceleration\vitis_proj\custom_DPLL_SoC\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:10:51 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\hari-admin\Documents\Dev\Thesis\BCP_acceleration\vitis_proj\custom_DPLL_SoC\_ide\psinit' in project 'custom_DPLL_SoC'.
+14:10:55 INFO  : Checking for BSP changes to sync application flags for project 'custom_DPLL_SoC'...
+14:10:55 INFO  : Updating application flags with new BSP settings...
+14:10:56 INFO  : Successfully updated application flags for project custom_DPLL_SoC.
