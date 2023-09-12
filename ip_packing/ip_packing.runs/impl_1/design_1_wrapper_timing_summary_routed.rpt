@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Mon Sep 11 13:56:48 2023
-| Host         : inm-10 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Mon Sep 11 17:37:04 2023
+| Host         : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.2 LTS
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : design_1_wrapper
 | Device       : 7z007s-clg400
@@ -140,7 +140,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      8.182        0.000                      0                18190        0.021        0.000                      0                18190        8.750        0.000                       0                  7313  
+      8.188        0.000                      0                18191        0.021        0.000                      0                18191        8.750        0.000                       0                  7313  
 
 
 All user specified timing constraints are met.
@@ -163,7 +163,7 @@ clk_fpga_0  {0.000 10.000}     20.000          50.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-clk_fpga_0          8.182        0.000                      0                18190        0.021        0.000                      0                18190        8.750        0.000                       0                  7313  
+clk_fpga_0          8.188        0.000                      0                18191        0.021        0.000                      0                18191        8.750        0.000                       0                  7313  
 
 
 ------------------------------------------------------------------------------------------------
@@ -214,7 +214,7 @@ Path Group    From Clock    To Clock
 From Clock:  clk_fpga_0
   To Clock:  clk_fpga_0
 
-Setup :            0  Failing Endpoints,  Worst Slack        8.182ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        8.188ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.021ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        8.750ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
@@ -222,7 +222,7 @@ PW    :            0  Failing Endpoints,  Worst Slack        8.750ns,  Total Vio
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             8.182ns  (required time - arrival time)
+Slack (MET) :             8.188ns  (required time - arrival time)
   Source:                 design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
   Destination:            design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment_reg[1]/D
@@ -230,7 +230,7 @@ Slack (MET) :             8.182ns  (required time - arrival time)
   Path Group:             clk_fpga_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        11.453ns  (logic 0.828ns (7.229%)  route 10.625ns (92.771%))
+  Data Path Delay:        11.447ns  (logic 0.828ns (7.233%)  route 10.619ns (92.767%))
   Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
   Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    3.268ns = ( 23.268 - 20.000 ) 
@@ -255,11 +255,11 @@ Slack (MET) :             8.182ns  (required time - arrival time)
     SLICE_X26Y30         FDRE (Prop_fdre_C_Q)         0.456     4.159 f  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/Q
                          net (fo=183, routed)         9.263    13.423    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_id_reg[4]_0[2]
     SLICE_X11Y2          LUT5 (Prop_lut5_I4_O)        0.124    13.547 f  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_4__31/O
-                         net (fo=1, routed)           0.437    13.984    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_4__31_n_0
-    SLICE_X11Y3          LUT6 (Prop_lut6_I5_O)        0.124    14.108 f  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89/O
-                         net (fo=3, routed)           0.925    15.033    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89_n_0
-    SLICE_X12Y3          LUT3 (Prop_lut3_I1_O)        0.124    15.157 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_1__89/O
-                         net (fo=1, routed)           0.000    15.157    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_1__89_n_0
+                         net (fo=1, routed)           0.431    13.978    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_4__31_n_0
+    SLICE_X11Y3          LUT6 (Prop_lut6_I5_O)        0.124    14.102 f  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89/O
+                         net (fo=3, routed)           0.925    15.027    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89_n_0
+    SLICE_X12Y3          LUT3 (Prop_lut3_I1_O)        0.124    15.151 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_1__89/O
+                         net (fo=1, routed)           0.000    15.151    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_1__89_n_0
     SLICE_X12Y3          FDRE                                         r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
@@ -275,11 +275,11 @@ Slack (MET) :             8.182ns  (required time - arrival time)
     SLICE_X12Y3          FDRE (Setup_fdre_C_D)        0.077    23.339    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment_reg[1]
   -------------------------------------------------------------------
                          required time                         23.339    
-                         arrival time                         -15.157    
+                         arrival time                         -15.151    
   -------------------------------------------------------------------
-                         slack                                  8.182    
+                         slack                                  8.188    
 
-Slack (MET) :             8.197ns  (required time - arrival time)
+Slack (MET) :             8.203ns  (required time - arrival time)
   Source:                 design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
   Destination:            design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_2_assignment_reg[1]/D
@@ -287,7 +287,7 @@ Slack (MET) :             8.197ns  (required time - arrival time)
   Path Group:             clk_fpga_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        11.479ns  (logic 0.854ns (7.440%)  route 10.625ns (92.561%))
+  Data Path Delay:        11.473ns  (logic 0.854ns (7.443%)  route 10.619ns (92.557%))
   Logic Levels:           3  (LUT4=1 LUT5=1 LUT6=1)
   Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    3.268ns = ( 23.268 - 20.000 ) 
@@ -312,11 +312,11 @@ Slack (MET) :             8.197ns  (required time - arrival time)
     SLICE_X26Y30         FDRE (Prop_fdre_C_Q)         0.456     4.159 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/Q
                          net (fo=183, routed)         9.263    13.423    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_id_reg[4]_0[2]
     SLICE_X11Y2          LUT5 (Prop_lut5_I4_O)        0.124    13.547 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_4__31/O
-                         net (fo=1, routed)           0.437    13.984    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_4__31_n_0
-    SLICE_X11Y3          LUT6 (Prop_lut6_I5_O)        0.124    14.108 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89/O
-                         net (fo=3, routed)           0.925    15.033    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89_n_0
-    SLICE_X12Y3          LUT4 (Prop_lut4_I1_O)        0.150    15.183 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_2_assignment[1]_i_1__26/O
-                         net (fo=1, routed)           0.000    15.183    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_2_assignment[1]_i_1__26_n_0
+                         net (fo=1, routed)           0.431    13.978    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_4__31_n_0
+    SLICE_X11Y3          LUT6 (Prop_lut6_I5_O)        0.124    14.102 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89/O
+                         net (fo=3, routed)           0.925    15.027    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89_n_0
+    SLICE_X12Y3          LUT4 (Prop_lut4_I1_O)        0.150    15.177 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_2_assignment[1]_i_1__26/O
+                         net (fo=1, routed)           0.000    15.177    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_2_assignment[1]_i_1__26_n_0
     SLICE_X12Y3          FDRE                                         r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_2_assignment_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
@@ -332,9 +332,9 @@ Slack (MET) :             8.197ns  (required time - arrival time)
     SLICE_X12Y3          FDRE (Setup_fdre_C_D)        0.118    23.380    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_2_assignment_reg[1]
   -------------------------------------------------------------------
                          required time                         23.380    
-                         arrival time                         -15.183    
+                         arrival time                         -15.177    
   -------------------------------------------------------------------
-                         slack                                  8.197    
+                         slack                                  8.203    
 
 Slack (MET) :             8.371ns  (required time - arrival time)
   Source:                 design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg3_reg[1]/C
@@ -391,7 +391,7 @@ Slack (MET) :             8.371ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  8.371    
 
-Slack (MET) :             8.425ns  (required time - arrival time)
+Slack (MET) :             8.435ns  (required time - arrival time)
   Source:                 design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
   Destination:            design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_3_assignment_reg[1]/D
@@ -399,7 +399,7 @@ Slack (MET) :             8.425ns  (required time - arrival time)
   Path Group:             clk_fpga_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        11.212ns  (logic 0.828ns (7.385%)  route 10.384ns (92.615%))
+  Data Path Delay:        11.202ns  (logic 0.828ns (7.391%)  route 10.374ns (92.609%))
   Logic Levels:           3  (LUT5=2 LUT6=1)
   Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    3.268ns = ( 23.268 - 20.000 ) 
@@ -422,13 +422,13 @@ Slack (MET) :             8.425ns  (required time - arrival time)
     SLICE_X26Y30         FDRE                                         r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X26Y30         FDRE (Prop_fdre_C_Q)         0.456     4.159 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/Q
-                         net (fo=183, routed)         9.464    13.623    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_id_reg[4]_0[2]
-    SLICE_X10Y2          LUT5 (Prop_lut5_I4_O)        0.124    13.747 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4/O
-                         net (fo=1, routed)           0.171    13.918    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4_n_0
-    SLICE_X10Y2          LUT6 (Prop_lut6_I5_O)        0.124    14.042 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2/O
-                         net (fo=3, routed)           0.749    14.791    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2_n_0
-    SLICE_X12Y3          LUT5 (Prop_lut5_I2_O)        0.124    14.915 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_3_assignment[1]_i_1/O
-                         net (fo=1, routed)           0.000    14.915    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_3_assignment[1]_i_1_n_0
+                         net (fo=183, routed)         9.454    13.614    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_id_reg[4]_0[2]
+    SLICE_X10Y2          LUT5 (Prop_lut5_I4_O)        0.124    13.738 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4/O
+                         net (fo=1, routed)           0.171    13.909    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4_n_0
+    SLICE_X10Y2          LUT6 (Prop_lut6_I5_O)        0.124    14.033 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2/O
+                         net (fo=3, routed)           0.749    14.782    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2_n_0
+    SLICE_X12Y3          LUT5 (Prop_lut5_I2_O)        0.124    14.906 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_3_assignment[1]_i_1/O
+                         net (fo=1, routed)           0.000    14.906    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_3_assignment[1]_i_1_n_0
     SLICE_X12Y3          FDRE                                         r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_3_assignment_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
@@ -444,11 +444,11 @@ Slack (MET) :             8.425ns  (required time - arrival time)
     SLICE_X12Y3          FDRE (Setup_fdre_C_D)        0.079    23.341    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_3_assignment_reg[1]
   -------------------------------------------------------------------
                          required time                         23.341    
-                         arrival time                         -14.915    
+                         arrival time                         -14.906    
   -------------------------------------------------------------------
-                         slack                                  8.425    
+                         slack                                  8.435    
 
-Slack (MET) :             8.442ns  (required time - arrival time)
+Slack (MET) :             8.452ns  (required time - arrival time)
   Source:                 design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
   Destination:            design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment_reg[1]/D
@@ -456,7 +456,7 @@ Slack (MET) :             8.442ns  (required time - arrival time)
   Path Group:             clk_fpga_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        11.195ns  (logic 0.828ns (7.396%)  route 10.367ns (92.604%))
+  Data Path Delay:        11.185ns  (logic 0.828ns (7.403%)  route 10.357ns (92.597%))
   Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
   Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    3.268ns = ( 23.268 - 20.000 ) 
@@ -479,13 +479,13 @@ Slack (MET) :             8.442ns  (required time - arrival time)
     SLICE_X26Y30         FDRE                                         r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X26Y30         FDRE (Prop_fdre_C_Q)         0.456     4.159 f  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/Q
-                         net (fo=183, routed)         9.464    13.623    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_id_reg[4]_0[2]
-    SLICE_X10Y2          LUT5 (Prop_lut5_I4_O)        0.124    13.747 f  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4/O
-                         net (fo=1, routed)           0.171    13.918    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4_n_0
-    SLICE_X10Y2          LUT6 (Prop_lut6_I5_O)        0.124    14.042 f  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2/O
-                         net (fo=3, routed)           0.732    14.774    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2_n_0
-    SLICE_X12Y3          LUT3 (Prop_lut3_I1_O)        0.124    14.898 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_1/O
-                         net (fo=1, routed)           0.000    14.898    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_1_n_0
+                         net (fo=183, routed)         9.454    13.614    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_id_reg[4]_0[2]
+    SLICE_X10Y2          LUT5 (Prop_lut5_I4_O)        0.124    13.738 f  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4/O
+                         net (fo=1, routed)           0.171    13.909    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4_n_0
+    SLICE_X10Y2          LUT6 (Prop_lut6_I5_O)        0.124    14.033 f  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2/O
+                         net (fo=3, routed)           0.732    14.765    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2_n_0
+    SLICE_X12Y3          LUT3 (Prop_lut3_I1_O)        0.124    14.889 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_1/O
+                         net (fo=1, routed)           0.000    14.889    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_1_n_0
     SLICE_X12Y3          FDRE                                         r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
@@ -501,11 +501,11 @@ Slack (MET) :             8.442ns  (required time - arrival time)
     SLICE_X12Y3          FDRE (Setup_fdre_C_D)        0.079    23.341    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment_reg[1]
   -------------------------------------------------------------------
                          required time                         23.341    
-                         arrival time                         -14.898    
+                         arrival time                         -14.889    
   -------------------------------------------------------------------
-                         slack                                  8.442    
+                         slack                                  8.452    
 
-Slack (MET) :             8.452ns  (required time - arrival time)
+Slack (MET) :             8.462ns  (required time - arrival time)
   Source:                 design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
   Destination:            design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_2_assignment_reg[1]/D
@@ -513,7 +513,7 @@ Slack (MET) :             8.452ns  (required time - arrival time)
   Path Group:             clk_fpga_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        11.224ns  (logic 0.857ns (7.635%)  route 10.367ns (92.365%))
+  Data Path Delay:        11.214ns  (logic 0.857ns (7.642%)  route 10.357ns (92.358%))
   Logic Levels:           3  (LUT4=1 LUT5=1 LUT6=1)
   Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    3.268ns = ( 23.268 - 20.000 ) 
@@ -536,13 +536,13 @@ Slack (MET) :             8.452ns  (required time - arrival time)
     SLICE_X26Y30         FDRE                                         r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X26Y30         FDRE (Prop_fdre_C_Q)         0.456     4.159 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/Q
-                         net (fo=183, routed)         9.464    13.623    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_id_reg[4]_0[2]
-    SLICE_X10Y2          LUT5 (Prop_lut5_I4_O)        0.124    13.747 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4/O
-                         net (fo=1, routed)           0.171    13.918    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4_n_0
-    SLICE_X10Y2          LUT6 (Prop_lut6_I5_O)        0.124    14.042 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2/O
-                         net (fo=3, routed)           0.732    14.774    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2_n_0
-    SLICE_X12Y3          LUT4 (Prop_lut4_I1_O)        0.153    14.927 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_2_assignment[1]_i_1/O
-                         net (fo=1, routed)           0.000    14.927    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_2_assignment[1]_i_1_n_0
+                         net (fo=183, routed)         9.454    13.614    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_id_reg[4]_0[2]
+    SLICE_X10Y2          LUT5 (Prop_lut5_I4_O)        0.124    13.738 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4/O
+                         net (fo=1, routed)           0.171    13.909    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_4_n_0
+    SLICE_X10Y2          LUT6 (Prop_lut6_I5_O)        0.124    14.033 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2/O
+                         net (fo=3, routed)           0.732    14.765    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_1_assignment[1]_i_2_n_0
+    SLICE_X12Y3          LUT4 (Prop_lut4_I1_O)        0.153    14.918 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_2_assignment[1]_i_1/O
+                         net (fo=1, routed)           0.000    14.918    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_2_assignment[1]_i_1_n_0
     SLICE_X12Y3          FDRE                                         r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_2_assignment_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
@@ -558,11 +558,11 @@ Slack (MET) :             8.452ns  (required time - arrival time)
     SLICE_X12Y3          FDRE (Setup_fdre_C_D)        0.118    23.380    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[2].clauseModule/variable_2_assignment_reg[1]
   -------------------------------------------------------------------
                          required time                         23.380    
-                         arrival time                         -14.927    
+                         arrival time                         -14.918    
   -------------------------------------------------------------------
-                         slack                                  8.452    
+                         slack                                  8.462    
 
-Slack (MET) :             8.476ns  (required time - arrival time)
+Slack (MET) :             8.482ns  (required time - arrival time)
   Source:                 design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
   Destination:            design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_3_assignment_reg[1]/D
@@ -570,7 +570,7 @@ Slack (MET) :             8.476ns  (required time - arrival time)
   Path Group:             clk_fpga_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        11.163ns  (logic 0.828ns (7.417%)  route 10.335ns (92.583%))
+  Data Path Delay:        11.157ns  (logic 0.828ns (7.421%)  route 10.329ns (92.579%))
   Logic Levels:           3  (LUT5=2 LUT6=1)
   Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    3.268ns = ( 23.268 - 20.000 ) 
@@ -595,11 +595,11 @@ Slack (MET) :             8.476ns  (required time - arrival time)
     SLICE_X26Y30         FDRE (Prop_fdre_C_Q)         0.456     4.159 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/slv_reg1_reg[2]/Q
                          net (fo=183, routed)         9.263    13.423    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_id_reg[4]_0[2]
     SLICE_X11Y2          LUT5 (Prop_lut5_I4_O)        0.124    13.547 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_4__31/O
-                         net (fo=1, routed)           0.437    13.984    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_4__31_n_0
-    SLICE_X11Y3          LUT6 (Prop_lut6_I5_O)        0.124    14.108 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89/O
-                         net (fo=3, routed)           0.635    14.743    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89_n_0
-    SLICE_X12Y3          LUT5 (Prop_lut5_I2_O)        0.124    14.867 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_3_assignment[1]_i_1__26/O
-                         net (fo=1, routed)           0.000    14.867    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_3_assignment[1]_i_1__26_n_0
+                         net (fo=1, routed)           0.431    13.978    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_4__31_n_0
+    SLICE_X11Y3          LUT6 (Prop_lut6_I5_O)        0.124    14.102 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89/O
+                         net (fo=3, routed)           0.635    14.737    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_1_assignment[1]_i_2__89_n_0
+    SLICE_X12Y3          LUT5 (Prop_lut5_I2_O)        0.124    14.861 r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_3_assignment[1]_i_1__26/O
+                         net (fo=1, routed)           0.000    14.861    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_3_assignment[1]_i_1__26_n_0
     SLICE_X12Y3          FDRE                                         r  design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_3_assignment_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
@@ -615,9 +615,9 @@ Slack (MET) :             8.476ns  (required time - arrival time)
     SLICE_X12Y3          FDRE (Setup_fdre_C_D)        0.081    23.343    design_1_i/BCP_accelerator_0/inst/BCP_accelerator_v2_0_S01_AXI_inst/topModule/generate_clause_modules[1].clauseModule/variable_3_assignment_reg[1]
   -------------------------------------------------------------------
                          required time                         23.343    
-                         arrival time                         -14.867    
+                         arrival time                         -14.861    
   -------------------------------------------------------------------
-                         slack                                  8.476    
+                         slack                                  8.482    
 
 Slack (MET) :             8.507ns  (required time - arrival time)
   Source:                 design_1_i/rst_ps7_0_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
@@ -1056,53 +1056,6 @@ Slack (MET) :             0.037ns  (arrival time - required time)
   -------------------------------------------------------------------
                          slack                                  0.037    
 
-Slack (MET) :             0.038ns  (arrival time - required time)
-  Source:                 design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/skid_buffer_reg[1083]/C
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
-  Destination:            design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/m_vector_i_reg[1083]/D
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
-  Path Group:             clk_fpga_0
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        0.404ns  (logic 0.227ns (56.141%)  route 0.177ns (43.859%))
-  Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        0.274ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.782ns
-    Source Clock Delay      (SCD):    1.390ns
-    Clock Pessimism Removal (CPR):    0.118ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           0.804     0.804    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.830 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=7313, routed)        0.560     1.390    design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/aclk
-    SLICE_X31Y50         FDRE                                         r  design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/skid_buffer_reg[1083]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X31Y50         FDRE (Prop_fdre_C_Q)         0.128     1.518 r  design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/skid_buffer_reg[1083]/Q
-                         net (fo=1, routed)           0.177     1.695    design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/skid_buffer_reg_n_0_[1083]
-    SLICE_X31Y49         LUT3 (Prop_lut3_I0_O)        0.099     1.794 r  design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/m_vector_i[1083]_i_1/O
-                         net (fo=1, routed)           0.000     1.794    design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/m_vector_i[1083]_i_1_n_0
-    SLICE_X31Y49         FDRE                                         r  design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/m_vector_i_reg[1083]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           0.919     0.919    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.948 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=7313, routed)        0.834     1.782    design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/aclk
-    SLICE_X31Y49         FDRE                                         r  design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/m_vector_i_reg[1083]/C
-                         clock pessimism             -0.118     1.664    
-    SLICE_X31Y49         FDRE (Hold_fdre_C_D)         0.092     1.756    design_1_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/r_reg/m_vector_i_reg[1083]
-  -------------------------------------------------------------------
-                         required time                         -1.756    
-                         arrival time                           1.794    
-  -------------------------------------------------------------------
-                         slack                                  0.038    
-
 Slack (MET) :             0.043ns  (arrival time - required time)
   Source:                 design_1_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/w_reg/m_vector_i_reg[1025]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
@@ -1234,6 +1187,52 @@ Slack (MET) :             0.045ns  (arrival time - required time)
                          clock pessimism             -0.372     1.394    
     SLICE_X24Y66         RAMD32 (Hold_ramd32_CLK_WADR3)
                                                       0.240     1.634    design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_102_107/RAMA
+  -------------------------------------------------------------------
+                         required time                         -1.634    
+                         arrival time                           1.679    
+  -------------------------------------------------------------------
+                         slack                                  0.045    
+
+Slack (MET) :             0.045ns  (arrival time - required time)
+  Source:                 design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_102_107/RAMA_D1/WADR3
+                            (rising edge-triggered cell RAMD32 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.298ns  (logic 0.141ns (47.393%)  route 0.157ns (52.607%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.766ns
+    Source Clock Delay      (SCD):    1.381ns
+    Clock Pessimism Removal (CPR):    0.372ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.804     0.804    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.830 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=7313, routed)        0.551     1.381    design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/s_sc_aclk
+    SLICE_X25Y66         FDRE                                         r  design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y66         FDRE (Prop_fdre_C_Q)         0.141     1.522 r  design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_wr_addra/count_r_reg[3]/Q
+                         net (fo=21, routed)          0.157     1.679    design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_102_107/ADDRD3
+    SLICE_X24Y66         RAMD32                                       r  design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_102_107/RAMA_D1/WADR3
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.919     0.919    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.948 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=7313, routed)        0.818     1.766    design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_102_107/WCLK
+    SLICE_X24Y66         RAMD32                                       r  design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_102_107/RAMA_D1/CLK
+                         clock pessimism             -0.372     1.394    
+    SLICE_X24Y66         RAMD32 (Hold_ramd32_CLK_WADR3)
+                                                      0.240     1.634    design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_102_107/RAMA_D1
   -------------------------------------------------------------------
                          required time                         -1.634    
                          arrival time                           1.679    
@@ -1378,58 +1377,13 @@ Path Group:  (none)
 From Clock:  clk_fpga_0
   To Clock:  clk_fpga_0
 
-Max Delay            61 Endpoints
-Min Delay            61 Endpoints
+Max Delay            60 Endpoints
+Min Delay            60 Endpoints
 --------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack:                    inf
-  Source:                 design_1_i/rst_ps7_0_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
-  Destination:            design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
-  Path Group:             (none)
-  Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        6.972ns  (logic 0.642ns (9.208%)  route 6.330ns (90.792%))
-  Logic Levels:           1  (LUT1=1)
-  Clock Path Skew:        -0.390ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    3.319ns
-    Source Clock Delay      (SCD):    3.709ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.600ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-  Timing Exception:       False Path
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           1.938     1.938    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     2.039 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=7313, routed)        1.670     3.709    design_1_i/rst_ps7_0_50M/U0/slowest_sync_clk
-    SLICE_X12Y28         FDRE                                         r  design_1_i/rst_ps7_0_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X12Y28         FDRE (Prop_fdre_C_Q)         0.518     4.227 f  design_1_i/rst_ps7_0_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
-                         net (fo=1926, routed)        6.168    10.396    design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aresetn
-    SLICE_X40Y58         LUT1 (Prop_lut1_I0_O)        0.124    10.520 r  design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to_i_1/O
-                         net (fo=1, routed)           0.162    10.681    design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/asr_d1
-    SLICE_X40Y58         FDRE                                         r  design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           1.666     1.666    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.757 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=7313, routed)        1.562     3.319    design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/aclk
-    SLICE_X40Y58         FDRE                                         r  design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
-
 Slack:                    inf
   Source:                 design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
@@ -1834,6 +1788,51 @@ Slack:                    inf
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.757 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
                          net (fo=7313, routed)        1.475     3.232    design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/dest_clk
     SLICE_X20Y69         FDCE                                         r  design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/arststages_ff_reg[2]/C
+
+Slack:                    inf
+  Source:                 design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[0]/CLR
+                            (recovery check against rising-edge clock clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Data Path Delay:        3.751ns  (logic 0.642ns (17.113%)  route 3.109ns (82.887%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.543ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.231ns
+    Source Clock Delay      (SCD):    3.774ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.938     1.938    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     2.039 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=7313, routed)        1.735     3.774    design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/aclk
+    SLICE_X42Y64         FDRE                                         r  design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y64         FDRE (Prop_fdre_C_Q)         0.518     4.292 r  design_1_i/axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
+                         net (fo=20, routed)          2.528     6.821    design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst/src_arst
+    SLICE_X14Y72         LUT1 (Prop_lut1_I0_O)        0.124     6.945 f  design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst/arststages_ff[2]_i_1/O
+                         net (fo=3, routed)           0.581     7.526    design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst/reset_pol
+    SLICE_X14Y72         FDCE                                         f  design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.666     1.666    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.757 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=7313, routed)        1.474     3.231    design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst/dest_clk
+    SLICE_X14Y72         FDCE                                         r  design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst/arststages_ff_reg[0]/C
 
 
 
