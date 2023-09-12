@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+c:/users/hari-admin/documents/dev/thesis/bcp_acceleration/ip_packing/ip_packing.tmp/bcp_accelerator_v2_0_project/BCP_accelerator_v2_0_project.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+c:/users/hari-admin/documents/dev/thesis/bcp_acceleration/ip_repo/BCP_accelerator_2_0/hdl/AXI_top_tb.sv,1694559960,systemVerilog,,,,AXI_top_tb,,uvm,,,,,,
+c:/users/hari-admin/documents/dev/thesis/bcp_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S01_AXI.v,1694454436,verilog,,,,BCP_accelerator_v2_0_S01_AXI,,uvm,,,,,,
+c:/users/hari-admin/documents/dev/thesis/bcp_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv,1694133208,systemVerilog,,c:/users/hari-admin/documents/dev/thesis/bcp_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ImplicationSelector.sv,,ClauseModule,,uvm,,,,,,
+c:/users/hari-admin/documents/dev/thesis/bcp_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ImplicationSelector.sv,1692307801,systemVerilog,,c:/users/hari-admin/documents/dev/thesis/bcp_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv,,ImplicationSelector,,uvm,,,,,,
+c:/users/hari-admin/documents/dev/thesis/bcp_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv,1694454299,systemVerilog,,c:/users/hari-admin/documents/dev/thesis/bcp_acceleration/ip_repo/BCP_accelerator_2_0/hdl/AXI_top_tb.sv,,top,,uvm,,,,,,
