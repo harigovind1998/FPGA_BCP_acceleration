@@ -97,8 +97,20 @@ module AXI_top_tb();
    		arstn = 0;
 		i=0;
 		#20 arstn=1;
-		for(i=0;i<=32'hF;i=i+1)	
-			#20 axi_write(32'd0,i);	//write i to slv_reg0\
+		//		for(i=0;i<=32'hF;i=i+1)	
+        //      #20 axi_write(32'd0,i);	//write i to slv_reg0\
+		update_clause(30'd0,32'd8,1'b1,32'd9,1'b0,32'd7,1'b1); // 8 -9 7
+		#60;
+        update_clause(30'd1,32'd7,1'b0,32'd9,1'b1,32'd15,1'b0); // -7 9 -15 
+		#60;
+		update_clause(30'd2,32'd9,1'b1,32'd8,1'b1,32'd1,1'b1); // 9 8 1
+		#60;
+		update_clause(30'd3,32'd5,1'b1,32'd19,1'b1,32'd2,1'b1); // 5 -19 2 
+		#60;
+		update_clause(30'd4,32'd1,1'b0,32'd9,1'b0,32'd8,1'b0); // -1 -9 -8
+		#60;
+		update_clause(30'd5,32'd4,1'b1,32'd19,1'b1,32'd16,1'b1); // 4 19 16
+		#60;
 		$finish;
 	end
 	
@@ -156,5 +168,26 @@ module AXI_top_tb();
 		//end of write transaction
 	end
 	endtask;
+	
+	task update_clause;
+	input [29:0] clause_id;
+	input [30:0] var1;
+	input        var1_pol;
+	input [30:0] var2;
+	input        var2_pol;
+	input [30:0] var3;
+	input        var3_pol;
+	begin
+	   #20 axi_write(32'd0,32'h00000000);
+	   // Write reg1;
+	   #20 axi_write(32'h00000004,{var1,var1_pol});
+	   // write reg2;
+	   #20 axi_write(32'h00000008,{var2,var2_pol});
+	   // write reg3;
+	   #20 axi_write(32'h0000000c,{var3,var3_pol});
+	   //write reg 0;
+	   #20 axi_write(32'h0,{clause_id,2'b01}); // Update clause ID OP code = 001
+	end;
+	endtask; 
 
 endmodule

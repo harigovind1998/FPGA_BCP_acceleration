@@ -13,7 +13,7 @@ view structure
 
 do {design_1.udo}
 
-run 1000ns
+run
 
 endsim
 

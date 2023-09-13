@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.tmp/BCP_accelerator_v2_0_project/BCP_accelerator_v2_0_project.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/AXI_top_tb.sv,1694621054,systemVerilog,,,,AXI_top_tb,,uvm,,,,,,
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0.v,1694465089,verilog,,,,BCP_accelerator_v2_0,,uvm,,,,,,
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S00_AXI.v,1694465089,verilog,,/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S01_AXI.v,,BCP_accelerator_v2_0_S00_AXI,,uvm,,,,,,
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S01_AXI.v,1694468041,verilog,,,,BCP_accelerator_v2_0_S01_AXI,,uvm,,,,,,
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv,1694622687,systemVerilog,,/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ImplicationSelector.sv,,ClauseModule,,uvm,,,,,,
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ImplicationSelector.sv,1694465089,systemVerilog,,/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv,,ImplicationSelector,,uvm,,,,,,
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv,1694622548,systemVerilog,,/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/AXI_top_tb.sv,,top,,uvm,,,,,,
