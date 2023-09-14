@@ -13,16 +13,16 @@
   <File Type="ROUTE-DRC-RPX" Name="design_1_wrapper_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="design_1_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="design_1_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="design_1_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="design_1_wrapper_postroute_physopt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="design_1_wrapper_physopt.dcp"/>
   <File Type="PLACE-IO" Name="design_1_wrapper_io_placed.rpt"/>
   <File Type="OPT-DRC" Name="design_1_wrapper_drc_opted.rpt"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="design_1_wrapper.ltx"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="design_1_wrapper_postroute_physopt_bb.dcp"/>
   <File Type="BITSTR-SYSDEF" Name="design_1_wrapper.sysdef"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="design_1_wrapper_postroute_physopt.dcp"/>
   <File Type="BITSTR-MMI" Name="design_1_wrapper.mmi"/>
   <File Type="BITSTR-BMM" Name="design_1_wrapper_bd.bmm"/>
+  <File Type="PHYSOPT-DCP" Name="design_1_wrapper_physopt.dcp"/>
   <File Type="PLACE-UTIL-PB" Name="design_1_wrapper_utilization_placed.pb"/>
   <File Type="BG-BGN" Name="design_1_wrapper.bgn"/>
   <File Type="OPT-DCP" Name="design_1_wrapper_opt.dcp"/>
@@ -41,10 +41,10 @@
   <File Type="PLACE-DCP" Name="design_1_wrapper_placed.dcp"/>
   <File Type="BITSTR-MSK" Name="design_1_wrapper.msk"/>
   <File Type="PWROPT-DCP" Name="design_1_wrapper_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="design_1_wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="BITSTR-RBT" Name="design_1_wrapper.rbt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="design_1_wrapper_postplace_pwropt.dcp"/>
   <File Type="BITSTR-NKY" Name="design_1_wrapper.nky"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="design_1_wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="ROUTE-DRC" Name="design_1_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="design_1_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
@@ -122,7 +122,7 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_50M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_BCP_accelerator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
 </GenRun>
