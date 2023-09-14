@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2,311.333 ns"></ZoomStartTime>
-      <ZoomEndTime time="2,747.734 ns"></ZoomEndTime>
-      <Cursor1Time time="2,555.933 ns"></Cursor1Time>
+      <ZoomStartTime time="3,098.178 ns"></ZoomStartTime>
+      <ZoomEndTime time="3,527.379 ns"></ZoomEndTime>
+      <Cursor1Time time="3,385.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="233"></NameColumnWidth>
@@ -179,7 +179,6 @@
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/CPU_OP_Code_in">
          <obj_property name="ElementShortName">CPU_OP_Code_in[1:0]</obj_property>
          <obj_property name="ObjectShortName">CPU_OP_Code_in[1:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/cpu_op_read_o">
          <obj_property name="ElementShortName">cpu_op_read_o</obj_property>
@@ -232,7 +231,6 @@
       <wvobject type="group" fp_name="group338">
          <obj_property name="label">Implication</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/implication_assignment">
             <obj_property name="ElementShortName">implication_assignment</obj_property>
             <obj_property name="ObjectShortName">implication_assignment</obj_property>
@@ -244,12 +242,23 @@
          <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implication_variable_id">
             <obj_property name="ElementShortName">implication_variable_id[4:0]</obj_property>
             <obj_property name="ObjectShortName">implication_variable_id[4:0]</obj_property>
-            <obj_property name="isExpanded"></obj_property>
          </wvobject>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/variable_id_broadcast">
          <obj_property name="ElementShortName">variable_id_broadcast[4:0]</obj_property>
          <obj_property name="ObjectShortName">variable_id_broadcast[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/output_status">
+         <obj_property name="ElementShortName">output_status[31:0]</obj_property>
+         <obj_property name="ObjectShortName">output_status[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/all_SAT">
+         <obj_property name="ElementShortName">all_SAT</obj_property>
+         <obj_property name="ObjectShortName">all_SAT</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/is_SAT">
+         <obj_property name="ElementShortName">is_SAT[90:0]</obj_property>
+         <obj_property name="ObjectShortName">is_SAT[90:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="divider343" type="divider">
@@ -483,6 +492,7 @@
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[2].clauseModule /variable_2_assignment">
          <obj_property name="ElementShortName">variable_2_assignment[1:0]</obj_property>
          <obj_property name="ObjectShortName">variable_2_assignment[1:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[2].clauseModule /variable_3_assignment">
          <obj_property name="ElementShortName">variable_3_assignment[1:0]</obj_property>
@@ -576,7 +586,6 @@
    <wvobject type="group" fp_name="group290">
       <obj_property name="label">CM4</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[4].clauseModule /CLAUSE_ID">
          <obj_property name="ElementShortName">CLAUSE_ID[31:0]</obj_property>
          <obj_property name="ObjectShortName">CLAUSE_ID[31:0]</obj_property>

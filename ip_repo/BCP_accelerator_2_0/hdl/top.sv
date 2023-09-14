@@ -130,7 +130,7 @@ module top #(
                                 variable_id_i;
                                 
   wire conflict = is_conflict > 0;
-  wire all_SAT = is_SAT == 16'b1111111111111111;
+  wire all_SAT = is_SAT == '1;
 
   genvar clauseModules;
   generate
