@@ -89,7 +89,7 @@ module ClauseModule#(
     wire [2:0] assigned_vars = {variable_3_assignment[1], variable_2_assignment[1], variable_1_assignment[1]};
     wire is_unit = (assigned_vars == 3'b110) ||(assigned_vars == 3'b101) || (assigned_vars == 3'b011); // One unassigned variable
     
-    assign unit_o = is_unit && clause_in_use;
+    assign unit_o = is_unit && clause_in_use && ~SAT;
     
     
     wire [(VARIABLE_ENCODING_LEN-1):0] unit_variable_id = (assigned_vars == 3'b110)? variable_1_id
@@ -97,11 +97,11 @@ module ClauseModule#(
                                                          :(assigned_vars == 3'b011)? variable_3_id
                                                          :2'b00;
     
-    assign implication_variable_id_o = unit_variable_id;
+    assign implication_variable_id_o = unit_o? unit_variable_id : 0;
                                                              
-    wire unit_variable_assignment = (assigned_vars == 3'b110)? variable_1_assignment[0]
-                                    :(assigned_vars == 3'b101)? variable_2_assignment[0]
-                                    :(assigned_vars == 3'b011)? variable_3_assignment[0]
+    wire unit_variable_assignment = (assigned_vars == 3'b110)? variable_1_polarity
+                                    :(assigned_vars == 3'b101)? variable_2_polarity
+                                    :(assigned_vars == 3'b011)? variable_3_polarity
                                     :1'b0;
                                     
     assign implication_assignment_o = unit_variable_assignment;

@@ -90,7 +90,7 @@ module top #(
 //  wire update_clause = should_update_clause && (state == UPDATE_CLAUSES);
 
   wire update_clause = (state==UPDATE_CLAUSES);
-  wire update_assignment=(state==PROPAGATE_DECISIONS);
+  wire update_assignment=(state==PROPAGATE_DECISIONS || state == PROPAGATE_IMPLICATIONS);
   
   reg [31:0] output_status = 32'b0;
   assign axi_reg4_o = output_status;
@@ -114,7 +114,7 @@ module top #(
   reg start_implication_finder = 1'b0;
 
   // Implication Selector => Implication Broadcaster
-  wire [(VARIABLE_ASSIGNMENT_LEN-1):0] implication_variable_id;
+  wire [(VARIABLE_ENCODING_LEN-1):0] implication_variable_id;
   wire implication_assignment, implication_found;
 
  // Decision variable and id
@@ -204,6 +204,7 @@ module top #(
           end else if (CPU_OP_Code_in == 2'b10) begin
             CPU_OP_Code <= DECISION_OP;
             state <= PROPAGATE_DECISIONS;
+            cpu_op_read_o <= 1'b1;
             propgate_state <= 1'b1;
           end else if (CPU_OP_Code_in == 2'b10) begin
             CPU_OP_Code <= BACKTRACK_OP;
@@ -238,6 +239,8 @@ module top #(
           end else if(is_unit) begin
               state <= GET_IMPLICATION;
               start_implication_finder <= 1'b1;
+          end else begin // No changes, wait for next decision
+            state <= IDLE;
           end
         end
         GET_IMPLICATION: begin
@@ -245,12 +248,13 @@ module top #(
           if(implication_found) begin
             state <= PROPAGATE_IMPLICATIONS;
             output_status <= 32'h00000006;
+            is_implication_broadcast <= 1'b1;
             axi_reg5_o <= implication;
           end
         end
         PROPAGATE_IMPLICATIONS: begin
           // Broadcast implication to every clause module
-          is_implication_broadcast <= 1'b1;
+          is_implication_broadcast <= 1'b0;
           state <= EVALUATE;
         end
       endcase
