@@ -1,7 +1,0 @@
-Running: xsim.dir/BCP_accelerator_v2_0_behav/xsimk -simmode gui -wdb BCP_accelerator_v2_0_behav.wdb -simrunnum 0 -socket 56623
-Design successfully loaded
-Design Loading Memory Usage: 30940 KB (Peak: 30948 KB)
-Design Loading CPU Usage: 20 ms
-Simulation completed
-Simulation Memory Usage: 113224 KB (Peak: 170208 KB)
-Simulation CPU Usage: 20 ms

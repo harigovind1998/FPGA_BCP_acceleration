@@ -6,7 +6,7 @@
 <Project Version="7" Minor="61" Path="/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.tmp/BCP_accelerator_v2_0_project/BCP_accelerator_v2_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="27264152238e4574806c369700639b01"/>
+    <Option Name="Id" Val="162243334bff40868164751d8729c924"/>
     <Option Name="Part" Val="xc7z007sclg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -59,7 +59,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="87"/>
+    <Option Name="WTXSimLaunchSim" Val="32"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -92,7 +92,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PPRDIR/../../../ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S00_AXI.v">
         <FileInfo>
-          <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -132,7 +132,7 @@
       </File>
       <File Path="$PPRDIR/../../../ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0.v">
         <FileInfo>
-          <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -145,6 +145,7 @@
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="BCP_accelerator_v2_0"/>
         <Option Name="TopRTLFile" Val="$PPRDIR/../../../ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0.v"/>
+        <Option Name="dataflowViewerSettings" Val="min_width=16"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -163,13 +164,15 @@
       </File>
       <File Path="$PPRDIR/../../../ip_repo/BCP_accelerator_2_0/hdl/AXI_top_tb_behav.wcfg">
         <FileInfo>
+          <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="UsedIn" Val="testbench"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="AXI_top_tb"/>
-        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../ip_repo/BCP_accelerator_2_0/hdl/AXI_top_tb.sv"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SelectedSimModel" Val="rtl"/>
@@ -178,7 +181,7 @@
         <Option Name="PamSignalDriverFile" Val="xil_bypass_driver"/>
         <Option Name="PamPseudoTop" Val="pseudo_tb"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/AXI_top_tb_behav.wcfg"/>
+        <Option Name="xsim.simulate.runtime" Val="6000ns"/>
       </Config>
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">

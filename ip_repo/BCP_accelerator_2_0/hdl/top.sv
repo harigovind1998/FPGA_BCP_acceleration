@@ -57,10 +57,7 @@ module top #(
     // AXI Outputs
     output wire [31:0] axi_reg4_o,
     output reg [VARIABLE_ENCODING_LEN:0] axi_reg5_o,
-    output reg        cpu_op_read_o,
-
-    input wire [(VARIABLE_ENCODING_LEN-1):0] variable_id_i,
-    input wire assignment_i
+    output reg        cpu_op_read_o
 );
 
   enum logic [1:0]{
@@ -89,9 +86,12 @@ module top #(
   // Update clause ClauseModuleInput
   wire [(VARIABLE_ENCODING_LEN*3-1):0] clause_update_variable_ids = {var_3_id_set, var_2_id_set, var_1_id_set};
   wire [2:0] clause_update_variable_polarities = {var_3_polarity_set, var_2_polarity_set, var_1_polarity_set};
-  reg should_update_clause = 1'b0;
-  wire update_clause = should_update_clause && (state == UPDATE_CLAUSES);
+//  reg should_update_clause = 1'b0;
+//  wire update_clause = should_update_clause && (state == UPDATE_CLAUSES);
 
+  wire update_clause = (state==UPDATE_CLAUSES);
+  wire update_assignment=(state==PROPAGATE_DECISIONS);
+  
   reg [31:0] output_status = 32'b0;
   assign axi_reg4_o = output_status;
 
@@ -117,11 +117,15 @@ module top #(
   wire [(VARIABLE_ASSIGNMENT_LEN-1):0] implication_variable_id;
   wire implication_assignment, implication_found;
 
+ // Decision variable and id
+  wire [(VARIABLE_ENCODING_LEN-1):0] variable_id_i = axi_reg1_i[1 +: VARIABLE_ENCODING_LEN];
+  wire assignment_i = axi_reg1_i[0];
+
   // Distinguish between implication and decision
   reg is_implication_broadcast = 1'b0;
   wire assignment_broadcast = is_implication_broadcast? implication_assignment: 
                                 assignment_i;
-  wire variable_id_broadcast = is_implication_broadcast? implication_variable_id:
+  wire [(VARIABLE_ENCODING_LEN-1):0] variable_id_broadcast = is_implication_broadcast? implication_variable_id:
                                 variable_id_i;
                                 
   wire conflict = is_conflict > 0;
@@ -140,20 +144,21 @@ module top #(
         .clk_i(clk_i),
         .rst_i(rst_i),
         // Update Clause
-          .update_clause_i(update_clause),  // Signal high when writing clause data
-          .clause_id_to_set_i(clause_update_id_in),  // Clause ID to update
-          .set_variable_id_i(clause_update_variable_ids),
-          .set_variable_polarity_i(clause_update_variable_polarities),
-          // Decision Variable
-          .decision_variable_id_i(variable_id_broadcast),
-          .decision_assignment_i(assignment_broadcast),
-          // Status Signals
-          .clause_SAT_o(is_SAT[clauseModules]),
-          .conflict_o(is_conflict[clauseModules]),
-          // Implication
-          .unit_o(is_unit[clauseModules]),
-          .implication_variable_id_o(implication_variable_ids[ (clauseModules*VARIABLE_ENCODING_LEN) +: VARIABLE_ENCODING_LEN]),
-          .implication_assignment_o(implication_assignments[(clauseModules*VARIABLE_ASSIGNMENT_LEN) +: 1]) // Each implication assignment is only one bit, not two. TODO change len of implication_assignments
+        .update_clause_i(update_clause),  // Signal high when writing clause data
+        .clause_id_to_set_i(clause_update_id_in),  // Clause ID to update
+        .set_variable_id_i(clause_update_variable_ids),
+        .set_variable_polarity_i(clause_update_variable_polarities),
+        // Decision Variable
+        .update_assignment_i(update_assignment),
+        .decision_variable_id_i(variable_id_broadcast),
+        .decision_assignment_i(assignment_broadcast),
+        // Status Signals
+        .clause_SAT_o(is_SAT[clauseModules]),
+        .conflict_o(is_conflict[clauseModules]),
+        // Implication
+        .unit_o(is_unit[clauseModules]),
+        .implication_variable_id_o(implication_variable_ids[ (clauseModules*VARIABLE_ENCODING_LEN) +: VARIABLE_ENCODING_LEN]),
+        .implication_assignment_o(implication_assignments[(clauseModules*VARIABLE_ASSIGNMENT_LEN) +: 1]) // Each implication assignment is only one bit, not two. TODO change len of implication_assignments
       );
     end
   endgenerate
@@ -188,14 +193,14 @@ module top #(
         IDLE: begin
           if(CPU_OP_Code_in == 2'b00) begin
             CPU_OP_Code <= NO_OP;
-            should_update_clause <= 1'b0;
+//            should_update_clause <= 1'b0;
             cpu_op_read_o <= 1'b0;
             // IDLE
           end else if (CPU_OP_Code_in == 2'b01) begin
             CPU_OP_Code <= UPDATE_CLAUSE_OP;
             cpu_op_read_o <= 1'b1; // Clear CPU Set register
             state <= UPDATE_CLAUSES;
-            should_update_clause <= 1'b1;
+//            should_update_clause <= 1'b1;
           end else if (CPU_OP_Code_in == 2'b10) begin
             CPU_OP_Code <= DECISION_OP;
             state <= PROPAGATE_DECISIONS;

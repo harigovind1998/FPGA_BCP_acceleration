@@ -23,6 +23,15 @@
 
 module AXI_top_tb();
 //clock and reset_n signals
+
+    parameter reg0_addr = 32'b0;
+    parameter reg1_addr = 32'h00000004;
+	parameter reg2_addr = 32'h00000008;
+	parameter reg3_addr = 32'h0000000c;
+    
+    
+    
+    
 	reg aclk =1'b0;
 	reg arstn = 1'b0;
 
@@ -97,6 +106,8 @@ module AXI_top_tb();
    		arstn = 0;
 		i=0;
 		#20 arstn=1;
+		
+		// Write clause to FPGA
 		//		for(i=0;i<=32'hF;i=i+1)	
         //      #20 axi_write(32'd0,i);	//write i to slv_reg0\
 		update_clause(30'd0,32'd8,1'b1,32'd9,1'b0,32'd7,1'b1); // 8 -9 7
@@ -111,6 +122,10 @@ module AXI_top_tb();
 		#60;
 		update_clause(30'd5,32'd4,1'b1,32'd19,1'b1,32'd16,1'b1); // 4 19 16
 		#60;
+		
+		// Send Decision to FPGA
+		send_decision(30'd1,1'b1);
+		#100;
 		$finish;
 	end
 	
@@ -164,7 +179,6 @@ module AXI_top_tb();
 		//deassert ready for response
 		write_resp_ready<=0;
 
-
 		//end of write transaction
 	end
 	endtask;
@@ -188,6 +202,19 @@ module AXI_top_tb();
 	   //write reg 0;
 	   #20 axi_write(32'h0,{clause_id,2'b01}); // Update clause ID OP code = 001
 	end;
-	endtask; 
+	endtask;
+	
+	task send_decision;
+	input [30:0] var_id;
+	input        decision_polarity;
+	begin
+	   #20 axi_write(reg0_addr, 32'd0);
+	   // Write reg 1
+	   #20 axi_write(reg1_addr, {var_id,decision_polarity});
+	   // Write reg 0 with CPU OP code 10
+	   #20 axi_write(reg0_addr,32'h00000002);
+	   // Verify
+	end
+	endtask
 
 endmodule

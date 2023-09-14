@@ -38,6 +38,7 @@ module ClauseModule#(
     input wire [(VARIABLE_ENCODING_LEN*3-1):0]set_variable_id_i,
     input wire [(MAX_CLAUSE_SIZE-1):0]set_variable_polarity_i,
     // Decision variable
+    input wire update_assignment_i,
     input wire [(VARIABLE_ENCODING_LEN-1):0] decision_variable_id_i,
     input wire decision_assignment_i,
     // Status signals
@@ -104,12 +105,6 @@ module ClauseModule#(
                                     :1'b0;
                                     
     assign implication_assignment_o = unit_variable_assignment;
-
-    wire [(CLAUSE_ID_LEN-1):0] clause_id;
-    assign clause_id = CLAUSE_ID[(CLAUSE_ID_LEN-1):0];
-
-    wire test_sig = (clause_id_to_set_i == clause_id);
-    wire my_turn_to_update = update_clause_i && (clause_id_to_set_i == clause_id);
     
     always @(posedge clk_i) begin
         if(rst_i) begin
@@ -118,7 +113,7 @@ module ClauseModule#(
             variable_2_assignment <= 2'b00;
             variable_3_assignment <= 2'b00;
         end else begin
-            if(update_clause_i && (clause_id_to_set_i == clause_id))begin
+            if(update_clause_i && (clause_id_to_set_i == CLAUSE_ID[(CLAUSE_ID_LEN-1):0]))begin
                 variable_1_id = set_variable_id_i[(0*VARIABLE_ENCODING_LEN) +: VARIABLE_ENCODING_LEN];
                 variable_2_id = set_variable_id_i[(1*VARIABLE_ENCODING_LEN) +: VARIABLE_ENCODING_LEN];
                 variable_3_id = set_variable_id_i[(2*VARIABLE_ENCODING_LEN) +: VARIABLE_ENCODING_LEN];
@@ -128,6 +123,8 @@ module ClauseModule#(
                 variable_3_polarity = set_variable_polarity_i[2];
                 clause_in_use <= 1'b1; // When a clause is updated, clause is in use
             end
+            
+            if (update_assignment_i) begin
             
             // If clause contains decision variable, update local assignment
             if(variable_1_id == decision_variable_id_i) begin
@@ -139,6 +136,8 @@ module ClauseModule#(
             end else if(variable_3_id == decision_variable_id_i) begin
                 variable_3_assignment[0] <= decision_assignment_i;
                 variable_3_assignment[1] <= 1'b1;
+            end
+            
             end
         end
     end

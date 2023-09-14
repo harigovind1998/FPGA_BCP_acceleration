@@ -466,11 +466,7 @@
         // AXI Outputs
         .axi_reg4_o(top_status),
         .axi_reg5_o(top_implication_details),
-        .cpu_op_read_o(op_code_read),
-
-        .variable_id_i(),
-        .assignment_i()
-    
+        .cpu_op_read_o(op_code_read)    
     );
     
     always @(posedge S_AXI_ACLK) begin
