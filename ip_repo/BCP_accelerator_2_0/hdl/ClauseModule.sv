@@ -41,6 +41,8 @@ module ClauseModule#(
     input wire update_assignment_i,
     input wire [(VARIABLE_ENCODING_LEN-1):0] decision_variable_id_i,
     input wire decision_assignment_i,
+    // Backtrack
+    input wire backtrack_i,
     // Status signals
     output wire clause_SAT_o,
     output wire conflict_o,
@@ -138,7 +140,21 @@ module ClauseModule#(
                 variable_3_assignment[1] <= 1'b1;
             end
             
+            end else if(backtrack_i) begin
+            // If clause contains decision variable, update local assignment
+            if(variable_1_id == decision_variable_id_i) begin
+                variable_1_assignment[0] <= decision_assignment_i;
+                variable_1_assignment[1] <= 1'b0;
+            end else if(variable_2_id == decision_variable_id_i) begin
+                variable_2_assignment[0] <= decision_assignment_i;
+                variable_2_assignment[1] <= 1'b0;
+            end else if(variable_3_id == decision_variable_id_i) begin
+                variable_3_assignment[0] <= decision_assignment_i;
+                variable_3_assignment[1] <= 1'b0;
+            end    
             end
+            
+            
         end
     end
     

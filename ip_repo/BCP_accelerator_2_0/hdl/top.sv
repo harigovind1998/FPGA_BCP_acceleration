@@ -91,6 +91,7 @@ module top #(
 
   wire update_clause = (state==UPDATE_CLAUSES);
   wire update_assignment=(state==PROPAGATE_DECISIONS || state == PROPAGATE_IMPLICATIONS);
+  wire clear_assignment = (state == BACKTRACK);
   
   reg [31:0] output_status = 32'b0;
   assign axi_reg4_o = output_status;
@@ -152,6 +153,8 @@ module top #(
         .update_assignment_i(update_assignment),
         .decision_variable_id_i(variable_id_broadcast),
         .decision_assignment_i(assignment_broadcast),
+        // Backtrack sig
+        .backtrack_i(clear_assignment),
         // Status Signals
         .clause_SAT_o(is_SAT[clauseModules]),
         .conflict_o(is_conflict[clauseModules]),
@@ -206,9 +209,10 @@ module top #(
             state <= PROPAGATE_DECISIONS;
             cpu_op_read_o <= 1'b1;
             propgate_state <= 1'b1;
-          end else if (CPU_OP_Code_in == 2'b10) begin
+          end else if (CPU_OP_Code_in == 2'b11) begin
             CPU_OP_Code <= BACKTRACK_OP;
             state <= BACKTRACK;
+            cpu_op_read_o <= 1'b1;
             propgate_state <= 1'b0;
           end
           // Listen to input from AXI to decide where to go next
