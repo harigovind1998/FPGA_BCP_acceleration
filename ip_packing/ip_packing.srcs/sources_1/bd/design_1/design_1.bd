@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x57D2BBFB6984D3A8",
+      "boundary_crc": "0x1732E4B229648CE1",
       "device": "xc7z007sclg400-1",
       "gen_directory": "../../../../ip_packing.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -187,8 +187,10 @@
       }
     },
     "ports": {
-      "led_on_indicator_0": {
-        "direction": "O"
+      "led_indicator": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
       }
     },
     "components": {
@@ -1251,10 +1253,10 @@
       }
     },
     "nets": {
-      "BCP_accelerator_0_led_on_indicator": {
+      "BCP_accelerator_0_op_indicator_led": {
         "ports": [
-          "BCP_accelerator_0/led_on_indicator",
-          "led_on_indicator_0"
+          "BCP_accelerator_0/op_indicator_led",
+          "led_indicator"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {

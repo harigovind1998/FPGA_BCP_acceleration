@@ -48,12 +48,13 @@
 
 
 // IP VLNV: carleton.ca:user:BCP_accelerator:2.0
-// IP Revision: 13
+// IP Revision: 14
 
 `timescale 1ns/1ps
 
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_BCP_accelerator_0_0 (
+  op_indicator_led,
   s00_axi_aclk,
   s00_axi_aresetn,
   s00_axi_awaddr,
@@ -111,10 +112,10 @@ module design_1_BCP_accelerator_0_0 (
   s01_axi_rdata,
   s01_axi_rresp,
   s01_axi_rvalid,
-  s01_axi_rready,
-  led_on_indicator
+  s01_axi_rready
 );
 
+output wire [1 : 0] op_indicator_led;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 5e+07, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *)
 input wire s00_axi_aclk;
@@ -239,7 +240,6 @@ output wire s01_axi_rvalid;
 _0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI RREADY" *)
 input wire s01_axi_rready;
-output wire led_on_indicator;
 
   BCP_accelerator_v2_0 #(
     .C_S01_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
@@ -253,6 +253,7 @@ output wire led_on_indicator;
     .C_S00_AXI_RUSER_WIDTH(0),  // Width of optional user defined signal in read data channel
     .C_S00_AXI_BUSER_WIDTH(0)  // Width of optional user defined signal in write response channel
   ) inst (
+    .op_indicator_led(op_indicator_led),
     .s00_axi_aclk(s00_axi_aclk),
     .s00_axi_aresetn(s00_axi_aresetn),
     .s00_axi_awid(1'B0),
@@ -319,7 +320,6 @@ output wire led_on_indicator;
     .s01_axi_rdata(s01_axi_rdata),
     .s01_axi_rresp(s01_axi_rresp),
     .s01_axi_rvalid(s01_axi_rvalid),
-    .s01_axi_rready(s01_axi_rready),
-    .led_on_indicator(led_on_indicator)
+    .s01_axi_rready(s01_axi_rready)
   );
 endmodule

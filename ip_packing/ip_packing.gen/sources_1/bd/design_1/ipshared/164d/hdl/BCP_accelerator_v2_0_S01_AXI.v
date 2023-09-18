@@ -15,7 +15,7 @@
 	)
 	(
 		// Users to add ports here
-
+        output wire [1:0] cup_op_o,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -310,12 +310,12 @@
 	                    end
 	        endcase
 	      end
+
 	      if(op_code_read) begin
                 slv_reg0 <= 0;
-            end
-        
-            slv_reg4 <= top_status;
-            slv_reg5 <= top_implication_details;
+          end
+          slv_reg4 <= top_status;
+          slv_reg5 <= top_implication_details;
 	  end
 	end    
 
@@ -452,6 +452,7 @@
 	end    
 
 	// Add user logic here
+	assign cup_op_o = slv_reg0[1:0];
     top #(
     ) topModule (
         .clk_i(S_AXI_ACLK),    
@@ -466,20 +467,9 @@
         // AXI Outputs
         .axi_reg4_o(top_status),
         .axi_reg5_o(top_implication_details),
-        .cpu_op_read_o(op_code_read)    
+        .clear_cpu_req(op_code_read)    
     );
     
-    always @(posedge S_AXI_ACLK) begin
-        if( S_AXI_ARESETN == 1'b0) begin
-        end else begin
-//            if(op_code_read) begin
-//                slv_reg0 <= 0;
-//            end
-        
-//            slv_reg4 <= top_status;
-//            slv_reg5 <= top_implication_details;
-        end
-    end
 	// User logic ends
 
 	endmodule

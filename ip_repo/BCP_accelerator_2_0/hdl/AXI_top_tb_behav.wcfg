@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3,098.178 ns"></ZoomStartTime>
-      <ZoomEndTime time="3,527.379 ns"></ZoomEndTime>
-      <Cursor1Time time="3,385.000 ns"></Cursor1Time>
+      <ZoomStartTime time="2,432.946 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,654.047 ns"></ZoomEndTime>
+      <Cursor1Time time="2,485.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="233"></NameColumnWidth>
+      <NameColumnWidth column_width="225"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="19" />
+   <WVObjectSize size="20" />
    <wvobject type="group" fp_name="group296">
       <obj_property name="label">TestBenchSigs</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -180,10 +180,6 @@
          <obj_property name="ElementShortName">CPU_OP_Code_in[1:0]</obj_property>
          <obj_property name="ObjectShortName">CPU_OP_Code_in[1:0]</obj_property>
       </wvobject>
-      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/cpu_op_read_o">
-         <obj_property name="ElementShortName">cpu_op_read_o</obj_property>
-         <obj_property name="ObjectShortName">cpu_op_read_o</obj_property>
-      </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/state">
          <obj_property name="ElementShortName">state[3:0]</obj_property>
          <obj_property name="ObjectShortName">state[3:0]</obj_property>
@@ -216,14 +212,6 @@
          <obj_property name="ElementShortName">clause_update_id_in[6:0]</obj_property>
          <obj_property name="ObjectShortName">clause_update_id_in[6:0]</obj_property>
       </wvobject>
-      <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/variable_id_i">
-         <obj_property name="ElementShortName">variable_id_i[4:0]</obj_property>
-         <obj_property name="ObjectShortName">variable_id_i[4:0]</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/assignment_i">
-         <obj_property name="ElementShortName">assignment_i</obj_property>
-         <obj_property name="ObjectShortName">assignment_i</obj_property>
-      </wvobject>
       <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/update_assignment">
          <obj_property name="ElementShortName">update_assignment</obj_property>
          <obj_property name="ObjectShortName">update_assignment</obj_property>
@@ -231,17 +219,10 @@
       <wvobject type="group" fp_name="group338">
          <obj_property name="label">Implication</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/implication_assignment">
-            <obj_property name="ElementShortName">implication_assignment</obj_property>
-            <obj_property name="ObjectShortName">implication_assignment</obj_property>
-         </wvobject>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/implication_found">
             <obj_property name="ElementShortName">implication_found</obj_property>
             <obj_property name="ObjectShortName">implication_found</obj_property>
-         </wvobject>
-         <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implication_variable_id">
-            <obj_property name="ElementShortName">implication_variable_id[4:0]</obj_property>
-            <obj_property name="ObjectShortName">implication_variable_id[4:0]</obj_property>
          </wvobject>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/variable_id_broadcast">
@@ -256,10 +237,22 @@
          <obj_property name="ElementShortName">all_SAT</obj_property>
          <obj_property name="ObjectShortName">all_SAT</obj_property>
       </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/is_unit">
+         <obj_property name="ElementShortName">is_unit[90:0]</obj_property>
+         <obj_property name="ObjectShortName">is_unit[90:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/is_conflict">
+         <obj_property name="ElementShortName">is_conflict[90:0]</obj_property>
+         <obj_property name="ObjectShortName">is_conflict[90:0]</obj_property>
+      </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/is_SAT">
          <obj_property name="ElementShortName">is_SAT[90:0]</obj_property>
          <obj_property name="ObjectShortName">is_SAT[90:0]</obj_property>
       </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/clear_assignment">
+      <obj_property name="ElementShortName">clear_assignment</obj_property>
+      <obj_property name="ObjectShortName">clear_assignment</obj_property>
    </wvobject>
    <wvobject fp_name="divider343" type="divider">
       <obj_property name="label">Implication Selector</obj_property>
@@ -296,9 +289,9 @@
          <obj_property name="ElementShortName">impl_found_o</obj_property>
          <obj_property name="ObjectShortName">impl_found_o</obj_property>
       </wvobject>
-      <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implicationSelector/state">
-         <obj_property name="ElementShortName">state[1:0]</obj_property>
-         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <wvobject type="other" fp_name="/AXI_top_tb/DUT/topModule/implicationSelector/state">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implicationSelector/clause_count">
          <obj_property name="ElementShortName">clause_count[6:0]</obj_property>
@@ -529,6 +522,14 @@
       <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[2].clauseModule /unit_o">
          <obj_property name="ElementShortName">unit_o</obj_property>
          <obj_property name="ObjectShortName">unit_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[2].clauseModule /SAT">
+         <obj_property name="ElementShortName">SAT</obj_property>
+         <obj_property name="ObjectShortName">SAT</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[2].clauseModule /clause_in_use">
+         <obj_property name="ElementShortName">clause_in_use</obj_property>
+         <obj_property name="ObjectShortName">clause_in_use</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="divider159" type="divider">

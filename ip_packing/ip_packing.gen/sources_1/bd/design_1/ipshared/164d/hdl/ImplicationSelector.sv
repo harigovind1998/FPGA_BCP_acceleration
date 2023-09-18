@@ -24,12 +24,6 @@
 
 
 module ImplicationSelector #(
-    //    parameter FORMULA_MAX_VARIABLE = 4,
-    //    parameter VARIABLE_ENCODING_LEN = $clog2(FORMULA_MAX_VARIABLE),
-    //    parameter VARIABLE_ASSIGNMENT_LEN = 2,
-    //    parameter MAX_CLAUSE = 16,
-    //    parameter CLAUSE_ID_LEN = $clog2(MAX_CLAUSE)
-
     parameter FORMULA_MAX_VARIABLE = 4,
     parameter VARIABLE_ENCODING_LEN = $clog2(FORMULA_MAX_VARIABLE + 1),
     parameter MAX_CLAUSE_SIZE = 3,
@@ -53,10 +47,9 @@ module ImplicationSelector #(
 );
   localparam bit [CLAUSE_ID_LEN-1:0] CLAUSE_COUNT_RESET_VAL = 0;  // Constant reset value
 
-  enum logic [1:0] {
+  enum logic {
     IDLE,
-    FIND_IMPL,
-    READ
+    FIND_IMPL
   } state = IDLE;
 
   reg [(CLAUSE_ID_LEN-1):0] clause_count = CLAUSE_COUNT_RESET_VAL;
@@ -66,28 +59,6 @@ module ImplicationSelector #(
 
   assign implication_variable_id_o = implication_variable_id;
   assign implication_assignment_o  = implication_assignment;
-
-  //   ImplicationFIFO #(
-  //       .FORMULA_MAX_VARIABLE(4),
-  //       .VARIABLE_ASSIGNMENT_LEN(2),
-  //       .BUFFER_SIZE(MAX_CLAUSE)
-  //   ) implicationFIFO (
-  //       .clk_i(clk_i),
-  //       .en_i(1'b1),
-  //       .rst_i(rst_i),
-  //       .empty_o(),
-  //       .full_o(),
-
-  //       // Write Signals
-  //       .variable_id_i(implication_variable_id),
-  //       .assignment_i(implication_assignment),
-  //       .wr_i(),
-
-  //       // Read Signals
-  //       .variable_id_o(),
-  //       .assignment_o(),
-  //       .rd_i()
-  //   );
 
   reg impl_found;
   assign impl_found_o = impl_found;
@@ -112,9 +83,6 @@ module ImplicationSelector #(
             impl_found <= 1'b1;
             state <= IDLE;
           end
-        end
-        READ: begin
-          // Pull the first implication for broadcast
         end
       endcase
     end

@@ -25,7 +25,7 @@
 	)
 	(
 		// Users to add ports here
-
+        output wire [1:0] op_indicator_led,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -99,9 +99,7 @@
 		output wire [C_S01_AXI_DATA_WIDTH-1 : 0] s01_axi_rdata,
 		output wire [1 : 0] s01_axi_rresp,
 		output wire  s01_axi_rvalid,
-		input wire  s01_axi_rready,
-		
-		output wire led_on_indicator
+		input wire  s01_axi_rready
 	);
 // Instantiation of Axi Bus Interface S00_AXI
 	BCP_accelerator_v2_0_S00_AXI # ( 
@@ -161,6 +159,8 @@
 		.S_AXI_RVALID(s00_axi_rvalid),
 		.S_AXI_RREADY(s00_axi_rready)
 	);
+	
+	wire [1:0] axi_lite_cpu_op_code;
 
 // Instantiation of Axi Bus Interface S01_AXI
 	BCP_accelerator_v2_0_S01_AXI # ( 
@@ -187,11 +187,12 @@
 		.S_AXI_RDATA(s01_axi_rdata),
 		.S_AXI_RRESP(s01_axi_rresp),
 		.S_AXI_RVALID(s01_axi_rvalid),
-		.S_AXI_RREADY(s01_axi_rready)
+		.S_AXI_RREADY(s01_axi_rready),
+		.cup_op_o(axi_lite_cpu_op_code)
 	);
 
 	// Add user logic here
-    assign led_on_indicator = 1'b1;
+    assign op_indicator_led = axi_lite_cpu_op_code;
 	// User logic ends
 
 	endmodule
