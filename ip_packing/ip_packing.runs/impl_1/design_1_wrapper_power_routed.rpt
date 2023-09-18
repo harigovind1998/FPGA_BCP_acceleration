@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date             : Mon Sep 18 13:03:17 2023
+| Date             : Mon Sep 18 14:34:35 2023
 | Host             : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.2 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.013 |        3 |       --- |             --- |
-| Slice Logic              |     0.009 |    16415 |       --- |             --- |
-|   LUT as Logic           |     0.008 |     6593 |     14400 |           45.78 |
-|   Register               |    <0.001 |     6676 |     28800 |           23.18 |
+| Clocks                   |     0.012 |        3 |       --- |             --- |
+| Slice Logic              |     0.009 |    16418 |       --- |             --- |
+|   LUT as Logic           |     0.008 |     6596 |     14400 |           45.81 |
+|   Register               |    <0.001 |     6678 |     28800 |           23.19 |
 |   LUT as Distributed RAM |    <0.001 |      332 |      6000 |            5.53 |
 |   LUT as Shift Register  |    <0.001 |      315 |      6000 |            5.25 |
 |   F7/F8 Muxes            |    <0.001 |      192 |     17600 |            1.09 |
 |   CARRY4                 |    <0.001 |       53 |      4400 |            1.20 |
 |   Others                 |     0.000 |      691 |       --- |             --- |
-| Signals                  |     0.010 |    11438 |       --- |             --- |
+| Signals                  |     0.010 |    11437 |       --- |             --- |
 | I/O                      |     0.000 |        2 |       100 |            2.00 |
 | PS7                      |     1.173 |        1 |       --- |             --- |
 | Static Power             |     0.115 |          |           |                 |

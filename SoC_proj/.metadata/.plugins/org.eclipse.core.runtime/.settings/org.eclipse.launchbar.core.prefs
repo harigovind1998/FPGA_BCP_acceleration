@@ -1,0 +1,8 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default_2,org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default_3,org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default_4,org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default_5
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default_2/activeLaunchMode=debug

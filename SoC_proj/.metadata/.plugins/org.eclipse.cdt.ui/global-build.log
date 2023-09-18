@@ -1,0 +1,69 @@
+Nothing to build in platform 'BCP_accelerator_V2_5'
+
+16:35:33 **** Incremental Build of configuration Debug for project HW_accelerated_DPLL ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:10: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   58 |     reg0 = 0x43C00000;
+      |          ^
+../src/helloworld.c:61:10: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   61 |     reg1 = 0x43C00004;
+      |          ^
+../src/helloworld.c:64:10: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   64 |     reg2 = 0x43C00008;
+      |          ^
+../src/helloworld.c:67:10: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   67 |     reg3 = 0x43C0000c;
+      |          ^
+../src/helloworld.c:70:10: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   70 |     reg4 = 0x43C00010;
+      |          ^
+../src/helloworld.c:73:10: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   73 |     reg5 = 0x43C00014;
+      |          ^
+../src/helloworld.c:76:10: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   76 |     reg6 = 0x43C00018;
+      |          ^
+../src/helloworld.c:72:15: warning: variable 'reg5' set but not used [-Wunused-but-set-variable]
+   72 |     uint32_t *reg5;
+      |               ^~~~
+../src/helloworld.c:69:15: warning: variable 'reg4' set but not used [-Wunused-but-set-variable]
+   69 |     uint32_t *reg4;
+      |               ^~~~
+../src/helloworld.c:66:15: warning: variable 'reg3' set but not used [-Wunused-but-set-variable]
+   66 |     uint32_t *reg3;
+      |               ^~~~
+../src/helloworld.c:63:15: warning: variable 'reg2' set but not used [-Wunused-but-set-variable]
+   63 |     uint32_t *reg2;
+      |               ^~~~
+../src/helloworld.c:60:15: warning: variable 'reg1' set but not used [-Wunused-but-set-variable]
+   60 |     uint32_t *reg1;
+      |               ^~~~
+../src/helloworld.c:57:15: warning: variable 'reg0' set but not used [-Wunused-but-set-variable]
+   57 |     uint32_t *reg0;
+      |               ^~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: HW_accelerated_DPLL.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/bsplib/lib -o "HW_accelerated_DPLL.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: HW_accelerated_DPLL.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size HW_accelerated_DPLL.elf  |tee "HW_accelerated_DPLL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19208	   1144	4200488	4220840	 4067a8	HW_accelerated_DPLL.elf
+Finished building: HW_accelerated_DPLL.elf.size
+ 
