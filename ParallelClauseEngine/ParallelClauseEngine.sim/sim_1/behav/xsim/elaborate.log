@@ -8,10 +8,4 @@ WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 fo
 WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 49 for port 'implication_variable_ids_i' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sim_1/new/ImplicationSelector_tb.sv:49]
 WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 17 for port 'implication_assignments_i' [C:/Users/hari-admin/Documents/Dev/Thesis/BCP_acceleration/ParallelClauseEngine/ParallelClauseEngine.srcs/sim_1/new/ImplicationSelector_tb.sv:50]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.ImplicationSelector_default
-Compiling module xil_defaultlib.ImplicationSelector_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot ImplicationSelector_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

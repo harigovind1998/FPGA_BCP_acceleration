@@ -31,51 +31,219 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module top#(
+module top #(
+    // parameter FORMULA_MAX_VARIABLE = 4,
+    // parameter VARIABLE_ENCODING_LEN = $clog2(FORMULA_MAX_VARIABLE),
+    // parameter VARIABLE_ASSIGNMENT_LEN = 2,
+    // parameter MAX_CLAUSE = 16
+
     parameter FORMULA_MAX_VARIABLE = 4,
-    parameter VARIABLE_ENCODING_LEN = $clog2(FORMULA_MAX_VARIABLE),
-    parameter VARIABLE_ASSIGNMENT_LEN = 2,
-    parameter MAX_CLAUSE = 16
-)(
+    parameter VARIABLE_ENCODING_LEN = $clog2(FORMULA_MAX_VARIABLE + 1),
+    parameter MAX_CLAUSE_SIZE = 3,
+    parameter VARIABLE_ASSIGNMENT_LEN = 1,
+    parameter MAX_CLAUSE = 16,
+    parameter CLAUSE_ID = -1,
+    parameter CLAUSE_ID_LEN = $clog2(MAX_CLAUSE)
+) (
     input wire clk_i,
-    input wire rst_i
-    );
+    input wire rst_i,
 
-    genvar clauseModules;
+    // AXI Inputs
+    input wire [31:0] axi_reg0_i,
+    input wire [31:0] axi_reg1_i,
+    input wire [31:0] axi_reg2_i,
+    input wire [31:0] axi_reg3_i,
 
-    wire [(MAX_CLAUSE-1):0] is_unit;
-    wire [(VARIABLE_ENCODING_LEN * MAX_CLAUSE):0] implication_variable_ids;
-    wire [(VARIABLE_ASSIGNMENT_LEN * MAX_CLAUSE):0] implication_assignments;
+    // AXI Outputs
+    output reg [31:0] axi_reg4_o,
+    output reg [VARIABLE_ENCODING_LEN:0] axi_reg5_o,
+    output reg        cpu_op_read_o,
 
-    generate
-        for(clauseModules = 0; clauseModules < MAX_CLAUSE; clauseModules++) begin : generate_clause_modules
-            ClauseModule #(.CLAUSE_ID(clauseModules)) clauseModule(
-                .clk_i(clk_i),
-                .rst_i(rst_i),
-                // Update Clause
-                .update_clause_i(), // Signal high when writing clause data
-                .clause_id_to_set_i(), // Clause ID to update
-                .set_variable_id_i(),
-                .set_variable_polarity_i(),
-                // Decision Variable
-                .decision_variable_id_i(),
-                .decision_assignment_i(),
-                // Status Signals
-                .clause_SAT_o(),
-                .conflict_o(),
-                // Implication
-                .unit_o(is_unit[clauseModules]),
-                .implication_variable_id_o(implication_variable_ids[ (clauseModules*VARIABLE_ENCODING_LEN) +: VARIABLE_ENCODING_LEN]),
-                .implication_assignment_o(implication_assignments[(clauseModules*VARIABLE_ASSIGNMENT_LEN) +: 1]) // Each implication assignment is only one bit, not two. TODO change len of implication_assignments
-            );
+    input wire [(VARIABLE_ENCODING_LEN-1):0] variable_id_i,
+    input wire assignment_i
+);
+
+  enum logic [1:0]{
+    NO_OP = 2'b00,
+    UPDATE_CLAUSE_OP = 2'b01,
+    DECISION_OP = 2'b10,
+    BACKTRACK_OP = 2'b11
+  } CPU_OP_Code = NO_OP;
+
+  // Slice axi_reg0
+  wire [1:0] CPU_OP_Code_in = axi_reg0_i[1:0];
+  wire [(CLAUSE_ID_LEN-1):0] clause_update_id_in = axi_reg0_i[2 +: CLAUSE_ID_LEN];
+
+  // Slice axi_reg1
+  wire var_1_polarity_set = axi_reg1_i[0];
+  wire [VARIABLE_ENCODING_LEN-1:0] var_1_id_set = axi_reg1_i[1 +: VARIABLE_ENCODING_LEN];
+
+  // Slice axi_reg2
+  wire var_2_polarity_set = axi_reg2_i[0];
+  wire [VARIABLE_ENCODING_LEN-1:0] var_2_id_set = axi_reg2_i[1 +: VARIABLE_ENCODING_LEN];
+
+  // Slice axi_reg3
+  wire var_3_polarity_set = axi_reg3_i[0];
+  wire [VARIABLE_ENCODING_LEN-1:0] var_3_id_set = axi_reg3_i[1 +: VARIABLE_ENCODING_LEN];
+
+  // Update clause ClauseModuleInput
+  wire [(VARIABLE_ENCODING_LEN*3-1):0] clause_update_variable_ids = {var_3_id_set, var_2_id_set, var_1_id_set};
+  wire [2:0] clause_update_variable_polarities = {var_3_polarity_set, var_2_polarity_set, var_1_polarity_set};
+  reg should_update_clause = 1'b0;
+
+  enum logic [3:0] {
+    IDLE,
+    UPDATE_CLAUSES,
+    BACKTRACK,
+    PROPAGATE_DECISIONS,
+    EVALUATE,
+    GET_IMPLICATION,
+    PROPAGATE_IMPLICATIONS
+  } state = IDLE;
+
+  reg propgate_state = 1'b0; // 0 = IN_BACKTRACK, 1 = IN_DECISION
+
+  // Clause Modules => implication selector engine communication
+  wire [(MAX_CLAUSE-1):0] is_unit, is_conflict, is_SAT;
+  wire [(VARIABLE_ENCODING_LEN * MAX_CLAUSE):0] implication_variable_ids;
+  wire [(VARIABLE_ASSIGNMENT_LEN * MAX_CLAUSE):0] implication_assignments;
+  reg start_implication_finder = 1'b0;
+
+  // Implication Selector => Implication Broadcaster
+  wire [(VARIABLE_ASSIGNMENT_LEN-1):0] implication_variable_id;
+  wire implication_assignment, implication_found;
+
+  // Distinguish between implication and decision
+  reg is_implication_broadcast = 1'b0;
+  wire assignment_broadcast = is_implication_broadcast? implication_assignment: 
+                                assignment_i;
+  wire variable_id_broadcast = is_implication_broadcast? implication_variable_id:
+                                variable_id_i;
+                                
+  wire conflict = is_conflict > 0;
+  wire all_SAT = is_SAT == 16'b1111111111111111;
+
+  genvar clauseModules;
+  generate
+    for (
+        clauseModules = 0; clauseModules < MAX_CLAUSE; clauseModules++
+    ) begin : generate_clause_modules
+      ClauseModule #(
+          .CLAUSE_ID(clauseModules)
+      ) clauseModule (
+          .clk_i(clk_i),
+          .rst_i(rst_i),
+          // Update Clause
+          .update_clause_i(should_update_clause),  // Signal high when writing clause data
+          .clause_id_to_set_i(clause_update_id_in),  // Clause ID to update
+          .set_variable_id_i(clause_update_variable_ids),
+          .set_variable_polarity_i(clause_update_variable_polarities),
+          // Decision Variable
+          .decision_variable_id_i(variable_id_broadcast),
+          .decision_assignment_i(assignment_broadcast),
+          // Status Signals
+          .clause_SAT_o(is_SAT[clauseModules]),
+          .conflict_o(is_conflict[clauseModules]),
+          // Implication
+          .unit_o(is_unit[clauseModules]),
+          .implication_variable_id_o(implication_variable_ids[ (clauseModules*VARIABLE_ENCODING_LEN) +: VARIABLE_ENCODING_LEN]),
+          .implication_assignment_o(implication_assignments[(clauseModules*VARIABLE_ASSIGNMENT_LEN) +: 1]) // Each implication assignment is only one bit, not two. TODO change len of implication_assignments
+      );
+    end
+  endgenerate
+
+  ImplicationSelector #(
+      .FORMULA_MAX_VARIABLE(FORMULA_MAX_VARIABLE),
+      .VARIABLE_ENCODING_LEN(VARIABLE_ENCODING_LEN),
+      .MAX_CLAUSE_SIZE(MAX_CLAUSE_SIZE),
+      .VARIABLE_ASSIGNMENT_LEN(VARIABLE_ASSIGNMENT_LEN),
+      .MAX_CLAUSE(MAX_CLAUSE),
+      .CLAUSE_ID_LEN(CLAUSE_ID_LEN)
+  ) implicationSelector (
+      .clk_i(clk_i),
+      .rst_i(rst),
+      .start_find_impl_i(start_implication_finder),
+      // Inputs
+      .is_unit_i(is_unit),
+      .implication_variable_ids_i(implication_variable_ids),
+      .implication_assignments_i(implication_assignments),
+      // Outputs
+      .implication_variable_id_o(implication_variable_id),
+      .implication_assignment_o(implication_assignment),
+      .impl_found_o(implication_found)
+  );
+
+  wire [(VARIABLE_ENCODING_LEN):0] implication = {implication_variable_id,implication_assignment};
+
+  always @(posedge clk_i) begin
+    if (rst_i) begin
+    end else begin
+      case (state)
+        IDLE: begin
+          if(CPU_OP_Code_in == 2'b00) begin
+            CPU_OP_Code <= NO_OP;
+            should_update_clause <= 1'b0;
+            cpu_op_read_o <= 1'b0;
+            // IDLE
+          end else if (CPU_OP_Code_in == 2'b01) begin
+            CPU_OP_Code <= UPDATE_CLAUSE_OP;
+            cpu_op_read_o <= 1'b1; // Clear CPU Set register
+            state <= UPDATE_CLAUSES;
+            should_update_clause <= 1'b1;
+          end else if (CPU_OP_Code_in == 2'b10) begin
+            CPU_OP_Code <= DECISION_OP;
+            state <= PROPAGATE_DECISIONS;
+            propgate_state <= 1'b1;
+          end else if (CPU_OP_Code_in == 2'b10) begin
+            CPU_OP_Code <= BACKTRACK_OP;
+            state <= BACKTRACK;
+            propgate_state <= 1'b0;
+          end
+          // Listen to input from AXI to decide where to go next
         end
-    endgenerate
-
-    
-    ImplicationSelector implicationSelector();
-
-
-
-
+        UPDATE_CLAUSES: begin
+          // Wait for update to finish
+          axi_reg4_o <= 32'h00000001;
+          state <= IDLE;
+          // Write data to clause modules
+        end
+        BACKTRACK: begin
+          axi_reg4_o <= 32'h00000001;
+          state <= IDLE;
+          // Same as propagate decisions, but no need to perform implications
+        end
+        PROPAGATE_DECISIONS: begin
+          state <= EVALUATE;
+          // Send decisions to all modules
+        end
+        EVALUATE: begin
+          // Wait for clause modules to complete evaluation
+          if(conflict) begin 
+            axi_reg4_o<= 32'h00000004;
+            state <= IDLE;
+          end else if(all_SAT) begin
+            axi_reg4_o <= 32'h00000005;
+            state <= IDLE;
+          end else if(is_unit) begin
+              state <= GET_IMPLICATION;
+              start_implication_finder <= 1'b1;
+          end
+        end
+        GET_IMPLICATION: begin
+          // wait for an implication to get decided: found_impl goes high
+          if(implication_found) begin
+            state <= PROPAGATE_IMPLICATIONS;
+            axi_reg4_o <= 32'h00000006;
+            axi_reg5_o <= implication;
+          end
+        end
+        PROPAGATE_IMPLICATIONS: begin
+          // Broadcast implication to every clause module
+          is_implication_broadcast <= 1'b1;
+          state <= EVALUATE;
+        end
+      endcase
+    end
+  end
 
 endmodule
