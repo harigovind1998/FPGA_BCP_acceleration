@@ -937,3 +937,132 @@ con
 ----------------End of Script----------------
 
 20:42:06 INFO  : Launch script is exported to file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration_system/_ide/scripts/debugger_accelerated_bcp_integration-default.tcl'
+20:54:21 INFO  : Disconnected from the channel tcfchan#2.
+20:59:49 DEBUG : Logs will be stored at '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/IDE.log'.
+20:59:50 INFO  : Launching XSCT server: xsct -n  -interactive /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/temp_xsdb_launch_script.tcl
+20:59:51 INFO  : XSCT server has started successfully.
+20:59:51 INFO  : plnx-install-location is set to ''
+20:59:51 INFO  : Successfully done setting XSCT server connection channel  
+20:59:51 INFO  : Successfully done setting workspace for the tool. 
+20:59:51 INFO  : Successfully done query RDI_DATADIR 
+20:59:51 INFO  : Platform repository initialization has completed.
+20:59:51 INFO  : Registering command handlers for Vitis TCF services
+21:02:03 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_4;BCP_accelerator_V2_5;BCP_accelerator_V2_6;BCP_accelerator_V2_7;BCP_accelerator_V2_8
+21:02:03 INFO  : Result from executing command 'getPlatforms': BCP_accelerator_V2_4|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_4/export/BCP_accelerator_V2_4/BCP_accelerator_V2_4.xpfm;BCP_accelerator_V2_5|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/BCP_accelerator_V2_5.xpfm;BCP_accelerator_V2_6|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_6/export/BCP_accelerator_V2_6/BCP_accelerator_V2_6.xpfm;BCP_accelerator_V2_7|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_7/export/BCP_accelerator_V2_7/BCP_accelerator_V2_7.xpfm;xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+21:02:27 INFO  : The hardware specification used by project 'Accelerated_BCP_Integration' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+21:02:28 INFO  : The file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream/BCP_accelerator_V2_7.bit' stored in project is removed.
+21:02:28 INFO  : The updated bitstream files are copied from platform to folder '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream' in project 'Accelerated_BCP_Integration'.
+21:02:28 INFO  : The file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' stored in project is removed.
+21:02:30 INFO  : The updated ps init files are copied from platform to folder '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit' in project 'Accelerated_BCP_Integration'.
+21:02:41 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_4;BCP_accelerator_V2_5;BCP_accelerator_V2_6;BCP_accelerator_V2_7;BCP_accelerator_V2_8
+21:02:41 INFO  : Result from executing command 'getPlatforms': BCP_accelerator_V2_4|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_4/export/BCP_accelerator_V2_4/BCP_accelerator_V2_4.xpfm;BCP_accelerator_V2_5|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/BCP_accelerator_V2_5.xpfm;BCP_accelerator_V2_6|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_6/export/BCP_accelerator_V2_6/BCP_accelerator_V2_6.xpfm;BCP_accelerator_V2_7|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_7/export/BCP_accelerator_V2_7/BCP_accelerator_V2_7.xpfm;BCP_accelerator_V2_8|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/BCP_accelerator_V2_8.xpfm;xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+21:02:45 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+21:02:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:50 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+21:02:50 INFO  : 'jtag frequency' command is executed.
+21:02:50 INFO  : Context for 'APU' is selected.
+21:02:50 INFO  : System reset is completed.
+21:02:53 INFO  : 'after 3000' command is executed.
+21:02:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+21:02:54 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream/BCP_accelerator_V2_8.bit"
+21:02:54 INFO  : Context for 'APU' is selected.
+21:02:54 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/hw/BCP_accelerator_V2_8.xsa'.
+21:02:54 INFO  : 'configparams force-mem-access 1' command is executed.
+21:02:54 INFO  : Context for 'APU' is selected.
+21:02:54 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+21:02:54 INFO  : 'ps7_init' command is executed.
+21:02:54 INFO  : 'ps7_post_config' command is executed.
+21:02:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:56 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:02:56 INFO  : 'configparams force-mem-access 0' command is executed.
+21:02:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream/BCP_accelerator_V2_8.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/hw/BCP_accelerator_V2_8.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:02:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:56 INFO  : 'con' command is executed.
+21:02:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:02:56 INFO  : Launch script is exported to file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration_system/_ide/scripts/debugger_accelerated_bcp_integration-default_1.tcl'
+21:04:14 INFO  : Disconnected from the channel tcfchan#2.
+21:04:26 INFO  : The hardware specification used by project 'Accelerated_BCP_Integration' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+21:04:27 INFO  : The file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream/BCP_accelerator_V2_8.bit' stored in project is removed.
+21:04:27 INFO  : The updated bitstream files are copied from platform to folder '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream' in project 'Accelerated_BCP_Integration'.
+21:04:27 INFO  : The file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' stored in project is removed.
+21:04:29 INFO  : The updated ps init files are copied from platform to folder '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit' in project 'Accelerated_BCP_Integration'.
+21:04:38 WARN  : Failed to update project references for project HW_accelerated_DPLL
+21:04:38 WARN  : Failed to update project references for project HW_accelerated_DPLL_system
+21:11:08 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_4;BCP_accelerator_V2_5;BCP_accelerator_V2_6;BCP_accelerator_V2_7;BCP_accelerator_V2_8
+21:11:08 INFO  : Result from executing command 'getPlatforms': BCP_accelerator_V2_4|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_4/export/BCP_accelerator_V2_4/BCP_accelerator_V2_4.xpfm;BCP_accelerator_V2_5|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/BCP_accelerator_V2_5.xpfm;BCP_accelerator_V2_6|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_6/export/BCP_accelerator_V2_6/BCP_accelerator_V2_6.xpfm;BCP_accelerator_V2_7|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_7/export/BCP_accelerator_V2_7/BCP_accelerator_V2_7.xpfm;xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+21:11:37 INFO  : The hardware specification used by project 'Accelerated_BCP_Integration' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+21:11:37 INFO  : The file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream/BCP_accelerator_V2_7.bit' stored in project is removed.
+21:11:37 INFO  : The updated bitstream files are copied from platform to folder '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream' in project 'Accelerated_BCP_Integration'.
+21:11:38 INFO  : The file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' stored in project is removed.
+21:11:40 INFO  : The updated ps init files are copied from platform to folder '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit' in project 'Accelerated_BCP_Integration'.
+21:11:51 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_4;BCP_accelerator_V2_5;BCP_accelerator_V2_6;BCP_accelerator_V2_7;BCP_accelerator_V2_8
+21:11:51 INFO  : Result from executing command 'getPlatforms': BCP_accelerator_V2_4|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_4/export/BCP_accelerator_V2_4/BCP_accelerator_V2_4.xpfm;BCP_accelerator_V2_5|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/BCP_accelerator_V2_5.xpfm;BCP_accelerator_V2_6|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_6/export/BCP_accelerator_V2_6/BCP_accelerator_V2_6.xpfm;BCP_accelerator_V2_7|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_7/export/BCP_accelerator_V2_7/BCP_accelerator_V2_7.xpfm;BCP_accelerator_V2_8|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/BCP_accelerator_V2_8.xpfm;xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+21:11:54 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+21:12:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:12:02 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+21:12:02 INFO  : 'jtag frequency' command is executed.
+21:12:02 INFO  : Context for 'APU' is selected.
+21:12:02 INFO  : System reset is completed.
+21:12:05 INFO  : 'after 3000' command is executed.
+21:12:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+21:12:07 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream/BCP_accelerator_V2_8.bit"
+21:12:07 INFO  : Context for 'APU' is selected.
+21:12:07 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/hw/BCP_accelerator_V2_8.xsa'.
+21:12:07 INFO  : 'configparams force-mem-access 1' command is executed.
+21:12:07 INFO  : Context for 'APU' is selected.
+21:12:07 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+21:12:07 INFO  : 'ps7_init' command is executed.
+21:12:07 INFO  : 'ps7_post_config' command is executed.
+21:12:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:12:08 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:12:08 INFO  : 'configparams force-mem-access 0' command is executed.
+21:12:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/bitstream/BCP_accelerator_V2_8.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/hw/BCP_accelerator_V2_8.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:12:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:12:08 INFO  : 'con' command is executed.
+21:12:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:12:08 INFO  : Launch script is exported to file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration_system/_ide/scripts/debugger_accelerated_bcp_integration-default_2.tcl'
+21:13:07 INFO  : Disconnected from the channel tcfchan#5.

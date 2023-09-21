@@ -238,6 +238,78 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
  */
 int SATSolverDPLL::apply_transform(Formula &f, int literal_to_apply) {
     int value_to_apply = f.literals[literal_to_apply];  // the value to apply, 0 - if true, 1 - if false iterate over the clauses in f
+
+    int decision_id = value_to_apply/2 + 1;
+	int decision_polarity = value_to_apply%2; // True if 0, False if 1
+
+	int decision = decision_id << 1 | decison_polarity;
+	// Send decision to FPGA
+	*reg1 = decision;
+	*reg0 = 1;
+	std::vector<int> assignmentsInThisLevel;
+	assignmentsInThisLevel.push_back(decision);
+	while(*reg4 == 0){
+		// Wait
+	}
+
+	int status = *reg4;
+
+	switch(status){
+		case 1:
+			// Move on to next decision
+			break;
+		case 4:
+			// Conflict, Start backtracking. Pop each assignment in queue.
+			while (!assignmentsInThisLevel.empty())
+			  {
+			    int backtrack=assignmentsInThisLevel.back();
+			    assignmentsInThisLevel.pop_back();
+
+			    *reg1 = backtrack;
+			    *reg0 = 3;
+
+			    while(*reg4 == 0){
+			    		// Wait
+			    }
+
+			    if(*reg4 == 1){
+			    	cout << "Backtracked " << backtrack << "\n";
+			    }
+			  }
+			return Cat::unsatisfied;
+			break;
+		case 5:
+			// SAT, output assignments
+			return Cat::satisfied;
+			break;
+		case 6:
+			// Implication, add implication to queue
+			while(*reg4 == 6){
+				int implication = *reg5;
+				assignmentsInThisLevel.push_back(implication);
+
+				int implication_id = implication >> 1 - 1;
+				int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+				f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
+				f.literal_frequency[implication_id] = -1;
+			}
+			// Need to check if satisfied after all the unit implications
+			return cat::normal;
+			break;
+		default:
+			// Error state
+	}
+
+	// Listen to status
+
+	// if reg4 = 0x1 => No changes, need more decisions
+
+	// if reg4 = 0x4 => Conflict. Start backtracking. Pop literals added in the level.
+	// if reg4 = 0x5 => SAT
+	// if reg4 = 0x6 => Implication Found. Add to list of literals
+
+
     for (int i = 0; i < f.clauses.size(); i++) {        // iterate over the variables in the clause
         for (int j = 0; j < f.clauses[i].size(); j++) {
             // if this is true, then the literal appears with the same polarity

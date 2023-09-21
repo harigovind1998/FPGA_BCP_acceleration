@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Wed Sep 20 20:35:27 2023
+//Date        : Wed Sep 20 21:07:21 2023
 //Host        : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -58,6 +58,7 @@ module design_1
   output [1:0]fpga_status_led;
   output [1:0]led_indicator;
 
+  wire [1:0]BCP_accelerator_0_axi_lite_fpga_status_code;
   wire [1:0]BCP_accelerator_0_op_indicator_led;
   wire [5:0]axi_smc_M00_AXI_ARADDR;
   wire [1:0]axi_smc_M00_AXI_ARBURST;
@@ -174,9 +175,11 @@ module design_1
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
 
+  assign fpga_status_led[1:0] = BCP_accelerator_0_axi_lite_fpga_status_code;
   assign led_indicator[1:0] = BCP_accelerator_0_op_indicator_led;
   design_1_BCP_accelerator_0_0 BCP_accelerator_0
-       (.op_indicator_led(BCP_accelerator_0_op_indicator_led),
+       (.fpga_status_led(BCP_accelerator_0_axi_lite_fpga_status_code),
+        .op_indicator_led(BCP_accelerator_0_op_indicator_led),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_smc_M00_AXI_ARADDR),
         .s00_axi_arburst(axi_smc_M00_AXI_ARBURST),

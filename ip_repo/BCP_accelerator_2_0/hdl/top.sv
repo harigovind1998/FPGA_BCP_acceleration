@@ -52,7 +52,8 @@ module top #(
     // AXI Outputs
     output wire [                   31:0] axi_reg4_o,
     output reg  [VARIABLE_ENCODING_LEN:0] axi_reg5_o,
-    output reg                            clear_cpu_req
+    output reg                            clear_cpu_req,
+    output reg                            write_status_reg
 );
   // CPU OP Code
   // NO_OP = 2'b00,
@@ -191,6 +192,7 @@ module top #(
     end else begin
       case (state)
         IDLE: begin
+          write_status_reg <= 1'b0;
           if (CPU_OP_Code_in == 2'b00) begin
             clear_cpu_req <= 1'b0;
             // IDLE
@@ -209,10 +211,12 @@ module top #(
         end
         UPDATE_CLAUSES: begin
           output_status <= 32'h00000001;
+          write_status_reg <= 1'b1;
           state <= IDLE;
         end
         BACKTRACK: begin
           output_status <= 32'h00000001;
+          write_status_reg <= 1'b1;
           state <= IDLE;
         end
         PROPAGATE_DECISIONS: begin
@@ -221,15 +225,19 @@ module top #(
         EVALUATE: begin
           if (conflict) begin
             output_status <= 32'h00000004;
+            write_status_reg <= 1'b1;
             state <= IDLE;
           end else if (all_SAT) begin
             output_status <= 32'h00000005;
+            write_status_reg <= 1'b1;
             state <= IDLE;
           end else if (is_unit) begin
             state <= GET_IMPLICATION;
             start_implication_finder <= 1'b1;
           end else begin  // No changes, wait for next decision
             state <= IDLE;
+            output_status <= 32'h00000001;
+            write_status_reg <= 1'b1;
           end
         end
         GET_IMPLICATION: begin
@@ -238,6 +246,7 @@ module top #(
             state <= PROPAGATE_IMPLICATIONS;
             output_status <= 32'h00000006;
             broadcast_implication <= 1'b1;
+            write_status_reg <= 1'b1;
             axi_reg5_o <= implication;
           end
         end
