@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;HW_accelerated_DPLL/src/main.cpp&apos;" deleteContents="false" description="Delete resource &apos;HW_accelerated_DPLL/src/main.cpp&apos;" element1="/HW_accelerated_DPLL/src/main.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1695235600706"/>
+</session>

@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Mon Sep 18 14:32:12 2023
-//Host        : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.2 LTS
+//Date        : Wed Sep 20 20:20:59 2023
+//Host        : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -32,6 +32,7 @@ module design_1
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    fpga_status_led,
     led_indicator);
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
@@ -54,8 +55,10 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
+  output [1:0]fpga_status_led;
   output [1:0]led_indicator;
 
+  wire [1:0]BCP_accelerator_0_axi_lite_fpga_status_code;
   wire [1:0]BCP_accelerator_0_op_indicator_led;
   wire [5:0]axi_smc_M00_AXI_ARADDR;
   wire [1:0]axi_smc_M00_AXI_ARBURST;
@@ -172,9 +175,11 @@ module design_1
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
 
+  assign fpga_status_led[1:0] = BCP_accelerator_0_axi_lite_fpga_status_code;
   assign led_indicator[1:0] = BCP_accelerator_0_op_indicator_led;
   design_1_BCP_accelerator_0_0 BCP_accelerator_0
-       (.op_indicator_led(BCP_accelerator_0_op_indicator_led),
+       (.axi_lite_fpga_status_code(BCP_accelerator_0_axi_lite_fpga_status_code),
+        .op_indicator_led(BCP_accelerator_0_op_indicator_led),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_smc_M00_AXI_ARADDR),
         .s00_axi_arburst(axi_smc_M00_AXI_ARBURST),

@@ -21,219 +21,222 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25980
+INFO: [Synth 8-7075] Helper process launched with PID 51198
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:87]
-WARNING: [Synth 8-6901] identifier 'UPDATE_CLAUSES' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:87]
-WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:88]
-WARNING: [Synth 8-6901] identifier 'PROPAGATE_DECISIONS' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:88]
-WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:88]
-WARNING: [Synth 8-6901] identifier 'PROPAGATE_IMPLICATIONS' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:88]
-WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:89]
-WARNING: [Synth 8-6901] identifier 'BACKTRACK' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:89]
-WARNING: [Synth 8-1958] event expressions must result in a singular type [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/BCP_accelerator_v2_0_S00_AXI.v:598]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:87]
+WARNING: [Synth 8-6901] identifier 'UPDATE_CLAUSES' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:87]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:88]
+WARNING: [Synth 8-6901] identifier 'PROPAGATE_DECISIONS' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:88]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:88]
+WARNING: [Synth 8-6901] identifier 'PROPAGATE_IMPLICATIONS' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:88]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:89]
+WARNING: [Synth 8-6901] identifier 'BACKTRACK' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:89]
+WARNING: [Synth 8-1958] event expressions must result in a singular type [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0_S00_AXI.v:598]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'axi_lite_fpga_status_code' is not allowed [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0.v:165]
+INFO: [Synth 8-11241] undeclared symbol 'fpga_status_led', assumed default net type 'wire' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0.v:199]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2417.734 ; gain = 371.738 ; free physical = 3235 ; free virtual = 9813
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1844.863; parent = 1641.232; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.746; parent = 2421.707; children = 973.039
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2417.703 ; gain = 372.738 ; free physical = 1068 ; free virtual = 9859
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1849.438; parent = 1644.009; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.719; parent = 2421.676; children = 973.043
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_BCP_accelerator_0_0' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ip/design_1_BCP_accelerator_0_0/synth/design_1_BCP_accelerator_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/BCP_accelerator_v2_0.v:4]
-INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S00_AXI' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S00_AXI' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S01_AXI' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'top' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:34]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized0' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized0' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized1' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized1' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized2' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized2' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized3' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized3' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized4' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized4' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized5' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized5' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized6' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized6' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized7' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized7' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized8' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized8' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized9' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized9' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized10' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized10' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized11' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized11' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized12' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized12' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized13' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized13' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized14' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized14' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized15' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized15' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized16' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized16' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized17' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized17' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized18' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized18' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized19' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized19' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized20' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized20' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized21' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized21' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized22' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized22' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized23' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized23' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized24' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized24' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized25' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized25' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized26' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized26' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized27' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized27' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized28' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized28' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized29' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized29' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized30' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized30' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized31' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized31' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized32' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized32' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized33' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized33' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized34' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized34' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized35' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized35' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized36' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized36' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized37' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized37' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized38' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized38' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized39' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized39' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized40' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized40' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized41' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized41' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized42' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized42' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized43' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized43' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized44' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized44' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized45' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized45' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized46' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized46' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized47' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized47' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized48' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized48' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized49' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized49' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized50' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized50' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized51' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized51' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized52' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized52' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized53' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized53' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized54' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized54' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized55' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized55' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized56' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized56' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized57' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized57' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized58' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized58' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized59' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized59' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized60' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized60' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized61' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized61' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized62' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized62' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized63' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized63' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized64' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized64' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized65' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized65' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized66' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized66' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized67' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized67' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized68' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized68' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized69' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized69' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized70' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized70' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized71' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized71' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized72' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized72' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized73' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized73' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized74' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized74' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized75' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized75' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized76' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized76' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized77' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized77' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized78' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized78' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized79' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized79' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized80' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized80' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized81' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized81' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized82' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized82' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized83' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized83' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized84' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized84' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized85' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized85' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized86' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized86' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized87' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized87' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized88' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized88' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized89' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized89' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ClauseModule.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ImplicationSelector' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ImplicationSelector.sv:26]
-INFO: [Synth 8-6155] done synthesizing module 'ImplicationSelector' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/ImplicationSelector.sv:26]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:192]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:34]
-WARNING: [Synth 8-689] width (32) of port connection 'axi_reg5_o' does not match port width (6) of module 'top' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/BCP_accelerator_v2_0_S01_AXI.v:469]
-INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S01_AXI' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/BCP_accelerator_v2_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S00_AXI' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S00_AXI' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S01_AXI' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized0' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized0' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized1' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized1' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized2' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized2' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized3' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized3' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized4' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized4' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized5' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized5' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized6' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized6' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized7' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized7' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized8' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized8' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized9' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized9' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized10' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized10' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized11' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized11' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized12' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized12' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized13' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized13' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized14' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized14' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized15' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized15' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized16' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized16' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized17' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized17' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized18' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized18' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized19' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized19' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized20' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized20' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized21' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized21' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized22' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized22' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized23' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized23' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized24' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized24' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized25' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized25' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized26' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized26' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized27' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized27' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized28' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized28' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized29' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized29' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized30' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized30' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized31' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized31' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized32' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized32' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized33' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized33' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized34' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized34' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized35' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized35' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized36' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized36' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized37' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized37' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized38' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized38' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized39' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized39' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized40' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized40' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized41' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized41' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized42' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized42' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized43' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized43' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized44' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized44' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized45' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized45' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized46' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized46' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized47' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized47' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized48' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized48' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized49' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized49' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized50' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized50' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized51' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized51' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized52' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized52' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized53' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized53' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized54' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized54' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized55' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized55' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized56' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized56' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized57' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized57' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized58' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized58' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized59' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized59' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized60' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized60' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized61' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized61' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized62' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized62' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized63' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized63' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized64' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized64' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized65' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized65' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized66' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized66' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized67' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized67' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized68' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized68' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized69' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized69' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized70' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized70' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized71' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized71' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized72' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized72' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized73' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized73' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized74' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized74' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized75' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized75' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized76' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized76' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized77' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized77' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized78' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized78' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized79' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized79' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized80' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized80' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized81' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized81' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized82' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized82' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized83' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized83' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized84' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized84' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized85' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized85' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized86' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized86' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized87' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized87' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized88' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized88' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized89' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized89' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ImplicationSelector' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ImplicationSelector.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'ImplicationSelector' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/ImplicationSelector.sv:26]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:192]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:34]
+WARNING: [Synth 8-689] width (32) of port connection 'axi_reg5_o' does not match port width (6) of module 'top' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0_S01_AXI.v:471]
+INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S01_AXI' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_BCP_accelerator_0_0' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ip/design_1_BCP_accelerator_0_0/synth/design_1_BCP_accelerator_0_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element propgate_state_reg was removed.  [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/4832/hdl/top.sv:204]
+WARNING: [Synth 8-6014] Unused sequential element propgate_state_reg was removed.  [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/top.sv:203]
+WARNING: [Synth 8-3848] Net axi_lite_fpga_status_code in module/entity BCP_accelerator_v2_0 does not have driver. [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ipshared/266f/hdl/BCP_accelerator_v2_0.v:29]
 WARNING: [Synth 8-7129] Port axi_reg0_i[31] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg0_i[30] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_reg0_i[29] in module top is either unconnected or has no load
@@ -336,58 +339,58 @@ WARNING: [Synth 8-7129] Port axi_reg3_i[8] in module top is either unconnected o
 WARNING: [Synth 8-7129] Port axi_reg3_i[7] in module top is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2602.672 ; gain = 556.676 ; free physical = 3192 ; free virtual = 9773
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1859.525; parent = 1655.895; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3575.715; parent = 2602.676; children = 973.039
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2602.641 ; gain = 557.676 ; free physical = 1038 ; free virtual = 9833
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1863.613; parent = 1658.185; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3575.688; parent = 2602.645; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2620.484 ; gain = 574.488 ; free physical = 3266 ; free virtual = 9847
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1860.744; parent = 1657.113; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3593.527; parent = 2620.488; children = 973.039
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2620.453 ; gain = 575.488 ; free physical = 1055 ; free virtual = 9850
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1864.840; parent = 1659.411; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3593.500; parent = 2620.457; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2620.484 ; gain = 574.488 ; free physical = 3266 ; free virtual = 9847
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1860.744; parent = 1657.113; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3593.527; parent = 2620.488; children = 973.039
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2620.453 ; gain = 575.488 ; free physical = 1055 ; free virtual = 9850
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1864.840; parent = 1659.411; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3593.500; parent = 2620.457; children = 973.043
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2620.484 ; gain = 0.000 ; free physical = 3263 ; free virtual = 9844
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2620.453 ; gain = 0.000 ; free physical = 1064 ; free virtual = 9858
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2773.234 ; gain = 0.000 ; free physical = 3183 ; free virtual = 9776
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2772.203 ; gain = 0.000 ; free physical = 995 ; free virtual = 9789
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2773.234 ; gain = 0.000 ; free physical = 3180 ; free virtual = 9774
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2772.203 ; gain = 0.000 ; free physical = 991 ; free virtual = 9785
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3300 ; free virtual = 9894
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1861.021; parent = 1657.422; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 1072 ; free virtual = 9867
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1865.697; parent = 1660.310; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3300 ; free virtual = 9894
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1861.182; parent = 1657.613; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 1072 ; free virtual = 9867
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1865.857; parent = 1660.501; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3300 ; free virtual = 9894
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1861.248; parent = 1657.680; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 1072 ; free virtual = 9867
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1865.924; parent = 1660.567; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
 ---------------------------------------------------------------------------------------------------
@@ -403,9 +406,9 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3302 ; free virtual = 9899
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1864.328; parent = 1660.760; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 1070 ; free virtual = 9868
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1868.417; parent = 1663.061; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -461,9 +464,9 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3265 ; free virtual = 9876
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1935.547; parent = 1731.979; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 1011 ; free virtual = 9821
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1953.176; parent = 1749.851; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -487,17 +490,17 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3152 ; free virtual = 9770
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2009.812; parent = 1806.244; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 871 ; free virtual = 9681
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2015.487; parent = 1810.131; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3151 ; free virtual = 9769
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2010.551; parent = 1806.982; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 870 ; free virtual = 9680
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2016.222; parent = 1810.865; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -520,9 +523,9 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3154 ; free virtual = 9772
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2010.551; parent = 1806.982; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 871 ; free virtual = 9681
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2016.222; parent = 1810.865; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -540,49 +543,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3173 ; free virtual = 9790
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2010.551; parent = 1806.982; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 902 ; free virtual = 9712
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2016.222; parent = 1810.865; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3173 ; free virtual = 9790
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2010.551; parent = 1806.982; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 881 ; free virtual = 9691
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2016.222; parent = 1810.865; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3173 ; free virtual = 9790
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2010.551; parent = 1806.982; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 881 ; free virtual = 9691
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2016.222; parent = 1810.865; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3173 ; free virtual = 9790
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2010.551; parent = 1806.982; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 881 ; free virtual = 9691
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2016.222; parent = 1810.865; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3180 ; free virtual = 9797
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2010.551; parent = 1806.982; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 842 ; free virtual = 9652
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2016.222; parent = 1810.865; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3180 ; free virtual = 9797
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2010.551; parent = 1806.982; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 839 ; free virtual = 9649
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2016.222; parent = 1810.865; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -600,11 +603,11 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY4   |    32|
 |2     |LUT1     |    12|
-|3     |LUT2     |   265|
-|4     |LUT3     |   151|
-|5     |LUT4     |   258|
-|6     |LUT5     |  1103|
-|7     |LUT6     |  1825|
+|3     |LUT2     |   268|
+|4     |LUT3     |   169|
+|5     |LUT4     |   252|
+|6     |LUT5     |  1105|
+|7     |LUT6     |  1807|
 |8     |MUXF7    |   159|
 |9     |MUXF8    |    28|
 |10    |RAM16X1S |    32|
@@ -612,32 +615,32 @@ Report Cell Usage:
 |12    |FDSE     |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3180 ; free virtual = 9797
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2010.551; parent = 1806.982; children = 203.631
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3714.262; parent = 2741.223; children = 973.039
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 849 ; free virtual = 9659
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2016.222; parent = 1810.865; children = 205.429
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3713.234; parent = 2740.191; children = 973.043
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 146 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2773.234 ; gain = 574.488 ; free physical = 3232 ; free virtual = 9850
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2773.234 ; gain = 727.238 ; free physical = 3232 ; free virtual = 9850
+Synthesis finished with 0 errors, 0 critical warnings and 148 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2772.203 ; gain = 575.488 ; free physical = 900 ; free virtual = 9710
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2772.203 ; gain = 727.238 ; free physical = 900 ; free virtual = 9710
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2773.234 ; gain = 0.000 ; free physical = 3343 ; free virtual = 9962
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2772.203 ; gain = 0.000 ; free physical = 1007 ; free virtual = 9817
 INFO: [Netlist 29-17] Analyzing 251 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2773.234 ; gain = 0.000 ; free physical = 3287 ; free virtual = 9908
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2772.203 ; gain = 0.000 ; free physical = 963 ; free virtual = 9773
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   RAM16X1S => RAM32X1S (RAMS32): 32 instances
 
-Synth Design complete, checksum: 256ff032
+Synth Design complete, checksum: 2654ba8d
 INFO: [Common 17-83] Releasing license: Synthesis
-220 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+221 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 2773.234 ; gain = 1032.637 ; free physical = 3495 ; free virtual = 10115
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2772.203 ; gain = 1031.605 ; free physical = 1172 ; free virtual = 9982
 INFO: [Common 17-1381] The checkpoint '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.runs/design_1_BCP_accelerator_0_0_synth_1/design_1_BCP_accelerator_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_BCP_accelerator_0_0, cache-ID = bfbe3c1800d94724
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_BCP_accelerator_0_0, cache-ID = ed961d8ed4ce98ba
 INFO: [Coretcl 2-1174] Renamed 96 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.runs/design_1_BCP_accelerator_0_0_synth_1/design_1_BCP_accelerator_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_BCP_accelerator_0_0_utilization_synth.rpt -pb design_1_BCP_accelerator_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 18 14:33:12 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 20 20:20:04 2023...

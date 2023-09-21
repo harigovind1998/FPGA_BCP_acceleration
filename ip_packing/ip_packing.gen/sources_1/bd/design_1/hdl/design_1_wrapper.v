@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Mon Sep 18 14:32:12 2023
-//Host        : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.2 LTS
+//Date        : Wed Sep 20 20:20:59 2023
+//Host        : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -31,6 +31,7 @@ module design_1_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    fpga_status_led,
     led_indicator);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -53,6 +54,7 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  output [1:0]fpga_status_led;
   output [1:0]led_indicator;
 
   wire [14:0]DDR_addr;
@@ -76,6 +78,7 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire [1:0]fpga_status_led;
   wire [1:0]led_indicator;
 
   design_1 design_1_i
@@ -100,5 +103,6 @@ module design_1_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .fpga_status_led(fpga_status_led),
         .led_indicator(led_indicator));
 endmodule

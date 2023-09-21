@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x1732E4B229648CE1",
+      "boundary_crc": "0x3D55F501D1E99DF6",
       "device": "xc7z007sclg400-1",
       "gen_directory": "../../../../ip_packing.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -188,6 +188,11 @@
     },
     "ports": {
       "led_indicator": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "fpga_status_led": {
         "direction": "O",
         "left": "1",
         "right": "0"
@@ -1253,6 +1258,12 @@
       }
     },
     "nets": {
+      "BCP_accelerator_0_axi_lite_fpga_status_code": {
+        "ports": [
+          "BCP_accelerator_0/axi_lite_fpga_status_code",
+          "fpga_status_led"
+        ]
+      },
       "BCP_accelerator_0_op_indicator_led": {
         "ports": [
           "BCP_accelerator_0/op_indicator_led",
