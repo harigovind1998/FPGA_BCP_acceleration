@@ -119,6 +119,7 @@ void SATSolverDPLL::SendClausesToAccelerator(){
 
 		if(*reg4==1){
 			printf("Updated Clause\n");
+			*reg4 = 0;
 		}
 	}
 
