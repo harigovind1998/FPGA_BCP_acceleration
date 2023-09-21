@@ -1260,7 +1260,7 @@
     "nets": {
       "BCP_accelerator_0_axi_lite_fpga_status_code": {
         "ports": [
-          "BCP_accelerator_0/axi_lite_fpga_status_code",
+          "BCP_accelerator_0/fpga_status_led",
           "fpga_status_led"
         ]
       },

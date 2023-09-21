@@ -1,0 +1,993 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Sep 20 20:35:54 2023
+# Process ID: 104357
+# Current directory: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.tmp/BCP_accelerator_v2_0_project/BCP_accelerator_v2_0_project.runs/synth_1
+# Command line: vivado -log BCP_accelerator_v2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BCP_accelerator_v2_0.tcl
+# Log file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.tmp/BCP_accelerator_v2_0_project/BCP_accelerator_v2_0_project.runs/synth_1/BCP_accelerator_v2_0.vds
+# Journal file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.tmp/BCP_accelerator_v2_0_project/BCP_accelerator_v2_0_project.runs/synth_1/vivado.jou
+# Running On: harigovind-MS-7C91, OS: Linux, CPU Frequency: 3719.656 MHz, CPU Physical cores: 12, Host memory: 16676 MB
+#-----------------------------------------------------------
+source BCP_accelerator_v2_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: synth_design -top BCP_accelerator_v2_0 -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 104385
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:87]
+WARNING: [Synth 8-6901] identifier 'UPDATE_CLAUSES' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:87]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:88]
+WARNING: [Synth 8-6901] identifier 'PROPAGATE_DECISIONS' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:88]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:88]
+WARNING: [Synth 8-6901] identifier 'PROPAGATE_IMPLICATIONS' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:88]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:89]
+WARNING: [Synth 8-6901] identifier 'BACKTRACK' is used before its declaration [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:89]
+WARNING: [Synth 8-1958] event expressions must result in a singular type [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S00_AXI.v:598]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2115.012 ; gain = 380.707 ; free physical = 223 ; free virtual = 8580
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1438.998; parent = 1270.773; children = 168.225
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3091.023; parent = 2117.984; children = 973.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S00_AXI' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S00_AXI' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'BCP_accelerator_v2_0_S01_AXI' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized0' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized0' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized1' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized1' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized2' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized2' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized3' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized3' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized4' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized4' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized5' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized5' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized6' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized6' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized7' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized7' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized8' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized8' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized9' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized9' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized10' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized10' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized11' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized11' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized12' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized12' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized13' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized13' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized14' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized14' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized15' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized15' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized16' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized16' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized17' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized17' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized18' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized18' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized19' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized19' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized20' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 21 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized20' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized21' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized21' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized22' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 23 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized22' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized23' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized23' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized24' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized24' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized25' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 26 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized25' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized26' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized26' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized27' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized27' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized28' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 29 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized28' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized29' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized29' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized30' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 31 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized30' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized31' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized31' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized32' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized32' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized33' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized33' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized34' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 35 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized34' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized35' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized35' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized36' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 37 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized36' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized37' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 38 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized37' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized38' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 39 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized38' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized39' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 40 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized39' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized40' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 41 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized40' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized41' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 42 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized41' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized42' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 43 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized42' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized43' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 44 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized43' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized44' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 45 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized44' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized45' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 46 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized45' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized46' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 47 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized46' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized47' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized47' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized48' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 49 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized48' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized49' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 50 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized49' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized50' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 51 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized50' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized51' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 52 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized51' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized52' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 53 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized52' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized53' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 54 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized53' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized54' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 55 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized54' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized55' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 56 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized55' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized56' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 57 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized56' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized57' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 58 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized57' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized58' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 59 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized58' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized59' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 60 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized59' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized60' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 61 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized60' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized61' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 62 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized61' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized62' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 63 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized62' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized63' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized63' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized64' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 65 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized64' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized65' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 66 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized65' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized66' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 67 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized66' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized67' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 68 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized67' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized68' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 69 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized68' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized69' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 70 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized69' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized70' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 71 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized70' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized71' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 72 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized71' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized72' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 73 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized72' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized73' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 74 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized73' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized74' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 75 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized74' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized75' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 76 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized75' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized76' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 77 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized76' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized77' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 78 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized77' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized78' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 79 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized78' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized79' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 80 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized79' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized80' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 81 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized80' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized81' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 82 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized81' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized82' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 83 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized82' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized83' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 84 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized83' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized84' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 85 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized84' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized85' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 86 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized85' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized86' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 87 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized86' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized87' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 88 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized87' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized88' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 89 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized88' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClauseModule__parameterized89' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+	Parameter MAX_VARIABLE_ID bound to: 20 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID bound to: 90 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClauseModule__parameterized89' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ClauseModule.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ImplicationSelector' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ImplicationSelector.sv:26]
+	Parameter FORMULA_MAX_VARIABLE bound to: 20 - type: integer 
+	Parameter VARIABLE_ENCODING_LEN bound to: 5 - type: integer 
+	Parameter MAX_CLAUSE_SIZE bound to: 3 - type: integer 
+	Parameter VARIABLE_ASSIGNMENT_LEN bound to: 1 - type: integer 
+	Parameter MAX_CLAUSE bound to: 91 - type: integer 
+	Parameter CLAUSE_ID_LEN bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ImplicationSelector' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/ImplicationSelector.sv:26]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:192]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:34]
+WARNING: [Synth 8-689] width (32) of port connection 'axi_reg5_o' does not match port width (6) of module 'top' [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S01_AXI.v:471]
+INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0_S01_AXI' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0_S01_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'BCP_accelerator_v2_0' (0#1) [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/BCP_accelerator_v2_0.v:4]
+WARNING: [Synth 8-6014] Unused sequential element propgate_state_reg was removed.  [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_repo/BCP_accelerator_2_0/hdl/top.sv:203]
+WARNING: [Synth 8-7129] Port axi_reg0_i[31] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[30] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[29] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[28] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[27] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[26] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[25] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[24] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[23] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[22] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[21] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[20] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[19] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[18] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[17] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[16] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg0_i[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[31] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[30] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[29] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[28] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[27] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[26] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[25] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[24] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[23] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[22] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[21] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[20] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[19] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[18] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[17] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[16] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[8] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg1_i[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[31] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[30] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[29] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[28] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[27] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[26] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[25] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[24] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[23] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[22] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[21] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[20] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[19] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[18] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[17] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[16] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[8] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg2_i[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[31] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[30] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[29] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[28] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[27] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[26] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[25] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[24] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[23] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[22] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[21] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[20] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[19] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[18] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[17] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[16] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[8] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_reg3_i[7] in module top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2287.949 ; gain = 553.645 ; free physical = 322 ; free virtual = 8551
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1451.533; parent = 1283.383; children = 168.225
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3260.992; parent = 2287.953; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2305.762 ; gain = 571.457 ; free physical = 336 ; free virtual = 8564
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1451.533; parent = 1283.383; children = 168.225
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.805; parent = 2305.766; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2313.766 ; gain = 579.461 ; free physical = 335 ; free virtual = 8563
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1451.533; parent = 1283.383; children = 168.225
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3286.809; parent = 2313.770; children = 973.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                          0001000 |                             0000
+          UPDATE_CLAUSES |                          1000000 |                             0001
+     PROPAGATE_DECISIONS |                          0010000 |                             0011
+                EVALUATE |                          0000010 |                             0100
+         GET_IMPLICATION |                          0000100 |                             0101
+  PROPAGATE_IMPLICATIONS |                          0000001 |                             0110
+               BACKTRACK |                          0100000 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2376.305 ; gain = 642.000 ; free physical = 157 ; free virtual = 8242
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1690.362; parent = 1522.679; children = 168.225
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3349.348; parent = 2376.309; children = 973.039
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 276   
+	                2 Bit    Registers := 280   
+	                1 Bit    Registers := 384   
++---RAMs : 
+	              128 Bit	(16 X 8 bit)          RAMs := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 7     
+	   7 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 5     
+	   7 Input    7 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 4     
+	   4 Input    6 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 91    
+	   2 Input    5 Bit        Muxes := 92    
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 91    
+	   2 Input    1 Bit        Muxes := 669   
+	   4 Input    1 Bit        Muxes := 95    
+	   7 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1914 ; free virtual = 9973
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1849.469; parent = 1644.598; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------+-----------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name          | RTL Object                                                                  | Inference | Size (Depth x Width) | Primitives    | 
++---------------------+-----------------------------------------------------------------------------+-----------+----------------------+---------------+
+|BCP_accelerator_v2_0 | BCP_accelerator_v2_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[0].byte_ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|BCP_accelerator_v2_0 | BCP_accelerator_v2_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[1].byte_ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|BCP_accelerator_v2_0 | BCP_accelerator_v2_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[2].byte_ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|BCP_accelerator_v2_0 | BCP_accelerator_v2_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[3].byte_ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
++---------------------+-----------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1905 ; free virtual = 9964
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1850.449; parent = 1645.578; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------------+-----------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name          | RTL Object                                                                  | Inference | Size (Depth x Width) | Primitives    | 
++---------------------+-----------------------------------------------------------------------------+-----------+----------------------+---------------+
+|BCP_accelerator_v2_0 | BCP_accelerator_v2_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[0].byte_ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|BCP_accelerator_v2_0 | BCP_accelerator_v2_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[1].byte_ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|BCP_accelerator_v2_0 | BCP_accelerator_v2_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[2].byte_ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|BCP_accelerator_v2_0 | BCP_accelerator_v2_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[3].byte_ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
++---------------------+-----------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1933 ; free virtual = 9983
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1850.449; parent = 1645.578; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1887 ; free virtual = 9940
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1850.449; parent = 1645.578; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1887 ; free virtual = 9940
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1850.449; parent = 1645.578; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1892 ; free virtual = 9945
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1850.449; parent = 1645.578; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1892 ; free virtual = 9945
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1850.449; parent = 1645.578; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1889 ; free virtual = 9943
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1850.449; parent = 1645.578; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1889 ; free virtual = 9943
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1850.449; parent = 1645.578; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    32|
+|3     |LUT1     |    12|
+|4     |LUT2     |   268|
+|5     |LUT3     |   169|
+|6     |LUT4     |   249|
+|7     |LUT5     |  1105|
+|8     |LUT6     |  1804|
+|9     |MUXF7    |   159|
+|10    |MUXF8    |    28|
+|11    |RAM16X1S |    32|
+|12    |FDRE     |  2620|
+|13    |FDSE     |     1|
+|14    |IBUF     |   123|
+|15    |OBUF     |    93|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------+------------------------------+------+
+|      |Instance                                         |Module                        |Cells |
++------+-------------------------------------------------+------------------------------+------+
+|1     |top                                              |                              |  6697|
+|2     |  BCP_accelerator_v2_0_S00_AXI_inst              |BCP_accelerator_v2_0_S00_AXI  |   256|
+|3     |  BCP_accelerator_v2_0_S01_AXI_inst              |BCP_accelerator_v2_0_S01_AXI  |  6223|
+|4     |    topModule                                    |top                           |  5913|
+|5     |      \generate_clause_modules[0].clauseModule   |ClauseModule                  |    42|
+|6     |      \generate_clause_modules[10].clauseModule  |ClauseModule__parameterized9  |    44|
+|7     |      \generate_clause_modules[11].clauseModule  |ClauseModule__parameterized10 |    57|
+|8     |      \generate_clause_modules[12].clauseModule  |ClauseModule__parameterized11 |    43|
+|9     |      \generate_clause_modules[13].clauseModule  |ClauseModule__parameterized12 |    46|
+|10    |      \generate_clause_modules[14].clauseModule  |ClauseModule__parameterized13 |    46|
+|11    |      \generate_clause_modules[15].clauseModule  |ClauseModule__parameterized14 |    48|
+|12    |      \generate_clause_modules[16].clauseModule  |ClauseModule__parameterized15 |    42|
+|13    |      \generate_clause_modules[17].clauseModule  |ClauseModule__parameterized16 |    49|
+|14    |      \generate_clause_modules[18].clauseModule  |ClauseModule__parameterized17 |    41|
+|15    |      \generate_clause_modules[19].clauseModule  |ClauseModule__parameterized18 |    47|
+|16    |      \generate_clause_modules[1].clauseModule   |ClauseModule__parameterized0  |    44|
+|17    |      \generate_clause_modules[20].clauseModule  |ClauseModule__parameterized19 |    44|
+|18    |      \generate_clause_modules[21].clauseModule  |ClauseModule__parameterized20 |    49|
+|19    |      \generate_clause_modules[22].clauseModule  |ClauseModule__parameterized21 |    44|
+|20    |      \generate_clause_modules[23].clauseModule  |ClauseModule__parameterized22 |    47|
+|21    |      \generate_clause_modules[24].clauseModule  |ClauseModule__parameterized23 |    43|
+|22    |      \generate_clause_modules[25].clauseModule  |ClauseModule__parameterized24 |    48|
+|23    |      \generate_clause_modules[26].clauseModule  |ClauseModule__parameterized25 |    40|
+|24    |      \generate_clause_modules[27].clauseModule  |ClauseModule__parameterized26 |    50|
+|25    |      \generate_clause_modules[28].clauseModule  |ClauseModule__parameterized27 |    42|
+|26    |      \generate_clause_modules[29].clauseModule  |ClauseModule__parameterized28 |    46|
+|27    |      \generate_clause_modules[2].clauseModule   |ClauseModule__parameterized1  |    44|
+|28    |      \generate_clause_modules[30].clauseModule  |ClauseModule__parameterized29 |    40|
+|29    |      \generate_clause_modules[31].clauseModule  |ClauseModule__parameterized30 |    47|
+|30    |      \generate_clause_modules[32].clauseModule  |ClauseModule__parameterized31 |    41|
+|31    |      \generate_clause_modules[33].clauseModule  |ClauseModule__parameterized32 |    48|
+|32    |      \generate_clause_modules[34].clauseModule  |ClauseModule__parameterized33 |    41|
+|33    |      \generate_clause_modules[35].clauseModule  |ClauseModule__parameterized34 |    49|
+|34    |      \generate_clause_modules[36].clauseModule  |ClauseModule__parameterized35 |    42|
+|35    |      \generate_clause_modules[37].clauseModule  |ClauseModule__parameterized36 |    48|
+|36    |      \generate_clause_modules[38].clauseModule  |ClauseModule__parameterized37 |    40|
+|37    |      \generate_clause_modules[39].clauseModule  |ClauseModule__parameterized38 |    47|
+|38    |      \generate_clause_modules[3].clauseModule   |ClauseModule__parameterized2  |    47|
+|39    |      \generate_clause_modules[40].clauseModule  |ClauseModule__parameterized39 |    42|
+|40    |      \generate_clause_modules[41].clauseModule  |ClauseModule__parameterized40 |    49|
+|41    |      \generate_clause_modules[42].clauseModule  |ClauseModule__parameterized41 |    41|
+|42    |      \generate_clause_modules[43].clauseModule  |ClauseModule__parameterized42 |    46|
+|43    |      \generate_clause_modules[44].clauseModule  |ClauseModule__parameterized43 |    41|
+|44    |      \generate_clause_modules[45].clauseModule  |ClauseModule__parameterized44 |    46|
+|45    |      \generate_clause_modules[46].clauseModule  |ClauseModule__parameterized45 |    40|
+|46    |      \generate_clause_modules[47].clauseModule  |ClauseModule__parameterized46 |    51|
+|47    |      \generate_clause_modules[48].clauseModule  |ClauseModule__parameterized47 |    39|
+|48    |      \generate_clause_modules[49].clauseModule  |ClauseModule__parameterized48 |    46|
+|49    |      \generate_clause_modules[4].clauseModule   |ClauseModule__parameterized3  |    42|
+|50    |      \generate_clause_modules[50].clauseModule  |ClauseModule__parameterized49 |    42|
+|51    |      \generate_clause_modules[51].clauseModule  |ClauseModule__parameterized50 |    46|
+|52    |      \generate_clause_modules[52].clauseModule  |ClauseModule__parameterized51 |    40|
+|53    |      \generate_clause_modules[53].clauseModule  |ClauseModule__parameterized52 |    49|
+|54    |      \generate_clause_modules[54].clauseModule  |ClauseModule__parameterized53 |    41|
+|55    |      \generate_clause_modules[55].clauseModule  |ClauseModule__parameterized54 |    50|
+|56    |      \generate_clause_modules[56].clauseModule  |ClauseModule__parameterized55 |    41|
+|57    |      \generate_clause_modules[57].clauseModule  |ClauseModule__parameterized56 |    48|
+|58    |      \generate_clause_modules[58].clauseModule  |ClauseModule__parameterized57 |    41|
+|59    |      \generate_clause_modules[59].clauseModule  |ClauseModule__parameterized58 |    48|
+|60    |      \generate_clause_modules[5].clauseModule   |ClauseModule__parameterized4  |    49|
+|61    |      \generate_clause_modules[60].clauseModule  |ClauseModule__parameterized59 |    39|
+|62    |      \generate_clause_modules[61].clauseModule  |ClauseModule__parameterized60 |    47|
+|63    |      \generate_clause_modules[62].clauseModule  |ClauseModule__parameterized61 |    41|
+|64    |      \generate_clause_modules[63].clauseModule  |ClauseModule__parameterized62 |    50|
+|65    |      \generate_clause_modules[64].clauseModule  |ClauseModule__parameterized63 |    41|
+|66    |      \generate_clause_modules[65].clauseModule  |ClauseModule__parameterized64 |    49|
+|67    |      \generate_clause_modules[66].clauseModule  |ClauseModule__parameterized65 |    43|
+|68    |      \generate_clause_modules[67].clauseModule  |ClauseModule__parameterized66 |    46|
+|69    |      \generate_clause_modules[68].clauseModule  |ClauseModule__parameterized67 |    41|
+|70    |      \generate_clause_modules[69].clauseModule  |ClauseModule__parameterized68 |    49|
+|71    |      \generate_clause_modules[6].clauseModule   |ClauseModule__parameterized5  |    46|
+|72    |      \generate_clause_modules[70].clauseModule  |ClauseModule__parameterized69 |    39|
+|73    |      \generate_clause_modules[71].clauseModule  |ClauseModule__parameterized70 |    50|
+|74    |      \generate_clause_modules[72].clauseModule  |ClauseModule__parameterized71 |    41|
+|75    |      \generate_clause_modules[73].clauseModule  |ClauseModule__parameterized72 |    46|
+|76    |      \generate_clause_modules[74].clauseModule  |ClauseModule__parameterized73 |    43|
+|77    |      \generate_clause_modules[75].clauseModule  |ClauseModule__parameterized74 |    47|
+|78    |      \generate_clause_modules[76].clauseModule  |ClauseModule__parameterized75 |    41|
+|79    |      \generate_clause_modules[77].clauseModule  |ClauseModule__parameterized76 |    49|
+|80    |      \generate_clause_modules[78].clauseModule  |ClauseModule__parameterized77 |    44|
+|81    |      \generate_clause_modules[79].clauseModule  |ClauseModule__parameterized78 |    45|
+|82    |      \generate_clause_modules[7].clauseModule   |ClauseModule__parameterized6  |    45|
+|83    |      \generate_clause_modules[80].clauseModule  |ClauseModule__parameterized79 |    41|
+|84    |      \generate_clause_modules[81].clauseModule  |ClauseModule__parameterized80 |    49|
+|85    |      \generate_clause_modules[82].clauseModule  |ClauseModule__parameterized81 |    41|
+|86    |      \generate_clause_modules[83].clauseModule  |ClauseModule__parameterized82 |    45|
+|87    |      \generate_clause_modules[84].clauseModule  |ClauseModule__parameterized83 |    42|
+|88    |      \generate_clause_modules[85].clauseModule  |ClauseModule__parameterized84 |    49|
+|89    |      \generate_clause_modules[86].clauseModule  |ClauseModule__parameterized85 |    43|
+|90    |      \generate_clause_modules[87].clauseModule  |ClauseModule__parameterized86 |    45|
+|91    |      \generate_clause_modules[88].clauseModule  |ClauseModule__parameterized87 |    40|
+|92    |      \generate_clause_modules[89].clauseModule  |ClauseModule__parameterized88 |    50|
+|93    |      \generate_clause_modules[8].clauseModule   |ClauseModule__parameterized7  |    42|
+|94    |      \generate_clause_modules[90].clauseModule  |ClauseModule__parameterized89 |    50|
+|95    |      \generate_clause_modules[9].clauseModule   |ClauseModule__parameterized8  |    59|
+|96    |      implicationSelector                        |ImplicationSelector           |  1782|
++------+-------------------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1889 ; free virtual = 9943
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1850.449; parent = 1645.578; children = 204.871
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3464.754; parent = 2491.715; children = 973.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 314 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2491.711 ; gain = 757.406 ; free physical = 1893 ; free virtual = 9947
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2491.719 ; gain = 757.406 ; free physical = 1893 ; free virtual = 9947
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2491.719 ; gain = 0.000 ; free physical = 2003 ; free virtual = 10057
+INFO: [Netlist 29-17] Analyzing 251 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2539.734 ; gain = 0.000 ; free physical = 1954 ; free virtual = 10010
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+
+Synth Design complete, checksum: 9a36a98
+INFO: [Common 17-83] Releasing license: Synthesis
+213 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 2539.734 ; gain = 812.367 ; free physical = 2168 ; free virtual = 10224
+INFO: [Common 17-1381] The checkpoint '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.tmp/BCP_accelerator_v2_0_project/BCP_accelerator_v2_0_project.runs/synth_1/BCP_accelerator_v2_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BCP_accelerator_v2_0_utilization_synth.rpt -pb BCP_accelerator_v2_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 20 20:36:23 2023...

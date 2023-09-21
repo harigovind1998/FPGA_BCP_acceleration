@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Sep 20 20:35:54 2023
+# Process ID: 104357
+# Current directory: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.tmp/BCP_accelerator_v2_0_project/BCP_accelerator_v2_0_project.runs/synth_1
+# Command line: vivado -log BCP_accelerator_v2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BCP_accelerator_v2_0.tcl
+# Log file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.tmp/BCP_accelerator_v2_0_project/BCP_accelerator_v2_0_project.runs/synth_1/BCP_accelerator_v2_0.vds
+# Journal file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.tmp/BCP_accelerator_v2_0_project/BCP_accelerator_v2_0_project.runs/synth_1/vivado.jou
+# Running On: harigovind-MS-7C91, OS: Linux, CPU Frequency: 3719.656 MHz, CPU Physical cores: 12, Host memory: 16676 MB
+#-----------------------------------------------------------
+source BCP_accelerator_v2_0.tcl -notrace

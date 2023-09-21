@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Wed Sep 20 20:20:59 2023
+//Date        : Wed Sep 20 20:37:24 2023
 //Host        : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -178,7 +178,7 @@ module design_1
   assign fpga_status_led[1:0] = BCP_accelerator_0_axi_lite_fpga_status_code;
   assign led_indicator[1:0] = BCP_accelerator_0_op_indicator_led;
   design_1_BCP_accelerator_0_0 BCP_accelerator_0
-       (.axi_lite_fpga_status_code(BCP_accelerator_0_axi_lite_fpga_status_code),
+       (.fpga_status_led(BCP_accelerator_0_axi_lite_fpga_status_code),
         .op_indicator_led(BCP_accelerator_0_op_indicator_led),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_smc_M00_AXI_ARADDR),
