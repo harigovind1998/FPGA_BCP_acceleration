@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2,432.946 ns"></ZoomStartTime>
-      <ZoomEndTime time="2,654.047 ns"></ZoomEndTime>
-      <Cursor1Time time="2,485.000 ns"></Cursor1Time>
+      <ZoomStartTime time="7,462,022.541 ns"></ZoomStartTime>
+      <ZoomEndTime time="7,462,133.492 ns"></ZoomEndTime>
+      <Cursor1Time time="7,462,078.041 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="225"></NameColumnWidth>
+      <NameColumnWidth column_width="217"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="20" />
+   <WVObjectSize size="21" />
    <wvobject type="group" fp_name="group296">
       <obj_property name="label">TestBenchSigs</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -119,6 +119,7 @@
    <wvobject type="group" fp_name="group297">
       <obj_property name="label">AXI_slave</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/S_AXI_AWADDR">
          <obj_property name="ElementShortName">S_AXI_AWADDR[31:0]</obj_property>
          <obj_property name="ObjectShortName">S_AXI_AWADDR[31:0]</obj_property>
@@ -219,7 +220,10 @@
       <wvobject type="group" fp_name="group338">
          <obj_property name="label">Implication</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implication">
+            <obj_property name="ElementShortName">implication[5:0]</obj_property>
+            <obj_property name="ObjectShortName">implication[5:0]</obj_property>
+         </wvobject>
          <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/implication_found">
             <obj_property name="ElementShortName">implication_found</obj_property>
             <obj_property name="ObjectShortName">implication_found</obj_property>
@@ -249,10 +253,67 @@
          <obj_property name="ElementShortName">is_SAT[90:0]</obj_property>
          <obj_property name="ObjectShortName">is_SAT[90:0]</obj_property>
       </wvobject>
+      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/clear_assignment">
+         <obj_property name="ElementShortName">clear_assignment</obj_property>
+         <obj_property name="ObjectShortName">clear_assignment</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/clear_assignment">
-      <obj_property name="ElementShortName">clear_assignment</obj_property>
-      <obj_property name="ObjectShortName">clear_assignment</obj_property>
+   <wvobject fp_name="divider171" type="divider">
+      <obj_property name="label">FIFO_o</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group170">
+      <obj_property name="label">FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/implicationFIFO/empty_o">
+         <obj_property name="ElementShortName">empty_o</obj_property>
+         <obj_property name="ObjectShortName">empty_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/implicationFIFO/full_o">
+         <obj_property name="ElementShortName">full_o</obj_property>
+         <obj_property name="ObjectShortName">full_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/implication_i">
+         <obj_property name="ElementShortName">implication_i[5:0]</obj_property>
+         <obj_property name="ObjectShortName">implication_i[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/implicationFIFO/wr_i">
+         <obj_property name="ElementShortName">wr_i</obj_property>
+         <obj_property name="ObjectShortName">wr_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/implication_o">
+         <obj_property name="ElementShortName">implication_o[5:0]</obj_property>
+         <obj_property name="ObjectShortName">implication_o[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/implicationFIFO/rd_i">
+         <obj_property name="ElementShortName">rd_i</obj_property>
+         <obj_property name="ObjectShortName">rd_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/data">
+         <obj_property name="ElementShortName">data[5:0]</obj_property>
+         <obj_property name="ObjectShortName">data[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/data_out">
+         <obj_property name="ElementShortName">data_out[5:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/count">
+         <obj_property name="ElementShortName">count[3:0]</obj_property>
+         <obj_property name="ObjectShortName">count[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/FIFO">
+         <obj_property name="ElementShortName">FIFO[0:16][5:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO[0:16][5:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/readCounter">
+         <obj_property name="ElementShortName">readCounter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">readCounter[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/writeCounter">
+         <obj_property name="ElementShortName">writeCounter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">writeCounter[3:0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="divider343" type="divider">
       <obj_property name="label">Implication Selector</obj_property>

@@ -101,18 +101,18 @@ void SATSolverDPLL::SendClausesToAccelerator(){
 		int var3 = formula.clauses[i][2];
 
 		int var1_id = var1/2 + 1;
-		int var1_polarity = var1%2; // True if 0, False if 1
+		int var1_polarity = (var1+1)%2; // In HW: True if 1, False if 0. In SW: True if 0, False if 1
 
 		int var2_id = var2/2 + 1;
-		int var2_polarity = var2%2;
+		int var2_polarity = (var2+1)%2;
 
 		int var3_id = var3/2 + 1;
-		int var3_polarity = var3%2;
+		int var3_polarity = (var3+1)%2;
 
 		*reg1 = (var1_id << 1) | var1_polarity;
 		*reg2 = (var2_id << 1) | var2_polarity;
 		*reg3 = (var3_id << 1) | var3_polarity;
-		*reg0 = 0x1;
+		*reg0 = (i << 1)|1;
 
 		while(*reg4 == 0){
 		}
@@ -195,34 +195,78 @@ void SATSolverDPLL::initialize() {
  *               Cat::normal - normal exit
  */
 int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_literal) {
-    if(use_literal){
-      apply_transform(f, literal_to_apply);
-    }
+    int value_to_apply = f.literals[literal_to_apply];  // the value to apply, 0 - if true, 1 - if false
 
-    bool unit_clause_found = false;  // stores whether the current iteration found a unit clause
-    if (f.clauses.size() == 0) {     // if the formula contains no clauses
-        return Cat::satisfied;       // it is vacuously satisfied
-    }
+    int decision_id = literal_to_apply + 1;
+	int decision_polarity = (value_to_apply+1)%2; // True if 1, False if 0
 
-    do {
-        unit_clause_found = false;
-        // iterate over the clauses in f
-        for (int i = 0; i < f.clauses.size(); i++) {
-            if (f.clauses[i].size() == 1) {  // if the size of a clause is 1, it is a unit clause
-                unit_clause_found = true;
-                f.literals[f.clauses[i][0] / 2] = f.clauses[i][0] % 2;  // 0 - if true, 1 - if false, set the literal
-                f.literal_frequency[f.clauses[i][0] / 2] = -1;          // once assigned, reset the frequency to mark it closed
-                int result = apply_transform(f, f.clauses[i][0] / 2);   // apply this change through f if this caused the formula to be either satisfied or unsatisfied, return the result flag
-                if (result == Cat::satisfied || result == Cat::unsatisfied) {
-                    return result;
-                }
-                break;                              // exit the loop to check for another unit clause from
-                                                    // the start
-            } else if (f.clauses[i].size() == 0) {  // if a given clause is empty
-                return Cat::unsatisfied;            // the formula is unsatisfiable in this branch
-            }
-        }
-    } while (unit_clause_found);
+	int decision = decision_id << 1 | decision_polarity;
+	// Send decision to FPGA
+	*reg1 = decision;
+	*reg0 = 2;
+	std::vector<int> assignmentsInThisLevel;
+	assignmentsInThisLevel.push_back(decision);
+	while(*reg4 == 0){
+		// Wait
+	}
+
+	while(*reg4 != 0){
+		volatile int status = *reg4;
+		switch(status){
+			case 1:
+			{
+				// Check Reg 6. If not 0 add to f.
+				bool isImpl = false;
+				while(*reg6 == 6){
+					isImpl = true;
+					int implication = *reg5;
+					assignmentsInThisLevel.push_back(implication);
+
+					int implication_id = (implication >> 1) - 1;
+					int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+					f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
+					f.literal_frequency[implication_id] = -1;
+				}// Need to check if satisfied after all the unit implications
+				if(!isImpl){
+					return Cat::normal;
+				}
+
+				*reg4 = 0;
+				break;
+			}
+			case 4:
+				// Conflict, Start backtracking. Pop each assignment in queue.
+				while (!assignmentsInThisLevel.empty()){
+			    	int backtrack=assignmentsInThisLevel.back();
+			    	assignmentsInThisLevel.pop_back();
+
+			    	*reg1 = backtrack;
+			    	*reg0 = 3;
+
+			    	while(*reg4 == 0){
+			    		// Wait
+			    	}
+
+			    	if(*reg4 == 1){
+			    		cout << "Backtracked " << backtrack << "\n";
+			    	}else{
+			    		cout << "Backtrack error, status code:" << *reg4 << "\n";
+			    	}
+				}
+				*reg4 = 0;
+				return Cat::unsatisfied;
+				break;
+			case 5:
+				// SAT, output assignments
+				return Cat::satisfied;
+				break;
+			default:
+				*reg4 = 0;
+				return Cat::unsatisfied;
+				// Error state
+		}
+	}
 
     return Cat::normal;  // if reached here, the unit resolution ended normally
 }
@@ -236,107 +280,108 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
  *               Cat::unsatisfied - the formula can no longer be satisfied
  *               Cat::normal - normal exit
  */
-int SATSolverDPLL::apply_transform(Formula &f, int literal_to_apply) {
-    int value_to_apply = f.literals[literal_to_apply];  // the value to apply, 0 - if true, 1 - if false iterate over the clauses in f
-
-    int decision_id = value_to_apply/2 + 1;
-	int decision_polarity = value_to_apply%2; // True if 0, False if 1
-
-	int decision = decision_id << 1 | decison_polarity;
-	// Send decision to FPGA
-	*reg1 = decision;
-	*reg0 = 1;
-	std::vector<int> assignmentsInThisLevel;
-	assignmentsInThisLevel.push_back(decision);
-	while(*reg4 == 0){
-		// Wait
-	}
-
-	int status = *reg4;
-
-	switch(status){
-		case 1:
-			// Move on to next decision
-			break;
-		case 4:
-			// Conflict, Start backtracking. Pop each assignment in queue.
-			while (!assignmentsInThisLevel.empty())
-			  {
-			    int backtrack=assignmentsInThisLevel.back();
-			    assignmentsInThisLevel.pop_back();
-
-			    *reg1 = backtrack;
-			    *reg0 = 3;
-
-			    while(*reg4 == 0){
-			    		// Wait
-			    }
-
-			    if(*reg4 == 1){
-			    	cout << "Backtracked " << backtrack << "\n";
-			    }
-			  }
-			return Cat::unsatisfied;
-			break;
-		case 5:
-			// SAT, output assignments
-			return Cat::satisfied;
-			break;
-		case 6:
-			// Implication, add implication to queue
-			while(*reg4 == 6){
-				int implication = *reg5;
-				assignmentsInThisLevel.push_back(implication);
-
-				int implication_id = implication >> 1 - 1;
-				int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
-
-				f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
-				f.literal_frequency[implication_id] = -1;
-			}
-			// Need to check if satisfied after all the unit implications
-			return cat::normal;
-			break;
-		default:
-			// Error state
-	}
-
-	// Listen to status
-
-	// if reg4 = 0x1 => No changes, need more decisions
-
-	// if reg4 = 0x4 => Conflict. Start backtracking. Pop literals added in the level.
-	// if reg4 = 0x5 => SAT
-	// if reg4 = 0x6 => Implication Found. Add to list of literals
-
-
-    for (int i = 0; i < f.clauses.size(); i++) {        // iterate over the variables in the clause
-        for (int j = 0; j < f.clauses[i].size(); j++) {
-            // if this is true, then the literal appears with the same polarity
-            // as it is being applied that is, if assigned true, it appears
-            // positive if assigned false, it appears negative, in this clause
-            // hence, the clause has now become true
-            if ((2 * literal_to_apply + value_to_apply) == f.clauses[i][j]) {
-                f.clauses.erase(f.clauses.begin() + i);  // remove the clause from the list
-                i--;                                     // reset iterator
-                if (f.clauses.size() == 0) {             // if all clauses have been removed, the formula is satisfied
-                    return Cat::satisfied;
-                }
-                break;                                             // move to the next clause
-            } else if (f.clauses[i][j] / 2 == literal_to_apply) {  // the literal appears with opposite polarity
-                f.clauses[i].erase(f.clauses[i].begin() + j);      // remove the literal from the clause, as it is false in it
-                j--;                                               // reset the iterator
-                if (f.clauses[i].size() == 0) {                    // if the clause is empty, the formula is unsatisfiable currently
-
-                    return Cat::unsatisfied;
-                }
-                break;  // move to the next clause
-            }
-        }
-    }
-    // if reached here, the function is exiting normally
-    return Cat::normal;
-}
+//int SATSolverDPLL::apply_transform(Formula &f, int literal_to_apply) {
+//    int value_to_apply = f.literals[literal_to_apply];  // the value to apply, 0 - if true, 1 - if false iterate over the clauses in f
+//
+//    int decision_id = value_to_apply/2 + 1;
+//	int decision_polarity = value_to_apply%2; // True if 0, False if 1
+//
+//	int decision = decision_id << 1 | decision_polarity;
+//	// Send decision to FPGA
+//	*reg1 = decision;
+//	*reg0 = 1;
+//	std::vector<int> assignmentsInThisLevel;
+//	assignmentsInThisLevel.push_back(decision);
+//	while(*reg4 == 0){
+//		// Wait
+//	}
+//
+//	int status = *reg4;
+//
+//	switch(status){
+//		case 1:
+//			// Move on to next decision
+//			break;
+//		case 4:
+//			// Conflict, Start backtracking. Pop each assignment in queue.
+//			while (!assignmentsInThisLevel.empty())
+//			  {
+//			    int backtrack=assignmentsInThisLevel.back();
+//			    assignmentsInThisLevel.pop_back();
+//
+//			    *reg1 = backtrack;
+//			    *reg0 = 3;
+//
+//			    while(*reg4 == 0){
+//			    		// Wait
+//			    }
+//
+//			    if(*reg4 == 1){
+//			    	cout << "Backtracked " << backtrack << "\n";
+//			    }
+//			  }
+//			return Cat::unsatisfied;
+//			break;
+//		case 5:
+//			// SAT, output assignments
+//			return Cat::satisfied;
+//			break;
+//		case 6:
+//			// Implication, add implication to queue
+//			while(*reg4 == 6){
+//				int implication = *reg5;
+//				assignmentsInThisLevel.push_back(implication);
+//
+//				int implication_id = implication >> 1 - 1;
+//				int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+//
+//				f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
+//				f.literal_frequency[implication_id] = -1;
+//			}
+//			// Need to check if satisfied after all the unit implications
+//			return Cat::normal;
+//			break;
+//		default:
+//			return Cat::unsatisfied;
+//			// Error state
+//	}
+//
+//	// Listen to status
+//
+//	// if reg4 = 0x1 => No changes, need more decisions
+//
+//	// if reg4 = 0x4 => Conflict. Start backtracking. Pop literals added in the level.
+//	// if reg4 = 0x5 => SAT
+//	// if reg4 = 0x6 => Implication Found. Add to list of literals
+//
+//
+//    for (int i = 0; i < f.clauses.size(); i++) {        // iterate over the variables in the clause
+//        for (int j = 0; j < f.clauses[i].size(); j++) {
+//            // if this is true, then the literal appears with the same polarity
+//            // as it is being applied that is, if assigned true, it appears
+//            // positive if assigned false, it appears negative, in this clause
+//            // hence, the clause has now become true
+//            if ((2 * literal_to_apply + value_to_apply) == f.clauses[i][j]) {
+//                f.clauses.erase(f.clauses.begin() + i);  // remove the clause from the list
+//                i--;                                     // reset iterator
+//                if (f.clauses.size() == 0) {             // if all clauses have been removed, the formula is satisfied
+//                    return Cat::satisfied;
+//                }
+//                break;                                             // move to the next clause
+//            } else if (f.clauses[i][j] / 2 == literal_to_apply) {  // the literal appears with opposite polarity
+//                f.clauses[i].erase(f.clauses[i].begin() + j);      // remove the literal from the clause, as it is false in it
+//                j--;                                               // reset the iterator
+//                if (f.clauses[i].size() == 0) {                    // if the clause is empty, the formula is unsatisfiable currently
+//
+//                    return Cat::unsatisfied;
+//                }
+//                break;  // move to the next clause
+//            }
+//        }
+//    }
+//    // if reached here, the function is exiting normally
+//    return Cat::normal;
+//}
 
 /*
  * function to perform the recursive DPLL on a given formula
@@ -461,8 +506,6 @@ int main() {
 //
 //	    volatile uint32_t *reg6 = (volatile uint32_t *) 0x43C00018;
 
-	    *reg6 = 3;
-
 	    printf("Hello World\n");
 	    printf("Successfully ran Hello World application\n");
 	    printf("Starting DPLL\n");
@@ -470,7 +513,7 @@ int main() {
 
     SATSolverDPLL solver;  // create the solver
     solver.initialize();   // initialize
-//    solver.solve();        // solve
+    solver.solve();        // solve
 //    return 0;
 	    cleanup_platform();
 	    return 0;

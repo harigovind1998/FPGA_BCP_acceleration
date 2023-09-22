@@ -53,7 +53,10 @@ module top #(
     output wire [                   31:0] axi_reg4_o,
     output reg  [VARIABLE_ENCODING_LEN:0] axi_reg5_o,
     output reg                            clear_cpu_req,
-    output reg                            write_status_reg
+    output reg                            write_status_reg,
+
+    output wire [VARIABLE_ENCODING_LEN:0] implication_o,
+    output reg implication_valid_o
 );
   // CPU OP Code
   // NO_OP = 2'b00,
@@ -187,6 +190,8 @@ module top #(
     chosen_implication_variable_id, chosen_implication_assignment
   };
 
+  assign implication_o = axi_reg5_o;
+
   always @(posedge clk_i) begin
     if (rst_i) begin
     end else begin
@@ -195,6 +200,7 @@ module top #(
           write_status_reg <= 1'b0;
           if (CPU_OP_Code_in == 2'b00) begin
             clear_cpu_req <= 1'b0;
+            implication_valid_o <= 1'b0;
             // IDLE
           end else if (CPU_OP_Code_in == 2'b01) begin
             clear_cpu_req <= 1'b1;  // Clear CPU Set register
@@ -244,15 +250,17 @@ module top #(
           // wait till an implication is chosen
           if (implication_found) begin
             state <= PROPAGATE_IMPLICATIONS;
-            output_status <= 32'h00000006;
+            output_status <= 32'h00000001;
             broadcast_implication <= 1'b1;
             write_status_reg <= 1'b1;
             axi_reg5_o <= implication;
+            implication_valid_o <= 1'b1;
           end
         end
         PROPAGATE_IMPLICATIONS: begin
           // Broadcast implication to every clause module
           broadcast_implication <= 1'b0;
+          implication_valid_o <= 1'b0;
           state <= EVALUATE;
         end
       endcase

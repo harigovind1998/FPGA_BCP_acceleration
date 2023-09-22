@@ -3,7 +3,7 @@
 	<name>Accelerated_BCP_Integration</name>
 	<comment>Created by Vitis v2022.2</comment>
 	<projects>
-		<project>BCP_accelerator_V2_8</project>
+		<project>BCP_accelerator_V2_9</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

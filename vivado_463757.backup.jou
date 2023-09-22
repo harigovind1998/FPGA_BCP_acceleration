@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Sep 22 15:34:48 2023
+# Process ID: 463757
+# Current directory: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration
+# Command line: vivado
+# Log file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/vivado.log
+# Journal file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/vivado.jou
+# Running On: harigovind-MS-7C91, OS: Linux, CPU Frequency: 4612.224 MHz, CPU Physical cores: 12, Host memory: 16676 MB
+#-----------------------------------------------------------
+start_gui

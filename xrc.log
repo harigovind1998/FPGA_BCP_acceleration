@@ -1,14 +1,14 @@
-Tue Sep 12 12:38:24 2023: Server was asked to start on port: '35413'
-Tue Sep 12 12:38:24 2023: Server is using token UUID: 'f182f853-27fd-4dc2-915d-e45ccf3a3532'
-Tue Sep 12 12:38:24 2023: Attempting to start server on port '35413'
-Tue Sep 12 12:38:24 2023: XRC main fifo: created main fifo '/tmp/xrcmainf182f853-27fd-4dc2-915d-e45ccf3a3532', fd read = 11
-Tue Sep 12 12:38:24 2023: Running Rule Check Server
-Tue Sep 12 12:38:24 2023: Version 1.6.1
-Tue Sep 12 12:38:24 2023: Rule Check Server: Accepted socket connection from client
-Tue Sep 12 12:38:24 2023: EXCHANGE_TOKEN received, server token: f182f853-27fd-4dc2-915d-e45ccf3a3532, passed token: f182f853-27fd-4dc2-915d-e45ccf3a3532
-Tue Sep 12 12:41:30 2023: STOP_SERVER received, server token: f182f853-27fd-4dc2-915d-e45ccf3a3532, passed token: f182f853-27fd-4dc2-915d-e45ccf3a3532
-Tue Sep 12 12:41:30 2023: Socket received request to stop server.
-Tue Sep 12 12:41:30 2023: SERVER: destructor for server bound to port 35413
-Tue Sep 12 12:41:30 2023: XRC main fifo: Good unlink of /tmp/xrcmainf182f853-27fd-4dc2-915d-e45ccf3a3532
-Tue Sep 12 12:41:30 2023: Server exiting with status 0.
-Tue Sep 12 12:41:30 2023: Closing log file.
+Fri Sep 22 15:45:25 2023: Server was asked to start on port: '46119'
+Fri Sep 22 15:45:25 2023: Server is using token UUID: 'fb7f32ff-c24f-4530-8d3f-e64f7f01a86c'
+Fri Sep 22 15:45:25 2023: Attempting to start server on port '46119'
+Fri Sep 22 15:45:25 2023: XRC main fifo: created main fifo '/tmp/xrcmainfb7f32ff-c24f-4530-8d3f-e64f7f01a86c', fd read = 11
+Fri Sep 22 15:45:25 2023: Running Rule Check Server
+Fri Sep 22 15:45:25 2023: Version 1.6.1
+Fri Sep 22 15:45:25 2023: Rule Check Server: Accepted socket connection from client
+Fri Sep 22 15:45:25 2023: EXCHANGE_TOKEN received, server token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c, passed token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c
+Fri Sep 22 15:47:28 2023: STOP_SERVER received, server token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c, passed token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c
+Fri Sep 22 15:47:28 2023: Socket received request to stop server.
+Fri Sep 22 15:47:28 2023: SERVER: destructor for server bound to port 46119
+Fri Sep 22 15:47:28 2023: XRC main fifo: Good unlink of /tmp/xrcmainfb7f32ff-c24f-4530-8d3f-e64f7f01a86c
+Fri Sep 22 15:47:28 2023: Server exiting with status 0.
+Fri Sep 22 15:47:28 2023: Closing log file.
