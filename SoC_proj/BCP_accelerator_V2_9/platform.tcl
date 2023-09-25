@@ -23,3 +23,8 @@ bsp reload
 catch {bsp regenerate}
 platform generate
 platform generate
+platform active {BCP_accelerator_V2_9}
+platform generate -domains standalone_domain,zynq_fsbl 
+platform generate
+platform active {BCP_accelerator_V2_9}
+platform active {BCP_accelerator_V2_9}

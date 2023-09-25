@@ -97,7 +97,8 @@ module AXI_top_tb();
     always 
         #5 aclk <= ~aclk;
         
-    integer i;	
+    integer i;
+    integer clause_id = 0;	
 	initial
 	begin
    		arstn = 0;
@@ -142,17 +143,295 @@ module AXI_top_tb();
     
         // 1 -3 1 0
         //2 3 -1 0
-        update_clause(30'd0,32'd1,1'b1,32'd3,1'b0,32'd1,1'b1);
-        #60;
-        update_clause(30'd0,32'd2,1'b1,32'd3,1'b1,32'd1,1'b0);
-        #60;
-        // Decisions
-       send_decision(1'b0,30'd1,1'b1);
-       #60;
-       send_decision(1'b0,30'd3,1'b0);
-       #60;
-       send_decision(1'b0,30'd2,1'b1);
+    //     update_clause(30'd0,32'd1,1'b1,32'd3,1'b0,32'd1,1'b1);
+    //     #60;
+    //     update_clause(30'd1,32'd2,1'b1,32'd3,1'b1,32'd1,1'b0);
+    //     #60;
+    //     // Decisions
+    //    send_decision(1'b0,30'd1,1'b1);
+    //    #60;
+    //    send_decision(1'b0,30'd3,1'b0);
+    //    #60;
+    //    send_decision(1'b0,30'd2,1'b1);
 		
+
+		// uf20-028.cnf 
+		update_clause(clause_id,-17,-13,-15);
+		clause_id++;
+		#60;
+        update_clause(clause_id,-11,-13,-12);
+		clause_id++;
+		#60;
+        update_clause(clause_id,20,11,16);
+		clause_id++;
+		#60;
+        update_clause(clause_id,-4,2,-16);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-4,14,1 );
+		clause_id++;
+		#60;
+		update_clause(clause_id,-17,-6,16);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-3,7,-1);
+		clause_id++;
+		#60;
+		update_clause(clause_id,13,-6,10);
+		clause_id++;
+		#60;
+		update_clause(clause_id,9,-18,-12);
+		clause_id++;
+		#60;
+		update_clause(clause_id,4,-1,-11);
+		clause_id++;
+		#60;
+		update_clause(clause_id,8,11,5);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-12,-5,-8);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-11,-19,-1);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-7,9,-2);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-15,7,9);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-8,-11,-13);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-2,-18,13);
+		clause_id++;
+		#60;
+		update_clause(clause_id,7,13,-4);
+		clause_id++;
+		#60;
+		update_clause(clause_id,12,-13,-16);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-18,5,2);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-6,16,-3);
+		clause_id++;
+		#60;
+		update_clause(clause_id,17,6,-18);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-14,-8,4);
+		clause_id++;
+		#60;
+		update_clause(clause_id,11,5,-1);
+		clause_id++;
+		#60;
+		update_clause(clause_id,20,6,4);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-11,9,-4);
+		clause_id++;
+		#60;
+		update_clause(clause_id,10,20,-18);
+		clause_id++;
+		#60;
+		update_clause(clause_id,18,-3,-7);
+		clause_id++;
+		#60;
+		update_clause(clause_id,9,-11,-4);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-8,-16,-17);
+		clause_id++;
+		#60;
+		update_clause(clause_id,19,-8,-3);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-11,12,-13);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-16,3,-19);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-6,13,-2);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-3,4,10);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-12,9,17);
+		clause_id++;
+		#60;
+		update_clause(clause_id,9,-1,-20);
+		clause_id++;
+		#60;
+		update_clause(clause_id,13,2,11);
+		clause_id++;
+		#60;
+		update_clause(clause_id,16,-11,5);
+		clause_id++;
+		#60;
+		update_clause(clause_id,13,-5,-9);
+		clause_id++;
+		#60;
+		update_clause(clause_id,19,-10,7);
+		clause_id++;
+		#60;
+		update_clause(clause_id,6,-19,-5);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-8,-3,7);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-8,1,13);
+		clause_id++;
+		#60;
+		update_clause(clause_id,20,-17,10);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-7,17,-16);
+		clause_id++;
+		#60;
+		update_clause(clause_id,20,-10,13);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-2,-7,-9);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-20,18,4);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-11,-19,17);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-6,-14,-19);
+		clause_id++;
+		#60;
+		update_clause(clause_id,19,7,5);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-5,-4,-15);
+		clause_id++;
+		#60;
+		update_clause(clause_id,4,16,-10);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-15,-18,10);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-15,3,-1);
+		clause_id++;
+		#60;
+		update_clause(clause_id,5,20,-9);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-7,10,12);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-4,1,13);
+		clause_id++;
+		#60;
+		update_clause(clause_id,5,14,-17);
+		clause_id++;
+		#60;
+		update_clause(clause_id,5,-2,3);
+		clause_id++;
+		#60;
+		update_clause(clause_id,4,-5,-15);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-12,1,4);
+		clause_id++;
+		#60;
+		update_clause(clause_id,15,-7,20);
+		clause_id++;
+		#60;
+		update_clause(clause_id,10,19,-17);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-16,5,-19);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-4,-14,-3);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-11,12,-14);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-1,17,-6);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-3,-11,-19);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-18,12,-4);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-14,-13,7);
+		clause_id++;
+		#60;
+		update_clause(clause_id,9,-2,-18);
+		clause_id++;
+		#60;
+		update_clause(clause_id,1,-16,-17);
+		clause_id++;
+		#60;
+		update_clause(clause_id,6,-18,9);
+		clause_id++;
+		#60;
+		update_clause(clause_id,3,-15,16);
+		clause_id++;
+		#60;
+		update_clause(clause_id,20,-4,17);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-13,9,-11);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-12,-20,7);
+		clause_id++;
+		#60;
+		update_clause(clause_id,2,-13,-14);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-8,-5,-14);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-14,-19,15);
+		clause_id++;
+		#60;
+		update_clause(clause_id,13,-8,-11);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-13,10,15);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-5,-8,-3);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-18,-1,11);
+		clause_id++;
+		#60;
+		update_clause(clause_id,9,11,3);
+		clause_id++;
+		#60;
+		update_clause(clause_id,1,-17,15);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-16,4,-10);
+		clause_id++;
+		#60;
+		update_clause(clause_id,16,-19,-11);
+		clause_id++;
+		#60;
+		update_clause(clause_id,-6,-7,18);
+		clause_id++;
+		#60;
+
+
+
 		#500;
 		$finish;
 	end
@@ -211,26 +490,58 @@ module AXI_top_tb();
 	end
 	endtask;
 	
+	// task update_clause;
+	// input [29:0] clause_id;
+	// input [30:0] var1;
+	// input        var1_pol;
+	// input [30:0] var2;
+	// input        var2_pol;
+	// input [30:0] var3;
+	// input        var3_pol;
+	// begin
+	//    #20 axi_write(32'd0,32'h00000000);
+	//    // Write reg1;
+	//    #20 axi_write(32'h00000004,{var1,var1_pol});
+	//    // write reg2;
+	//    #20 axi_write(32'h00000008,{var2,var2_pol});
+	//    // write reg3;
+	//    #20 axi_write(32'h0000000c,{var3,var3_pol});
+	//    //write reg 0;
+	//    #20 axi_write(32'h0,{clause_id,2'b01}); // Update clause ID OP code = 001
+	// end;
+	// endtask;
+
 	task update_clause;
-	input [29:0] clause_id;
-	input [30:0] var1;
-	input        var1_pol;
-	input [30:0] var2;
-	input        var2_pol;
-	input [30:0] var3;
-	input        var3_pol;
+	input integer clause_id;
+	input integer signed var1;
+	input integer signed var2;
+	input integer signed var3;
 	begin
-	   #20 axi_write(32'd0,32'h00000000);
-	   // Write reg1;
-	   #20 axi_write(32'h00000004,{var1,var1_pol});
-	   // write reg2;
-	   #20 axi_write(32'h00000008,{var2,var2_pol});
-	   // write reg3;
-	   #20 axi_write(32'h0000000c,{var3,var3_pol});
+
+		#20 axi_write(32'd0,32'h00000000);
+		if(var1 > 0) begin
+			#20 axi_write(32'h00000004,{var1,1'b1});
+		end else begin
+			#20 axi_write(32'h00000004,{-var1,1'b0});
+		end
+
+		if(var2 > 0) begin
+			#20 axi_write(32'h00000008,{var2,1'b1});
+		end else begin
+			#20 axi_write(32'h00000008,{-var2,1'b0});
+		end
+
+		if(var3 > 0) begin
+			#20 axi_write(32'h0000000c,{var3,1'b1});
+		end else begin
+			#20 axi_write(32'h0000000c,{-var3,1'b0});
+		end
 	   //write reg 0;
 	   #20 axi_write(32'h0,{clause_id,2'b01}); // Update clause ID OP code = 001
 	end;
 	endtask;
+
+
 	
 	task send_decision;
 	input backtrack;

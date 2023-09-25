@@ -4,7 +4,7 @@
     "xci_name": "design_1_BCP_accelerator_0_0",
     "cell_name": "BCP_accelerator_0",
     "component_reference": "carleton.ca:user:BCP_accelerator:2.0",
-    "ip_revision": "23",
+    "ip_revision": "26",
     "gen_directory": "../../../../../../ip_packing.gen/sources_1/bd/design_1/ip/design_1_BCP_accelerator_0_0",
     "parameters": {
       "component_parameters": {
@@ -53,7 +53,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "23" } ],
+        "IPREVISION": [ { "value": "26" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ip_packing.gen/sources_1/bd/design_1/ip/design_1_BCP_accelerator_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

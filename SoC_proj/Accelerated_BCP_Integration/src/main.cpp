@@ -197,6 +197,8 @@ void SATSolverDPLL::initialize() {
 int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_literal) {
     int value_to_apply = f.literals[literal_to_apply];  // the value to apply, 0 - if true, 1 - if false
 
+    cout << "Applying literal: " << literal_to_apply << endl;
+
     int decision_id = literal_to_apply + 1;
 	int decision_polarity = (value_to_apply+1)%2; // True if 1, False if 0
 
@@ -217,7 +219,7 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 			{
 				// Check Reg 6. If not 0 add to f.
 				bool isImpl = false;
-				while(*reg6 == 6){
+				while(*reg6 == 0xffffffff){
 					isImpl = true;
 					int implication = *reg5;
 					assignmentsInThisLevel.push_back(implication);
@@ -227,6 +229,8 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 
 					f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
 					f.literal_frequency[implication_id] = -1;
+
+					cout << "Unit Implication" << implication_id<< "\n";
 				}// Need to check if satisfied after all the unit implications
 				if(!isImpl){
 					return Cat::normal;
@@ -459,7 +463,7 @@ void SATSolverDPLL::show_result(Formula &f, int result) {
                 cout << (i + 1);
             }
         }
-        cout << " 0";
+        cout << " 0 \n";
     } else  // if the formula is unsatisfiable
     {
         cout << "UNSAT";

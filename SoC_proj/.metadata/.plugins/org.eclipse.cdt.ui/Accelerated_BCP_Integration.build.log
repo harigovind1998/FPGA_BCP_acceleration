@@ -1,29 +1,10 @@
-15:45:28 **** Incremental Build of configuration Debug for project Accelerated_BCP_Integration ****
+13:02:19 **** Incremental Build of configuration Debug for project Accelerated_BCP_Integration ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
-Building file: ../src/main.cpp
-Invoking: ARM v7 g++ compiler
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_9/export/BCP_accelerator_V2_9/sw/BCP_accelerator_V2_9/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In member function 'void SATSolverDPLL::show_result(Formula&, int)':
-../src/main.cpp:452:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
-  452 |         for (int i = 0; i < f.literals.size(); i++) {
-      |                         ~~^~~~~~~~~~~~~~~~~~~
-Finished building: ../src/main.cpp
- 
-Building target: Accelerated_BCP_Integration.elf
-Invoking: ARM v7 g++ linker
-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/BCP_accelerator_V2_9/export/BCP_accelerator_V2_9/sw/BCP_accelerator_V2_9/standalone_domain/bsplib/lib -o "Accelerated_BCP_Integration.elf" ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: Accelerated_BCP_Integration.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size Accelerated_BCP_Integration.elf  |tee "Accelerated_BCP_Integration.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 584983	   2832	4207036	4794851	 4929e3	Accelerated_BCP_Integration.elf
-Finished building: Accelerated_BCP_Integration.elf.size
- 
+make[1]: Nothing to be done for 'main-build'.
 
-15:45:29 Build Finished (took 870ms)
+13:02:20 Build Finished (took 122ms)
 
