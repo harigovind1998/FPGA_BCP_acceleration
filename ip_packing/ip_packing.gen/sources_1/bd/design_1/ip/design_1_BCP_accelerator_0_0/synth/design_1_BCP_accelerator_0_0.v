@@ -48,7 +48,7 @@
 
 
 // IP VLNV: carleton.ca:user:BCP_accelerator:2.0
-// IP Revision: 26
+// IP Revision: 31
 
 (* X_CORE_INFO = "BCP_accelerator_v2_0,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_BCP_accelerator_0_0,BCP_accelerator_v2_0,{}" *)

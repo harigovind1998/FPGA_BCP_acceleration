@@ -104,8 +104,6 @@ module AXI_top_tb();
    		arstn = 0;
 		i=0;
 		#20 arstn=1;
-		
-		
 		// SAMPLE TEST CASE BELOW:
 //		// Write clause to FPGA
 //		//		for(i=0;i<=32'hF;i=i+1)	
@@ -429,10 +427,24 @@ module AXI_top_tb();
 		update_clause(clause_id,-6,-7,18);
 		clause_id++;
 		#60;
-
-
-
-		#500;
+		send_decision(1'b0,30'd11,1'b0);
+		#60;
+		send_decision(1'b0,30'd4,1'b0);
+		#60;
+		send_decision(1'b0,30'd13,1'b1);
+		#60;
+		send_decision(1'b0,30'd5,1'b1);
+		#5000;
+		axi_read(32'h00000018);
+		#60;
+		axi_read(32'h00000014);
+		#60;
+		axi_read(32'h00000014);
+		#60;
+		axi_read(32'h00000014);
+		#60;
+		axi_read(32'h00000014);
+		#60;
 		$finish;
 	end
 	
@@ -489,6 +501,35 @@ module AXI_top_tb();
 		//end of write transaction
 	end
 	endtask;
+
+	task axi_read;
+	input [31:0] addr;
+	begin
+		#3 read_addr <= addr;	//Put write address on bus
+		read_addr_valid <= 1'b1;	//indicate address is valid
+
+		wait(read_addr_ready);
+		//wait for one slave ready signal or the other
+		@(posedge aclk);
+		if(read_addr_ready&&read_addr_valid)
+		begin
+			read_addr_valid <= 1'b0;
+		end
+
+		//wait for valid response
+		wait(read_data_valid);
+		read_data_ready <= 1'b1;
+		
+		//both handshake signals and rising edge
+		@(posedge aclk);
+		if(read_data_valid && read_data_ready)
+		begin
+			write_resp_ready<=0;
+		end
+	end
+	endtask;
+
+
 	
 	// task update_clause;
 	// input [29:0] clause_id;

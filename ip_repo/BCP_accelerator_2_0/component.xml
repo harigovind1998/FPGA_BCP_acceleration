@@ -710,7 +710,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a4ca901f</spirit:value>
+            <spirit:value>5bcc4cd6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -726,7 +726,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a4ca901f</spirit:value>
+            <spirit:value>5bcc4cd6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -783,7 +783,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f167f0ee</spirit:value>
+            <spirit:value>a04fc6ff</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2153,9 +2153,8 @@
       <spirit:file>
         <spirit:name>hdl/AXI_top_tb.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/AXI_top_tb_behav.wcfg</spirit:name>
@@ -2317,14 +2316,14 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>BCP_accelerator_v2.0</xilinx:displayName>
-      <xilinx:coreRevision>26</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-09-25T18:21:01Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>31</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-09-26T18:35:29Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4cb0c302"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="24ec706d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c9bda17b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1bc57354"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="249c2c9c"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="532e0ef9"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="3f143e1f"/>

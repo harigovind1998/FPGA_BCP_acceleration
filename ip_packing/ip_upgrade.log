@@ -1,6 +1,111 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Sep 26 14:35:39 2023
+| Host         : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BCP_accelerator_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BCP_accelerator_0_0 (carleton.ca:user:BCP_accelerator:2.0) from (Rev. 30) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Sep 26 12:37:11 2023
+| Host         : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BCP_accelerator_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BCP_accelerator_0_0 (carleton.ca:user:BCP_accelerator:2.0) from (Rev. 29) to (Rev. 30)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Sep 26 11:58:39 2023
+| Host         : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BCP_accelerator_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BCP_accelerator_0_0 (carleton.ca:user:BCP_accelerator:2.0) from (Rev. 28) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Sep 26 11:30:30 2023
+| Host         : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BCP_accelerator_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BCP_accelerator_0_0 (carleton.ca:user:BCP_accelerator:2.0) from (Rev. 27) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Sep 26 11:09:21 2023
+| Host         : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BCP_accelerator_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BCP_accelerator_0_0 (carleton.ca:user:BCP_accelerator:2.0) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
 | Date         : Mon Sep 25 14:21:11 2023
 | Host         : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
 | Command      : upgrade_ip

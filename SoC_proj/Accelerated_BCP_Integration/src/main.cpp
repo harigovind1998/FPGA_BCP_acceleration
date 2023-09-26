@@ -112,6 +112,7 @@ void SATSolverDPLL::SendClausesToAccelerator(){
 		*reg1 = (var1_id << 1) | var1_polarity;
 		*reg2 = (var2_id << 1) | var2_polarity;
 		*reg3 = (var3_id << 1) | var3_polarity;
+		int clause_id = (i<<1) |1;
 		*reg0 = (i << 1)|1;
 
 		while(*reg4 == 0){
@@ -202,7 +203,7 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
     int decision_id = literal_to_apply + 1;
 	int decision_polarity = (value_to_apply+1)%2; // True if 1, False if 0
 
-	int decision = decision_id << 1 | decision_polarity;
+	int decision = (decision_id << 1) | decision_polarity;
 	// Send decision to FPGA
 	*reg1 = decision;
 	*reg0 = 2;
@@ -219,7 +220,7 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 			{
 				// Check Reg 6. If not 0 add to f.
 				bool isImpl = false;
-				while(*reg6 == 0xffffffff){
+				while(*reg6 == 1){
 					isImpl = true;
 					int implication = *reg5;
 					assignmentsInThisLevel.push_back(implication);
@@ -235,8 +236,6 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 				if(!isImpl){
 					return Cat::normal;
 				}
-
-				*reg4 = 0;
 				break;
 			}
 			case 4:
@@ -258,7 +257,6 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 			    		cout << "Backtrack error, status code:" << *reg4 << "\n";
 			    	}
 				}
-				*reg4 = 0;
 				return Cat::unsatisfied;
 				break;
 			case 5:
@@ -266,7 +264,6 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 				return Cat::satisfied;
 				break;
 			default:
-				*reg4 = 0;
 				return Cat::unsatisfied;
 				// Error state
 		}
@@ -274,118 +271,6 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 
     return Cat::normal;  // if reached here, the unit resolution ended normally
 }
-
-/*
- * applies a value of a literal to all clauses in a given formula
- * arguments: f - the formula to apply on
- *            literal_to_apply - the literal which has just been set
- * return value: int - the return status flag, a member of the Cat enum
- *               Cat::satisfied - the formula has been satisfied
- *               Cat::unsatisfied - the formula can no longer be satisfied
- *               Cat::normal - normal exit
- */
-//int SATSolverDPLL::apply_transform(Formula &f, int literal_to_apply) {
-//    int value_to_apply = f.literals[literal_to_apply];  // the value to apply, 0 - if true, 1 - if false iterate over the clauses in f
-//
-//    int decision_id = value_to_apply/2 + 1;
-//	int decision_polarity = value_to_apply%2; // True if 0, False if 1
-//
-//	int decision = decision_id << 1 | decision_polarity;
-//	// Send decision to FPGA
-//	*reg1 = decision;
-//	*reg0 = 1;
-//	std::vector<int> assignmentsInThisLevel;
-//	assignmentsInThisLevel.push_back(decision);
-//	while(*reg4 == 0){
-//		// Wait
-//	}
-//
-//	int status = *reg4;
-//
-//	switch(status){
-//		case 1:
-//			// Move on to next decision
-//			break;
-//		case 4:
-//			// Conflict, Start backtracking. Pop each assignment in queue.
-//			while (!assignmentsInThisLevel.empty())
-//			  {
-//			    int backtrack=assignmentsInThisLevel.back();
-//			    assignmentsInThisLevel.pop_back();
-//
-//			    *reg1 = backtrack;
-//			    *reg0 = 3;
-//
-//			    while(*reg4 == 0){
-//			    		// Wait
-//			    }
-//
-//			    if(*reg4 == 1){
-//			    	cout << "Backtracked " << backtrack << "\n";
-//			    }
-//			  }
-//			return Cat::unsatisfied;
-//			break;
-//		case 5:
-//			// SAT, output assignments
-//			return Cat::satisfied;
-//			break;
-//		case 6:
-//			// Implication, add implication to queue
-//			while(*reg4 == 6){
-//				int implication = *reg5;
-//				assignmentsInThisLevel.push_back(implication);
-//
-//				int implication_id = implication >> 1 - 1;
-//				int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
-//
-//				f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
-//				f.literal_frequency[implication_id] = -1;
-//			}
-//			// Need to check if satisfied after all the unit implications
-//			return Cat::normal;
-//			break;
-//		default:
-//			return Cat::unsatisfied;
-//			// Error state
-//	}
-//
-//	// Listen to status
-//
-//	// if reg4 = 0x1 => No changes, need more decisions
-//
-//	// if reg4 = 0x4 => Conflict. Start backtracking. Pop literals added in the level.
-//	// if reg4 = 0x5 => SAT
-//	// if reg4 = 0x6 => Implication Found. Add to list of literals
-//
-//
-//    for (int i = 0; i < f.clauses.size(); i++) {        // iterate over the variables in the clause
-//        for (int j = 0; j < f.clauses[i].size(); j++) {
-//            // if this is true, then the literal appears with the same polarity
-//            // as it is being applied that is, if assigned true, it appears
-//            // positive if assigned false, it appears negative, in this clause
-//            // hence, the clause has now become true
-//            if ((2 * literal_to_apply + value_to_apply) == f.clauses[i][j]) {
-//                f.clauses.erase(f.clauses.begin() + i);  // remove the clause from the list
-//                i--;                                     // reset iterator
-//                if (f.clauses.size() == 0) {             // if all clauses have been removed, the formula is satisfied
-//                    return Cat::satisfied;
-//                }
-//                break;                                             // move to the next clause
-//            } else if (f.clauses[i][j] / 2 == literal_to_apply) {  // the literal appears with opposite polarity
-//                f.clauses[i].erase(f.clauses[i].begin() + j);      // remove the literal from the clause, as it is false in it
-//                j--;                                               // reset the iterator
-//                if (f.clauses[i].size() == 0) {                    // if the clause is empty, the formula is unsatisfiable currently
-//
-//                    return Cat::unsatisfied;
-//                }
-//                break;  // move to the next clause
-//            }
-//        }
-//    }
-//    // if reached here, the function is exiting normally
-//    return Cat::normal;
-//}
 
 /*
  * function to perform the recursive DPLL on a given formula
@@ -396,20 +281,6 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
  * way
  */
 int SATSolverDPLL::DPLL(Formula f) {
-    // steady_clock::time_point begin = steady_clock::now();
-
-    // int result = unit_propagate(f);  // perform unit propagation on the formula
-
-    // steady_clock::time_point end = steady_clock::now();
-    // cout << "Time difference = " << duration_cast<nanoseconds>(end - begin).count() << "[ns]" << endl;
-
-    // if (result == Cat::satisfied) {  // if formula satisfied, show result and return
-    //     show_result(f, result);
-    //     return Cat::completed;
-    // } else if (result == Cat::unsatisfied) {  // if formula not satisfied in this branch, return normally
-    //     return Cat::normal;
-    // }
-
     // find the variable with maximum frequency in f, which will be the next to
     // be assigned a value already assigned variables have this field reset to
     // -1 in order to ignore them
@@ -474,15 +345,6 @@ void SATSolverDPLL::show_result(Formula &f, int result) {
  * function to call the solver
  */
 void SATSolverDPLL::solve() {
-    // Possible that an unit clause exits that automatically satisfies the problem before making decisions
-    // int simplify_result = unit_propagate(formula, 0, false);
-    // if (simplify_result == Cat::satisfied) {  // if formula satisfied, show result and return
-    //     show_result(formula, simplify_result);
-    //     return;
-    // } else if (simplify_result == Cat::unsatisfied) {  // if formula not satisfied in this branch, return normally
-    //     return;
-    // }
-
     int result = DPLL(formula);  // final result of DPLL on the original formula
     // if normal return till the end, then the formula could not be satisfied in
     // any branch, so it is unsatisfiable
