@@ -48,14 +48,13 @@
 
 
 // IP VLNV: carleton.ca:user:BCP_accelerator:2.0
-// IP Revision: 31
+// IP Revision: 52
 
 `timescale 1ns/1ps
 
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_BCP_accelerator_0_0 (
-  op_indicator_led,
-  fpga_status_led,
+  led_out,
   s00_axi_aclk,
   s00_axi_aresetn,
   s00_axi_awaddr,
@@ -116,8 +115,7 @@ module design_1_BCP_accelerator_0_0 (
   s01_axi_rready
 );
 
-output wire [1 : 0] op_indicator_led;
-output wire [1 : 0] fpga_status_led;
+output wire [3 : 0] led_out;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 5e+07, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *)
 input wire s00_axi_aclk;
@@ -255,8 +253,7 @@ input wire s01_axi_rready;
     .C_S00_AXI_RUSER_WIDTH(0),  // Width of optional user defined signal in read data channel
     .C_S00_AXI_BUSER_WIDTH(0)  // Width of optional user defined signal in write response channel
   ) inst (
-    .op_indicator_led(op_indicator_led),
-    .fpga_status_led(fpga_status_led),
+    .led_out(led_out),
     .s00_axi_aclk(s00_axi_aclk),
     .s00_axi_aresetn(s00_axi_aresetn),
     .s00_axi_awid(1'B0),

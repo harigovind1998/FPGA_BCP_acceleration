@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 26 14:35:50 2023" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Sep 27 22:48:38 2023" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z007s" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -109,14 +109,9 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="PS_PORB"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="1" NAME="led_indicator" RIGHT="0" SIGIS="undef" SIGNAME="BCP_accelerator_0_op_indicator_led">
+    <PORT DIR="O" LEFT="3" NAME="led_o" RIGHT="0" SIGIS="undef" SIGNAME="BCP_accelerator_0_led_out">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="BCP_accelerator_0" PORT="op_indicator_led"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="1" NAME="fpga_status_led" RIGHT="0" SIGIS="undef" SIGNAME="BCP_accelerator_0_fpga_status_led">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="BCP_accelerator_0" PORT="fpga_status_led"/>
+        <CONNECTION INSTANCE="BCP_accelerator_0" PORT="led_out"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -169,7 +164,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="31" FULLNAME="/BCP_accelerator_0" HWVERSION="2.0" INSTANCE="BCP_accelerator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BCP_accelerator" VLNV="carleton.ca:user:BCP_accelerator:2.0">
+    <MODULE COREREVISION="52" FULLNAME="/BCP_accelerator_0" HWVERSION="2.0" INSTANCE="BCP_accelerator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BCP_accelerator" VLNV="carleton.ca:user:BCP_accelerator:2.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_mem" RANGE="4096" USAGE="memory"/>
@@ -196,14 +191,9 @@
         <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x7AA0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" LEFT="1" NAME="op_indicator_led" RIGHT="0" SIGIS="undef" SIGNAME="BCP_accelerator_0_op_indicator_led">
+        <PORT DIR="O" LEFT="3" NAME="led_out" RIGHT="0" SIGIS="undef" SIGNAME="BCP_accelerator_0_led_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="led_indicator"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="fpga_status_led" RIGHT="0" SIGIS="undef" SIGNAME="BCP_accelerator_0_fpga_status_led">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="fpga_status_led"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="led_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="5e+07" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">

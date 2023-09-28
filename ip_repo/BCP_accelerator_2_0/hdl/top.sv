@@ -32,12 +32,11 @@
 
 
 module top #(
-    parameter FORMULA_MAX_VARIABLE = 20,
+    parameter FORMULA_MAX_VARIABLE = 32,
     parameter VARIABLE_ENCODING_LEN = $clog2(FORMULA_MAX_VARIABLE + 1),
     parameter MAX_CLAUSE_SIZE = 3,
     parameter VARIABLE_ASSIGNMENT_LEN = 1,
-    parameter MAX_CLAUSE = 91,
-    parameter CLAUSE_ID = -1,
+    parameter MAX_CLAUSE = 128,
     parameter CLAUSE_ID_LEN = $clog2(MAX_CLAUSE)
 ) (
     input wire clk_i,
@@ -56,45 +55,16 @@ module top #(
     output reg                            write_status_reg,
 
     output wire [VARIABLE_ENCODING_LEN:0] implication_o,
-    output reg implication_valid_o
+    output reg implication_valid_o,
+    
+    output wire [3:0] curr_stat
 );
   // CPU OP Code
   // NO_OP = 2'b00,
   // UPDATE_CLAUSE_OP = 2'b01,
   // DECISION_OP = 2'b10,
   // BACKTRACK_OP = 2'b11
-
-  // Slice axi_reg0
-  wire [1:0] CPU_OP_Code_in = axi_reg0_i[1:0];
-  wire [(CLAUSE_ID_LEN-1):0] clause_update_id_in = axi_reg0_i[2+:CLAUSE_ID_LEN];
-
-  // Slice axi_reg1
-  wire var_1_polarity_set = axi_reg1_i[0];
-  wire [VARIABLE_ENCODING_LEN-1:0] var_1_id_set = axi_reg1_i[1+:VARIABLE_ENCODING_LEN];
-
-  // Slice axi_reg2
-  wire var_2_polarity_set = axi_reg2_i[0];
-  wire [VARIABLE_ENCODING_LEN-1:0] var_2_id_set = axi_reg2_i[1+:VARIABLE_ENCODING_LEN];
-
-  // Slice axi_reg3
-  wire var_3_polarity_set = axi_reg3_i[0];
-  wire [VARIABLE_ENCODING_LEN-1:0] var_3_id_set = axi_reg3_i[1+:VARIABLE_ENCODING_LEN];
-
-  // Update clause ClauseModuleInput
-  wire [(VARIABLE_ENCODING_LEN*3-1):0] clause_update_variable_ids = {
-    var_3_id_set, var_2_id_set, var_1_id_set
-  };
-  wire [2:0] clause_update_variable_polarities = {
-    var_3_polarity_set, var_2_polarity_set, var_1_polarity_set
-  };
-
-  wire update_clause = (state == UPDATE_CLAUSES);
-  wire update_assignment = (state == PROPAGATE_DECISIONS || state == PROPAGATE_IMPLICATIONS);
-  wire clear_assignment = (state == BACKTRACK);
-
-  reg [31:0] output_status = 32'b0;
-  assign axi_reg4_o = output_status;
-
+  
   enum logic [3:0] {
     IDLE,
     UPDATE_CLAUSES,
@@ -105,31 +75,67 @@ module top #(
     PROPAGATE_IMPLICATIONS
   } state = IDLE;
 
+  // Slice axi_reg0
+  (* keep = "true" *) wire [1:0] CPU_OP_Code_in = axi_reg0_i[1:0];
+  (* keep = "true" *) wire [(CLAUSE_ID_LEN-1):0] clause_update_id_in = axi_reg0_i[2+:CLAUSE_ID_LEN];
+
+  // Slice axi_reg1
+  (* keep = "true" *) wire var_1_polarity_set = axi_reg1_i[0];
+  (* keep = "true" *) wire [VARIABLE_ENCODING_LEN-1:0] var_1_id_set = axi_reg1_i[1+:VARIABLE_ENCODING_LEN];
+
+  // Slice axi_reg2
+  (* keep = "true" *) wire var_2_polarity_set = axi_reg2_i[0];
+  (* keep = "true" *) wire [VARIABLE_ENCODING_LEN-1:0] var_2_id_set = axi_reg2_i[1+:VARIABLE_ENCODING_LEN];
+
+  // Slice axi_reg3
+  (* keep = "true" *) wire var_3_polarity_set = axi_reg3_i[0];
+  (* keep = "true" *) wire [VARIABLE_ENCODING_LEN-1:0] var_3_id_set = axi_reg3_i[1+:VARIABLE_ENCODING_LEN];
+
+  // Update clause ClauseModuleInput
+  (* keep = "true" *) wire [(VARIABLE_ENCODING_LEN*3-1):0] clause_update_variable_ids = {
+    var_3_id_set, var_2_id_set, var_1_id_set
+  };
+  (* keep = "true" *) wire [2:0] clause_update_variable_polarities = {
+    var_3_polarity_set, var_2_polarity_set, var_1_polarity_set
+  };
+
+  (* keep = "true" *) wire update_clause = (state == UPDATE_CLAUSES);
+  (* keep = "true" *) wire update_assignment = (state == PROPAGATE_DECISIONS || state == PROPAGATE_IMPLICATIONS);
+  (* keep = "true" *) wire clear_assignment = (state == BACKTRACK);
+
+  reg [31:0] output_status = 32'b0;
+  assign axi_reg4_o = output_status;
+
   reg propgate_state = 1'b0;  // 0 = IN_BACKTRACK, 1 = IN_DECISION
 
   // Clause Modules => implication selector engine communication
-  wire [(MAX_CLAUSE-1):0] is_unit, is_conflict, is_SAT;
-  wire [(VARIABLE_ENCODING_LEN * MAX_CLAUSE):0] implication_variable_ids;
-  wire [(VARIABLE_ASSIGNMENT_LEN * MAX_CLAUSE):0] implication_assignments;
+  (* keep = "true" *) wire [(MAX_CLAUSE-1):0] is_unit;
+  (* keep = "true" *) wire [(MAX_CLAUSE-1):0] is_conflict;
+  (* keep = "true" *) wire [(MAX_CLAUSE-1):0] is_SAT;
+  (* keep = "true" *) wire [(VARIABLE_ENCODING_LEN * MAX_CLAUSE):0] implication_variable_ids;
+  (* keep = "true" *) wire [(VARIABLE_ASSIGNMENT_LEN * MAX_CLAUSE):0] implication_assignments;
   reg start_implication_finder = 1'b0;
 
   // Implication Selector => Implication Broadcaster
-  wire [(VARIABLE_ENCODING_LEN-1):0] chosen_implication_variable_id;
-  wire chosen_implication_assignment, implication_found;
+  (* keep = "true" *) wire [(VARIABLE_ENCODING_LEN-1):0] chosen_implication_variable_id;
+  (* keep = "true" *) wire chosen_implication_assignment, implication_found;
 
   // Decision variable and id
-  wire [(VARIABLE_ENCODING_LEN-1):0] decision_variable_id = axi_reg1_i[1+:VARIABLE_ENCODING_LEN];
-  wire decision_assignment = axi_reg1_i[0];
+  (* keep = "true" *) wire [(VARIABLE_ENCODING_LEN-1):0] decision_variable_id = axi_reg1_i[1+:VARIABLE_ENCODING_LEN];
+  (* keep = "true" *) wire decision_assignment = axi_reg1_i[0];
 
   // Distinguish between implication and decision
   reg broadcast_implication = 1'b0;
-  wire assignment_broadcast = broadcast_implication? chosen_implication_assignment: 
+  (* keep = "true" *) wire assignment_broadcast = broadcast_implication? chosen_implication_assignment: 
                                 decision_assignment;
-  wire [(VARIABLE_ENCODING_LEN-1):0] variable_id_broadcast = broadcast_implication? chosen_implication_variable_id:
+  (* keep = "true" *) wire [(VARIABLE_ENCODING_LEN-1):0] variable_id_broadcast = broadcast_implication? chosen_implication_variable_id:
                                 decision_variable_id;
 
-  wire conflict = is_conflict > 0;
-  wire all_SAT = is_SAT == '1;
+  (* keep = "true" *) wire conflict = is_conflict != '0;
+  (* keep = "true" *) wire all_SAT = is_SAT == '1;
+  (* keep = "true" *) wire unit = is_unit != '0;
+  
+  assign curr_stat = {1'b1,unit,all_SAT,conflict};
 
   genvar clauseModules;
   generate
@@ -192,6 +198,8 @@ module top #(
   };
 
   assign implication_o = axi_reg5_o;
+  
+  reg [3:0] count =0;
 
   always @(posedge clk_i) begin
     if (rst_i) begin
@@ -199,6 +207,7 @@ module top #(
       case (state)
         IDLE: begin
           write_status_reg <= 1'b0;
+          count <= '0;
           if (CPU_OP_Code_in == 2'b00) begin
             clear_cpu_req <= 1'b0;
             implication_valid_o <= 1'b0;
@@ -217,17 +226,28 @@ module top #(
           end
         end
         UPDATE_CLAUSES: begin
-          output_status <= 32'h00000001;
-          write_status_reg <= 1'b1;
-          state <= IDLE;
+          clear_cpu_req <= 1'b0;
+          count <= count + 1;
+          if(count == 10)
+          begin
+            state <= IDLE;
+            output_status <= 32'h00000001;
+            write_status_reg <= 1'b1;
+          end
         end
         BACKTRACK: begin
           output_status <= 32'h00000001;
+          clear_cpu_req <= 1'b0;
           write_status_reg <= 1'b1;
           state <= IDLE;
         end
         PROPAGATE_DECISIONS: begin
-          state <= EVALUATE;
+          clear_cpu_req <= 1'b0;
+          count <= count + 1;
+          if(count == 10)
+          begin
+            state <= EVALUATE;
+          end
         end
         EVALUATE: begin
           if (conflict) begin
@@ -238,12 +258,14 @@ module top #(
             output_status <= 32'h00000005;
             write_status_reg <= 1'b1;
             state <= IDLE;
-          end else if (is_unit) begin
+          end else if (unit) begin
             state <= GET_IMPLICATION;
+            output_status <= 32'h00000006; // Running state. Wait
+            write_status_reg <= 1'b1;
             start_implication_finder <= 1'b1;
           end else begin  // No changes, wait for next decision
             state <= IDLE;
-            output_status <= 32'h00000001;
+            output_status <= 32'h00000002;
             write_status_reg <= 1'b1;
           end
         end
@@ -252,8 +274,6 @@ module top #(
           start_implication_finder <= 1'b0;
           if (implication_found) begin
             state <= PROPAGATE_IMPLICATIONS;
-            output_status <= 32'h00000006; // Running state. Wait
-            write_status_reg <= 1'b1;
             broadcast_implication <= 1'b1;
             axi_reg5_o <= implication;
             implication_valid_o <= 1'b1;

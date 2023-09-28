@@ -28,6 +28,7 @@ module AXI_top_tb();
     parameter reg1_addr = 32'h00000004;
 	parameter reg2_addr = 32'h00000008;
 	parameter reg3_addr = 32'h0000000c;
+	parameter reg4_addr = 32'h00000010;
     
 	reg aclk =1'b0;
 	reg arstn = 1'b0;
@@ -98,7 +99,8 @@ module AXI_top_tb();
         #5 aclk <= ~aclk;
         
     integer i;
-    integer clause_id = 0;	
+    integer clause_id = 0;
+    integer decision = 0;	
 	initial
 	begin
    		arstn = 0;
@@ -427,12 +429,16 @@ module AXI_top_tb();
 		update_clause(clause_id,-6,-7,18);
 		clause_id++;
 		#60;
+		decision = 22;
 		send_decision(1'b0,30'd11,1'b0);
 		#60;
+		decision = 8;
 		send_decision(1'b0,30'd4,1'b0);
 		#60;
+		decision = 27;
 		send_decision(1'b0,30'd13,1'b1);
 		#60;
+		decision = 11;
 		send_decision(1'b0,30'd5,1'b1);
 		#5000;
 		axi_read(32'h00000018);
@@ -445,6 +451,17 @@ module AXI_top_tb();
 		#60;
 		axi_read(32'h00000014);
 		#60;
+
+        // hello_world.cnf
+//        update_clause(clause_id,1,-3,1);
+//        clause_id++;
+//        #60;
+//        update_clause(clause_id,2,3,-1);
+//        clause_id++;
+//        #60;
+//        send_decision(1'b0,30'd1,1'b0);
+//        #500;
+        
 		$finish;
 	end
 	
@@ -590,8 +607,10 @@ module AXI_top_tb();
 	input        decision_polarity;
 	begin
 	   #20 axi_write(reg0_addr, 32'd0);
+	   #20 axi_write(reg4_addr, 32'd0);
 	   // Write reg 1
-	   #20 axi_write(reg1_addr, {var_id,decision_polarity});
+//	   #20 axi_write(reg1_addr, {var_id,decision_polarity});
+        #20 axi_write(reg1_addr, decision);
 	   // Write reg 0 with CPU OP code 10
 	   if(backtrack) begin
 	       #20 axi_write(reg0_addr,32'h00000003);

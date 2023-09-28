@@ -15,6 +15,7 @@
 #include <stdint.h>
 #include "platform.h"
 #include "xil_printf.h"
+#include <sleep.h>
 
 #define reg0 (volatile uint32_t *) 0x43C00000
 #define reg1 (volatile uint32_t *) 0x43C00004
@@ -96,29 +97,33 @@ class SATSolverDPLL {
 
 void SATSolverDPLL::SendClausesToAccelerator(){
 	for (int i = 0; i < clause_count; i++) {
-		int var1 = formula.clauses[i][0];
-		int var2 = formula.clauses[i][1];
-		int var3 = formula.clauses[i][2];
+		uint32_t var1 = (uint32_t) formula.clauses[i][0];
+		uint32_t var2 = (uint32_t) formula.clauses[i][1];
+		uint32_t var3 = (uint32_t) formula.clauses[i][2];
 
-		int var1_id = var1/2 + 1;
-		int var1_polarity = (var1+1)%2; // In HW: True if 1, False if 0. In SW: True if 0, False if 1
+		uint32_t var1_id = var1/2 + 1;
+		uint32_t var1_polarity = (var1+1)%2; // In HW: True if 1, False if 0. In SW: True if 0, False if 1
+		uint32_t reg1Val = (var1_id << 1) | var1_polarity;
 
-		int var2_id = var2/2 + 1;
-		int var2_polarity = (var2+1)%2;
+		uint32_t var2_id = var2/2 + 1;
+		uint32_t var2_polarity = (var2+1)%2;
+		uint32_t reg2Val = (var2_id << 1) | var2_polarity;
 
-		int var3_id = var3/2 + 1;
-		int var3_polarity = (var3+1)%2;
+		uint32_t var3_id = var3/2 + 1;
+		uint32_t var3_polarity = (var3+1)%2;
+		uint32_t reg3Val = (var3_id << 1) | var3_polarity;
 
-		*reg1 = (var1_id << 1) | var1_polarity;
-		*reg2 = (var2_id << 1) | var2_polarity;
-		*reg3 = (var3_id << 1) | var3_polarity;
-		int clause_id = (i<<1) |1;
-		*reg0 = (i << 1)|1;
+		uint32_t clause_id = (uint32_t) i;
 
-		while(*reg4 == 0){
+		*reg1 = reg1Val;
+		*reg2 = reg2Val;
+		*reg3 = reg3Val;
+		*reg0 = (clause_id << 1)|1;
+
+		while(*reg4 == (uint32_t) 0){
 		}
 
-		if(*reg4==1){
+		if(*reg4== (uint32_t)1){
 			printf("Updated Clause\n");
 			*reg4 = 0;
 		}
@@ -198,30 +203,34 @@ void SATSolverDPLL::initialize() {
 int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_literal) {
     int value_to_apply = f.literals[literal_to_apply];  // the value to apply, 0 - if true, 1 - if false
 
-    cout << "Applying literal: " << literal_to_apply << endl;
+    uint32_t decision_id = literal_to_apply + 1;
+	uint32_t decision_polarity = (value_to_apply+1)%2; // True if 1, False if 0
 
-    int decision_id = literal_to_apply + 1;
-	int decision_polarity = (value_to_apply+1)%2; // True if 1, False if 0
+	cout << "Applying literal: "<< decision_id << " Polarity(1=True, 0=False): " << decision_polarity << endl;
 
-	int decision = (decision_id << 1) | decision_polarity;
+//    int decision_id = 1;
+//    int decision_polarity = 0; // True if 1, False if 0
+
+
+	uint32_t decision = (decision_id << 1) | decision_polarity;
 	// Send decision to FPGA
+	*reg4 = (uint32_t) 0;
 	*reg1 = decision;
-	*reg0 = 2;
+	*reg0 = (uint32_t) 2;
+
 	std::vector<int> assignmentsInThisLevel;
 	assignmentsInThisLevel.push_back(decision);
-	while(*reg4 == 0){
+	while(*reg4 == (uint32_t) 0){
 		// Wait
 	}
 
-	while(*reg4 != 0){
-		volatile int status = *reg4;
-		switch(status){
-			case 1:
+	while(*reg4 != (uint32_t) 0){
+//		uint32_t status = *reg4;
+		switch(*reg4){
+			case (uint32_t) 1:
 			{
-				// Check Reg 6. If not 0 add to f.
-				bool isImpl = false;
-				while(*reg6 == 1){
-					isImpl = true;
+				while(*reg6 == (uint32_t) 1){
+
 					int implication = *reg5;
 					assignmentsInThisLevel.push_back(implication);
 
@@ -230,16 +239,46 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 
 					f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
 					f.literal_frequency[implication_id] = -1;
-
 					cout << "Unit Implication" << implication_id<< "\n";
 				}// Need to check if satisfied after all the unit implications
-				if(!isImpl){
-					return Cat::normal;
-				}
+
+				return Cat::normal;
 				break;
 			}
-			case 4:
+			case (uint32_t) 2:
+			{
+				while(*reg6 == (uint32_t) 1){
+					int implication = *reg5;
+					assignmentsInThisLevel.push_back(implication);
+
+					int implication_id = (implication >> 1) - 1;
+					int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+					f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
+					f.literal_frequency[implication_id] = -1;
+					cout << "Unit Implication" << implication_id<< "\n";
+				}// Need to check if satisfied after all the unit implications
+
+				return Cat::normal;
+				break;
+			}
+			case (uint32_t) 4:
+			{
 				// Conflict, Start backtracking. Pop each assignment in queue.
+				while(*reg6 == (uint32_t) 1){
+
+					int implication = *reg5;
+					assignmentsInThisLevel.push_back(implication);
+
+					int implication_id = (implication >> 1) - 1;
+					int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+					f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
+					f.literal_frequency[implication_id] = -1;
+					cout << "Unit Implication" << implication_id<< "\n";
+
+				}// Need to check if satisfied after all the unit implications
+
 				while (!assignmentsInThisLevel.empty()){
 			    	int backtrack=assignmentsInThisLevel.back();
 			    	assignmentsInThisLevel.pop_back();
@@ -259,10 +298,29 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 				}
 				return Cat::unsatisfied;
 				break;
-			case 5:
+			}
+			case (uint32_t) 5:
 				// SAT, output assignments
 				return Cat::satisfied;
 				break;
+			case (uint32_t) 6:
+			{
+				// Implication running
+				while(*reg6 == 1){
+
+					int implication = *reg5;
+					assignmentsInThisLevel.push_back(implication);
+
+					int implication_id = (implication >> 1) - 1;
+					int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+					f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
+					f.literal_frequency[implication_id] = -1;
+					cout << "Unit Implication" << implication_id<< "\n";
+
+				}// Need to check if satisfied after all the unit implications
+				break;
+			}
 			default:
 				return Cat::unsatisfied;
 				// Error state
@@ -346,9 +404,13 @@ void SATSolverDPLL::show_result(Formula &f, int result) {
  */
 void SATSolverDPLL::solve() {
     int result = DPLL(formula);  // final result of DPLL on the original formula
+
+//	unit_propagate(formula,1, false);
     // if normal return till the end, then the formula could not be satisfied in
     // any branch, so it is unsatisfiable
-    if (result == Cat::normal) {
+
+
+	if (result == Cat::normal) {
         show_result(formula,
                     Cat::unsatisfied);  // the argument formula is a dummy
                                         // here, the result is UNSAT
@@ -381,6 +443,7 @@ int main() {
     solver.initialize();   // initialize
     solver.solve();        // solve
 //    return 0;
+
 	    cleanup_platform();
 	    return 0;
 }

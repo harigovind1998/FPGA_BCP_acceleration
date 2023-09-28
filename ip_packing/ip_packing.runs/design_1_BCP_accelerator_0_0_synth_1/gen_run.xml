@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="design_1_BCP_accelerator_0_0_synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1695753363">
+<GenRun Id="design_1_BCP_accelerator_0_0_synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1695869346">
   <File Type="VDS-TIMINGSUMMARY" Name="design_1_BCP_accelerator_0_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_1_BCP_accelerator_0_0.dcp"/>
   <File Type="RDS-UTIL-PB" Name="design_1_BCP_accelerator_0_0_utilization_synth.pb"/>

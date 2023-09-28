@@ -4,7 +4,7 @@
     "xci_name": "design_1_BCP_accelerator_0_0",
     "cell_name": "BCP_accelerator_0",
     "component_reference": "carleton.ca:user:BCP_accelerator:2.0",
-    "ip_revision": "31",
+    "ip_revision": "52",
     "gen_directory": "../../../../../../ip_packing.gen/sources_1/bd/design_1/ip/design_1_BCP_accelerator_0_0",
     "parameters": {
       "component_parameters": {
@@ -53,7 +53,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "31" } ],
+        "IPREVISION": [ { "value": "52" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ip_packing.gen/sources_1/bd/design_1/ip/design_1_BCP_accelerator_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -64,8 +64,7 @@
     },
     "boundary": {
       "ports": {
-        "op_indicator_led": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
-        "fpga_status_led": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "led_out": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
         "s00_axi_aclk": [ { "direction": "in" } ],
         "s00_axi_aresetn": [ { "direction": "in" } ],
         "s00_axi_awaddr": [ { "direction": "in", "size_left": "5", "size_right": "0" } ],
