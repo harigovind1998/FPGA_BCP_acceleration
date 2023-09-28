@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="26,743.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="30,873.001 ns"></ZoomEndTime>
-      <Cursor1Time time="28,975.000 ns"></Cursor1Time>
+      <ZoomStartTime time="33,962.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="36,035.001 ns"></ZoomEndTime>
+      <Cursor1Time time="34,545.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="304"></NameColumnWidth>
-      <ValueColumnWidth column_width="133"></ValueColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="27" />
+   <WVObjectSize size="63" />
    <wvobject type="group" fp_name="group296">
       <obj_property name="label">TestBenchSigs</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -194,8 +194,8 @@
          <obj_property name="ObjectShortName">var_3_id_set[5:0]</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/clause_update_id_in">
-         <obj_property name="ElementShortName">clause_update_id_in[6:0]</obj_property>
-         <obj_property name="ObjectShortName">clause_update_id_in[6:0]</obj_property>
+         <obj_property name="ElementShortName">clause_update_id_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">clause_update_id_in[7:0]</obj_property>
       </wvobject>
       <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/update_assignment">
          <obj_property name="ElementShortName">update_assignment</obj_property>
@@ -205,8 +205,8 @@
          <obj_property name="label">Implication</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implication">
-            <obj_property name="ElementShortName">implication[6:0]</obj_property>
-            <obj_property name="ObjectShortName">implication[6:0]</obj_property>
+            <obj_property name="ElementShortName">implication[7:0]</obj_property>
+            <obj_property name="ObjectShortName">implication[7:0]</obj_property>
          </wvobject>
          <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/implication_found">
             <obj_property name="ElementShortName">implication_found</obj_property>
@@ -250,6 +250,10 @@
       <obj_property name="label">FIFO</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/AXI_top_tb/DUT/implicationFIFO/rst_i">
+         <obj_property name="ElementShortName">rst_i</obj_property>
+         <obj_property name="ObjectShortName">rst_i</obj_property>
+      </wvobject>
       <wvobject type="logic" fp_name="/AXI_top_tb/DUT/implicationFIFO/empty_o">
          <obj_property name="ElementShortName">empty_o</obj_property>
          <obj_property name="ObjectShortName">empty_o</obj_property>
@@ -259,36 +263,36 @@
          <obj_property name="ObjectShortName">full_o</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/implication_i">
-         <obj_property name="ElementShortName">implication_i[5:0]</obj_property>
-         <obj_property name="ObjectShortName">implication_i[5:0]</obj_property>
+         <obj_property name="ElementShortName">implication_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">implication_i[31:0]</obj_property>
       </wvobject>
       <wvobject type="logic" fp_name="/AXI_top_tb/DUT/implicationFIFO/wr_i">
          <obj_property name="ElementShortName">wr_i</obj_property>
          <obj_property name="ObjectShortName">wr_i</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/implication_o">
-         <obj_property name="ElementShortName">implication_o[5:0]</obj_property>
-         <obj_property name="ObjectShortName">implication_o[5:0]</obj_property>
+         <obj_property name="ElementShortName">implication_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">implication_o[31:0]</obj_property>
       </wvobject>
       <wvobject type="logic" fp_name="/AXI_top_tb/DUT/implicationFIFO/rd_i">
          <obj_property name="ElementShortName">rd_i</obj_property>
          <obj_property name="ObjectShortName">rd_i</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/data">
-         <obj_property name="ElementShortName">data[5:0]</obj_property>
-         <obj_property name="ObjectShortName">data[5:0]</obj_property>
+         <obj_property name="ElementShortName">data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31:0]</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/data_out">
-         <obj_property name="ElementShortName">data_out[5:0]</obj_property>
-         <obj_property name="ObjectShortName">data_out[5:0]</obj_property>
+         <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/count">
          <obj_property name="ElementShortName">count[3:0]</obj_property>
          <obj_property name="ObjectShortName">count[3:0]</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/FIFO">
-         <obj_property name="ElementShortName">FIFO[0:16][5:0]</obj_property>
-         <obj_property name="ObjectShortName">FIFO[0:16][5:0]</obj_property>
+         <obj_property name="ElementShortName">FIFO[0:32][31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO[0:32][31:0]</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/implicationFIFO/readCounter">
          <obj_property name="ElementShortName">readCounter[3:0]</obj_property>
@@ -306,6 +310,7 @@
    <wvobject type="group" fp_name="group344">
       <obj_property name="label">Implication Selector</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/implicationSelector/rst_i">
          <obj_property name="ElementShortName">rst_i</obj_property>
          <obj_property name="ObjectShortName">rst_i</obj_property>
@@ -315,8 +320,9 @@
          <obj_property name="ObjectShortName">start_find_impl_i</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implicationSelector/is_unit_i">
-         <obj_property name="ElementShortName">is_unit_i[127:0]</obj_property>
-         <obj_property name="ObjectShortName">is_unit_i[127:0]</obj_property>
+         <obj_property name="ElementShortName">is_unit_i[128:0]</obj_property>
+         <obj_property name="ObjectShortName">is_unit_i[128:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implicationSelector/implication_variable_ids_i">
          <obj_property name="ElementShortName">implication_variable_ids_i[768:0]</obj_property>
@@ -343,8 +349,8 @@
          <obj_property name="ObjectShortName">state</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implicationSelector/clause_count">
-         <obj_property name="ElementShortName">clause_count[6:0]</obj_property>
-         <obj_property name="ObjectShortName">clause_count[6:0]</obj_property>
+         <obj_property name="ElementShortName">clause_count[7:0]</obj_property>
+         <obj_property name="ObjectShortName">clause_count[7:0]</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/implicationSelector/implication_variable_id">
          <obj_property name="ElementShortName">implication_variable_id[5:0]</obj_property>
@@ -707,5 +713,149 @@
          <obj_property name="ElementShortName">variable_3_assignment[1:0]</obj_property>
          <obj_property name="ObjectShortName">variable_3_assignment[1:0]</obj_property>
       </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider381" type="divider">
+      <obj_property name="label">CM12</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /rst_i">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /update_clause_i">
+      <obj_property name="ElementShortName">update_clause_i</obj_property>
+      <obj_property name="ObjectShortName">update_clause_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /clause_id_to_set_i">
+      <obj_property name="ElementShortName">clause_id_to_set_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">clause_id_to_set_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /set_variable_id_i">
+      <obj_property name="ElementShortName">set_variable_id_i[18:0]</obj_property>
+      <obj_property name="ObjectShortName">set_variable_id_i[18:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /var_1_id_set">
+      <obj_property name="ElementShortName">var_1_id_set[5:0]</obj_property>
+      <obj_property name="ObjectShortName">var_1_id_set[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /var_2_id_set">
+      <obj_property name="ElementShortName">var_2_id_set[5:0]</obj_property>
+      <obj_property name="ObjectShortName">var_2_id_set[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /var_3_id_set">
+      <obj_property name="ElementShortName">var_3_id_set[5:0]</obj_property>
+      <obj_property name="ObjectShortName">var_3_id_set[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /set_variable_polarity_i">
+      <obj_property name="ElementShortName">set_variable_polarity_i[2:0]</obj_property>
+      <obj_property name="ObjectShortName">set_variable_polarity_i[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /update_assignment_i">
+      <obj_property name="ElementShortName">update_assignment_i</obj_property>
+      <obj_property name="ObjectShortName">update_assignment_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /decision_variable_id_i">
+      <obj_property name="ElementShortName">decision_variable_id_i[5:0]</obj_property>
+      <obj_property name="ObjectShortName">decision_variable_id_i[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /decision_assignment_i">
+      <obj_property name="ElementShortName">decision_assignment_i</obj_property>
+      <obj_property name="ObjectShortName">decision_assignment_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /backtrack_i">
+      <obj_property name="ElementShortName">backtrack_i</obj_property>
+      <obj_property name="ObjectShortName">backtrack_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /clause_SAT_o">
+      <obj_property name="ElementShortName">clause_SAT_o</obj_property>
+      <obj_property name="ObjectShortName">clause_SAT_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /conflict_o">
+      <obj_property name="ElementShortName">conflict_o</obj_property>
+      <obj_property name="ObjectShortName">conflict_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /unit_o">
+      <obj_property name="ElementShortName">unit_o</obj_property>
+      <obj_property name="ObjectShortName">unit_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /implication_variable_id_o">
+      <obj_property name="ElementShortName">implication_variable_id_o[5:0]</obj_property>
+      <obj_property name="ObjectShortName">implication_variable_id_o[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /implication_assignment_o">
+      <obj_property name="ElementShortName">implication_assignment_o</obj_property>
+      <obj_property name="ObjectShortName">implication_assignment_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /clause_in_use">
+      <obj_property name="ElementShortName">clause_in_use</obj_property>
+      <obj_property name="ObjectShortName">clause_in_use</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /variable_1_id">
+      <obj_property name="ElementShortName">variable_1_id[5:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_1_id[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /variable_2_id">
+      <obj_property name="ElementShortName">variable_2_id[5:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_2_id[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /variable_3_id">
+      <obj_property name="ElementShortName">variable_3_id[5:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_3_id[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /variable_1_polarity">
+      <obj_property name="ElementShortName">variable_1_polarity</obj_property>
+      <obj_property name="ObjectShortName">variable_1_polarity</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /variable_2_polarity">
+      <obj_property name="ElementShortName">variable_2_polarity</obj_property>
+      <obj_property name="ObjectShortName">variable_2_polarity</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /variable_3_polarity">
+      <obj_property name="ElementShortName">variable_3_polarity</obj_property>
+      <obj_property name="ObjectShortName">variable_3_polarity</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /variable_1_assignment">
+      <obj_property name="ElementShortName">variable_1_assignment[1:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_1_assignment[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /variable_2_assignment">
+      <obj_property name="ElementShortName">variable_2_assignment[1:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_2_assignment[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /variable_3_assignment">
+      <obj_property name="ElementShortName">variable_3_assignment[1:0]</obj_property>
+      <obj_property name="ObjectShortName">variable_3_assignment[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /all_assigned">
+      <obj_property name="ElementShortName">all_assigned</obj_property>
+      <obj_property name="ObjectShortName">all_assigned</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /var_1_eval">
+      <obj_property name="ElementShortName">var_1_eval</obj_property>
+      <obj_property name="ObjectShortName">var_1_eval</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /var_2_eval">
+      <obj_property name="ElementShortName">var_2_eval</obj_property>
+      <obj_property name="ObjectShortName">var_2_eval</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /var_3_eval">
+      <obj_property name="ElementShortName">var_3_eval</obj_property>
+      <obj_property name="ObjectShortName">var_3_eval</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /SAT">
+      <obj_property name="ElementShortName">SAT</obj_property>
+      <obj_property name="ObjectShortName">SAT</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /assigned_vars">
+      <obj_property name="ElementShortName">assigned_vars[2:0]</obj_property>
+      <obj_property name="ObjectShortName">assigned_vars[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_top_tb/DUT/topModule/\generate_clause_modules[17].clauseModule /is_unit">
+      <obj_property name="ElementShortName">is_unit</obj_property>
+      <obj_property name="ObjectShortName">is_unit</obj_property>
    </wvobject>
 </wave_config>
