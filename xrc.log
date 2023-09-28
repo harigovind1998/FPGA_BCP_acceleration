@@ -1,14 +1,8 @@
-Fri Sep 22 15:45:25 2023: Server was asked to start on port: '46119'
-Fri Sep 22 15:45:25 2023: Server is using token UUID: 'fb7f32ff-c24f-4530-8d3f-e64f7f01a86c'
-Fri Sep 22 15:45:25 2023: Attempting to start server on port '46119'
-Fri Sep 22 15:45:25 2023: XRC main fifo: created main fifo '/tmp/xrcmainfb7f32ff-c24f-4530-8d3f-e64f7f01a86c', fd read = 11
-Fri Sep 22 15:45:25 2023: Running Rule Check Server
-Fri Sep 22 15:45:25 2023: Version 1.6.1
-Fri Sep 22 15:45:25 2023: Rule Check Server: Accepted socket connection from client
-Fri Sep 22 15:45:25 2023: EXCHANGE_TOKEN received, server token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c, passed token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c
-Fri Sep 22 15:47:28 2023: STOP_SERVER received, server token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c, passed token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c
-Fri Sep 22 15:47:28 2023: Socket received request to stop server.
-Fri Sep 22 15:47:28 2023: SERVER: destructor for server bound to port 46119
-Fri Sep 22 15:47:28 2023: XRC main fifo: Good unlink of /tmp/xrcmainfb7f32ff-c24f-4530-8d3f-e64f7f01a86c
-Fri Sep 22 15:47:28 2023: Server exiting with status 0.
-Fri Sep 22 15:47:28 2023: Closing log file.
+Thu Sep 28 17:26:06 2023: Server was asked to start on port: '37429'
+Thu Sep 28 17:26:06 2023: Server is using token UUID: 'b1abc805-f10f-4504-9ba3-7b5d5924fae4'
+Thu Sep 28 17:26:06 2023: Attempting to start server on port '37429'
+Thu Sep 28 17:26:06 2023: XRC main fifo: created main fifo '/tmp/xrcmainb1abc805-f10f-4504-9ba3-7b5d5924fae4', fd read = 11
+Thu Sep 28 17:26:06 2023: Running Rule Check Server
+Thu Sep 28 17:26:06 2023: Version 1.6.1
+Thu Sep 28 17:26:06 2023: Rule Check Server: Accepted socket connection from client
+Thu Sep 28 17:26:06 2023: EXCHANGE_TOKEN received, server token: b1abc805-f10f-4504-9ba3-7b5d5924fae4, passed token: b1abc805-f10f-4504-9ba3-7b5d5924fae4

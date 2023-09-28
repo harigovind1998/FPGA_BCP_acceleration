@@ -115,13 +115,13 @@ void SATSolverDPLL::SendClausesToAccelerator(){
 
 		uint32_t clause_id = (uint32_t) i;
 
-		*reg0 = 0;
+		*reg0 = 4;
 		*reg1 = reg1Val;
 		*reg2 = reg2Val;
 		*reg3 = reg3Val;
-		*reg0 = (clause_id << 1);
-		sleep(1);
-		*reg0 = (clause_id << 1)|1;
+		uint32_t temp_id = clause_id << 2;
+		*reg0 = temp_id;
+		*reg0 = temp_id|1;
 
 		while(*reg4 == (uint32_t) 0){
 		}
