@@ -21,3 +21,4 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate
+platform active {BCP_accelerator_V2_21}
