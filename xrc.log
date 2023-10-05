@@ -1,14 +1,11 @@
-Fri Sep 22 15:45:25 2023: Server was asked to start on port: '46119'
-Fri Sep 22 15:45:25 2023: Server is using token UUID: 'fb7f32ff-c24f-4530-8d3f-e64f7f01a86c'
-Fri Sep 22 15:45:25 2023: Attempting to start server on port '46119'
-Fri Sep 22 15:45:25 2023: XRC main fifo: created main fifo '/tmp/xrcmainfb7f32ff-c24f-4530-8d3f-e64f7f01a86c', fd read = 11
-Fri Sep 22 15:45:25 2023: Running Rule Check Server
-Fri Sep 22 15:45:25 2023: Version 1.6.1
-Fri Sep 22 15:45:25 2023: Rule Check Server: Accepted socket connection from client
-Fri Sep 22 15:45:25 2023: EXCHANGE_TOKEN received, server token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c, passed token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c
-Fri Sep 22 15:47:28 2023: STOP_SERVER received, server token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c, passed token: fb7f32ff-c24f-4530-8d3f-e64f7f01a86c
-Fri Sep 22 15:47:28 2023: Socket received request to stop server.
-Fri Sep 22 15:47:28 2023: SERVER: destructor for server bound to port 46119
-Fri Sep 22 15:47:28 2023: XRC main fifo: Good unlink of /tmp/xrcmainfb7f32ff-c24f-4530-8d3f-e64f7f01a86c
-Fri Sep 22 15:47:28 2023: Server exiting with status 0.
-Fri Sep 22 15:47:28 2023: Closing log file.
+Wed Oct  4 23:33:15 2023: Server was asked to start on port: '37951'
+Wed Oct  4 23:33:15 2023: Server is using token UUID: '2597152f-7921-41c6-944c-7b6227777771'
+Wed Oct  4 23:33:15 2023: Attempting to start server on port '37951'
+Wed Oct  4 23:33:15 2023: XRC main fifo: created main fifo '/tmp/xrcmain2597152f-7921-41c6-944c-7b6227777771', fd read = 11
+Wed Oct  4 23:33:15 2023: Running Rule Check Server
+Wed Oct  4 23:33:15 2023: Version 1.6.1
+Wed Oct  4 23:33:15 2023: Rule Check Server: Accepted socket connection from client
+Wed Oct  4 23:33:15 2023: EXCHANGE_TOKEN received, server token: 2597152f-7921-41c6-944c-7b6227777771, passed token: 2597152f-7921-41c6-944c-7b6227777771
+Wed Oct  4 23:33:38 2023: STOP_SERVER received, server token: 2597152f-7921-41c6-944c-7b6227777771, passed token: 2597152f-7921-41c6-944c-7b6227777771
+Wed Oct  4 23:33:38 2023: Socket received request to stop server.
+Wed Oct  4 23:33:38 2023: SERVER: destructor for server bound to port 37951
