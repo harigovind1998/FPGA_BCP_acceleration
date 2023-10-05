@@ -228,7 +228,7 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 		// Wait
 	}
 
-	sleep(1);
+//	sleep(1);
 
 	while(*reg4 != (uint32_t) 0){
 		switch(*reg4){
@@ -445,20 +445,6 @@ void SATSolverDPLL::solve() {
 
 int main() {
 	init_platform();
-
-//	    volatile uint32_t *reg0 = (volatile uint32_t *) 0x43C00000;
-//
-//	    volatile uint32_t *reg1 = (volatile uint32_t *) 0x43C00004;
-//
-//	    volatile uint32_t *reg2 = (volatile uint32_t *) 0x43C00008;
-//
-//	    volatile uint32_t *reg3 = (volatile uint32_t *) 0x43C0000c;
-//
-//	    volatile uint32_t *reg4 = (volatile uint32_t *) 0x43C00010;
-//
-//	    volatile uint32_t *reg5 = (volatile uint32_t *) 0x43C00014;
-//
-//	    volatile uint32_t *reg6 = (volatile uint32_t *) 0x43C00018;
 
 	    printf("Hello World\n");
 	    printf("Successfully ran Hello World application\n");

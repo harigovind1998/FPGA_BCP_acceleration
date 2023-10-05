@@ -366,3 +366,7 @@ timestamp=[2023-10-04 22:35:34], mode=BUILD, duration=0:00:00.120, duration_ms=1
 timestamp=[2023-10-04 22:46:03], mode=PLATFORM_GENERATION, duration=0:00:04.400, duration_ms=4400, data={name=BCP_accelerator_V2_22}
 timestamp=[2023-10-04 22:46:03], mode=BUILD, duration=0:00:00.122, duration_ms=122, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=true}
 timestamp=[2023-10-04 22:46:05], mode=BUILD, duration=0:00:00.875, duration_ms=875, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-04 23:18:39], mode=PLATFORM_CREATION, duration=0:00:04.678, duration_ms=4678, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2023-10-04 23:19:45], mode=PLATFORM_GENERATION, duration=0:00:07.350, duration_ms=7350, data={name=BCP_accelerator_V2_23}
+timestamp=[2023-10-04 23:19:47], mode=BUILD, duration=0:00:00.878, duration_ms=878, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-04 23:24:01], mode=BUILD, duration=0:00:00.833, duration_ms=833, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
