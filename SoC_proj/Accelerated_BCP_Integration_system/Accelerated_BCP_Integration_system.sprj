@@ -6,7 +6,7 @@
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
     </configBuildOptions>
     <lastBuildOptions xsi:type="systemproject:SystemOptions">
-      <applications name="Accelerated_BCP_Integration" domainName="standalone_domain" domainPrettyName="standalone on ps7_cortexa9_0" appBuildConfig="Debug"/>
+      <applications name="Accelerated_BCP_Integration" domainName="standalone_domain" domainPrettyName="standalone_domain" appBuildConfig="Debug"/>
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
     </lastBuildOptions>
   </configuration>

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date             : Thu Sep 28 17:13:52 2023
+| Date             : Wed Oct  4 23:14:58 2023
 | Host             : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.016 |        3 |       --- |             --- |
-| Slice Logic              |     0.009 |    21843 |       --- |             --- |
+| Clocks                   |     0.015 |        3 |       --- |             --- |
+| Slice Logic              |     0.009 |    21869 |       --- |             --- |
 |   LUT as Logic           |     0.008 |     8847 |     14400 |           61.44 |
 |   LUT as Distributed RAM |    <0.001 |      420 |      6000 |            7.00 |
-|   Register               |    <0.001 |     8942 |     28800 |           31.05 |
-|   LUT as Shift Register  |    <0.001 |      340 |      6000 |            5.67 |
-|   CARRY4                 |    <0.001 |       58 |      4400 |            1.32 |
+|   Register               |    <0.001 |     8952 |     28800 |           31.08 |
+|   LUT as Shift Register  |    <0.001 |      342 |      6000 |            5.70 |
+|   CARRY4                 |    <0.001 |       60 |      4400 |            1.36 |
 |   F7/F8 Muxes            |    <0.001 |      247 |     17600 |            1.40 |
 |   Others                 |     0.000 |      943 |       --- |             --- |
-| Signals                  |     0.010 |    15308 |       --- |             --- |
+| Signals                  |     0.010 |    15329 |       --- |             --- |
 | I/O                      |     0.000 |        4 |       100 |            4.00 |
 | PS7                      |     1.173 |        1 |       --- |             --- |
 | Static Power             |     0.115 |          |           |                 |
@@ -153,8 +153,8 @@ Table of Contents
 +--------------------------+-----------+
 | design_1_wrapper         |     1.208 |
 |   design_1_i             |     1.208 |
-|     BCP_accelerator_0    |     0.012 |
-|       inst               |     0.012 |
+|     BCP_accelerator_0    |     0.011 |
+|       inst               |     0.011 |
 |     axi_smc              |     0.023 |
 |       inst               |     0.023 |
 |     processing_system7_0 |     1.174 |

@@ -6,3 +6,9 @@ Thu Sep 28 17:26:06 2023: Running Rule Check Server
 Thu Sep 28 17:26:06 2023: Version 1.6.1
 Thu Sep 28 17:26:06 2023: Rule Check Server: Accepted socket connection from client
 Thu Sep 28 17:26:06 2023: EXCHANGE_TOKEN received, server token: b1abc805-f10f-4504-9ba3-7b5d5924fae4, passed token: b1abc805-f10f-4504-9ba3-7b5d5924fae4
+Thu Sep 28 17:44:18 2023: STOP_SERVER received, server token: b1abc805-f10f-4504-9ba3-7b5d5924fae4, passed token: b1abc805-f10f-4504-9ba3-7b5d5924fae4
+Thu Sep 28 17:44:18 2023: Socket received request to stop server.
+Thu Sep 28 17:44:18 2023: SERVER: destructor for server bound to port 37429
+Thu Sep 28 17:44:18 2023: XRC main fifo: Good unlink of /tmp/xrcmainb1abc805-f10f-4504-9ba3-7b5d5924fae4
+Thu Sep 28 17:44:18 2023: Server exiting with status 0.
+Thu Sep 28 17:44:18 2023: Closing log file.

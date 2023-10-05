@@ -1,2 +1,6 @@
-Nothing to build in platform 'BCP_accelerator_V2_22'
+22:45:59 **** Incremental Build of project BCP_accelerator_V2_22 ****
+buildplatform.sh 45461 BCP_accelerator_V2_22 no_domain_build 
+XSDB Server Channel: tcfchan#4
+
+22:46:03 Build Finished (took 4s.378ms)
 
