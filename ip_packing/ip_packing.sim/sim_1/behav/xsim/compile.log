@@ -1,0 +1,99 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3
+INFO: [VRFC 10-311] analyzing module clk_map_imp_5Y9LOC
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_1TZX5BB
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_1GOYQYZ
+INFO: [VRFC 10-311] analyzing module m01_exit_pipeline_imp_1XMPFJB
+INFO: [VRFC 10-311] analyzing module m01_nodes_imp_94N5OD
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_USCCV8
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_Y7M43I
+INFO: [VRFC 10-311] analyzing module switchboards_imp_4N4PBE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/sim/bd_afc3_one_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_one_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/sim/bd_afc3_arsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_arsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/sim/bd_afc3_rsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_rsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/sim/bd_afc3_awsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_awsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_5/sim/bd_afc3_wsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_wsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/sim/bd_afc3_bsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_bsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/sim/bd_afc3_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/sim/bd_afc3_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_9/sim/bd_afc3_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_10/sim/bd_afc3_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_11/sim/bd_afc3_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_12/sim/bd_afc3_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_13/sim/bd_afc3_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_14/sim/bd_afc3_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_15/sim/bd_afc3_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_16/sim/bd_afc3_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_17/sim/bd_afc3_m00arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/sim/bd_afc3_m00rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_19/sim/bd_afc3_m00awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_20/sim/bd_afc3_m00wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_21/sim/bd_afc3_m00bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_22/sim/bd_afc3_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/sim/bd_afc3_m01s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m01s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/sim/bd_afc3_m01arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m01arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/sim/bd_afc3_m01rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m01rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/sim/bd_afc3_m01awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m01awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_27/sim/bd_afc3_m01wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m01wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_28/sim/bd_afc3_m01bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m01bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_29/sim/bd_afc3_m01e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m01e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axi_smc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ipshared/7f3b/hdl/BCP_accelerator_v2_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCP_accelerator_v2_0_S00_AXI
+WARNING: [VRFC 10-634] event expressions must result in a singular type [/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ipshared/7f3b/hdl/BCP_accelerator_v2_0_S00_AXI.v:598]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ipshared/7f3b/hdl/BCP_accelerator_v2_0_S01_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCP_accelerator_v2_0_S01_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ipshared/7f3b/hdl/ClauseModule.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClauseModule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ipshared/7f3b/hdl/ImplicationFIFO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImplicationFIFO
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ipshared/7f3b/hdl/ImplicationSelector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImplicationSelector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ipshared/7f3b/hdl/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ipshared/7f3b/hdl/BCP_accelerator_v2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCP_accelerator_v2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_BCP_accelerator_0_0/sim/design_1_BCP_accelerator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_BCP_accelerator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/sim/bd_afc3_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_afc3_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_ps7_0_50M_0'

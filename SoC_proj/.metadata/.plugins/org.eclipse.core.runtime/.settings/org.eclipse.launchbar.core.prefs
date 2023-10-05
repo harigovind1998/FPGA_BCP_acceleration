@@ -1,0 +1,14 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_Accelerated_BCP_Integration-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_Accelerated_BCP_Integration-GDB_1
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_Accelerated_BCP_Integration-Default/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_Accelerated_BCP_Integration-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_Accelerated_BCP_Integration-Default_1/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_Accelerated_BCP_Integration-Default_1/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_Accelerated_BCP_Integration-GDB/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_Accelerated_BCP_Integration-GDB/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_HW_accelerated_DPLL-Default_2/activeLaunchMode=debug

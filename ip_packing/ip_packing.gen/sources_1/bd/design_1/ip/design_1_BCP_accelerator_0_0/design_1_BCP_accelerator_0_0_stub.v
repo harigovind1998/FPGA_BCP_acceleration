@@ -1,8 +1,8 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Mon Sep 18 12:52:10 2023
-// Host        : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.2 LTS
+// Date        : Wed Oct  4 23:13:30 2023
+// Host        : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/ip_packing.gen/sources_1/bd/design_1/ip/design_1_BCP_accelerator_0_0/design_1_BCP_accelerator_0_0_stub.v
 // Design      : design_1_BCP_accelerator_0_0
@@ -14,21 +14,20 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "BCP_accelerator_v2_0,Vivado 2022.2" *)
-module design_1_BCP_accelerator_0_0(op_indicator_led, s00_axi_aclk, 
-  s00_axi_aresetn, s00_axi_awaddr, s00_axi_awlen, s00_axi_awsize, s00_axi_awburst, 
-  s00_axi_awlock, s00_axi_awcache, s00_axi_awprot, s00_axi_awqos, s00_axi_awregion, 
-  s00_axi_awvalid, s00_axi_awready, s00_axi_wdata, s00_axi_wstrb, s00_axi_wlast, 
-  s00_axi_wvalid, s00_axi_wready, s00_axi_bresp, s00_axi_bvalid, s00_axi_bready, 
-  s00_axi_araddr, s00_axi_arlen, s00_axi_arsize, s00_axi_arburst, s00_axi_arlock, 
-  s00_axi_arcache, s00_axi_arprot, s00_axi_arqos, s00_axi_arregion, s00_axi_arvalid, 
-  s00_axi_arready, s00_axi_rdata, s00_axi_rresp, s00_axi_rlast, s00_axi_rvalid, 
-  s00_axi_rready, s01_axi_aclk, s01_axi_aresetn, s01_axi_awaddr, s01_axi_awprot, 
-  s01_axi_awvalid, s01_axi_awready, s01_axi_wdata, s01_axi_wstrb, s01_axi_wvalid, 
-  s01_axi_wready, s01_axi_bresp, s01_axi_bvalid, s01_axi_bready, s01_axi_araddr, 
-  s01_axi_arprot, s01_axi_arvalid, s01_axi_arready, s01_axi_rdata, s01_axi_rresp, 
-  s01_axi_rvalid, s01_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="op_indicator_led[1:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[5:0],s00_axi_awlen[7:0],s00_axi_awsize[2:0],s00_axi_awburst[1:0],s00_axi_awlock,s00_axi_awcache[3:0],s00_axi_awprot[2:0],s00_axi_awqos[3:0],s00_axi_awregion[3:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wlast,s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[5:0],s00_axi_arlen[7:0],s00_axi_arsize[2:0],s00_axi_arburst[1:0],s00_axi_arlock,s00_axi_arcache[3:0],s00_axi_arprot[2:0],s00_axi_arqos[3:0],s00_axi_arregion[3:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rlast,s00_axi_rvalid,s00_axi_rready,s01_axi_aclk,s01_axi_aresetn,s01_axi_awaddr[4:0],s01_axi_awprot[2:0],s01_axi_awvalid,s01_axi_awready,s01_axi_wdata[31:0],s01_axi_wstrb[3:0],s01_axi_wvalid,s01_axi_wready,s01_axi_bresp[1:0],s01_axi_bvalid,s01_axi_bready,s01_axi_araddr[4:0],s01_axi_arprot[2:0],s01_axi_arvalid,s01_axi_arready,s01_axi_rdata[31:0],s01_axi_rresp[1:0],s01_axi_rvalid,s01_axi_rready" */;
-  output [1:0]op_indicator_led;
+module design_1_BCP_accelerator_0_0(led_out, s00_axi_aclk, s00_axi_aresetn, 
+  s00_axi_awaddr, s00_axi_awlen, s00_axi_awsize, s00_axi_awburst, s00_axi_awlock, 
+  s00_axi_awcache, s00_axi_awprot, s00_axi_awqos, s00_axi_awregion, s00_axi_awvalid, 
+  s00_axi_awready, s00_axi_wdata, s00_axi_wstrb, s00_axi_wlast, s00_axi_wvalid, 
+  s00_axi_wready, s00_axi_bresp, s00_axi_bvalid, s00_axi_bready, s00_axi_araddr, 
+  s00_axi_arlen, s00_axi_arsize, s00_axi_arburst, s00_axi_arlock, s00_axi_arcache, 
+  s00_axi_arprot, s00_axi_arqos, s00_axi_arregion, s00_axi_arvalid, s00_axi_arready, 
+  s00_axi_rdata, s00_axi_rresp, s00_axi_rlast, s00_axi_rvalid, s00_axi_rready, s01_axi_aclk, 
+  s01_axi_aresetn, s01_axi_awaddr, s01_axi_awprot, s01_axi_awvalid, s01_axi_awready, 
+  s01_axi_wdata, s01_axi_wstrb, s01_axi_wvalid, s01_axi_wready, s01_axi_bresp, 
+  s01_axi_bvalid, s01_axi_bready, s01_axi_araddr, s01_axi_arprot, s01_axi_arvalid, 
+  s01_axi_arready, s01_axi_rdata, s01_axi_rresp, s01_axi_rvalid, s01_axi_rready)
+/* synthesis syn_black_box black_box_pad_pin="led_out[3:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[5:0],s00_axi_awlen[7:0],s00_axi_awsize[2:0],s00_axi_awburst[1:0],s00_axi_awlock,s00_axi_awcache[3:0],s00_axi_awprot[2:0],s00_axi_awqos[3:0],s00_axi_awregion[3:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wlast,s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[5:0],s00_axi_arlen[7:0],s00_axi_arsize[2:0],s00_axi_arburst[1:0],s00_axi_arlock,s00_axi_arcache[3:0],s00_axi_arprot[2:0],s00_axi_arqos[3:0],s00_axi_arregion[3:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rlast,s00_axi_rvalid,s00_axi_rready,s01_axi_aclk,s01_axi_aresetn,s01_axi_awaddr[4:0],s01_axi_awprot[2:0],s01_axi_awvalid,s01_axi_awready,s01_axi_wdata[31:0],s01_axi_wstrb[3:0],s01_axi_wvalid,s01_axi_wready,s01_axi_bresp[1:0],s01_axi_bvalid,s01_axi_bready,s01_axi_araddr[4:0],s01_axi_arprot[2:0],s01_axi_arvalid,s01_axi_arready,s01_axi_rdata[31:0],s01_axi_rresp[1:0],s01_axi_rvalid,s01_axi_rready" */;
+  output [3:0]led_out;
   input s00_axi_aclk;
   input s00_axi_aresetn;
   input [5:0]s00_axi_awaddr;

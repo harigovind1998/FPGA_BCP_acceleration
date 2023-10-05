@@ -7,27 +7,27 @@
 
 
 ##LEDS
-set_property -dict { PACKAGE_PIN N20   IOSTANDARD LVCMOS33 } [get_ports { led_indicator[0] }]; #IO_L14P_T2_SRCC_34 Schematic=LD0
-set_property -dict { PACKAGE_PIN P20   IOSTANDARD LVCMOS33 } [get_ports { led_indicator[1] }]; #IO_L14N_T2_SRCC_34 Schematic=LD1
-#set_property -dict { PACKAGE_PIN R19   IOSTANDARD LVCMOS33 } [get_ports { led[2] }]; #IO_0_34 Schematic=LD2
-#set_property -dict { PACKAGE_PIN T20   IOSTANDARD LVCMOS33 } [get_ports { led[3] }]; #IO_L15P_T2_DQS_34 Schematic=LD3
+set_property -dict { PACKAGE_PIN N20   IOSTANDARD LVCMOS33 } [get_ports { led_o[0] }]; #IO_L14P_T2_SRCC_34 Schematic=LD0
+set_property -dict { PACKAGE_PIN P20   IOSTANDARD LVCMOS33 } [get_ports { led_o[1] }]; #IO_L14N_T2_SRCC_34 Schematic=LD1
+set_property -dict { PACKAGE_PIN R19   IOSTANDARD LVCMOS33 } [get_ports { led_o[2] }]; #IO_0_34 Schematic=LD2
+set_property -dict { PACKAGE_PIN T20   IOSTANDARD LVCMOS33 } [get_ports { led_o[3] }]; #IO_L15P_T2_DQS_34 Schematic=LD3
 
 ##RGB_LEDS
-#set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_0[0] }]; #IO_L3P_T0_DWS_PUDC_B_34 Schematic=LD4_R
-#set_property -dict { PACKAGE_PIN T19   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_0[1] }]; #IO_25_34 Schematic=LD4_G
-#set_property -dict { PACKAGE_PIN W20   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_0[2] }]; #IO_L16N_T2_34 Schematic=LD4_B
+#set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } [get_ports { led_out[4] }]; #IO_L3P_T0_DWS_PUDC_B_34 Schematic=LD4_R
+#set_property -dict { PACKAGE_PIN T19   IOSTANDARD LVCMOS33 } [get_ports { led_out[4] }]; #IO_25_34 Schematic=LD4_G
+#set_property -dict { PACKAGE_PIN W20   IOSTANDARD LVCMOS33 } [get_ports { led_out[4] }]; #IO_L16N_T2_34 Schematic=LD4_B
 
-#set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_1[0] }]; #IO_L17N_T2_34  Schematic=LD5_R
-#set_property -dict { PACKAGE_PIN V20   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_1[1] }]; #IO_L16P_T2_34 Schematic=LD5_G
-#set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_1[2] }]; #IO_L22N_T3_34 Schematic=LD5_B
+#set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 } [get_ports { led_out[5] }]; #IO_L17N_T2_34  Schematic=LD5_R
+#set_property -dict { PACKAGE_PIN V20   IOSTANDARD LVCMOS33 } [get_ports { led_out[5] }]; #IO_L16P_T2_34 Schematic=LD5_G
+#set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports { led_out[5] }]; #IO_L22N_T3_34 Schematic=LD5_B
 
-#set_property -dict { PACKAGE_PIN W18   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_2[0] }]; #IO_L22P_T3_34  Schematic=LD6_R
-#set_property -dict { PACKAGE_PIN W16   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_2[1] }]; #IO_L18N_T2_34 Schematic=LD6_G
-#set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_2[2] }]; #IO_L17P_T2_34 Schematic=LD6_B
+#set_property -dict { PACKAGE_PIN W18   IOSTANDARD LVCMOS33 } [get_ports { led_out[6] }]; #IO_L22P_T3_34  Schematic=LD6_R
+#set_property -dict { PACKAGE_PIN W16   IOSTANDARD LVCMOS33 } [get_ports { led_out[6] }]; #IO_L18N_T2_34 Schematic=LD6_G
+#set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 } [get_ports { led_out[6] }]; #IO_L17P_T2_34 Schematic=LD6_B
 
-#set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_3[0] }]; #IO_L8N_T1_34 Schematic=LD7_R
-#set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_3[1] }]; #IO_L7P_T1_34 Schematic=LD7_G
-#set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { RGB_led_3[2] }]; #IO_L7N_T1_34 Schematic=LD7_B
+#set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { led_out[7] }]; #IO_L8N_T1_34 Schematic=LD7_R
+#set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { led_out[7] }]; #IO_L7P_T1_34 Schematic=LD7_G
+#set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { led_out[7] }]; #IO_L7N_T1_34 Schematic=LD7_B
 
 ##Switches
 #set_property -dict { PACKAGE_PIN R17   IOSTANDARD LVCMOS33 } [get_ports { sw[0] }]; #IO_L19N_T3_VREF_34 Schematic=SW0

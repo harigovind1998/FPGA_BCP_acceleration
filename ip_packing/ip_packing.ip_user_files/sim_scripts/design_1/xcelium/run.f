@@ -124,16 +124,17 @@
   "../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/d2be/hdl/BCP_accelerator_v2_0_S00_AXI.v" \
-  "../../../bd/design_1/ipshared/d2be/hdl/BCP_accelerator_v2_0_S01_AXI.v" \
+  "../../../bd/design_1/ipshared/feb9/hdl/BCP_accelerator_v2_0_S00_AXI.v" \
+  "../../../bd/design_1/ipshared/feb9/hdl/BCP_accelerator_v2_0_S01_AXI.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/design_1/ipshared/d2be/hdl/ClauseModule.sv" \
-  "../../../bd/design_1/ipshared/d2be/hdl/ImplicationSelector.sv" \
-  "../../../bd/design_1/ipshared/d2be/hdl/top.sv" \
+  "../../../bd/design_1/ipshared/feb9/hdl/ClauseModule.sv" \
+  "../../../bd/design_1/ipshared/feb9/hdl/ImplicationFIFO.sv" \
+  "../../../bd/design_1/ipshared/feb9/hdl/ImplicationSelector.sv" \
+  "../../../bd/design_1/ipshared/feb9/hdl/top.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/d2be/hdl/BCP_accelerator_v2_0.v" \
+  "../../../bd/design_1/ipshared/feb9/hdl/BCP_accelerator_v2_0.v" \
   "../../../bd/design_1/ip/design_1_BCP_accelerator_0_0/sim/design_1_BCP_accelerator_0_0.v" \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
