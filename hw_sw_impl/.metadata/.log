@@ -1,0 +1,700 @@
+!SESSION 2023-10-06 11:31:55.149 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-10-06 11:31:55.469
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-10-06 11:31:55.488
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-10-06 11:35:53.303
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.594
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.594
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.594
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.898
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.899
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.899
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.899
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.899
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2022.2/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.899
+!MESSAGE XSCT Command: [setws /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl], Thread: Thread-20
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:35:55.900
+!MESSAGE XSCT command with result: [setws /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl], Result: [null, ]. Thread: Thread-20
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-10-06 11:36:09.647
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-10-06 11:36:09.647
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-10-06 11:36:09.647
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:36:12.981
+!MESSAGE Indexed 'Accelerated_BCP_Integration_system' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:36:16.430
+!MESSAGE Indexed 'BCP_accelerator_V2_11' (481 sources, 649 headers) in 3.4 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:36:18.942
+!MESSAGE Indexed 'BCP_accelerator_V2_15' (481 sources, 649 headers) in 2.28 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:36:21.413
+!MESSAGE Indexed 'BCP_accelerator_V2_19' (481 sources, 649 headers) in 2.46 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:36:26.543
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:36:27.361
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:36:27.366
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss ], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:36:27.368
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:36:27.368
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:36:27.369
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-10-06 11:36:27.370
+!MESSAGE Generating MD5 hash for file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:36:27.375
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:36:27.376
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:36:45.749
+!MESSAGE Indexed 'BCP_accelerator_V2_22' (481 sources, 649 headers) in 15.9 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:36:48.155
+!MESSAGE Indexed 'BCP_accelerator_V2_6' (481 sources, 649 headers) in 2.4 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:36:50.545
+!MESSAGE Indexed 'BCP_accelerator_V2_12' (481 sources, 649 headers) in 2.38 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:36:52.325
+!MESSAGE Indexed 'BCP_accelerator_V2_16' (481 sources, 649 headers) in 1.77 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:37:21.564
+!MESSAGE Indexed 'BCP_accelerator_V2_23' (484 sources, 651 headers) in 29.2 sec: 24,087 declarations; 107,239 references; 294 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:06.692
+!MESSAGE Indexed 'BCP_accelerator_V2_7' (481 sources, 649 headers) in 105 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:06.705
+!MESSAGE Indexed 'HW_accelerated_DPLL_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:09.647
+!MESSAGE Indexed 'BCP_accelerator_V2_13' (481 sources, 649 headers) in 2.92 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:11.444
+!MESSAGE Indexed 'BCP_accelerator_V2_17' (481 sources, 649 headers) in 1.79 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:13.358
+!MESSAGE Indexed 'BCP_accelerator_V2_20' (481 sources, 649 headers) in 1.91 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:15.228
+!MESSAGE Indexed 'BCP_accelerator_V2_4' (481 sources, 649 headers) in 1.86 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:17.060
+!MESSAGE Indexed 'BCP_accelerator_V2_8' (481 sources, 649 headers) in 1.82 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:19.031
+!MESSAGE Indexed 'led_test' (481 sources, 649 headers) in 1.96 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:19.112
+!MESSAGE Indexed 'HW_accelerated_DPLL' (2 sources, 51 headers) in 0.079 sec: 1,458 declarations; 2,191 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:21.070
+!MESSAGE Indexed 'BCP_accelerator_V2_10' (477 sources, 573 headers) in 1.95 sec: 21,699 declarations; 98,651 references; 273 unresolved inclusions; 88 syntax errors; 1,394 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:22.939
+!MESSAGE Indexed 'BCP_accelerator_V2_14' (481 sources, 649 headers) in 1.86 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:24.966
+!MESSAGE Indexed 'BCP_accelerator_V2_18' (481 sources, 649 headers) in 2.02 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:26.946
+!MESSAGE Indexed 'BCP_accelerator_V2_21' (481 sources, 649 headers) in 1.97 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:28.871
+!MESSAGE Indexed 'BCP_accelerator_V2_5' (481 sources, 649 headers) in 1.92 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:30.953
+!MESSAGE Indexed 'BCP_accelerator_V2_9' (481 sources, 649 headers) in 2.08 sec: 23,874 declarations; 103,975 references; 293 unresolved inclusions; 90 syntax errors; 1,411 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-06 11:39:34.318
+!MESSAGE Indexed 'Accelerated_BCP_Integration' (2 sources, 228 headers) in 3.36 sec: 30,459 declarations; 48,985 references; 0 unresolved inclusions; 73 syntax errors; 21 unresolved names (0.026%)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2023-10-06 11:40:00.553
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at com.xilinx.sdx.scw.util.ScwProjectHelper.getXpfmLocation(ScwProjectHelper.java:159)
+	at com.xilinx.sdx.scw.util.ScwPlatformStatusHelper.isUptoDate(ScwPlatformStatusHelper.java:46)
+	at com.xilinx.sdx.scw.ui.util.PlatformDecorator.decorate(PlatformDecorator.java:60)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:251)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:386)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:362)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 4 2023-10-06 11:40:00.553
+!MESSAGE Exception in Decorator. The 'Platform Decorator' decorator will be disabled.
+!SUBENTRY 1 org.eclipse.ui 4 4 2023-10-06 11:40:00.553
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at com.xilinx.sdx.scw.util.ScwProjectHelper.getXpfmLocation(ScwProjectHelper.java:159)
+	at com.xilinx.sdx.scw.util.ScwPlatformStatusHelper.isUptoDate(ScwPlatformStatusHelper.java:46)
+	at com.xilinx.sdx.scw.ui.util.PlatformDecorator.decorate(PlatformDecorator.java:60)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:251)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:386)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:362)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-10-06 11:41:01.785
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:35.104
+!MESSAGE XSCT Command: [::hsi::utils::closehw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:35.355
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa], Result: [null, ]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:35.356
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:36.444
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa], Result: [null, ]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:36.445
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss ], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:36.679
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:36.683
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:36.917
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-10-06 11:44:36.918
+!MESSAGE Generating MD5 hash for file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:36.920
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:37.153
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/sw/BCP_accelerator_V2_23/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:38.911
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:44:42.512
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/hw/BCP_accelerator_V2_23.xsa], Result: [null, {"BCP_accelerator_0": {"hier_name": "BCP_accelerator_0",
+"type": "BCP_accelerator",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_spi_1": {"hier_name": "ps7_spi_1",
+"type": "ps7_spi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-10-06 11:44:48.067
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:06.712
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/hw/BCP_accelerator_V2_5.xsa], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:07.743
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/hw/BCP_accelerator_V2_5.xsa], Result: [null, ]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:07.743
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/hw/BCP_accelerator_V2_5.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/system.mss ], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:07.978
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/hw/BCP_accelerator_V2_5.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:07.978
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/hw/BCP_accelerator_V2_5.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/system.mss], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:08.212
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/hw/BCP_accelerator_V2_5.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-10-06 11:46:08.213
+!MESSAGE Generating MD5 hash for file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:08.214
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/system.mss], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:08.448
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/sw/BCP_accelerator_V2_5/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:09.458
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/hw/BCP_accelerator_V2_5.xsa], Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-06 11:46:13.234
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/hw/BCP_accelerator_V2_5.xsa], Result: [null, {"BCP_accelerator_0": {"hier_name": "BCP_accelerator_0",
+"type": "BCP_accelerator",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_spi_1": {"hier_name": "ps7_spi_1",
+"type": "ps7_spi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-12: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-10-06 11:46:18.741
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
