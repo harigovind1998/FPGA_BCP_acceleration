@@ -53,3 +53,45 @@ timestamp=[2023-10-06 11:46:06], mode=PLATFORM_GENERATION, duration=0:00:15.243,
 timestamp=[2023-10-06 11:46:08], mode=BUILD, duration=0:00:00.392, duration_ms=392, data={name=HW_accelerated_DPLL, configuration=Debug, clean_build=false}
 timestamp=[2023-10-06 11:46:18], mode=BUILD, duration=0:00:05.503, duration_ms=5503, data={name=HW_accelerated_DPLL_system, configuration=Debug, clean_build=false}
 timestamp=[2023-10-06 11:46:36], mode=PLATFORM_GENERATION, duration=0:00:18.230, duration_ms=18230, data={name=led_test}
+timestamp=[2023-10-08 22:23:29], mode=WORKBENCH_START, duration=0:00:04.129, duration_ms=4129, data={}
+timestamp=[2023-10-08 22:23:30], mode=WORKBENCH_UI_INIT, duration=0:00:00.877, duration_ms=877, data={editors_count=1, platform_editors_count=0, projects_count=26, platform_projects_count=21, active_platform_editor=false, projects=Accelerated_BCP_Integration,Accelerated_BCP_Integration_system,BCP_accelerator_V2_10,BCP_accelerator_V2_11,BCP_accelerator_V2_12,BCP_accelerator_V2_13,BCP_accelerator_V2_14,BCP_accelerator_V2_15,BCP_accelerator_V2_16,BCP_accelerator_V2_17,BCP_accelerator_V2_18,BCP_accelerator_V2_19,BCP_accelerator_V2_20,BCP_accelerator_V2_21,BCP_accelerator_V2_22,BCP_accelerator_V2_23,BCP_accelerator_V2_4,BCP_accelerator_V2_5,BCP_accelerator_V2_6,BCP_accelerator_V2_7,BCP_accelerator_V2_8,BCP_accelerator_V2_9,HW_accelerated_DPLL,HW_accelerated_DPLL_system,RemoteSystemsTempFiles,led_test}
+timestamp=[2023-10-08 22:23:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.761, duration_ms=761, data={}
+timestamp=[2023-10-08 22:39:51], mode=PLATFORM_GENERATION, duration=0:00:06.608, duration_ms=6608, data={name=BCP_accelerator_V2_23}
+timestamp=[2023-10-08 22:39:52], mode=BUILD, duration=0:00:00.792, duration_ms=792, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:41:58], mode=PLATFORM_CREATION, duration=0:00:05.322, duration_ms=5322, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2023-10-08 22:43:13], mode=PLATFORM_GENERATION, duration=0:00:08.414, duration_ms=8414, data={name=20_91_133MHz_opt}
+timestamp=[2023-10-08 22:43:15], mode=BUILD, duration=0:00:01.234, duration_ms=1234, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:47:02], mode=BUILD, duration=0:00:01.057, duration_ms=1057, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:48:07], mode=BUILD, duration=0:00:00.233, duration_ms=233, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:50:27], mode=BUILD, duration=0:00:01.086, duration_ms=1086, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:51:10], mode=BUILD, duration=0:00:00.686, duration_ms=686, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:51:18], mode=BUILD, duration=0:00:01.037, duration_ms=1037, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:52:20], mode=BUILD, duration=0:00:01.038, duration_ms=1038, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:52:41], mode=BUILD, duration=0:00:01.087, duration_ms=1087, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:55:29], mode=BUILD, duration=0:00:01.038, duration_ms=1038, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 22:57:03], mode=BUILD, duration=0:00:01.039, duration_ms=1039, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:14:22], mode=BUILD, duration=0:00:00.745, duration_ms=745, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:14:42], mode=BUILD, duration=0:00:01.094, duration_ms=1094, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:15:24], mode=BUILD, duration=0:00:01.045, duration_ms=1045, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:16:52], mode=BUILD, duration=0:00:01.044, duration_ms=1044, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:17:39], mode=BUILD, duration=0:00:01.095, duration_ms=1095, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:23:52], mode=BUILD, duration=0:00:01.100, duration_ms=1100, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:26:51], mode=BUILD, duration=0:00:01.098, duration_ms=1098, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:27:35], mode=BUILD, duration=0:00:00.748, duration_ms=748, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:28:24], mode=BUILD, duration=0:00:00.712, duration_ms=712, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:28:45], mode=BUILD, duration=0:00:01.098, duration_ms=1098, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:29:21], mode=BUILD, duration=0:00:00.699, duration_ms=699, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:29:58], mode=BUILD, duration=0:00:00.698, duration_ms=698, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:30:05], mode=BUILD, duration=0:00:00.700, duration_ms=700, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:30:38], mode=BUILD, duration=0:00:00.699, duration_ms=699, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:31:27], mode=BUILD, duration=0:00:01.099, duration_ms=1099, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:31:36], mode=BUILD, duration=0:00:01.100, duration_ms=1100, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:34:40], mode=BUILD, duration=0:00:01.101, duration_ms=1101, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:39:12], mode=BUILD, duration=0:00:00.753, duration_ms=753, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:39:28], mode=BUILD, duration=0:00:01.052, duration_ms=1052, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:39:33], mode=BUILD, duration=0:00:00.301, duration_ms=301, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:40:46], mode=BUILD, duration=0:00:01.104, duration_ms=1104, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:44:10], mode=BUILD, duration=0:00:00.737, duration_ms=737, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:44:14], mode=BUILD, duration=0:00:01.105, duration_ms=1105, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:45:20], mode=BUILD, duration=0:00:01.156, duration_ms=1156, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}
+timestamp=[2023-10-08 23:50:14], mode=BUILD, duration=0:00:01.108, duration_ms=1108, data={name=Accelerated_BCP_Integration, configuration=Debug, clean_build=false}

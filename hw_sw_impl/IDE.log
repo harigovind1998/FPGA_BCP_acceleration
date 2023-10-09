@@ -80,3 +80,856 @@
 11:46:06 INFO  : Checking for BSP changes to sync application flags for project 'HW_accelerated_DPLL'...
 11:46:23 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_10;BCP_accelerator_V2_11;BCP_accelerator_V2_12;BCP_accelerator_V2_13;BCP_accelerator_V2_14;BCP_accelerator_V2_15;BCP_accelerator_V2_16;BCP_accelerator_V2_17;BCP_accelerator_V2_18;BCP_accelerator_V2_19;BCP_accelerator_V2_20;BCP_accelerator_V2_21;BCP_accelerator_V2_22;BCP_accelerator_V2_23;BCP_accelerator_V2_4;BCP_accelerator_V2_5;BCP_accelerator_V2_6;BCP_accelerator_V2_7;BCP_accelerator_V2_8;BCP_accelerator_V2_9;led_test
 11:46:28 INFO  : Result from executing command 'getPlatforms': BCP_accelerator_V2_10|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_10/export/BCP_accelerator_V2_10/BCP_accelerator_V2_10.xpfm;BCP_accelerator_V2_11|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_11/export/BCP_accelerator_V2_11/BCP_accelerator_V2_11.xpfm;BCP_accelerator_V2_12|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_12/export/BCP_accelerator_V2_12/BCP_accelerator_V2_12.xpfm;BCP_accelerator_V2_13|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_13/export/BCP_accelerator_V2_13/BCP_accelerator_V2_13.xpfm;BCP_accelerator_V2_14|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_14/export/BCP_accelerator_V2_14/BCP_accelerator_V2_14.xpfm;BCP_accelerator_V2_15|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_15/export/BCP_accelerator_V2_15/BCP_accelerator_V2_15.xpfm;BCP_accelerator_V2_16|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_16/export/BCP_accelerator_V2_16/BCP_accelerator_V2_16.xpfm;BCP_accelerator_V2_17|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_17/export/BCP_accelerator_V2_17/BCP_accelerator_V2_17.xpfm;BCP_accelerator_V2_18|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_18/export/BCP_accelerator_V2_18/BCP_accelerator_V2_18.xpfm;BCP_accelerator_V2_19|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_19/export/BCP_accelerator_V2_19/BCP_accelerator_V2_19.xpfm;BCP_accelerator_V2_20|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_20/export/BCP_accelerator_V2_20/BCP_accelerator_V2_20.xpfm;BCP_accelerator_V2_21|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_21/export/BCP_accelerator_V2_21/BCP_accelerator_V2_21.xpfm;BCP_accelerator_V2_22|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_22/export/BCP_accelerator_V2_22/BCP_accelerator_V2_22.xpfm;BCP_accelerator_V2_23|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/BCP_accelerator_V2_23.xpfm;BCP_accelerator_V2_4|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_4/export/BCP_accelerator_V2_4/BCP_accelerator_V2_4.xpfm;BCP_accelerator_V2_5|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/BCP_accelerator_V2_5.xpfm;BCP_accelerator_V2_6|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_6/export/BCP_accelerator_V2_6/BCP_accelerator_V2_6.xpfm;BCP_accelerator_V2_7|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_7/export/BCP_accelerator_V2_7/BCP_accelerator_V2_7.xpfm;BCP_accelerator_V2_8|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/BCP_accelerator_V2_8.xpfm;BCP_accelerator_V2_9|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_9/export/BCP_accelerator_V2_9/BCP_accelerator_V2_9.xpfm;xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+22:23:27 DEBUG : Logs will be stored at '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/IDE.log'.
+22:23:28 INFO  : Launching XSCT server: xsct -n  -interactive /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/temp_xsdb_launch_script.tcl
+22:23:30 INFO  : Registering command handlers for Vitis TCF services
+22:23:30 INFO  : Platform repository initialization has completed.
+22:23:30 INFO  : XSCT server has started successfully.
+22:23:30 INFO  : Successfully done setting XSCT server connection channel  
+22:23:30 INFO  : plnx-install-location is set to ''
+22:23:30 INFO  : Successfully done setting workspace for the tool. 
+22:23:30 INFO  : Successfully done query RDI_DATADIR 
+22:39:47 INFO  : Result from executing command 'getProjects': BCP_accelerator_V2_10;BCP_accelerator_V2_11;BCP_accelerator_V2_12;BCP_accelerator_V2_13;BCP_accelerator_V2_14;BCP_accelerator_V2_15;BCP_accelerator_V2_16;BCP_accelerator_V2_17;BCP_accelerator_V2_18;BCP_accelerator_V2_19;BCP_accelerator_V2_20;BCP_accelerator_V2_21;BCP_accelerator_V2_22;BCP_accelerator_V2_23;BCP_accelerator_V2_4;BCP_accelerator_V2_5;BCP_accelerator_V2_6;BCP_accelerator_V2_7;BCP_accelerator_V2_8;BCP_accelerator_V2_9;led_test
+22:39:47 INFO  : Result from executing command 'getPlatforms': BCP_accelerator_V2_10|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_10/export/BCP_accelerator_V2_10/BCP_accelerator_V2_10.xpfm;BCP_accelerator_V2_11|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_11/export/BCP_accelerator_V2_11/BCP_accelerator_V2_11.xpfm;BCP_accelerator_V2_12|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_12/export/BCP_accelerator_V2_12/BCP_accelerator_V2_12.xpfm;BCP_accelerator_V2_13|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_13/export/BCP_accelerator_V2_13/BCP_accelerator_V2_13.xpfm;BCP_accelerator_V2_14|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_14/export/BCP_accelerator_V2_14/BCP_accelerator_V2_14.xpfm;BCP_accelerator_V2_15|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_15/export/BCP_accelerator_V2_15/BCP_accelerator_V2_15.xpfm;BCP_accelerator_V2_16|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_16/export/BCP_accelerator_V2_16/BCP_accelerator_V2_16.xpfm;BCP_accelerator_V2_17|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_17/export/BCP_accelerator_V2_17/BCP_accelerator_V2_17.xpfm;BCP_accelerator_V2_18|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_18/export/BCP_accelerator_V2_18/BCP_accelerator_V2_18.xpfm;BCP_accelerator_V2_19|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_19/export/BCP_accelerator_V2_19/BCP_accelerator_V2_19.xpfm;BCP_accelerator_V2_20|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_20/export/BCP_accelerator_V2_20/BCP_accelerator_V2_20.xpfm;BCP_accelerator_V2_21|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_21/export/BCP_accelerator_V2_21/BCP_accelerator_V2_21.xpfm;BCP_accelerator_V2_22|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_22/export/BCP_accelerator_V2_22/BCP_accelerator_V2_22.xpfm;BCP_accelerator_V2_23|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/BCP_accelerator_V2_23.xpfm;BCP_accelerator_V2_4|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_4/export/BCP_accelerator_V2_4/BCP_accelerator_V2_4.xpfm;BCP_accelerator_V2_5|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/BCP_accelerator_V2_5.xpfm;BCP_accelerator_V2_6|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_6/export/BCP_accelerator_V2_6/BCP_accelerator_V2_6.xpfm;BCP_accelerator_V2_7|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_7/export/BCP_accelerator_V2_7/BCP_accelerator_V2_7.xpfm;BCP_accelerator_V2_8|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/BCP_accelerator_V2_8.xpfm;BCP_accelerator_V2_9|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_9/export/BCP_accelerator_V2_9/BCP_accelerator_V2_9.xpfm;led_test|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/led_test/export/led_test/led_test.xpfm;xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+22:39:51 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:41:58 INFO  : Result from executing command 'getProjects': 20_91_133MHz_opt;BCP_accelerator_V2_10;BCP_accelerator_V2_11;BCP_accelerator_V2_12;BCP_accelerator_V2_13;BCP_accelerator_V2_14;BCP_accelerator_V2_15;BCP_accelerator_V2_16;BCP_accelerator_V2_17;BCP_accelerator_V2_18;BCP_accelerator_V2_19;BCP_accelerator_V2_20;BCP_accelerator_V2_21;BCP_accelerator_V2_22;BCP_accelerator_V2_23;BCP_accelerator_V2_4;BCP_accelerator_V2_5;BCP_accelerator_V2_6;BCP_accelerator_V2_7;BCP_accelerator_V2_8;BCP_accelerator_V2_9;led_test
+22:41:58 INFO  : Result from executing command 'getPlatforms': BCP_accelerator_V2_10|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_10/export/BCP_accelerator_V2_10/BCP_accelerator_V2_10.xpfm;BCP_accelerator_V2_11|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_11/export/BCP_accelerator_V2_11/BCP_accelerator_V2_11.xpfm;BCP_accelerator_V2_12|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_12/export/BCP_accelerator_V2_12/BCP_accelerator_V2_12.xpfm;BCP_accelerator_V2_13|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_13/export/BCP_accelerator_V2_13/BCP_accelerator_V2_13.xpfm;BCP_accelerator_V2_14|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_14/export/BCP_accelerator_V2_14/BCP_accelerator_V2_14.xpfm;BCP_accelerator_V2_15|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_15/export/BCP_accelerator_V2_15/BCP_accelerator_V2_15.xpfm;BCP_accelerator_V2_16|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_16/export/BCP_accelerator_V2_16/BCP_accelerator_V2_16.xpfm;BCP_accelerator_V2_17|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_17/export/BCP_accelerator_V2_17/BCP_accelerator_V2_17.xpfm;BCP_accelerator_V2_18|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_18/export/BCP_accelerator_V2_18/BCP_accelerator_V2_18.xpfm;BCP_accelerator_V2_19|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_19/export/BCP_accelerator_V2_19/BCP_accelerator_V2_19.xpfm;BCP_accelerator_V2_20|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_20/export/BCP_accelerator_V2_20/BCP_accelerator_V2_20.xpfm;BCP_accelerator_V2_21|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_21/export/BCP_accelerator_V2_21/BCP_accelerator_V2_21.xpfm;BCP_accelerator_V2_22|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_22/export/BCP_accelerator_V2_22/BCP_accelerator_V2_22.xpfm;BCP_accelerator_V2_23|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/BCP_accelerator_V2_23.xpfm;BCP_accelerator_V2_4|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_4/export/BCP_accelerator_V2_4/BCP_accelerator_V2_4.xpfm;BCP_accelerator_V2_5|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/BCP_accelerator_V2_5.xpfm;BCP_accelerator_V2_6|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_6/export/BCP_accelerator_V2_6/BCP_accelerator_V2_6.xpfm;BCP_accelerator_V2_7|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_7/export/BCP_accelerator_V2_7/BCP_accelerator_V2_7.xpfm;BCP_accelerator_V2_8|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/BCP_accelerator_V2_8.xpfm;BCP_accelerator_V2_9|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_9/export/BCP_accelerator_V2_9/BCP_accelerator_V2_9.xpfm;led_test|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/led_test/export/led_test/led_test.xpfm;xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+22:42:42 INFO  : The hardware specification used by project 'Accelerated_BCP_Integration' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+22:42:43 INFO  : The file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/BCP_accelerator_V2_23.bit' stored in project is removed.
+22:42:43 INFO  : The updated bitstream files are copied from platform to folder '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream' in project 'Accelerated_BCP_Integration'.
+22:42:43 INFO  : The file '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' stored in project is removed.
+22:42:45 INFO  : The updated ps init files are copied from platform to folder '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit' in project 'Accelerated_BCP_Integration'.
+22:43:09 INFO  : Result from executing command 'getProjects': 20_91_133MHz_opt;BCP_accelerator_V2_10;BCP_accelerator_V2_11;BCP_accelerator_V2_12;BCP_accelerator_V2_13;BCP_accelerator_V2_14;BCP_accelerator_V2_15;BCP_accelerator_V2_16;BCP_accelerator_V2_17;BCP_accelerator_V2_18;BCP_accelerator_V2_19;BCP_accelerator_V2_20;BCP_accelerator_V2_21;BCP_accelerator_V2_22;BCP_accelerator_V2_23;BCP_accelerator_V2_4;BCP_accelerator_V2_5;BCP_accelerator_V2_6;BCP_accelerator_V2_7;BCP_accelerator_V2_8;BCP_accelerator_V2_9;led_test
+22:43:09 INFO  : Result from executing command 'getPlatforms': 20_91_133MHz_opt|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/20_91_133MHz_opt.xpfm;BCP_accelerator_V2_10|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_10/export/BCP_accelerator_V2_10/BCP_accelerator_V2_10.xpfm;BCP_accelerator_V2_11|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_11/export/BCP_accelerator_V2_11/BCP_accelerator_V2_11.xpfm;BCP_accelerator_V2_12|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_12/export/BCP_accelerator_V2_12/BCP_accelerator_V2_12.xpfm;BCP_accelerator_V2_13|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_13/export/BCP_accelerator_V2_13/BCP_accelerator_V2_13.xpfm;BCP_accelerator_V2_14|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_14/export/BCP_accelerator_V2_14/BCP_accelerator_V2_14.xpfm;BCP_accelerator_V2_15|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_15/export/BCP_accelerator_V2_15/BCP_accelerator_V2_15.xpfm;BCP_accelerator_V2_16|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_16/export/BCP_accelerator_V2_16/BCP_accelerator_V2_16.xpfm;BCP_accelerator_V2_17|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_17/export/BCP_accelerator_V2_17/BCP_accelerator_V2_17.xpfm;BCP_accelerator_V2_18|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_18/export/BCP_accelerator_V2_18/BCP_accelerator_V2_18.xpfm;BCP_accelerator_V2_19|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_19/export/BCP_accelerator_V2_19/BCP_accelerator_V2_19.xpfm;BCP_accelerator_V2_20|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_20/export/BCP_accelerator_V2_20/BCP_accelerator_V2_20.xpfm;BCP_accelerator_V2_21|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_21/export/BCP_accelerator_V2_21/BCP_accelerator_V2_21.xpfm;BCP_accelerator_V2_22|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_22/export/BCP_accelerator_V2_22/BCP_accelerator_V2_22.xpfm;BCP_accelerator_V2_23|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_23/export/BCP_accelerator_V2_23/BCP_accelerator_V2_23.xpfm;BCP_accelerator_V2_4|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_4/export/BCP_accelerator_V2_4/BCP_accelerator_V2_4.xpfm;BCP_accelerator_V2_5|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/BCP_accelerator_V2_5.xpfm;BCP_accelerator_V2_6|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_6/export/BCP_accelerator_V2_6/BCP_accelerator_V2_6.xpfm;BCP_accelerator_V2_7|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_7/export/BCP_accelerator_V2_7/BCP_accelerator_V2_7.xpfm;BCP_accelerator_V2_8|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_8/export/BCP_accelerator_V2_8/BCP_accelerator_V2_8.xpfm;BCP_accelerator_V2_9|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_9/export/BCP_accelerator_V2_9/BCP_accelerator_V2_9.xpfm;led_test|/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/led_test/export/led_test/led_test.xpfm;xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+22:43:13 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:43:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:43:22 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+22:43:22 INFO  : 'jtag frequency' command is executed.
+22:43:22 INFO  : Context for 'APU' is selected.
+22:43:22 INFO  : System reset is completed.
+22:43:25 INFO  : 'after 3000' command is executed.
+22:43:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+22:43:26 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+22:43:26 INFO  : Context for 'APU' is selected.
+22:43:26 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+22:43:26 INFO  : 'configparams force-mem-access 1' command is executed.
+22:43:26 INFO  : Context for 'APU' is selected.
+22:43:26 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+22:43:26 INFO  : 'ps7_init' command is executed.
+22:43:26 INFO  : 'ps7_post_config' command is executed.
+22:43:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:43:28 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:43:28 INFO  : 'configparams force-mem-access 0' command is executed.
+22:43:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:47:01 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:48:06 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:48:25 INFO  : Disconnected from the channel tcfchan#3.
+22:48:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:48:25 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+22:48:25 INFO  : 'jtag frequency' command is executed.
+22:48:25 INFO  : Context for 'APU' is selected.
+22:48:25 INFO  : System reset is completed.
+22:48:28 INFO  : 'after 3000' command is executed.
+22:48:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+22:48:29 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+22:48:29 INFO  : Context for 'APU' is selected.
+22:48:29 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+22:48:29 INFO  : 'configparams force-mem-access 1' command is executed.
+22:48:29 INFO  : Context for 'APU' is selected.
+22:48:29 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+22:48:29 INFO  : 'ps7_init' command is executed.
+22:48:29 INFO  : 'ps7_post_config' command is executed.
+22:48:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:48:31 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:48:31 INFO  : 'configparams force-mem-access 0' command is executed.
+22:48:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:50:26 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:50:31 INFO  : Disconnected from the channel tcfchan#4.
+22:50:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:50:31 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+22:50:31 INFO  : 'jtag frequency' command is executed.
+22:50:31 INFO  : Context for 'APU' is selected.
+22:50:31 INFO  : System reset is completed.
+22:50:34 INFO  : 'after 3000' command is executed.
+22:50:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+22:50:35 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+22:50:35 INFO  : Context for 'APU' is selected.
+22:50:35 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+22:50:35 INFO  : 'configparams force-mem-access 1' command is executed.
+22:50:35 INFO  : Context for 'APU' is selected.
+22:50:35 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+22:50:35 INFO  : 'ps7_init' command is executed.
+22:50:35 INFO  : 'ps7_post_config' command is executed.
+22:50:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:50:37 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:50:37 INFO  : 'configparams force-mem-access 0' command is executed.
+22:50:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:51:09 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:51:17 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:51:24 INFO  : Disconnected from the channel tcfchan#5.
+22:51:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:51:24 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+22:51:24 INFO  : 'jtag frequency' command is executed.
+22:51:24 INFO  : Context for 'APU' is selected.
+22:51:24 INFO  : System reset is completed.
+22:51:27 INFO  : 'after 3000' command is executed.
+22:51:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+22:51:28 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+22:51:28 INFO  : Context for 'APU' is selected.
+22:51:28 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+22:51:28 INFO  : 'configparams force-mem-access 1' command is executed.
+22:51:28 INFO  : Context for 'APU' is selected.
+22:51:28 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+22:51:28 INFO  : 'ps7_init' command is executed.
+22:51:28 INFO  : 'ps7_post_config' command is executed.
+22:51:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:51:29 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:51:29 INFO  : 'configparams force-mem-access 0' command is executed.
+22:51:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:52:14 INFO  : Disconnected from the channel tcfchan#6.
+22:52:19 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:52:40 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:52:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:52:51 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+22:52:51 INFO  : 'jtag frequency' command is executed.
+22:52:51 INFO  : Context for 'APU' is selected.
+22:52:51 INFO  : System reset is completed.
+22:52:54 INFO  : 'after 3000' command is executed.
+22:52:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+22:52:56 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+22:52:56 INFO  : Context for 'APU' is selected.
+22:52:56 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+22:52:56 INFO  : 'configparams force-mem-access 1' command is executed.
+22:52:56 INFO  : Context for 'APU' is selected.
+22:52:56 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+22:52:56 INFO  : 'ps7_init' command is executed.
+22:52:56 INFO  : 'ps7_post_config' command is executed.
+22:52:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:52:57 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:52:57 INFO  : 'configparams force-mem-access 0' command is executed.
+22:52:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:55:12 INFO  : Disconnected from the channel tcfchan#7.
+22:55:28 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:55:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:55:38 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+22:55:38 INFO  : 'jtag frequency' command is executed.
+22:55:38 INFO  : Context for 'APU' is selected.
+22:55:38 INFO  : System reset is completed.
+22:55:41 INFO  : 'after 3000' command is executed.
+22:55:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+22:55:42 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+22:55:42 INFO  : Context for 'APU' is selected.
+22:55:42 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+22:55:42 INFO  : 'configparams force-mem-access 1' command is executed.
+22:55:42 INFO  : Context for 'APU' is selected.
+22:55:42 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+22:55:43 INFO  : 'ps7_init' command is executed.
+22:55:43 INFO  : 'ps7_post_config' command is executed.
+22:55:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:44 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:55:44 INFO  : 'configparams force-mem-access 0' command is executed.
+22:55:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:57:02 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+22:57:08 INFO  : Disconnected from the channel tcfchan#8.
+22:57:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:57:08 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+22:57:08 INFO  : 'jtag frequency' command is executed.
+22:57:08 INFO  : Context for 'APU' is selected.
+22:57:08 INFO  : System reset is completed.
+22:57:11 INFO  : 'after 3000' command is executed.
+22:57:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+22:57:12 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+22:57:12 INFO  : Context for 'APU' is selected.
+22:57:12 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+22:57:12 INFO  : 'configparams force-mem-access 1' command is executed.
+22:57:12 INFO  : Context for 'APU' is selected.
+22:57:12 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+22:57:12 INFO  : 'ps7_init' command is executed.
+22:57:12 INFO  : 'ps7_post_config' command is executed.
+22:57:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:57:13 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:57:13 INFO  : 'configparams force-mem-access 0' command is executed.
+22:57:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:14:22 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:14:41 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:14:47 INFO  : Disconnected from the channel tcfchan#9.
+23:14:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:14:47 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:14:47 INFO  : 'jtag frequency' command is executed.
+23:14:47 INFO  : Context for 'APU' is selected.
+23:14:47 INFO  : System reset is completed.
+23:14:50 INFO  : 'after 3000' command is executed.
+23:14:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:14:51 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:14:51 INFO  : Context for 'APU' is selected.
+23:14:51 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:14:51 INFO  : 'configparams force-mem-access 1' command is executed.
+23:14:51 INFO  : Context for 'APU' is selected.
+23:14:51 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:14:52 INFO  : 'ps7_init' command is executed.
+23:14:52 INFO  : 'ps7_post_config' command is executed.
+23:14:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:14:53 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:14:53 INFO  : 'configparams force-mem-access 0' command is executed.
+23:14:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:15:23 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:15:28 INFO  : Disconnected from the channel tcfchan#10.
+23:15:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:15:28 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:15:28 INFO  : 'jtag frequency' command is executed.
+23:15:28 INFO  : Context for 'APU' is selected.
+23:15:28 INFO  : System reset is completed.
+23:15:31 INFO  : 'after 3000' command is executed.
+23:15:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:15:32 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:15:32 INFO  : Context for 'APU' is selected.
+23:15:32 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:15:32 INFO  : 'configparams force-mem-access 1' command is executed.
+23:15:32 INFO  : Context for 'APU' is selected.
+23:15:32 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:15:33 INFO  : 'ps7_init' command is executed.
+23:15:33 INFO  : 'ps7_post_config' command is executed.
+23:15:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:15:34 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:15:34 INFO  : 'configparams force-mem-access 0' command is executed.
+23:15:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:16:51 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:16:54 INFO  : Disconnected from the channel tcfchan#11.
+23:16:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:16:55 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:16:55 INFO  : 'jtag frequency' command is executed.
+23:16:55 INFO  : Context for 'APU' is selected.
+23:16:55 INFO  : System reset is completed.
+23:16:58 INFO  : 'after 3000' command is executed.
+23:16:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:16:59 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:16:59 INFO  : Context for 'APU' is selected.
+23:16:59 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:16:59 INFO  : 'configparams force-mem-access 1' command is executed.
+23:16:59 INFO  : Context for 'APU' is selected.
+23:16:59 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:16:59 INFO  : 'ps7_init' command is executed.
+23:16:59 INFO  : 'ps7_post_config' command is executed.
+23:16:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:17:00 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:17:00 INFO  : 'configparams force-mem-access 0' command is executed.
+23:17:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:17:37 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:20:15 INFO  : Disconnected from the channel tcfchan#12.
+23:20:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:20:15 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:20:15 INFO  : 'jtag frequency' command is executed.
+23:20:15 INFO  : Context for 'APU' is selected.
+23:20:15 INFO  : System reset is completed.
+23:20:18 INFO  : 'after 3000' command is executed.
+23:20:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:20:19 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:20:19 INFO  : Context for 'APU' is selected.
+23:20:19 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:20:19 INFO  : 'configparams force-mem-access 1' command is executed.
+23:20:19 INFO  : Context for 'APU' is selected.
+23:20:19 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:20:19 INFO  : 'ps7_init' command is executed.
+23:20:19 INFO  : 'ps7_post_config' command is executed.
+23:20:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:21 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:20:21 INFO  : 'configparams force-mem-access 0' command is executed.
+23:20:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:21:31 INFO  : Disconnected from the channel tcfchan#13.
+23:21:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:21:31 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:21:31 INFO  : 'jtag frequency' command is executed.
+23:21:31 INFO  : Context for 'APU' is selected.
+23:21:31 INFO  : System reset is completed.
+23:21:34 INFO  : 'after 3000' command is executed.
+23:21:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:21:36 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:21:36 INFO  : Context for 'APU' is selected.
+23:21:36 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:21:36 INFO  : 'configparams force-mem-access 1' command is executed.
+23:21:36 INFO  : Context for 'APU' is selected.
+23:21:36 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:21:36 INFO  : 'ps7_init' command is executed.
+23:21:36 INFO  : 'ps7_post_config' command is executed.
+23:21:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:21:37 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:21:37 INFO  : 'configparams force-mem-access 0' command is executed.
+23:21:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:23:51 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:23:55 INFO  : Disconnected from the channel tcfchan#14.
+23:23:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:23:55 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:23:55 INFO  : 'jtag frequency' command is executed.
+23:23:55 INFO  : Context for 'APU' is selected.
+23:23:55 INFO  : System reset is completed.
+23:23:58 INFO  : 'after 3000' command is executed.
+23:23:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:23:59 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:23:59 INFO  : Context for 'APU' is selected.
+23:23:59 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:23:59 INFO  : 'configparams force-mem-access 1' command is executed.
+23:23:59 INFO  : Context for 'APU' is selected.
+23:23:59 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:23:59 INFO  : 'ps7_init' command is executed.
+23:23:59 INFO  : 'ps7_post_config' command is executed.
+23:23:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:00 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:24:01 INFO  : 'configparams force-mem-access 0' command is executed.
+23:24:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:24:53 INFO  : Disconnected from the channel tcfchan#15.
+23:24:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:24:53 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:24:53 INFO  : 'jtag frequency' command is executed.
+23:24:53 INFO  : Context for 'APU' is selected.
+23:24:53 INFO  : System reset is completed.
+23:24:56 INFO  : 'after 3000' command is executed.
+23:24:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:24:57 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:24:57 INFO  : Context for 'APU' is selected.
+23:24:57 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:24:57 INFO  : 'configparams force-mem-access 1' command is executed.
+23:24:57 INFO  : Context for 'APU' is selected.
+23:24:57 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:24:57 INFO  : 'ps7_init' command is executed.
+23:24:57 INFO  : 'ps7_post_config' command is executed.
+23:24:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:59 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:24:59 INFO  : 'configparams force-mem-access 0' command is executed.
+23:24:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:26:50 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:27:34 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:28:23 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:28:44 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:29:20 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:29:57 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:30:04 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:30:38 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:31:25 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:31:35 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:31:38 INFO  : Disconnected from the channel tcfchan#16.
+23:31:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:31:38 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:31:38 INFO  : 'jtag frequency' command is executed.
+23:31:38 INFO  : Context for 'APU' is selected.
+23:31:38 INFO  : System reset is completed.
+23:31:41 INFO  : 'after 3000' command is executed.
+23:31:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:31:42 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:31:42 INFO  : Context for 'APU' is selected.
+23:31:42 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:31:42 INFO  : 'configparams force-mem-access 1' command is executed.
+23:31:42 INFO  : Context for 'APU' is selected.
+23:31:42 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:31:43 INFO  : 'ps7_init' command is executed.
+23:31:43 INFO  : 'ps7_post_config' command is executed.
+23:31:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:44 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:31:44 INFO  : 'configparams force-mem-access 0' command is executed.
+23:31:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:34:39 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:34:43 INFO  : Disconnected from the channel tcfchan#17.
+23:34:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:34:43 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:34:43 INFO  : 'jtag frequency' command is executed.
+23:34:43 INFO  : Context for 'APU' is selected.
+23:34:43 INFO  : System reset is completed.
+23:34:46 INFO  : 'after 3000' command is executed.
+23:34:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:34:47 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:34:47 INFO  : Context for 'APU' is selected.
+23:34:47 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:34:47 INFO  : 'configparams force-mem-access 1' command is executed.
+23:34:47 INFO  : Context for 'APU' is selected.
+23:34:47 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:34:47 INFO  : 'ps7_init' command is executed.
+23:34:47 INFO  : 'ps7_post_config' command is executed.
+23:34:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:34:49 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:34:49 INFO  : 'configparams force-mem-access 0' command is executed.
+23:34:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:39:11 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:39:27 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:39:33 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:39:35 INFO  : Disconnected from the channel tcfchan#18.
+23:39:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:39:35 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:39:35 INFO  : 'jtag frequency' command is executed.
+23:39:35 INFO  : Context for 'APU' is selected.
+23:39:35 INFO  : System reset is completed.
+23:39:38 INFO  : 'after 3000' command is executed.
+23:39:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:39:40 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:39:40 INFO  : Context for 'APU' is selected.
+23:39:40 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:39:40 INFO  : 'configparams force-mem-access 1' command is executed.
+23:39:40 INFO  : Context for 'APU' is selected.
+23:39:40 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:39:40 INFO  : 'ps7_init' command is executed.
+23:39:40 INFO  : 'ps7_post_config' command is executed.
+23:39:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:39:41 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:39:41 INFO  : 'configparams force-mem-access 0' command is executed.
+23:39:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:40:45 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:40:51 INFO  : Disconnected from the channel tcfchan#19.
+23:40:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:40:52 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:40:52 INFO  : 'jtag frequency' command is executed.
+23:40:52 INFO  : Context for 'APU' is selected.
+23:40:52 INFO  : System reset is completed.
+23:40:55 INFO  : 'after 3000' command is executed.
+23:40:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:40:56 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:40:56 INFO  : Context for 'APU' is selected.
+23:40:56 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:40:56 INFO  : 'configparams force-mem-access 1' command is executed.
+23:40:56 INFO  : Context for 'APU' is selected.
+23:40:56 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:40:56 INFO  : 'ps7_init' command is executed.
+23:40:56 INFO  : 'ps7_post_config' command is executed.
+23:40:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:40:57 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:40:57 INFO  : 'configparams force-mem-access 0' command is executed.
+23:40:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:44:09 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:44:13 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:44:20 INFO  : Disconnected from the channel tcfchan#20.
+23:44:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:44:21 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:44:21 INFO  : 'jtag frequency' command is executed.
+23:44:21 INFO  : Context for 'APU' is selected.
+23:44:21 INFO  : System reset is completed.
+23:44:24 INFO  : 'after 3000' command is executed.
+23:44:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:44:25 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:44:25 INFO  : Context for 'APU' is selected.
+23:44:25 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:44:25 INFO  : 'configparams force-mem-access 1' command is executed.
+23:44:25 INFO  : Context for 'APU' is selected.
+23:44:25 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:44:25 INFO  : 'ps7_init' command is executed.
+23:44:25 INFO  : 'ps7_post_config' command is executed.
+23:44:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:44:26 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:44:26 INFO  : 'configparams force-mem-access 0' command is executed.
+23:44:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:45:19 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:45:27 INFO  : Disconnected from the channel tcfchan#21.
+23:45:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:27 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:45:27 INFO  : 'jtag frequency' command is executed.
+23:45:27 INFO  : Context for 'APU' is selected.
+23:45:28 INFO  : System reset is completed.
+23:45:31 INFO  : 'after 3000' command is executed.
+23:45:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:45:32 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:45:32 INFO  : Context for 'APU' is selected.
+23:45:32 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:45:32 INFO  : 'configparams force-mem-access 1' command is executed.
+23:45:32 INFO  : Context for 'APU' is selected.
+23:45:32 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:45:32 INFO  : 'ps7_init' command is executed.
+23:45:32 INFO  : 'ps7_post_config' command is executed.
+23:45:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:45:33 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:45:33 INFO  : 'configparams force-mem-access 0' command is executed.
+23:45:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:50:13 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_Integration'...
+23:50:16 INFO  : Disconnected from the channel tcfchan#22.
+23:50:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:50:16 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+23:50:16 INFO  : 'jtag frequency' command is executed.
+23:50:16 INFO  : Context for 'APU' is selected.
+23:50:16 INFO  : System reset is completed.
+23:50:19 INFO  : 'after 3000' command is executed.
+23:50:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+23:50:21 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit"
+23:50:21 INFO  : Context for 'APU' is selected.
+23:50:21 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa'.
+23:50:21 INFO  : 'configparams force-mem-access 1' command is executed.
+23:50:21 INFO  : Context for 'APU' is selected.
+23:50:21 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl' is done.
+23:50:21 INFO  : 'ps7_init' command is executed.
+23:50:21 INFO  : 'ps7_post_config' command is executed.
+23:50:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:50:22 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:50:22 INFO  : 'configparams force-mem-access 0' command is executed.
+23:50:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
