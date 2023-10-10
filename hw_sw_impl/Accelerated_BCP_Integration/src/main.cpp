@@ -91,6 +91,7 @@ class SATSolverDPLL {
         Formula &,
         int);                          // applies the value of the literal in every clause
     void show_result(Formula &, int);  // displays the result
+    XTime totalTStart, totalTEnd, BCPTStart, BCPTEnd;
    public:
     SATSolverDPLL() {}
     void SendClausesToAccelerator();
@@ -213,11 +214,6 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
     uint32_t decision_id = literal_to_apply + 1;
 	uint32_t decision_polarity = (value_to_apply+1)%2; // True if 1, False if 0
 
-//	cout << "Applying literal: "<< decision_id << " Polarity(1=True, 0=False): " << decision_polarity << endl;
-
-//    int decision_id = 1;
-//    int decision_polarity = 0; // True if 1, False if 0
-
 	uint32_t decision = (decision_id << 1) | decision_polarity;
 
 	std::vector<uint32_t> assignmentsInThisLevel;
@@ -234,9 +230,7 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 	while(*reg4 == (uint32_t) 0){
 		// Wait
 	}
-	XTime_GetTime(&tEnd);
-//	sleep(1);
-//	while(*reg4 != (uint32_t) 0){
+
 	while(true){
 		uint32_t status = *reg4;
 		XTime_GetTime(&tEnd);
@@ -276,11 +270,6 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 			    		// Wait
 			    	}
 
-//			    	if(*reg4 == 1){
-//			    		cout << "Backtracked " << backtrack << "\n";
-//			    	}else{
-//			    		cout << "Backtrack error, status code:" << *reg4 << "\n";
-//			    	}
 			    	if(*reg4 != 1){
 			    		cout << "Backtrack error, status code:" << *reg4 << "\n";
 			    	}
@@ -291,7 +280,6 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 			case (uint32_t) 5:
 			{
 				// SAT, output assignments
-//				XTime_GetTime(&tEnd);
 				getImplications(assignmentsInThisLevel, f);
 				int numberOfImpls = assignmentsInThisLevel.size();
 				printf("%.4f, %d\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000), numberOfImpls);
@@ -302,8 +290,6 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 			case (uint32_t) 6:
 				{
 				// Implication running
-//				getImplications(assignmentsInThisLevel, f);
-//				printf("running");
 				break;
 				}
 			default:
@@ -326,7 +312,6 @@ void SATSolverDPLL::getImplications(std::vector<uint32_t> &implications, Formula
 
 		f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
 		f.literal_frequency[implication_id] = -1;
-//		cout << "Unit Implication" << implication_id<< "\n";
 	}
 }
 
@@ -353,6 +338,7 @@ int SATSolverDPLL::DPLL(Formula f) {
         }
 
         new_f.literal_frequency[i] = -1;                   // reset the frequency to -1 to ignore in the future
+
         int transform_result = unit_propagate(new_f, i, true);  // apply the change to all the clauses
 
         if (transform_result == Cat::satisfied) {  // if formula satisfied, show result and return
@@ -379,6 +365,8 @@ int SATSolverDPLL::DPLL(Formula f) {
  *            result - the result flag, a member of the Cat enum
  */
 void SATSolverDPLL::show_result(Formula &f, int result) {
+	XTime_GetTime(&totalTEnd);
+	printf("Total Execution Time%.5f\n", 1.0 * (totalTEnd - totalTStart) / (COUNTS_PER_SECOND/1000000));
     if (result == Cat::satisfied)  // if the formula is satisfiable
     {
         cout << "SAT" << endl;
@@ -420,12 +408,12 @@ void SATSolverDPLL::testRoundTrip(){
  * function to call the solver
  */
 void SATSolverDPLL::solve() {
+	XTime_GetTime(&totalTStart);
     int result = DPLL(formula);  // final result of DPLL on the original formula
 
-//	unit_propagate(formula,1, false);
     // if normal return till the end, then the formula could not be satisfied in
     // any branch, so it is unsatisfiable
-//	testRoundTrip();
+    //	testRoundTrip();
 	if (result == Cat::normal) {
         show_result(formula,
                     Cat::unsatisfied);  // the argument formula is a dummy

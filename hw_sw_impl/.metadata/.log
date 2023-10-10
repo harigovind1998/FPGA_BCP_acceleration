@@ -9544,3 +9544,1963 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2023-10-08 23:50:22.497
 !MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-15: Launching Debugger_Accelerated_BCP_Integration-GDB_4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 15:54:28.104
+!MESSAGE XSCT Command: [disconnect tcfchan#23], Thread: Thread-1950
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 15:54:28.232
+!MESSAGE XSCT command with result: [disconnect tcfchan#23], Result: [null, ]. Thread: Thread-1950
+!SESSION 2023-10-09 19:39:07.182 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-10-09 19:39:07.519
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-10-09 19:39:07.538
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-10-09 19:39:09.617
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:11.972
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-57
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:11.972
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-84
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:11.974
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-57
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:11.974
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-84
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:11.974
+!MESSAGE XSCT Command: [setws /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl], Thread: Thread-84
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:11.975
+!MESSAGE XSCT command with result: [setws /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl], Result: [null, ]. Thread: Thread-84
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:12.058
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:12.127
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:12.127
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:39:12.128
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2022.2/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-10-09 19:39:41.696
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-10-09 19:39:41.697
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-10-09 19:39:41.697
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:19.283
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:20.220
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:20.225
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/system.mss ], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:20.226
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:20.227
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:20.227
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-10-09 19:41:20.229
+!MESSAGE Generating MD5 hash for file: /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:20.232
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:20.233
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:25.471
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:25.477
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Result: [null, {"BCP_accelerator_0": {"hier_name": "BCP_accelerator_0",
+"type": "BCP_accelerator",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_spi_1": {"hier_name": "ps7_spi_1",
+"type": "ps7_spi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:25.479
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:25.480
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Result: [null, {"device": "7z007s",
+"family": "zynq",
+"timestamp": "Sun Oct  8 18:53:24 2023",
+"vivado_version": "2022.2",
+"part": "xc7z007sclg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.069
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.072
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666666",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "130",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "16 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.072
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.078
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0], Result: [null, {"BCP_accelerator_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_spi_1": {},
+"ps7_uart_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.079
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.087
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0], Result: [null, {"BCP_accelerator_0_S01_AXI": {"name": "BCP_accelerator_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S01_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_spi_1": {"name": "ps7_spi_1",
+"base": "0xE0007000",
+"high": "0xE0007FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"BCP_accelerator_0_S00_AXI_S00_AXI_mem": {"name": "BCP_accelerator_0",
+"base": "0x7AA00000",
+"high": "0x7AA0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "S00_AXI_mem",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.088
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.088
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.088
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.089
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.089
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.090
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.090
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.090
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.090
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.091
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.091
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.091
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.092
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.093
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+}]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.094
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.095
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa ps7_cortexa9_0], Result: [null, BCP_accelerator_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_spi_1 ps7_uart_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.095
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa bit], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.096
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa bit], Result: [null, 20_91_133MHz_opt.bit]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.097
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.375
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.376
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.905
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Bla 887100000291A]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.905
+!MESSAGE XSCT Command: [version -server], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.906
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.907
+!MESSAGE XSCT Command: [version], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.907
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.909
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.912
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Bla 887100000291A]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.912
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.920
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.922
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.924
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Bla 887100000291A]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.925
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.932
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.933
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.940
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Bla 887100000291A]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.940
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.948
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.950
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.952
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Bla 887100000291A]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.952
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.961
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.962
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.965
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Bla 887100000291A]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.965
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.972
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.973
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.976
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Bla 887100000291A]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.976
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.983
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.984
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.993
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.993
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.994
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:26.994
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:27.000
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:27.001
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:27.057
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:27.058
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:30.062
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:30.139
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:30.142
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:30.142
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:30.150
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:30.155
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:30.211
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:30.212
+!MESSAGE XSCT Command: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.456
+!MESSAGE XSCT command with result: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.469
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.474
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.474
+!MESSAGE XSCT Command: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.490
+!MESSAGE XSCT command with result: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.490
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.491
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.491
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.495
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.496
+!MESSAGE XSCT Command: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.497
+!MESSAGE XSCT command with result: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.497
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.679
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.679
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.684
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.684
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.689
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:31.689
+!MESSAGE XSCT Command: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:32.806
+!MESSAGE XSCT command with result: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:32.807
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:41:32.829
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-2: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.616
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-201
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.619
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-201
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.829
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.837
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.837
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.844
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.844
+!MESSAGE XSCT Command: [version -server], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.845
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.845
+!MESSAGE XSCT Command: [version], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.846
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.846
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.850
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.850
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.865
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.865
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.870
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.870
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.884
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.884
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.888
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.888
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.896
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.896
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.899
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.899
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.907
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.907
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.910
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.910
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.919
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.919
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.923
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.924
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.936
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.937
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.946
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.946
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.947
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.947
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.952
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:53.953
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:54.008
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:54.008
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:57.012
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:57.023
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:57.027
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:57.027
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:57.035
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:57.035
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:57.049
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:57.049
+!MESSAGE XSCT Command: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:58.249
+!MESSAGE XSCT command with result: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:58.263
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:58.270
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:58.270
+!MESSAGE XSCT Command: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.404
+!MESSAGE XSCT command with result: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_0]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.404
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.405
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.405
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.409
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.410
+!MESSAGE XSCT Command: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.410
+!MESSAGE XSCT command with result: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.411
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.571
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.571
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.576
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.576
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.580
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:45:59.580
+!MESSAGE XSCT Command: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:46:00.753
+!MESSAGE XSCT command with result: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:46:00.754
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:46:00.777
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-9: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:19.985
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-244
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.003
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-244
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.145
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.149
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.149
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.154
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.154
+!MESSAGE XSCT Command: [version -server], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.155
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.155
+!MESSAGE XSCT Command: [version], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.155
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.155
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.159
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.159
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.169
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.169
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.172
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.172
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.180
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.180
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.183
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.183
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.190
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.191
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.193
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.194
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.204
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.204
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.207
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.207
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.215
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.215
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.218
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.218
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.225
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.226
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.234
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.234
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.234
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.235
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.240
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.240
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.294
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:20.295
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:23.298
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:23.307
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:23.310
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:23.310
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:23.318
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:23.318
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:23.335
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:23.335
+!MESSAGE XSCT Command: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:24.535
+!MESSAGE XSCT command with result: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:24.580
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:24.585
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:24.585
+!MESSAGE XSCT Command: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.590
+!MESSAGE XSCT command with result: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_1]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.591
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.591
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.592
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.595
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.596
+!MESSAGE XSCT Command: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.597
+!MESSAGE XSCT command with result: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.597
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.752
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.753
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.758
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.759
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.763
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:25.764
+!MESSAGE XSCT Command: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:26.903
+!MESSAGE XSCT command with result: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:26.903
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:48:26.919
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-6: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.128
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-286
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.140
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-286
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.334
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.338
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.339
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.345
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.345
+!MESSAGE XSCT Command: [version -server], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.346
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.346
+!MESSAGE XSCT Command: [version], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.346
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.347
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.350
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.350
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.359
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.360
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.363
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.364
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.372
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.373
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.376
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.377
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.386
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.386
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.391
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.391
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.400
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.400
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.403
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.403
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.411
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.411
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.414
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.414
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.423
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.423
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.432
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.432
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.433
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.433
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.440
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.440
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.497
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:53.498
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:56.500
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:56.509
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:56.512
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:56.512
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:56.520
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:56.520
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:56.533
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:56.534
+!MESSAGE XSCT Command: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:57.732
+!MESSAGE XSCT command with result: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:57.752
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:57.757
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:57.757
+!MESSAGE XSCT Command: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.763
+!MESSAGE XSCT command with result: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_2]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.763
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.763
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.764
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.767
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.767
+!MESSAGE XSCT Command: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.768
+!MESSAGE XSCT command with result: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.768
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.914
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.915
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.918
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.918
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.922
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:49:58.922
+!MESSAGE XSCT Command: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:50:00.015
+!MESSAGE XSCT command with result: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:50:00.016
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:50:00.032
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-12: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.597
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-329
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.606
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-329
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.748
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.751
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.752
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.756
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.757
+!MESSAGE XSCT Command: [version -server], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.757
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.757
+!MESSAGE XSCT Command: [version], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.757
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.758
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.761
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.761
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.770
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.771
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.774
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.774
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.782
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.782
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.784
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.784
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.792
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.792
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.794
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.794
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.802
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.802
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.804
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.804
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.812
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.812
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.814
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.814
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.822
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.822
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.829
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Bla 887100000291A" && level == 0}], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.829
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.830
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.830
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.835
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.835
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.889
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:54.890
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:57.893
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:57.903
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:57.906
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Bla 887100000291A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:57.906
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:57.914
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:57.914
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:57.928
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:57.928
+!MESSAGE XSCT Command: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:59.126
+!MESSAGE XSCT command with result: [fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/bitstream/20_91_133MHz_opt.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:59.146
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:59.154
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:51:59.155
+!MESSAGE XSCT Command: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.273
+!MESSAGE XSCT command with result: [loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/hw/20_91_133MHz_opt.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_3]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.274
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.274
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.275
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.278
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.279
+!MESSAGE XSCT Command: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.279
+!MESSAGE XSCT command with result: [source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.279
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.424
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.425
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.428
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.428
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.433
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:00.433
+!MESSAGE XSCT Command: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:01.574
+!MESSAGE XSCT command with result: [dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_Integration/Debug/Accelerated_BCP_Integration.elf], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:01.575
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 19:52:01.593
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-5: Launching Debugger_Accelerated_BCP_Integration-GDB_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 20:10:29.036
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-499
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-09 20:10:29.038
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-499

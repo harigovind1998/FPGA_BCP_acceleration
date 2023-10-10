@@ -1,6 +1,6 @@
 Nothing to build in platform '20_91_133MHz_opt'
 
-23:50:13 **** Incremental Build of configuration Debug for project Accelerated_BCP_Integration ****
+19:41:20 **** Incremental Build of configuration Debug for project Accelerated_BCP_Integration ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -10,8 +10,8 @@ Building file: ../src/main.cpp
 Invoking: ARM v7 g++ compiler
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
 ../src/main.cpp: In member function 'void SATSolverDPLL::show_result(Formula&, int)':
-../src/main.cpp:385:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
-  385 |         for (int i = 0; i < f.literals.size(); i++) {
+../src/main.cpp:379:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  379 |         for (int i = 0; i < f.literals.size(); i++) {
       |                         ~~^~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.cpp
  
@@ -23,6 +23,6 @@ Finished building target: Accelerated_BCP_Integration.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size Accelerated_BCP_Integration.elf  |tee "Accelerated_BCP_Integration.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 595463	   2832	4207036	4805331	 4952d3	Accelerated_BCP_Integration.elf
+ 595619	   2832	4207036	4805487	 49536f	Accelerated_BCP_Integration.elf
 Finished building: Accelerated_BCP_Integration.elf.size
  
