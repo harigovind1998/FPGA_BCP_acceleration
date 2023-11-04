@@ -28,3 +28,4 @@ bsp reload
 bsp write
 platform clean
 platform generate
+platform generate

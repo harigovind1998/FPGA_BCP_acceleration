@@ -48,7 +48,7 @@
 
 
 // IP VLNV: carleton.ca:user:BCP_accelerator:2.0
-// IP Revision: 110
+// IP Revision: 112
 
 `timescale 1ns/1ps
 

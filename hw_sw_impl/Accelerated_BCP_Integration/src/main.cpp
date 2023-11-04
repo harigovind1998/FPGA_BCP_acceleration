@@ -91,7 +91,7 @@ class SATSolverDPLL {
         Formula &,
         int);                          // applies the value of the literal in every clause
     void show_result(Formula &, int);  // displays the result
-    XTime totalTStart, totalTEnd, BCPTStart, BCPTEnd;
+    XTime  totalTStart, totalTEnd, solverTStart, BCPTStart, BCPTEnd;
    public:
     SATSolverDPLL() {}
     void SendClausesToAccelerator();
@@ -100,6 +100,8 @@ class SATSolverDPLL {
 };
 
 void SATSolverDPLL::SendClausesToAccelerator(){
+	XTime  transferTStart, transferTEnd;
+	XTime_GetTime(&transferTStart);
 	for (int i = 0; i < clause_count; i++) {
 		uint32_t var1 = (uint32_t) formula.clauses[i][0];
 		uint32_t var2 = (uint32_t) formula.clauses[i][1];
@@ -119,7 +121,6 @@ void SATSolverDPLL::SendClausesToAccelerator(){
 
 		uint32_t clause_id = (uint32_t) i;
 
-		*reg0 = 4;
 		*reg1 = reg1Val;
 		*reg2 = reg2Val;
 		*reg3 = reg3Val;
@@ -131,10 +132,11 @@ void SATSolverDPLL::SendClausesToAccelerator(){
 		}
 
 		if(*reg4== (uint32_t)1){
-//			printf("Updated Clause\n");
 			*reg4 = 0;
 		}
 	}
+	XTime_GetTime(&transferTEnd);
+	printf("Time to transfer: %.5f\n", 1.0 * (transferTEnd - transferTStart) / (COUNTS_PER_SECOND/1000000));
 
 	// For each clause:
 	// 1. Write variable 1 + polarity to reg1
@@ -160,6 +162,7 @@ void SATSolverDPLL::initialize() {
             getline(cin, s);  // ignore
         } else                // else, if would be a p
         {
+        	XTime_GetTime(&totalTStart);
             cin >> s;  // this would be cnf
             break;
         }
@@ -366,7 +369,8 @@ int SATSolverDPLL::DPLL(Formula f) {
  */
 void SATSolverDPLL::show_result(Formula &f, int result) {
 	XTime_GetTime(&totalTEnd);
-	printf("Total Execution Time%.5f\n", 1.0 * (totalTEnd - totalTStart) / (COUNTS_PER_SECOND/1000000));
+	printf("Solver Execution Time: %.5f\n", 1.0 * (totalTEnd - solverTStart) / (COUNTS_PER_SECOND/1000000));
+	printf("Total Execution Time: %.5f\n", 1.0 * (totalTEnd - totalTStart) / (COUNTS_PER_SECOND/1000000));
     if (result == Cat::satisfied)  // if the formula is satisfiable
     {
         cout << "SAT" << endl;
@@ -408,7 +412,7 @@ void SATSolverDPLL::testRoundTrip(){
  * function to call the solver
  */
 void SATSolverDPLL::solve() {
-	XTime_GetTime(&totalTStart);
+	XTime_GetTime(&solverTStart);
     int result = DPLL(formula);  // final result of DPLL on the original formula
 
     // if normal return till the end, then the formula could not be satisfied in
@@ -423,11 +427,6 @@ void SATSolverDPLL::solve() {
 
 int main() {
 	init_platform();
-
-	    printf("Hello World\n");
-	    printf("Successfully ran Hello World application\n");
-	    printf("Starting DPLL\n");
-
 
     SATSolverDPLL solver;  // create the solver
     solver.initialize();   // initialize

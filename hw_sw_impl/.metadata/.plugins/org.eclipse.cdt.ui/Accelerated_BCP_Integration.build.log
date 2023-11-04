@@ -1,4 +1,4 @@
-19:41:20 **** Incremental Build of configuration Debug for project Accelerated_BCP_Integration ****
+11:07:53 **** Incremental Build of configuration Debug for project Accelerated_BCP_Integration ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,24 +6,29 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 Building file: ../src/main.cpp
 Invoking: ARM v7 g++ compiler
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/export/50_224_106MHz/sw/50_224_106MHz/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
 ../src/main.cpp: In member function 'void SATSolverDPLL::show_result(Formula&, int)':
-../src/main.cpp:379:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
-  379 |         for (int i = 0; i < f.literals.size(); i++) {
+../src/main.cpp:377:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  377 |         for (int i = 0; i < f.literals.size(); i++) {
       |                         ~~^~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.cpp
  
+Building file: ../src/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/export/50_224_106MHz/sw/50_224_106MHz/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
 Building target: Accelerated_BCP_Integration.elf
 Invoking: ARM v7 g++ linker
-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/export/20_91_133MHz_opt/sw/20_91_133MHz_opt/standalone_domain/bsplib/lib -o "Accelerated_BCP_Integration.elf" ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/export/50_224_106MHz/sw/50_224_106MHz/standalone_domain/bsplib/lib -o "Accelerated_BCP_Integration.elf" ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
 Finished building target: Accelerated_BCP_Integration.elf
  
 Invoking: ARM v7 Print Size
 arm-none-eabi-size Accelerated_BCP_Integration.elf  |tee "Accelerated_BCP_Integration.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 595619	   2832	4207036	4805487	 49536f	Accelerated_BCP_Integration.elf
+ 595747	   2832	4207044	4805623	 4953f7	Accelerated_BCP_Integration.elf
 Finished building: Accelerated_BCP_Integration.elf.size
  
 
-19:41:21 Build Finished (took 1s.79ms)
+11:07:54 Build Finished (took 1s.279ms)
 

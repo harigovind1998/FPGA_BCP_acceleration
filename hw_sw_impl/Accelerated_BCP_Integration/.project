@@ -3,7 +3,7 @@
 	<name>Accelerated_BCP_Integration</name>
 	<comment>Created by Vitis v2022.2</comment>
 	<projects>
-		<project>20_91_133MHz_opt</project>
+		<project>50_224_106MHz</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
