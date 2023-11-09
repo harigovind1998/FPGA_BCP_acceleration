@@ -217,6 +217,8 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
     uint32_t decision_id = literal_to_apply + 1;
 	uint32_t decision_polarity = (value_to_apply+1)%2; // True if 1, False if 0
 
+    cout << "Applying literal: " << literal_to_apply << "Polarity(0= True, 1=False): " << value_to_apply << endl;
+
 	uint32_t decision = (decision_id << 1) | decision_polarity;
 
 	std::vector<uint32_t> assignmentsInThisLevel;
@@ -266,6 +268,11 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
 			    	int backtrack=assignmentsInThisLevel.back();
 			    	assignmentsInThisLevel.pop_back();
 
+                    int implication_id = (backtrack >> 1) - 1;
+            		int implication_polarity = (~backtrack) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+                    cout << "Backtracking: " << implication_id << ", val: " << implication_polarity << endl;
+
 			    	*reg1 = backtrack;
 			    	*reg0 = 3;
 
@@ -312,6 +319,8 @@ void SATSolverDPLL::getImplications(std::vector<uint32_t> &implications, Formula
 
 		int implication_id = (implication >> 1) - 1;
 		int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+        cout << "Unit implication found: " << implication_id << ", val: " << implication_polarity << endl;
 
 		f.literals[implication_id] = implication_polarity;  // 0 - if true, 1 - if false, set the literal
 		f.literal_frequency[implication_id] = -1;

@@ -1,4 +1,4 @@
-10:37:57 **** Build of configuration Debug for project HW_accelerated_DPLL ****
+15:36:29 **** Build of configuration Debug for project HW_accelerated_DPLL ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -66,5 +66,5 @@ arm-none-eabi-size HW_accelerated_DPLL.elf  |tee "HW_accelerated_DPLL.elf.size"
 Finished building: HW_accelerated_DPLL.elf.size
  
 
-10:37:57 Build Finished (took 368ms)
+15:36:29 Build Finished (took 438ms)
 

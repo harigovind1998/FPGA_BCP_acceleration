@@ -108,7 +108,7 @@ private:
     vector<subFormula *> subFormulas;
     int literal_count;                                        // the number of variables in the formula
     int clause_count;                                         // the number of clauses in the formula
-    int unit_propagate(Formula &, int, bool);                 // performs unit propagation
+    int unit_propagate(Formula &, int, bool, std::vector<uint32_t> &);                 // performs unit propagation
     bool getImplications(std::vector<uint32_t> &, Formula &, int); // Gets implications from FPGA
 
     void testRoundTrip();
@@ -252,18 +252,18 @@ void SATSolverDPLL::splitClauses()
         literals.push_back(var3);
 
         currSubFomula->clauses.push_back(literals);
-        if ((currSubFomula->clauses.size() == MAX_CLAUSE || currSubFomula->numOfVars == MAX_VAR - 3) && i<clause_count-1){
+        if ((currSubFomula->clauses.size() == MAX_CLAUSE || currSubFomula->numOfVars > MAX_VAR - 3) && i<clause_count-1){
             subFormulas.push_back(new subFormula());
             subFormulas.back()->subFormulaID = subclauseId;
-            subFormulas.back()->numOfVars++;
+            subFormulas.back()->numOfVars = 1;
             subclauseId++;
         }
     }
     formula.satClauses.resize(subFormulas.size(), false);
     cout << "number of sub clauses: " << subFormulas.size() << endl;
-    for (unordered_map<int, int>::const_iterator it = subFormulas[0]->variableMapping_cpuToFPGA.begin(); it != subFormulas[0]->variableMapping_cpuToFPGA.end(); ++it){
-            cout << "CPU: " << it->first << " FPGA:" << it->second << endl;
-    }
+//    for (unordered_map<int, int>::const_iterator it = subFormulas[0]->variableMapping_cpuToFPGA.begin(); it != subFormulas[0]->variableMapping_cpuToFPGA.end(); ++it){
+//            cout << "CPU: " << it->first << " FPGA:" << it->second << endl;
+//    }
 
 }
 
@@ -272,12 +272,13 @@ void SATSolverDPLL::SendClausesToAccelerator(int clauseId)
     XTime transferTStart, transferTEnd;
     XTime_GetTime(&transferTStart);
     subFormula *subFormula = subFormulas[clauseId];
-    for (int i = 0; i < subFormula->clauses.size(); i++)
+//    for (int i = 0; i < subFormula->clauses.size(); i++)
+    for (int i = 0; i < MAX_CLAUSE; i++)
     {
 
-        uint32_t var1 = (uint32_t)subFormula->clauses[i][0];
-        uint32_t var2 = (uint32_t)subFormula->clauses[i][1];
-        uint32_t var3 = (uint32_t)subFormula->clauses[i][2];
+        uint32_t var1 = (uint32_t)subFormula->clauses[i % subFormula->clauses.size()][0];
+        uint32_t var2 = (uint32_t)subFormula->clauses[i % subFormula->clauses.size()][1];
+        uint32_t var3 = (uint32_t)subFormula->clauses[i % subFormula->clauses.size()][2];
 
         uint32_t var1_id = subFormula->variableMapping_cpuToFPGA[var1/ 2 + 1];
         uint32_t var1_polarity = (var1 + 1) % 2; // In HW: True if 1, False if 0. In SW: True if 0, False if 1
@@ -336,7 +337,7 @@ void SATSolverDPLL::sendDecisionsToAccelerator(Formula &f, int clauseId)
             uint32_t decision_id = it->second;
             uint32_t decision_polarity = (value_to_apply + 1) % 2; // True if 1, False if 0
 
-            cout << "Literal: " << it->first - 1 << " Polarity: " << decision_polarity << endl;
+//            cout << "Literal: " << it->first - 1 << " Polarity: " << decision_polarity << endl;
 
             uint32_t decision = (decision_id << 1) | decision_polarity;
 
@@ -366,23 +367,32 @@ void SATSolverDPLL::sendDecisionsToAccelerator(Formula &f, int clauseId)
  *               Cat::unsatisfied - the formula can no longer be satisfied
  *               Cat::normal - normal exit
  */
-int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_literal)
+int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_literal, std::vector<uint32_t> &assignmentsInThisLevel)
 {
-    XTime tStart, tEnd, tUpdateFPGAStart, tUpdateFPGAEnd;
+    XTime tStart, tEnd, tSpendInBCPStart, tSpendInBCPEnd, tUpdateStart, tUpdateEnd;
+//    cout << "Applying literal: " << literal_to_apply << " Polarity: " << f.literals[literal_to_apply] << endl << endl;
+    int numberOfImplications = 0;
+    float timeSpentInFPGA = 0.0;
     bool newImplications = true;
+    XTime_GetTime(&tSpendInBCPStart);
+
     int timeToUpdateFPGA = 0;
-    while (newImplications)
-    {
-        newImplications = false;
+//    while (newImplications)
+//    {
+//        newImplications = false;
         for (int subFormulaId = 0; subFormulaId < subFormulas.size(); subFormulaId++)
         {
             // Send clauses to FPGA
-            XTime_GetTime(&tUpdateFPGAStart);
-            SendClausesToAccelerator(subFormulaId);
-            // Send decisions till now to FPGA
-            sendDecisionsToAccelerator(f, subFormulaId);
-            XTime_GetTime(&tUpdateFPGAEnd);
-            timeToUpdateFPGA += (tUpdateFPGAEnd-tUpdateFPGAStart);
+
+        	XTime_GetTime(&tUpdateStart);
+
+			if (subFormulas.size()>1) {
+				SendClausesToAccelerator(subFormulaId);
+				// Send decisions till now to FPGA
+				sendDecisionsToAccelerator(f, subFormulaId);
+			}
+            XTime_GetTime(&tUpdateEnd);
+            timeToUpdateFPGA += (tUpdateEnd-tUpdateStart);
             // Send current decision, wait for updated status
 
             int value_to_apply = f.literals[literal_to_apply]; // the value to apply, 0 - if true, 1 - if false
@@ -390,19 +400,25 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
             	continue;
             }
 
+            int numberOfClausesInSubFor = subFormulas[subFormulaId]->clauses.size();
+//            cout << "clause id: "<< subFormulaId << endl;
+//            cout << "subFormula Size" << subFormulas.size() << endl;
+
             uint32_t decision_id = subFormulas[subFormulaId]->variableMapping_cpuToFPGA[literal_to_apply+1];
             uint32_t decision_polarity = (value_to_apply + 1) % 2; // True if 1, False if 0
-            cout << "Applying literal: " << literal_to_apply << "Decision Id: " << decision_id << " Polarity: " << decision_polarity << endl << endl;
+
+//            cout << "Applying literal: " << literal_to_apply << "Polarity(0= True, 1=False): " << value_to_apply << " Freq: " << f.literal_frequency[literal_to_apply] << endl;
 
             uint32_t decision = (decision_id << 1) | decision_polarity;
 
-            std::vector<uint32_t> assignmentsInThisLevel;
+
             assignmentsInThisLevel.push_back(decision);
 
             // Send decision to FPGA
             *reg0 = (uint32_t)0;
             *reg4 = (uint32_t)0;
             *reg1 = decision;
+//            cout << "tFPGA: " << timeSpentInFPGA << endl;
             XTime_GetTime(&tStart);
             *reg0 = (uint32_t)2;
 
@@ -415,14 +431,14 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
             {
                 uint32_t status = *reg4;
                 XTime_GetTime(&tEnd);
+//                timeSpentInFPGA += (1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000)) - 0.696;
                 switch (status)
                 {
                 case (uint32_t)1:
                 {
                     getImplications(assignmentsInThisLevel, f, subFormulaId);
                     int numberOfImpls = assignmentsInThisLevel.size();
-//                    printf("%.4f, %d, %.4f\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000), numberOfImpls, 1.0 * timeToUpdateFPGA / (COUNTS_PER_SECOND / 1000000));
-                    printf("Case 1 \n");
+                    printf("%.4f, %d, %.4f\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000), numberOfImpls * numberOfClausesInSubFor, 1.0 * (tSpendInBCPEnd-tSpendInBCPStart) / (COUNTS_PER_SECOND / 1000000));
                     return Cat::normal;
                     break;
                 }
@@ -430,11 +446,12 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
                 {
                     newImplications |= getImplications(assignmentsInThisLevel, f, subFormulaId);
                     int numberOfImpls = assignmentsInThisLevel.size();
-                    printf("%.4f, %d, %.4f\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000), numberOfImpls, 1.0 * timeToUpdateFPGA / (COUNTS_PER_SECOND / 1000000));
+                    numberOfImplications += numberOfImpls * numberOfClausesInSubFor;
+//                    timeSpentInFPGA = 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000);
+                    timeSpentInFPGA += 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000) - 0.696;
 
-                    printf("Case 2, number of implications: %d, continue? %d\n", numberOfImpls, newImplications);
-//                    cout << "case 2, number of implications: " << numberOfImpls << " continue? " << newImplications >> endl;
                     // Move to next
+//                    printf("%.4f, %d, %.4f NORMAL\n", timeSpentInFPGA, numberOfImplications, 1.0 * (tSpendInBCPEnd-tSpendInBCPStart) / (COUNTS_PER_SECOND / 1000000));
                     wait = false;
                     break;
                 }
@@ -443,8 +460,13 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
                     // Conflict, Start backtracking. Pop each assignment in queue.
                     getImplications(assignmentsInThisLevel, f, subFormulaId);
                     int numberOfImpls = assignmentsInThisLevel.size();
-                    printf("%.4f, %d, %.4f\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000), numberOfImpls, 1.0 * timeToUpdateFPGA / (COUNTS_PER_SECOND / 1000000));
-                    printf("Case 4 \n");
+                    numberOfImplications += numberOfImpls * numberOfClausesInSubFor;
+
+                    timeSpentInFPGA += 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000) - 0.696;
+
+                    XTime_GetTime(&tSpendInBCPEnd);
+
+//                    printf("%.4f, %d, %.4f, %.4f\n", timeSpentInFPGA, numberOfImplications, 1.0 * (timeToUpdateFPGA) / (COUNTS_PER_SECOND / 1000000), 1.0 * (tSpendInBCPEnd-tSpendInBCPStart) / (COUNTS_PER_SECOND / 1000000));
                     return Cat::unsatisfied;
                     break;
                 }
@@ -453,9 +475,10 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
                     // SAT, output assignments
                     newImplications |= getImplications(assignmentsInThisLevel, f, subFormulaId);
                     int numberOfImpls = assignmentsInThisLevel.size();
-                    printf("%.4f, %d, %.4f\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000), numberOfImpls, 1.0 * timeToUpdateFPGA / (COUNTS_PER_SECOND / 1000000));
-                    printf("Case 5 \n");
-                    // return Cat::satisfied;
+                    numberOfImplications += numberOfImpls * numberOfClausesInSubFor;
+
+                    timeSpentInFPGA += 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000) - 0.696;
+                    printf("%.4f, %d, %.4f SAT\n", timeSpentInFPGA, numberOfImplications, 1.0 * (tSpendInBCPEnd-tSpendInBCPStart) / (COUNTS_PER_SECOND / 1000000));
                     formula.satClauses[subFormulaId] = true;
                     wait = false;
                     break;
@@ -469,16 +492,21 @@ int SATSolverDPLL::unit_propagate(Formula &f, int literal_to_apply, bool use_lit
                     return Cat::unsatisfied;
                     // Error state
                 }
-            }
+//            }
         }
     }
 
     for(int i = 0; i < formula.satClauses.size(); i++){
         if(!(formula.satClauses[i])){
+        	XTime_GetTime(&tSpendInBCPEnd);
+        	printf("%.4f, %d, %.4f, %.4f\n", timeSpentInFPGA, numberOfImplications, 1.0 * (timeToUpdateFPGA) / (COUNTS_PER_SECOND / 1000000), 1.0 * (tSpendInBCPEnd-tSpendInBCPStart) / (COUNTS_PER_SECOND / 1000000));
             return Cat::normal;
         }
     }
 
+    XTime_GetTime(&tSpendInBCPEnd);
+
+    printf("%.4f, %d, %.4f, %.4f\n", timeSpentInFPGA, numberOfImplications, 1.0 * (timeToUpdateFPGA) / (COUNTS_PER_SECOND / 1000000), 1.0 * (tSpendInBCPEnd-tSpendInBCPStart) / (COUNTS_PER_SECOND / 1000000));
     return Cat::satisfied; // if reached here, the unit resolution ended normally
 }
 
@@ -487,14 +515,15 @@ bool SATSolverDPLL::getImplications(std::vector<uint32_t> &implications, Formula
     bool newImplications = false;
     while (*reg6 == (uint32_t)1)
     {
-     	cout << "Getting Implication"<< endl;
         newImplications = true;
         uint32_t implication = *reg5; // Read
-        int FPGA_varConvertion = subFormulas[clauseId]->variableMapping_FPGAToCPU[implication>>1];
         implications.push_back(implication);
+        int FPGA_varConvertion = subFormulas[clauseId]->variableMapping_FPGAToCPU[implication>>1];
 
         int implication_id = FPGA_varConvertion - 1;
         int implication_polarity = (~implication) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+//        cout << "Unit implication found: " << implication_id << ", val: " << implication_polarity << endl;
 
         f.literals[implication_id] = implication_polarity; // 0 - if true, 1 - if false, set the literal
         f.literal_frequency[implication_id] = -1;
@@ -516,6 +545,7 @@ int SATSolverDPLL::DPLL(Formula f)
     // be assigned a value already assigned variables have this field reset to
     // -1 in order to ignore them
     int i = distance(f.literal_frequency.begin(), max_element(f.literal_frequency.begin(), f.literal_frequency.end()));
+    std::vector<uint32_t> assignmentsInThisLevel;
     // need to apply twice, once true, the other false
     for (int j = 0; j < 2; j++)
     {
@@ -528,10 +558,11 @@ int SATSolverDPLL::DPLL(Formula f)
         {                                    // if not
             new_f.literals[i] = (j + 1) % 2; // assign negative first
         }
+//        cout << "lit " << i << "Literal freq: " << new_f.literal_frequency[i] << endl;
 
         new_f.literal_frequency[i] = -1; // reset the frequency to -1 to ignore in the future
 
-        int transform_result = unit_propagate(new_f, i, true); // apply the change to all the clauses
+        int transform_result = unit_propagate(new_f, i, true, assignmentsInThisLevel); // apply the change to all the clauses
 
         if (transform_result == Cat::satisfied)
         { // if formula satisfied, show result and return
@@ -540,16 +571,85 @@ int SATSolverDPLL::DPLL(Formula f)
         }
         else if (transform_result == Cat::unsatisfied)
         { // if formula not satisfied in this branch, return normally
+        	if(subFormulas.size() == 1){
+        		while (!assignmentsInThisLevel.empty()){
+        			int backtrack=assignmentsInThisLevel.back();
+        			assignmentsInThisLevel.pop_back();
+
+        			int implication_id = (backtrack >> 1) - 1;
+        			int implication_polarity = (~backtrack) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+//        			cout << "Backtracking: " << subFormulas[0]->variableMapping_FPGAToCPU[backtrack>>1] << ", val: " << implication_polarity << endl;
+
+        			*reg1 = backtrack;
+        			*reg0 = 3;
+
+        			while(*reg4 == 0){
+        				// Wait
+        			}
+
+        			if(*reg4 != 1){
+        				cout << "Backtrack error, status code:" << *reg4 << "\n";
+        			}
+        		}
+        	}
+
             continue;
         }
 
         int dpll_result = DPLL(new_f); // recursively call DPLL on the new formula
+
+        if(subFormulas.size() == 1){
+                    		while (!assignmentsInThisLevel.empty()){
+                    			int backtrack=assignmentsInThisLevel.back();
+                    			assignmentsInThisLevel.pop_back();
+
+                    			int implication_id = (backtrack >> 1) - 1;
+                    			int implication_polarity = (~backtrack) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+//                    			cout << "Backtracking: " << subFormulas[0]->variableMapping_FPGAToCPU[backtrack>>1] << ", val: " << implication_polarity << endl;
+
+                    			*reg1 = backtrack;
+                    			*reg0 = 3;
+
+                    			while(*reg4 == 0){
+                    				// Wait
+                    			}
+
+                    			if(*reg4 != 1){
+                    				cout << "Backtrack error, status code:" << *reg4 << "\n";
+                    			}
+                    		}
+                    	}
 
         if (dpll_result == Cat::completed)
         { // propagate the result, if completed
             return dpll_result;
         }
     }
+
+    if(subFormulas.size() == 1){
+            		while (!assignmentsInThisLevel.empty()){
+            			int backtrack=assignmentsInThisLevel.back();
+            			assignmentsInThisLevel.pop_back();
+
+            			int implication_id = (backtrack >> 1) - 1;
+            			int implication_polarity = (~backtrack) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+
+//            			cout << "Backtracking: " << subFormulas[0]->variableMapping_FPGAToCPU[backtrack>>1] << ", val: " << implication_polarity << endl;
+
+            			*reg1 = backtrack;
+            			*reg0 = 3;
+
+            			while(*reg4 == 0){
+            				// Wait
+            			}
+
+            			if(*reg4 != 1){
+            				cout << "Backtrack error, status code:" << *reg4 << "\n";
+            			}
+            		}
+            	}
 
     // if the control reaches here, the function has returned normally
     return Cat::normal;

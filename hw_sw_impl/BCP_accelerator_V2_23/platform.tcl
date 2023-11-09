@@ -32,3 +32,4 @@ platform clean
 platform generate
 platform generate
 platform generate
+platform generate

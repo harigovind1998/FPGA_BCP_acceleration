@@ -1,6 +1,6 @@
-10:36:18 **** Build of project BCP_accelerator_V2_14 ****
-buildplatform.sh 35375 BCP_accelerator_V2_14  
-XSDB Server Channel: tcfchan#6
+15:34:48 **** Build of project BCP_accelerator_V2_14 ****
+buildplatform.sh 36469 BCP_accelerator_V2_14  
+XSDB Server Channel: tcfchan#15
 Reading the platform  : "BCP_accelerator_V2_14"
 Building the zynq_fsbl application.
 make: Entering directory '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_14/zynq_fsb
@@ -155,11 +155,15 @@ bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
 
-Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
-
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
 none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
 bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
 
 Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
 
@@ -167,23 +171,19 @@ make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=/bin/sh"
 ne-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi
 =hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
-Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
-
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
 ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
-Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
 ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
-
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
--as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
 i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
@@ -197,11 +197,11 @@ i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAG
 
 Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_0/src
 
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
 make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
 -as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
 nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
 
 make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
 bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
@@ -215,11 +215,11 @@ make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s include  "SHELL=/bin/sh" "COMPI
 -as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
 nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
+Running Make include in ps7_cortexa9_0/libsrc/spips_v3_8/src
+
 make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
 s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
 startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-Running Make include in ps7_cortexa9_0/libsrc/spips_v3_8/src
 
 make -C ps7_cortexa9_0/libsrc/spips_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
@@ -227,11 +227,11 @@ ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 Running Make include in ps7_cortexa9_0/libsrc/standalone_v8_0/src
 
-Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src
-
 make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
 eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
 rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src
 
 make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
 i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
@@ -271,17 +271,15 @@ Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
 
 Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
 
-Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
-
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
 eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
 rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
 
 Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
 
@@ -293,11 +291,13 @@ make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
-Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
 
 make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
 s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
 startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_10/src
 
 make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
 s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
@@ -311,11 +311,11 @@ tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
 
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
 make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
 ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
 
 make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
 " "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
@@ -347,11 +347,11 @@ startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_7/src
 
-Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
-
 make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
 
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
 " "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
@@ -527,28 +527,30 @@ BCP_accelerator_selftest.c: In function 'BCP_ACCELERATOR_Reg_SelfTest':
 BCP_accelerator_selftest.c:52:71: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
    52 |           if ( BCP_ACCELERATOR_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
       |                                                                       ^~
+Finished building libraries sequentially.
+
 BCP_accelerator_selftest.c:36:13: warning: unused variable 'Index' [-Wunused-variable]
    36 |         int Index;
       |             ^~~~~
-Finished building libraries sequentially.
-
 make -j 10 --no-print-directory par_libs
 
 Running Make include in ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src
-
-Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
 
 make -C ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
 none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
 bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
-none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
-bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
 
 Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
 
 Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
 
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-no
 ne-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi
@@ -559,8 +561,6 @@ Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
 ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
 
 make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
 -as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
@@ -578,11 +578,11 @@ i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAG
 
 Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_10/src
 
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_0/src
+
 make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
 i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
 -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_0/src
 
 make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
 -as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
@@ -620,11 +620,11 @@ make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s include  "SHELL=/bin/sh" "C
 eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
 rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
-Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src
-
 make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
 i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
 -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src
 
 make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
@@ -648,9 +648,11 @@ make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s libs  "SHELL=/bin/sh" "C
 eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
 rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
 Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
 
-Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
 
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
@@ -659,8 +661,6 @@ artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
 " "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
 tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
 
 Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
 
@@ -686,11 +686,11 @@ tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
 
-Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
-
 make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
 ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
 
 make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
 " "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
@@ -716,11 +716,11 @@ i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAG
 
 Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_11/src
 
-Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_7/src
-
 make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
 s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
 startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_7/src
 
 make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
@@ -771,5 +771,5 @@ rtexa9_0/lib/xusbps_sinit.o
 Finished building libraries
 
 
-10:36:24 Build Finished (took 6s.123ms)
+15:34:54 Build Finished (took 6s.195ms)
 

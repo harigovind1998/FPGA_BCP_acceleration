@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Accelerated_BCP_Integration" location="/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/SoC_proj/Accelerated_BCP_Integration" platform="/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/large_instance_support/export/large_instance_support/large_instance_support.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="Accelerated_BCP_Integration_system" sysConfig="large_instance_support" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" dimmRepoPath="" language="CPP" mssSignature="4353e7cc3a410d7a986917ab7c07273e">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.794461832">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.897444783" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

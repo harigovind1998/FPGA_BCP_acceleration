@@ -27,3 +27,4 @@ platform active {BCP_accelerator_V2_11}
 platform clean
 platform generate
 platform generate
+platform generate

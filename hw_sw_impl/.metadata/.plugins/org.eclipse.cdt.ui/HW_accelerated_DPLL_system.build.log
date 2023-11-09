@@ -1,4 +1,4 @@
-10:37:58 **** Build of configuration Debug for project HW_accelerated_DPLL_system ****
+15:36:30 **** Build of configuration Debug for project HW_accelerated_DPLL_system ****
 make all 
 Generating bif file for the system project
 Executing command '::scw::generate_bif -xpfm /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/BCP_accelerator_V2_5/export/BCP_accelerator_V2_5/BCP_accelerator_V2_5.xpfm -domains standalone_domain -bifpath /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/HW_accelerated_DPLL_system/Debug/system.bif' on XSCT
@@ -6,5 +6,5 @@ sdcard_gen --xpfm /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw
 creating BOOT.BIN using /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/HW_accelerated_DPLL/_ide/bitstream/BCP_accelerator_V2_5.bit
 Running /tools/Xilinx/Vitis/2022.2/bin/bootgen  -image /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/HW_accelerated_DPLL_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-10:38:03 Build Finished (took 5s.226ms)
+15:36:35 Build Finished (took 5s.296ms)
 

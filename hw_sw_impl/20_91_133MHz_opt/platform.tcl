@@ -23,3 +23,4 @@ bsp reload
 catch {bsp regenerate}
 platform generate
 platform generate
+platform generate

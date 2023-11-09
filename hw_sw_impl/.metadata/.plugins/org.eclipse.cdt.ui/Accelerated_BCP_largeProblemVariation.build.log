@@ -1,4 +1,4 @@
-21:20:12 **** Incremental Build of configuration Debug for project Accelerated_BCP_largeProblemVariation ****
+21:34:11 **** Incremental Build of configuration Debug for project Accelerated_BCP_largeProblemVariation ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,23 +7,35 @@ make --no-print-directory main-build
 Building file: ../src/main.cpp
 Invoking: ARM v7 g++ compiler
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/sw/larger_instance_support_final/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In member function 'void SATSolverDPLL::SendClausesToAccelerator(int)':
-../src/main.cpp:275:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::vector<int> >::size_type' {aka 'unsigned int'} [-Wsign-compare]
-  275 |     for (int i = 0; i < subFormula->clauses.size(); i++)
-      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/main.cpp: In member function 'int SATSolverDPLL::unit_propagate(Formula&, int, bool)':
-../src/main.cpp:377:49: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<subFormula*>::size_type' {aka 'unsigned int'} [-Wsign-compare]
-  377 |         for (int subFormulaId = 0; subFormulaId < subFormulas.size(); subFormulaId++)
+../src/main.cpp: In member function 'int SATSolverDPLL::unit_propagate(Formula&, int, bool, std::vector<long unsigned int>&)':
+../src/main.cpp:383:49: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<subFormula*>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  383 |         for (int subFormulaId = 0; subFormulaId < subFormulas.size(); subFormulaId++)
       |                                    ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
-../src/main.cpp:423:25: warning: unused variable 'numberOfImpls' [-Wunused-variable]
-  423 |                     int numberOfImpls = assignmentsInThisLevel.size();
-      |                         ^~~~~~~~~~~~~
-../src/main.cpp:476:22: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<bool>::size_type' {aka 'unsigned int'} [-Wsign-compare]
-  476 |     for(int i = 0; i < formula.satClauses.size(); i++){
+../src/main.cpp:499:22: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<bool>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  499 |     for(int i = 0; i < formula.satClauses.size(); i++){
       |                    ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cpp: In member function 'int SATSolverDPLL::DPLL(Formula)':
+../src/main.cpp:579:37: warning: unused variable 'implication_id' [-Wunused-variable]
+  579 |                                 int implication_id = (backtrack >> 1) - 1;
+      |                                     ^~~~~~~~~~~~~~
+../src/main.cpp:580:37: warning: unused variable 'implication_polarity' [-Wunused-variable]
+  580 |                                 int implication_polarity = (~backtrack) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+      |                                     ^~~~~~~~~~~~~~~~~~~~
+../src/main.cpp:607:45: warning: unused variable 'implication_id' [-Wunused-variable]
+  607 |                                         int implication_id = (backtrack >> 1) - 1;
+      |                                             ^~~~~~~~~~~~~~
+../src/main.cpp:608:45: warning: unused variable 'implication_polarity' [-Wunused-variable]
+  608 |                                         int implication_polarity = (~backtrack) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+      |                                             ^~~~~~~~~~~~~~~~~~~~
+../src/main.cpp:636:37: warning: unused variable 'implication_id' [-Wunused-variable]
+  636 |                                 int implication_id = (backtrack >> 1) - 1;
+      |                                     ^~~~~~~~~~~~~~
+../src/main.cpp:637:37: warning: unused variable 'implication_polarity' [-Wunused-variable]
+  637 |                                 int implication_polarity = (~backtrack) & 1; // In Accelerator, 1 = positive, 0 = negative. SW the logic is reversed.
+      |                                     ^~~~~~~~~~~~~~~~~~~~
 ../src/main.cpp: In member function 'void SATSolverDPLL::show_result(Formula&, int)':
-../src/main.cpp:571:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
-  571 |         for (int i = 0; i < f.literals.size(); i++)
+../src/main.cpp:671:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  671 |         for (int i = 0; i < f.literals.size(); i++)
       |                         ~~^~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.cpp
  
@@ -35,9 +47,9 @@ Finished building target: Accelerated_BCP_largeProblemVariation.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size Accelerated_BCP_largeProblemVariation.elf  |tee "Accelerated_BCP_largeProblemVariation.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 625111	   2832	4207036	4834979	 49c6a3	Accelerated_BCP_largeProblemVariation.elf
+ 626607	   2832	421540284	422169723	1929cc7b	Accelerated_BCP_largeProblemVariation.elf
 Finished building: Accelerated_BCP_largeProblemVariation.elf.size
  
 
-21:20:14 Build Finished (took 1s.234ms)
+21:34:13 Build Finished (took 1s.313ms)
 

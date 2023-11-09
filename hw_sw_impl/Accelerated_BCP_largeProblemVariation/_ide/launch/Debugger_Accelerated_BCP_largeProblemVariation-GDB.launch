@@ -45,7 +45,7 @@
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.is_default_gdb_port" value="true"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.launch.work.dir" value=""/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.performance.analysis" value="false"/>
-    <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.performance.analysis.linux.hw.target" value=""/>
+    <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.performance.analysis.linux.hw.target" value="Local"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.sdsoc.project" value="Accelerated_BCP_largeProblemVariation"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.secure.debug" value="false"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.secure.debug.image" value=""/>

@@ -23,3 +23,5 @@ bsp reload
 catch {bsp regenerate}
 bsp reload
 platform generate
+platform active {larger_instance_support_final}
+platform generate

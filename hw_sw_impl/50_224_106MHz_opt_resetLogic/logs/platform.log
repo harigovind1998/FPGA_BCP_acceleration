@@ -2948,3 +2948,1278 @@ TRACE::2023-11-04.20:30:44::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Docum
 /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2023-11-04.20:30:44::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:04::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:04::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:04::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:04::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:04::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:04::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:04::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened new HwDB with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWReader::Active system found as  50_224_106MHz_opt_resetLogic
+TRACE::2023-11-08.15:34:05::SCWReader::Handling sysconfig 50_224_106MHz_opt_resetLogic
+TRACE::2023-11-08.15:34:05::SCWDomain::checking for install qemu data   : 
+TRACE::2023-11-08.15:34:05::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2023-11-08.15:34:05::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::No sw design opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::mss exists loading the mss file  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::Opened the sw design from mss  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::Adding the swdes entry /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system_5
+TRACE::2023-11-08.15:34:05::SCWMssOS::updating the scw layer about changes
+TRACE::2023-11-08.15:34:05::SCWMssOS::Opened the sw design.  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS:: library already available in sw design:  xilffs:4.8
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2023-11-08.15:34:05::SCWMssOS::Saving the mss changes /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-11-08.15:34:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-11-08.15:34:05::SCWMssOS::Commit changes completed.
+TRACE::2023-11-08.15:34:05::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-11-08.15:34:05::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWReader::No isolation master present  
+TRACE::2023-11-08.15:34:05::SCWDomain::checking for install qemu data   : 
+TRACE::2023-11-08.15:34:05::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2023-11-08.15:34:05::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::No sw design opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::mss exists loading the mss file  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::Opened the sw design from mss  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::Adding the swdes entry /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_6
+TRACE::2023-11-08.15:34:05::SCWMssOS::updating the scw layer about changes
+TRACE::2023-11-08.15:34:05::SCWMssOS::Opened the sw design.  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::Saving the mss changes /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-11-08.15:34:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-11-08.15:34:05::SCWMssOS::Commit changes completed.
+TRACE::2023-11-08.15:34:05::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-11-08.15:34:05::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWReader::No isolation master present  
+LOG::2023-11-08.15:34:05::SCWPlatform::Started generating the artifacts platform 50_224_106MHz_opt_resetLogic
+TRACE::2023-11-08.15:34:05::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-11-08.15:34:05::SCWPlatform::Started generating the artifacts for system configuration 50_224_106MHz_opt_resetLogic
+LOG::2023-11-08.15:34:05::SCWSystem::Checking the domain zynq_fsbl
+LOG::2023-11-08.15:34:05::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2023-11-08.15:34:05::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2023-11-08.15:34:05::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWBDomain::Completed writing the mss file at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2023-11-08.15:34:05::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-11-08.15:34:05::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2023-11-08.15:34:05::SCWBDomain::System Command Ran  cd  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl ; bash -c " make -C zynq_fsbl_bsp ; make  " 
+TRACE::2023-11-08.15:34:05::SCWBDomain::make: Entering directory '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/z
+TRACE::2023-11-08.15:34:05::SCWBDomain::ynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make --no-print-directory seq_libs
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2023-11-08.15:34:05::SCWBDomain::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2023-11-08.15:34:05::SCWBDomain::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2023-11-08.15:34:05::SCWBDomain::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2023-11-08.15:34:05::SCWBDomain::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-no
+TRACE::2023-11-08.15:34:05::SCWBDomain::ne-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi
+TRACE::2023-11-08.15:34:05::SCWBDomain::=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2023-11-08.15:34:05::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2023-11-08.15:34:05::SCWBDomain:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/spips_v3_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/spips_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/standalone_v8_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2023-11-08.15:34:05::SCWBDomain::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2023-11-08.15:34:05::SCWBDomain::rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-non
+TRACE::2023-11-08.15:34:05::SCWBDomain::e-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2023-11-08.15:34:05::SCWBDomain::hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Compiling BCP_accelerator...
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Finished building libraries sequentially.
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -j 10 --no-print-directory par_libs
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2023-11-08.15:34:05::SCWBDomain::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2023-11-08.15:34:05::SCWBDomain::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2023-11-08.15:34:05::SCWBDomain::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2023-11-08.15:34:05::SCWBDomain::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-no
+TRACE::2023-11-08.15:34:05::SCWBDomain::ne-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi
+TRACE::2023-11-08.15:34:05::SCWBDomain::=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2023-11-08.15:34:05::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2023-11-08.15:34:05::SCWBDomain:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/spips_v3_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/spips_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/standalone_v8_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2023-11-08.15:34:05::SCWBDomain::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2023-11-08.15:34:05::SCWBDomain::rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-non
+TRACE::2023-11-08.15:34:05::SCWBDomain::e-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2023-11-08.15:34:05::SCWBDomain::hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2023-11-08.15:34:05::SCWBDomain::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2023-11-08.15:34:05::SCWBDomain::rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-11-08.15:34:05::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-11-08.15:34:05::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-11-08.15:34:05::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-11-08.15:34:05::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/scugic_v5_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/sdps_v4_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-11-08.15:34:05::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-11-08.15:34:05::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/standalone_v8_0/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/spips_v3_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/spips_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-11-08.15:34:05::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-11-08.15:34:05::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_11/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_7/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-11-08.15:34:05::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-11-08.15:34:05::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_8/src
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Finished building libraries parallelly.
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make --no-print-directory archive
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/_open.o ps7_cortexa9_0/lib/_sbrk
+TRACE::2023-11-08.15:34:05::SCWBDomain::.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/asm_vectors.o ps7_cortexa9_0/lib/boot.o ps7_cortexa9_0/lib/close.o ps7_cortexa
+TRACE::2023-11-08.15:34:05::SCWBDomain::9_0/lib/cpputest_time.o ps7_cortexa9_0/lib/cpu_init.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/lib/fcntl.o ps7_cortexa9_0/lib/
+TRACE::2023-11-08.15:34:05::SCWBDomain::fstat.o ps7_cortexa9_0/lib/getpid.o ps7_cortexa9_0/lib/inbyte.o ps7_cortexa9_0/lib/isatty.o ps7_cortexa9_0/lib/kill.o ps7_corte
+TRACE::2023-11-08.15:34:05::SCWBDomain::xa9_0/lib/lseek.o ps7_cortexa9_0/lib/open.o ps7_cortexa9_0/lib/outbyte.o ps7_cortexa9_0/lib/print.o ps7_cortexa9_0/lib/putnum.o
+TRACE::2023-11-08.15:34:05::SCWBDomain:: ps7_cortexa9_0/lib/read.o ps7_cortexa9_0/lib/sbrk.o ps7_cortexa9_0/lib/sleep.o ps7_cortexa9_0/lib/time.o ps7_cortexa9_0/lib/tr
+TRACE::2023-11-08.15:34:05::SCWBDomain::anslation_table.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/usleep.o ps7_cortexa9_0/lib/vectors.o ps7_cortexa9_0/lib/write
+TRACE::2023-11-08.15:34:05::SCWBDomain::.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_0/lib/xadcps_g.o ps7_cortexa9_0/lib/xadcps_intr.o ps7_cortexa9_0/lib/xadcps_selftes
+TRACE::2023-11-08.15:34:05::SCWBDomain::t.o ps7_cortexa9_0/lib/xadcps_sinit.o ps7_cortexa9_0/lib/xcoresightpsdcc.o ps7_cortexa9_0/lib/xdevcfg.o ps7_cortexa9_0/lib/xdev
+TRACE::2023-11-08.15:34:05::SCWBDomain::cfg_g.o ps7_cortexa9_0/lib/xdevcfg_hw.o ps7_cortexa9_0/lib/xdevcfg_intr.o ps7_cortexa9_0/lib/xdevcfg_selftest.o ps7_cortexa9_0/
+TRACE::2023-11-08.15:34:05::SCWBDomain::lib/xdevcfg_sinit.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0/lib/xdmaps_g.o ps7_cortexa9_0/lib/xdmaps_hw.o ps7_cortexa9_0/lib
+TRACE::2023-11-08.15:34:05::SCWBDomain::/xdmaps_selftest.o ps7_cortexa9_0/lib/xdmaps_sinit.o ps7_cortexa9_0/lib/xgpiops.o ps7_cortexa9_0/lib/xgpiops_g.o ps7_cortexa9_0
+TRACE::2023-11-08.15:34:05::SCWBDomain::/lib/xgpiops_hw.o ps7_cortexa9_0/lib/xgpiops_intr.o ps7_cortexa9_0/lib/xgpiops_selftest.o ps7_cortexa9_0/lib/xgpiops_sinit.o ps
+TRACE::2023-11-08.15:34:05::SCWBDomain::7_cortexa9_0/lib/xil-crt0.o ps7_cortexa9_0/lib/xil_assert.o ps7_cortexa9_0/lib/xil_cache.o ps7_cortexa9_0/lib/xil_clocking.o ps
+TRACE::2023-11-08.15:34:05::SCWBDomain::7_cortexa9_0/lib/xil_exception.o ps7_cortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/xil_misc_psreset_api.o ps7_cortexa9_0/lib/xil_
+TRACE::2023-11-08.15:34:05::SCWBDomain::mmu.o ps7_cortexa9_0/lib/xil_printf.o ps7_cortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xil_sleeptimer.o ps7_cortexa9_0/l
+TRACE::2023-11-08.15:34:05::SCWBDomain::ib/xil_spinlock.o ps7_cortexa9_0/lib/xil_testcache.o ps7_cortexa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/xil_testmem.o ps7_corte
+TRACE::2023-11-08.15:34:05::SCWBDomain::xa9_0/lib/xil_util.o ps7_cortexa9_0/lib/xinterrupt_wrap.o ps7_cortexa9_0/lib/xl2cc_counter.o ps7_cortexa9_0/lib/xplatform_info.
+TRACE::2023-11-08.15:34:05::SCWBDomain::o ps7_cortexa9_0/lib/xpm_counter.o ps7_cortexa9_0/lib/xqspips.o ps7_cortexa9_0/lib/xqspips_g.o ps7_cortexa9_0/lib/xqspips_hw.o 
+TRACE::2023-11-08.15:34:05::SCWBDomain::ps7_cortexa9_0/lib/xqspips_options.o ps7_cortexa9_0/lib/xqspips_selftest.o ps7_cortexa9_0/lib/xqspips_sinit.o ps7_cortexa9_0/li
+TRACE::2023-11-08.15:34:05::SCWBDomain::b/xscugic.o ps7_cortexa9_0/lib/xscugic_g.o ps7_cortexa9_0/lib/xscugic_hw.o ps7_cortexa9_0/lib/xscugic_intr.o ps7_cortexa9_0/lib
+TRACE::2023-11-08.15:34:05::SCWBDomain::/xscugic_selftest.o ps7_cortexa9_0/lib/xscugic_sinit.o ps7_cortexa9_0/lib/xscutimer.o ps7_cortexa9_0/lib/xscutimer_g.o ps7_cort
+TRACE::2023-11-08.15:34:05::SCWBDomain::exa9_0/lib/xscutimer_selftest.o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa9_0/lib/xscuwdt_g.
+TRACE::2023-11-08.15:34:05::SCWBDomain::o ps7_cortexa9_0/lib/xscuwdt_selftest.o ps7_cortexa9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib/xsdps_
+TRACE::2023-11-08.15:34:05::SCWBDomain::card.o ps7_cortexa9_0/lib/xsdps_g.o ps7_cortexa9_0/lib/xsdps_host.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xsdps
+TRACE::2023-11-08.15:34:05::SCWBDomain::_sinit.o ps7_cortexa9_0/lib/xspips.o ps7_cortexa9_0/lib/xspips_g.o ps7_cortexa9_0/lib/xspips_hw.o ps7_cortexa9_0/lib/xspips_opt
+TRACE::2023-11-08.15:34:05::SCWBDomain::ions.o ps7_cortexa9_0/lib/xspips_selftest.o ps7_cortexa9_0/lib/xspips_sinit.o ps7_cortexa9_0/lib/xtime_l.o ps7_cortexa9_0/lib/x
+TRACE::2023-11-08.15:34:05::SCWBDomain::uartps.o ps7_cortexa9_0/lib/xuartps_g.o ps7_cortexa9_0/lib/xuartps_hw.o ps7_cortexa9_0/lib/xuartps_intr.o ps7_cortexa9_0/lib/xu
+TRACE::2023-11-08.15:34:05::SCWBDomain::artps_options.o ps7_cortexa9_0/lib/xuartps_selftest.o ps7_cortexa9_0/lib/xuartps_sinit.o ps7_cortexa9_0/lib/xusbps.o ps7_cortex
+TRACE::2023-11-08.15:34:05::SCWBDomain::a9_0/lib/xusbps_endpoint.o ps7_cortexa9_0/lib/xusbps_g.o ps7_cortexa9_0/lib/xusbps_hw.o ps7_cortexa9_0/lib/xusbps_intr.o ps7_co
+TRACE::2023-11-08.15:34:05::SCWBDomain::rtexa9_0/lib/xusbps_sinit.o
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::Finished building libraries
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::make: Leaving directory '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zy
+TRACE::2023-11-08.15:34:05::SCWBDomain::nq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2023-11-08.15:34:05::SCWBDomain::arm-none-eabi-gcc -o fsbl.elf fsbl_handoff.o fsbl_hooks.o image_mover.o main.o md5.o nand.o nor.o pcap.o ps7_init.o qspi.o rsa.
+TRACE::2023-11-08.15:34:05::SCWBDomain::o sd.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id
+TRACE::2023-11-08.15:34:05::SCWBDomain::=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-
+TRACE::2023-11-08.15:34:05::SCWBDomain::group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                     -Wl,--gc-sections -Lzynq_fsbl_bsp
+TRACE::2023-11-08.15:34:05::SCWBDomain::/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+LOG::2023-11-08.15:34:05::SCWSystem::Checking the domain standalone_domain
+LOG::2023-11-08.15:34:05::SCWSystem::Not a boot domain 
+LOG::2023-11-08.15:34:05::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2023-11-08.15:34:05::SCWDomain::Generating domain artifcats
+TRACE::2023-11-08.15:34:05::SCWMssOS::Generating standalone artifcats
+TRACE::2023-11-08.15:34:05::SCWMssOS::Copying the qemu file from  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/resources/50_224_106MHz_opt_resetLogic/standalone_domain/qemu_args.txt To /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/export/50_224_106MHz_opt_resetLogic/sw/50_224_106MHz_opt_resetLogic/qemu/
+TRACE::2023-11-08.15:34:05::SCWMssOS::Copying the qemu file from  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/resources/50_224_106MHz_opt_resetLogic/standalone_domain/qemu_args.txt To /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/export/50_224_106MHz_opt_resetLogic/sw/50_224_106MHz_opt_resetLogic/standalone_domain/qemu/
+TRACE::2023-11-08.15:34:05::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:05::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:05::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::Completed writing the mss file at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2023-11-08.15:34:05::SCWMssOS::Mss edits present, copying mssfile into export location /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:05::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-11-08.15:34:05::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-11-08.15:34:05::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2023-11-08.15:34:05::SCWMssOS::doing bsp build ... 
+TRACE::2023-11-08.15:34:05::SCWMssOS::System Command Ran  cd  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp ; bash -c "make  " 
+TRACE::2023-11-08.15:34:05::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2023-11-08.15:34:05::SCWMssOS::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2023-11-08.15:34:05::SCWMssOS::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2023-11-08.15:34:05::SCWMssOS::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2023-11-08.15:34:05::SCWMssOS::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-no
+TRACE::2023-11-08.15:34:05::SCWMssOS::ne-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi
+TRACE::2023-11-08.15:34:05::SCWMssOS::=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWMssOS::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWMssOS::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWMssOS::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWMssOS::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2023-11-08.15:34:05::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2023-11-08.15:34:05::SCWMssOS:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/spips_v3_8/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spips_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWMssOS::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/standalone_v8_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2023-11-08.15:34:05::SCWMssOS::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2023-11-08.15:34:05::SCWMssOS::rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWMssOS::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWMssOS::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-non
+TRACE::2023-11-08.15:34:05::SCWMssOS::e-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2023-11-08.15:34:05::SCWMssOS::hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Compiling BCP_accelerator...
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Finished building libraries sequentially.
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/BCP_accelerator_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2023-11-08.15:34:05::SCWMssOS::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2023-11-08.15:34:05::SCWMssOS::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2023-11-08.15:34:05::SCWMssOS::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2023-11-08.15:34:05::SCWMssOS::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-no
+TRACE::2023-11-08.15:34:05::SCWMssOS::ne-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi
+TRACE::2023-11-08.15:34:05::SCWMssOS::=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWMssOS::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWMssOS::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWMssOS::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWMssOS::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2023-11-08.15:34:05::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2023-11-08.15:34:05::SCWMssOS:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/spips_v3_8/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spips_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWMssOS::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/standalone_v8_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2023-11-08.15:34:05::SCWMssOS::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2023-11-08.15:34:05::SCWMssOS::rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWMssOS::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWMssOS::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-11-08.15:34:05::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-11-08.15:34:05::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-non
+TRACE::2023-11-08.15:34:05::SCWMssOS::e-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2023-11-08.15:34:05::SCWMssOS::hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2023-11-08.15:34:05::SCWMssOS::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2023-11-08.15:34:05::SCWMssOS::rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-11-08.15:34:05::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-11-08.15:34:05::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-11-08.15:34:05::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-11-08.15:34:05::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/scugic_v5_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-11-08.15:34:05::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-11-08.15:34:05::SCWMssOS::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/sdps_v4_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/spips_v3_8/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-11-08.15:34:05::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-11-08.15:34:05::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spips_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-11-08.15:34:05::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-11-08.15:34:05::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/standalone_v8_0/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2023-11-08.15:34:05::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2023-11-08.15:34:05::SCWMssOS::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_11/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-11-08.15:34:05::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-11-08.15:34:05::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_7/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-11-08.15:34:05::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-11-08.15:34:05::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-11-08.15:34:05::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-11-08.15:34:05::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::Finished building libraries parallelly.
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::make --no-print-directory archive
+
+TRACE::2023-11-08.15:34:05::SCWMssOS::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/_open.o ps7_cortexa9_0/lib/_sbrk
+TRACE::2023-11-08.15:34:05::SCWMssOS::.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/asm_vectors.o ps7_cortexa9_0/lib/boot.o ps7_cortexa9_0/lib/close.o ps7_cortexa
+TRACE::2023-11-08.15:34:05::SCWMssOS::9_0/lib/cpputest_time.o ps7_cortexa9_0/lib/cpu_init.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/lib/fcntl.o ps7_cortexa9_0/lib/
+TRACE::2023-11-08.15:34:05::SCWMssOS::fstat.o ps7_cortexa9_0/lib/getpid.o ps7_cortexa9_0/lib/inbyte.o ps7_cortexa9_0/lib/isatty.o ps7_cortexa9_0/lib/kill.o ps7_corte
+TRACE::2023-11-08.15:34:05::SCWMssOS::xa9_0/lib/lseek.o ps7_cortexa9_0/lib/open.o ps7_cortexa9_0/lib/outbyte.o ps7_cortexa9_0/lib/print.o ps7_cortexa9_0/lib/putnum.o
+TRACE::2023-11-08.15:34:05::SCWMssOS:: ps7_cortexa9_0/lib/read.o ps7_cortexa9_0/lib/sbrk.o ps7_cortexa9_0/lib/sleep.o ps7_cortexa9_0/lib/time.o ps7_cortexa9_0/lib/tr
+TRACE::2023-11-08.15:34:05::SCWMssOS::anslation_table.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/usleep.o ps7_cortexa9_0/lib/vectors.o ps7_cortexa9_0/lib/write
+TRACE::2023-11-08.15:34:05::SCWMssOS::.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_0/lib/xadcps_g.o ps7_cortexa9_0/lib/xadcps_intr.o ps7_cortexa9_0/lib/xadcps_selftes
+TRACE::2023-11-08.15:34:05::SCWMssOS::t.o ps7_cortexa9_0/lib/xadcps_sinit.o ps7_cortexa9_0/lib/xcoresightpsdcc.o ps7_cortexa9_0/lib/xdevcfg.o ps7_cortexa9_0/lib/xdev
+TRACE::2023-11-08.15:34:05::SCWMssOS::cfg_g.o ps7_cortexa9_0/lib/xdevcfg_hw.o ps7_cortexa9_0/lib/xdevcfg_intr.o ps7_cortexa9_0/lib/xdevcfg_selftest.o ps7_cortexa9_0/
+TRACE::2023-11-08.15:34:05::SCWMssOS::lib/xdevcfg_sinit.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0/lib/xdmaps_g.o ps7_cortexa9_0/lib/xdmaps_hw.o ps7_cortexa9_0/lib
+TRACE::2023-11-08.15:34:05::SCWMssOS::/xdmaps_selftest.o ps7_cortexa9_0/lib/xdmaps_sinit.o ps7_cortexa9_0/lib/xgpiops.o ps7_cortexa9_0/lib/xgpiops_g.o ps7_cortexa9_0
+TRACE::2023-11-08.15:34:05::SCWMssOS::/lib/xgpiops_hw.o ps7_cortexa9_0/lib/xgpiops_intr.o ps7_cortexa9_0/lib/xgpiops_selftest.o ps7_cortexa9_0/lib/xgpiops_sinit.o ps
+TRACE::2023-11-08.15:34:05::SCWMssOS::7_cortexa9_0/lib/xil-crt0.o ps7_cortexa9_0/lib/xil_assert.o ps7_cortexa9_0/lib/xil_cache.o ps7_cortexa9_0/lib/xil_clocking.o ps
+TRACE::2023-11-08.15:34:05::SCWMssOS::7_cortexa9_0/lib/xil_exception.o ps7_cortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/xil_misc_psreset_api.o ps7_cortexa9_0/lib/xil_
+TRACE::2023-11-08.15:34:05::SCWMssOS::mmu.o ps7_cortexa9_0/lib/xil_printf.o ps7_cortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xil_sleeptimer.o ps7_cortexa9_0/l
+TRACE::2023-11-08.15:34:05::SCWMssOS::ib/xil_spinlock.o ps7_cortexa9_0/lib/xil_testcache.o ps7_cortexa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/xil_testmem.o ps7_corte
+TRACE::2023-11-08.15:34:05::SCWMssOS::xa9_0/lib/xil_util.o ps7_cortexa9_0/lib/xinterrupt_wrap.o ps7_cortexa9_0/lib/xl2cc_counter.o ps7_cortexa9_0/lib/xplatform_info.
+TRACE::2023-11-08.15:34:05::SCWMssOS::o ps7_cortexa9_0/lib/xpm_counter.o ps7_cortexa9_0/lib/xqspips.o ps7_cortexa9_0/lib/xqspips_g.o ps7_cortexa9_0/lib/xqspips_hw.o 
+TRACE::2023-11-08.15:34:05::SCWMssOS::ps7_cortexa9_0/lib/xqspips_options.o ps7_cortexa9_0/lib/xqspips_selftest.o ps7_cortexa9_0/lib/xqspips_sinit.o ps7_cortexa9_0/li
+TRACE::2023-11-08.15:34:05::SCWMssOS::b/xscugic.o ps7_cortexa9_0/lib/xscugic_g.o ps7_cortexa9_0/lib/xscugic_hw.o ps7_cortexa9_0/lib/xscugic_intr.o ps7_cortexa9_0/lib
+TRACE::2023-11-08.15:34:05::SCWMssOS::/xscugic_selftest.o ps7_cortexa9_0/lib/xscugic_sinit.o ps7_cortexa9_0/lib/xscutimer.o ps7_cortexa9_0/lib/xscutimer_g.o ps7_cort
+TRACE::2023-11-08.15:34:05::SCWMssOS::exa9_0/lib/xscutimer_selftest.o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa9_0/lib/xscuwdt_g.
+TRACE::2023-11-08.15:34:05::SCWMssOS::o ps7_cortexa9_0/lib/xscuwdt_selftest.o ps7_cortexa9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib/xsdps_
+TRACE::2023-11-08.15:34:05::SCWMssOS::card.o ps7_cortexa9_0/lib/xsdps_g.o ps7_cortexa9_0/lib/xsdps_host.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xsdps
+TRACE::2023-11-08.15:34:05::SCWMssOS::_sinit.o ps7_cortexa9_0/lib/xspips.o ps7_cortexa9_0/lib/xspips_g.o ps7_cortexa9_0/lib/xspips_hw.o ps7_cortexa9_0/lib/xspips_opt
+TRACE::2023-11-08.15:34:05::SCWMssOS::ions.o ps7_cortexa9_0/lib/xspips_selftest.o ps7_cortexa9_0/lib/xspips_sinit.o ps7_cortexa9_0/lib/xtime_l.o ps7_cortexa9_0/lib/x
+TRACE::2023-11-08.15:34:05::SCWMssOS::uartps.o ps7_cortexa9_0/lib/xuartps_g.o ps7_cortexa9_0/lib/xuartps_hw.o ps7_cortexa9_0/lib/xuartps_intr.o ps7_cortexa9_0/lib/xu
+TRACE::2023-11-08.15:34:05::SCWMssOS::artps_options.o ps7_cortexa9_0/lib/xuartps_selftest.o ps7_cortexa9_0/lib/xuartps_sinit.o ps7_cortexa9_0/lib/xusbps.o ps7_cortex
+TRACE::2023-11-08.15:34:05::SCWMssOS::a9_0/lib/xusbps_endpoint.o ps7_cortexa9_0/lib/xusbps_g.o ps7_cortexa9_0/lib/xusbps_hw.o ps7_cortexa9_0/lib/xusbps_intr.o ps7_co
+TRACE::2023-11-08.15:34:05::SCWMssOS::rtexa9_0/lib/xusbps_sinit.o
+
+TRACE::2023-11-08.15:34:06::SCWMssOS::Finished building libraries
+
+TRACE::2023-11-08.15:34:06::SCWMssOS::Copying to export directory.
+TRACE::2023-11-08.15:34:06::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-11-08.15:34:06::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2023-11-08.15:34:06::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2023-11-08.15:34:06::SCWSystem::Completed Processing the sysconfig 50_224_106MHz_opt_resetLogic
+LOG::2023-11-08.15:34:06::SCWPlatform::Completed generating the artifacts for system configuration 50_224_106MHz_opt_resetLogic
+TRACE::2023-11-08.15:34:06::SCWPlatform::Started preparing the platform 
+TRACE::2023-11-08.15:34:06::SCWSystem::Writing the bif file for system config 50_224_106MHz_opt_resetLogic
+TRACE::2023-11-08.15:34:06::SCWSystem::dir created 
+TRACE::2023-11-08.15:34:06::SCWSystem::Writing the bif 
+TRACE::2023-11-08.15:34:06::SCWPlatform::Started writing the spfm file 
+TRACE::2023-11-08.15:34:06::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-11-08.15:34:06::SCWPlatform::Completed generating the platform
+TRACE::2023-11-08.15:34:06::SCWMssOS::Saving the mss changes /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:06::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-11-08.15:34:06::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-11-08.15:34:06::SCWMssOS::Commit changes completed.
+TRACE::2023-11-08.15:34:06::SCWMssOS::Saving the mss changes /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:06::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-11-08.15:34:06::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-11-08.15:34:06::SCWMssOS::Commit changes completed.
+TRACE::2023-11-08.15:34:06::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:06::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:06::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:06::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:06::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:06::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-11-08.15:34:06::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:06::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:06::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:06::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:06::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:06::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:06::SCWWriter::formatted JSON is {
+	"platformName":	"50_224_106MHz_opt_resetLogic",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"50_224_106MHz_opt_resetLogic",
+	"platHandOff":	"/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/ip_packing/BSP/Testing/50_224_106MHz_opt_resetLogic.xsa",
+	"platIntHandOff":	"<platformDir>/hw/50_224_106MHz_opt_resetLogic.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"50_224_106MHz_opt_resetLogic",
+	"systems":	[{
+			"systemName":	"50_224_106MHz_opt_resetLogic",
+			"systemDesc":	"50_224_106MHz_opt_resetLogic",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"50_224_106MHz_opt_resetLogic",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"83be2cce92e605b2d5722c01b1c039f7",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.8", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/50_224_106MHz_opt_resetLogic/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/50_224_106MHz_opt_resetLogic/standalone_domain/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"23cd73541117c95ca40ad8ad156d38f0",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"standalone":	{
+							"stdin":	"ps7_uart_1",
+							"stdout":	"ps7_uart_1",
+							"libOptionNames":	["stdin", "stdout"]
+						},
+						"libsContainingOptions":	["standalone"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-11-08.15:34:06::SCWPlatform::updated the xpfm file.
+TRACE::2023-11-08.15:34:06::SCWPlatform::Trying to open the hw design at /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform::DSA given /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform::DSA absoulate path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform::DSA directory /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw
+TRACE::2023-11-08.15:34:06::SCWPlatform:: Platform Path /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/hw/50_224_106MHz_opt_resetLogic.xsa
+TRACE::2023-11-08.15:34:06::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-11-08.15:34:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-11-08.15:34:06::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-11-08.15:34:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-11-08.15:34:06::SCWMssOS::Checking the sw design at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2023-11-08.15:34:06::SCWMssOS::DEBUG:  swdes dump  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/20_91_133MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/32_128_106MHz_opt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_4||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_3||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_6||
+/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_5||
+
+TRACE::2023-11-08.15:34:06::SCWMssOS::Sw design exists and opened at  /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/50_224_106MHz_opt_resetLogic/ps7_cortexa9_0/standalone_domain/bsp/system.mss
