@@ -7774,3 +7774,994 @@ dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accel
 configparams force-mem-access 0
 ----------------End of Script----------------
 
+21:38:30 INFO  : Disconnected from the channel tcfchan#33.
+12:36:08 DEBUG : Logs will be stored at '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/IDE.log'.
+12:36:09 INFO  : Launching XSCT server: xsct -n  -interactive /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/temp_xsdb_launch_script.tcl
+12:36:11 INFO  : XSCT server has started successfully.
+12:36:11 INFO  : Registering command handlers for Vitis TCF services
+12:36:11 INFO  : plnx-install-location is set to ''
+12:36:11 INFO  : Successfully done setting XSCT server connection channel  
+12:36:11 INFO  : Successfully done query RDI_DATADIR 
+12:36:11 INFO  : Successfully done setting workspace for the tool. 
+12:36:11 INFO  : Platform repository initialization has completed.
+12:38:04 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+12:39:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:39:00 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+12:39:00 INFO  : 'jtag frequency' command is executed.
+12:39:00 INFO  : Context for 'APU' is selected.
+12:39:01 INFO  : System reset is completed.
+12:39:04 INFO  : 'after 3000' command is executed.
+12:39:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+12:39:05 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+12:39:05 INFO  : Context for 'APU' is selected.
+12:39:05 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+12:39:05 INFO  : 'configparams force-mem-access 1' command is executed.
+12:39:05 INFO  : Context for 'APU' is selected.
+12:39:05 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+12:39:05 INFO  : 'ps7_init' command is executed.
+12:39:05 INFO  : 'ps7_post_config' command is executed.
+12:39:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:39:06 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:39:06 INFO  : 'configparams force-mem-access 0' command is executed.
+12:39:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:40:02 INFO  : Disconnected from the channel tcfchan#1.
+12:40:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:40:02 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+12:40:02 INFO  : 'jtag frequency' command is executed.
+12:40:02 INFO  : Context for 'APU' is selected.
+12:40:02 INFO  : System reset is completed.
+12:40:05 INFO  : 'after 3000' command is executed.
+12:40:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+12:40:06 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+12:40:06 INFO  : Context for 'APU' is selected.
+12:40:07 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+12:40:07 INFO  : 'configparams force-mem-access 1' command is executed.
+12:40:07 INFO  : Context for 'APU' is selected.
+12:40:07 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+12:40:07 INFO  : 'ps7_init' command is executed.
+12:40:07 INFO  : 'ps7_post_config' command is executed.
+12:40:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:40:09 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:40:09 INFO  : 'configparams force-mem-access 0' command is executed.
+12:40:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:42:17 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+12:42:22 INFO  : Disconnected from the channel tcfchan#2.
+12:42:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:42:22 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+12:42:22 INFO  : 'jtag frequency' command is executed.
+12:42:22 INFO  : Context for 'APU' is selected.
+12:42:22 INFO  : System reset is completed.
+12:42:25 INFO  : 'after 3000' command is executed.
+12:42:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+12:42:26 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+12:42:26 INFO  : Context for 'APU' is selected.
+12:42:27 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+12:42:27 INFO  : 'configparams force-mem-access 1' command is executed.
+12:42:27 INFO  : Context for 'APU' is selected.
+12:42:27 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+12:42:28 INFO  : 'ps7_init' command is executed.
+12:42:28 INFO  : 'ps7_post_config' command is executed.
+12:42:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:42:29 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:42:29 INFO  : 'configparams force-mem-access 0' command is executed.
+12:42:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:44:27 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+12:44:33 INFO  : Disconnected from the channel tcfchan#3.
+12:44:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:44:33 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+12:44:33 INFO  : 'jtag frequency' command is executed.
+12:44:33 INFO  : Context for 'APU' is selected.
+12:44:33 INFO  : System reset is completed.
+12:44:36 INFO  : 'after 3000' command is executed.
+12:44:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+12:44:38 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+12:44:38 INFO  : Context for 'APU' is selected.
+12:44:39 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+12:44:39 INFO  : 'configparams force-mem-access 1' command is executed.
+12:44:39 INFO  : Context for 'APU' is selected.
+12:44:39 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+12:44:39 INFO  : 'ps7_init' command is executed.
+12:44:39 INFO  : 'ps7_post_config' command is executed.
+12:44:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:44:40 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:44:40 INFO  : 'configparams force-mem-access 0' command is executed.
+12:44:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:59:21 INFO  : Disconnected from the channel tcfchan#4.
+12:59:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:21 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+12:59:21 INFO  : 'jtag frequency' command is executed.
+12:59:21 INFO  : Context for 'APU' is selected.
+12:59:21 INFO  : System reset is completed.
+12:59:24 INFO  : 'after 3000' command is executed.
+12:59:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+12:59:25 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+12:59:25 INFO  : Context for 'APU' is selected.
+12:59:26 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+12:59:26 INFO  : 'configparams force-mem-access 1' command is executed.
+12:59:26 INFO  : Context for 'APU' is selected.
+12:59:26 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+12:59:26 INFO  : 'ps7_init' command is executed.
+12:59:26 INFO  : 'ps7_post_config' command is executed.
+12:59:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:59:28 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:59:28 INFO  : 'configparams force-mem-access 0' command is executed.
+12:59:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:02:30 INFO  : Disconnected from the channel tcfchan#5.
+13:02:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:30 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:02:30 INFO  : 'jtag frequency' command is executed.
+13:02:30 INFO  : Context for 'APU' is selected.
+13:02:30 INFO  : System reset is completed.
+13:02:33 INFO  : 'after 3000' command is executed.
+13:02:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:02:34 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:02:34 INFO  : Context for 'APU' is selected.
+13:02:35 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:02:35 INFO  : 'configparams force-mem-access 1' command is executed.
+13:02:35 INFO  : Context for 'APU' is selected.
+13:02:35 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:02:35 INFO  : 'ps7_init' command is executed.
+13:02:35 INFO  : 'ps7_post_config' command is executed.
+13:02:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:02:37 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:02:37 INFO  : 'configparams force-mem-access 0' command is executed.
+13:02:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:07:24 INFO  : Disconnected from the channel tcfchan#6.
+13:07:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:07:24 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:07:24 INFO  : 'jtag frequency' command is executed.
+13:07:24 INFO  : Context for 'APU' is selected.
+13:07:24 INFO  : System reset is completed.
+13:07:27 INFO  : 'after 3000' command is executed.
+13:07:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:07:28 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:07:28 INFO  : Context for 'APU' is selected.
+13:07:29 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:07:29 INFO  : 'configparams force-mem-access 1' command is executed.
+13:07:29 INFO  : Context for 'APU' is selected.
+13:07:29 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:07:30 INFO  : 'ps7_init' command is executed.
+13:07:30 INFO  : 'ps7_post_config' command is executed.
+13:07:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:07:31 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:07:31 INFO  : 'configparams force-mem-access 0' command is executed.
+13:07:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:13:42 INFO  : Disconnected from the channel tcfchan#7.
+13:13:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:43 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:13:43 INFO  : 'jtag frequency' command is executed.
+13:13:43 INFO  : Context for 'APU' is selected.
+13:13:43 INFO  : System reset is completed.
+13:13:46 INFO  : 'after 3000' command is executed.
+13:13:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:13:47 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:13:47 INFO  : Context for 'APU' is selected.
+13:13:48 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:13:48 INFO  : 'configparams force-mem-access 1' command is executed.
+13:13:48 INFO  : Context for 'APU' is selected.
+13:13:48 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:13:48 INFO  : 'ps7_init' command is executed.
+13:13:48 INFO  : 'ps7_post_config' command is executed.
+13:13:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:13:49 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:13:49 INFO  : 'configparams force-mem-access 0' command is executed.
+13:13:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:21:46 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+13:21:56 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+13:22:16 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+13:22:19 INFO  : Disconnected from the channel tcfchan#8.
+13:22:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:22:19 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:22:19 INFO  : 'jtag frequency' command is executed.
+13:22:19 INFO  : Context for 'APU' is selected.
+13:22:19 INFO  : System reset is completed.
+13:22:22 INFO  : 'after 3000' command is executed.
+13:22:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:22:24 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:22:24 INFO  : Context for 'APU' is selected.
+13:22:25 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:22:25 INFO  : 'configparams force-mem-access 1' command is executed.
+13:22:25 INFO  : Context for 'APU' is selected.
+13:22:25 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:22:25 INFO  : 'ps7_init' command is executed.
+13:22:25 INFO  : 'ps7_post_config' command is executed.
+13:22:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:26 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:22:26 INFO  : 'configparams force-mem-access 0' command is executed.
+13:22:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:24:48 INFO  : Disconnected from the channel tcfchan#9.
+13:24:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:24:48 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:24:48 INFO  : 'jtag frequency' command is executed.
+13:24:48 INFO  : Context for 'APU' is selected.
+13:24:48 INFO  : System reset is completed.
+13:24:51 INFO  : 'after 3000' command is executed.
+13:24:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:24:52 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:24:52 INFO  : Context for 'APU' is selected.
+13:24:53 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:24:53 INFO  : 'configparams force-mem-access 1' command is executed.
+13:24:53 INFO  : Context for 'APU' is selected.
+13:24:53 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:24:54 INFO  : 'ps7_init' command is executed.
+13:24:54 INFO  : 'ps7_post_config' command is executed.
+13:24:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:24:55 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:24:55 INFO  : 'configparams force-mem-access 0' command is executed.
+13:24:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:26:06 INFO  : Disconnected from the channel tcfchan#10.
+13:26:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:07 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:26:07 INFO  : 'jtag frequency' command is executed.
+13:26:07 INFO  : Context for 'APU' is selected.
+13:26:07 INFO  : System reset is completed.
+13:26:10 INFO  : 'after 3000' command is executed.
+13:26:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:26:11 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:26:11 INFO  : Context for 'APU' is selected.
+13:26:12 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:26:12 INFO  : 'configparams force-mem-access 1' command is executed.
+13:26:12 INFO  : Context for 'APU' is selected.
+13:26:12 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:26:12 INFO  : 'ps7_init' command is executed.
+13:26:12 INFO  : 'ps7_post_config' command is executed.
+13:26:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:13 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:26:13 INFO  : 'configparams force-mem-access 0' command is executed.
+13:26:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:29:09 INFO  : Disconnected from the channel tcfchan#11.
+13:29:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:29:09 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:29:09 INFO  : 'jtag frequency' command is executed.
+13:29:09 INFO  : Context for 'APU' is selected.
+13:29:10 INFO  : System reset is completed.
+13:29:13 INFO  : 'after 3000' command is executed.
+13:29:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:29:14 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:29:14 INFO  : Context for 'APU' is selected.
+13:29:15 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:29:15 INFO  : 'configparams force-mem-access 1' command is executed.
+13:29:15 INFO  : Context for 'APU' is selected.
+13:29:15 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:29:15 INFO  : 'ps7_init' command is executed.
+13:29:15 INFO  : 'ps7_post_config' command is executed.
+13:29:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:29:16 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:29:16 INFO  : 'configparams force-mem-access 0' command is executed.
+13:29:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:30:42 INFO  : Disconnected from the channel tcfchan#12.
+13:30:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:30:42 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:30:42 INFO  : 'jtag frequency' command is executed.
+13:30:42 INFO  : Context for 'APU' is selected.
+13:30:42 INFO  : System reset is completed.
+13:30:45 INFO  : 'after 3000' command is executed.
+13:30:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:30:46 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:30:46 INFO  : Context for 'APU' is selected.
+13:30:47 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:30:47 INFO  : 'configparams force-mem-access 1' command is executed.
+13:30:47 INFO  : Context for 'APU' is selected.
+13:30:47 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:30:47 INFO  : 'ps7_init' command is executed.
+13:30:47 INFO  : 'ps7_post_config' command is executed.
+13:30:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:30:49 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:30:49 INFO  : 'configparams force-mem-access 0' command is executed.
+13:30:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:32:38 INFO  : Disconnected from the channel tcfchan#13.
+13:32:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:32:39 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:32:39 INFO  : 'jtag frequency' command is executed.
+13:32:39 INFO  : Context for 'APU' is selected.
+13:32:39 INFO  : System reset is completed.
+13:32:42 INFO  : 'after 3000' command is executed.
+13:32:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:32:43 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:32:43 INFO  : Context for 'APU' is selected.
+13:32:44 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:32:44 INFO  : 'configparams force-mem-access 1' command is executed.
+13:32:44 INFO  : Context for 'APU' is selected.
+13:32:44 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:32:44 INFO  : 'ps7_init' command is executed.
+13:32:44 INFO  : 'ps7_post_config' command is executed.
+13:32:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:32:45 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:32:46 INFO  : 'configparams force-mem-access 0' command is executed.
+13:32:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:35:10 INFO  : Disconnected from the channel tcfchan#14.
+13:35:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:35:10 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:35:10 INFO  : 'jtag frequency' command is executed.
+13:35:10 INFO  : Context for 'APU' is selected.
+13:35:10 INFO  : System reset is completed.
+13:35:13 INFO  : 'after 3000' command is executed.
+13:35:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:35:15 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:35:15 INFO  : Context for 'APU' is selected.
+13:35:16 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:35:16 INFO  : 'configparams force-mem-access 1' command is executed.
+13:35:16 INFO  : Context for 'APU' is selected.
+13:35:16 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:35:16 INFO  : 'ps7_init' command is executed.
+13:35:16 INFO  : 'ps7_post_config' command is executed.
+13:35:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:35:17 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:35:17 INFO  : 'configparams force-mem-access 0' command is executed.
+13:35:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:43:56 INFO  : Disconnected from the channel tcfchan#15.
+13:43:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:43:56 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:43:56 INFO  : 'jtag frequency' command is executed.
+13:43:56 INFO  : Context for 'APU' is selected.
+13:43:56 INFO  : System reset is completed.
+13:43:59 INFO  : 'after 3000' command is executed.
+13:43:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:44:00 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:44:00 INFO  : Context for 'APU' is selected.
+13:44:01 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:44:01 INFO  : 'configparams force-mem-access 1' command is executed.
+13:44:01 INFO  : Context for 'APU' is selected.
+13:44:01 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:44:01 INFO  : 'ps7_init' command is executed.
+13:44:01 INFO  : 'ps7_post_config' command is executed.
+13:44:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:44:03 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:44:03 INFO  : 'configparams force-mem-access 0' command is executed.
+13:44:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:46:59 INFO  : Disconnected from the channel tcfchan#16.
+13:47:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:47:00 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:47:00 INFO  : 'jtag frequency' command is executed.
+13:47:00 INFO  : Context for 'APU' is selected.
+13:47:00 INFO  : System reset is completed.
+13:47:03 INFO  : 'after 3000' command is executed.
+13:47:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:47:04 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:47:04 INFO  : Context for 'APU' is selected.
+13:47:05 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:47:05 INFO  : 'configparams force-mem-access 1' command is executed.
+13:47:05 INFO  : Context for 'APU' is selected.
+13:47:05 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:47:05 INFO  : 'ps7_init' command is executed.
+13:47:05 INFO  : 'ps7_post_config' command is executed.
+13:47:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:47:06 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:47:06 INFO  : 'configparams force-mem-access 0' command is executed.
+13:47:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:47:24 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+13:47:27 INFO  : Disconnected from the channel tcfchan#17.
+13:47:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:47:27 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+13:47:27 INFO  : 'jtag frequency' command is executed.
+13:47:27 INFO  : Context for 'APU' is selected.
+13:47:28 INFO  : System reset is completed.
+13:47:31 INFO  : 'after 3000' command is executed.
+13:47:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+13:47:32 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+13:47:32 INFO  : Context for 'APU' is selected.
+13:47:33 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+13:47:33 INFO  : 'configparams force-mem-access 1' command is executed.
+13:47:33 INFO  : Context for 'APU' is selected.
+13:47:33 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+13:47:33 INFO  : 'ps7_init' command is executed.
+13:47:33 INFO  : 'ps7_post_config' command is executed.
+13:47:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:47:34 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:47:34 INFO  : 'configparams force-mem-access 0' command is executed.
+13:47:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:58:39 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+13:59:19 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+14:02:06 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+14:02:10 INFO  : Disconnected from the channel tcfchan#18.
+14:02:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:02:10 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+14:02:10 INFO  : 'jtag frequency' command is executed.
+14:02:10 INFO  : Context for 'APU' is selected.
+14:02:10 INFO  : System reset is completed.
+14:02:13 INFO  : 'after 3000' command is executed.
+14:02:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+14:02:14 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+14:02:14 INFO  : Context for 'APU' is selected.
+14:02:15 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+14:02:15 INFO  : 'configparams force-mem-access 1' command is executed.
+14:02:15 INFO  : Context for 'APU' is selected.
+14:02:15 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+14:02:16 INFO  : 'ps7_init' command is executed.
+14:02:16 INFO  : 'ps7_post_config' command is executed.
+14:02:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:17 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:02:17 INFO  : 'configparams force-mem-access 0' command is executed.
+14:02:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:08:16 INFO  : Disconnected from the channel tcfchan#19.
+14:31:56 DEBUG : Logs will be stored at '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/IDE.log'.
+14:31:56 INFO  : Launching XSCT server: xsct -n  -interactive /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/temp_xsdb_launch_script.tcl
+14:31:58 INFO  : XSCT server has started successfully.
+14:31:58 INFO  : Successfully done setting XSCT server connection channel  
+14:31:58 INFO  : plnx-install-location is set to ''
+14:31:58 INFO  : Successfully done setting workspace for the tool. 
+14:31:58 INFO  : Successfully done query RDI_DATADIR 
+14:31:58 INFO  : Registering command handlers for Vitis TCF services
+14:31:58 INFO  : Platform repository initialization has completed.
+14:37:09 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+14:37:55 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+14:38:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:38:07 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+14:38:07 INFO  : 'jtag frequency' command is executed.
+14:38:07 INFO  : Context for 'APU' is selected.
+14:38:07 INFO  : System reset is completed.
+14:38:10 INFO  : 'after 3000' command is executed.
+14:38:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+14:38:12 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+14:38:12 INFO  : Context for 'APU' is selected.
+14:38:12 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+14:38:12 INFO  : 'configparams force-mem-access 1' command is executed.
+14:38:12 INFO  : Context for 'APU' is selected.
+14:38:12 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+14:38:12 INFO  : 'ps7_init' command is executed.
+14:38:12 INFO  : 'ps7_post_config' command is executed.
+14:38:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:13 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:38:13 INFO  : 'configparams force-mem-access 0' command is executed.
+14:38:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:41:44 INFO  : Disconnected from the channel tcfchan#1.
+14:41:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:45 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+14:41:45 INFO  : 'jtag frequency' command is executed.
+14:41:45 INFO  : Context for 'APU' is selected.
+14:41:45 INFO  : System reset is completed.
+14:41:48 INFO  : 'after 3000' command is executed.
+14:41:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+14:41:49 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+14:41:49 INFO  : Context for 'APU' is selected.
+14:41:50 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+14:41:50 INFO  : 'configparams force-mem-access 1' command is executed.
+14:41:50 INFO  : Context for 'APU' is selected.
+14:41:50 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+14:41:50 INFO  : 'ps7_init' command is executed.
+14:41:50 INFO  : 'ps7_post_config' command is executed.
+14:41:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:52 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:41:52 INFO  : 'configparams force-mem-access 0' command is executed.
+14:41:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:45:56 INFO  : Disconnected from the channel tcfchan#2.
+14:45:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:45:57 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+14:45:57 INFO  : 'jtag frequency' command is executed.
+14:45:57 INFO  : Context for 'APU' is selected.
+14:45:57 INFO  : System reset is completed.
+14:46:00 INFO  : 'after 3000' command is executed.
+14:46:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+14:46:01 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+14:46:01 INFO  : Context for 'APU' is selected.
+14:46:02 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+14:46:02 INFO  : 'configparams force-mem-access 1' command is executed.
+14:46:02 INFO  : Context for 'APU' is selected.
+14:46:02 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+14:46:02 INFO  : 'ps7_init' command is executed.
+14:46:02 INFO  : 'ps7_post_config' command is executed.
+14:46:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:46:03 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:46:03 INFO  : 'configparams force-mem-access 0' command is executed.
+14:46:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:49:35 INFO  : Checking for BSP changes to sync application flags for project 'Accelerated_BCP_largeProblemVariation'...
+14:49:37 INFO  : Disconnected from the channel tcfchan#3.
+14:49:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:49:37 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+14:49:37 INFO  : 'jtag frequency' command is executed.
+14:49:37 INFO  : Context for 'APU' is selected.
+14:49:37 INFO  : System reset is completed.
+14:49:40 INFO  : 'after 3000' command is executed.
+14:49:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+14:49:42 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+14:49:42 INFO  : Context for 'APU' is selected.
+14:49:43 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+14:49:43 INFO  : 'configparams force-mem-access 1' command is executed.
+14:49:43 INFO  : Context for 'APU' is selected.
+14:49:43 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+14:49:43 INFO  : 'ps7_init' command is executed.
+14:49:43 INFO  : 'ps7_post_config' command is executed.
+14:49:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:44 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:49:44 INFO  : 'configparams force-mem-access 0' command is executed.
+14:49:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:52:55 INFO  : Disconnected from the channel tcfchan#4.
+14:52:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:52:56 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+14:52:56 INFO  : 'jtag frequency' command is executed.
+14:52:56 INFO  : Context for 'APU' is selected.
+14:52:56 INFO  : System reset is completed.
+14:52:59 INFO  : 'after 3000' command is executed.
+14:52:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+14:53:00 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+14:53:00 INFO  : Context for 'APU' is selected.
+14:53:01 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+14:53:01 INFO  : 'configparams force-mem-access 1' command is executed.
+14:53:01 INFO  : Context for 'APU' is selected.
+14:53:01 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+14:53:01 INFO  : 'ps7_init' command is executed.
+14:53:01 INFO  : 'ps7_post_config' command is executed.
+14:53:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:53:02 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:53:02 INFO  : 'configparams force-mem-access 0' command is executed.
+14:53:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:55:10 INFO  : Disconnected from the channel tcfchan#5.
+14:55:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:10 INFO  : Jtag cable 'RealDigital Bla 887100000291A' is selected.
+14:55:10 INFO  : 'jtag frequency' command is executed.
+14:55:10 INFO  : Context for 'APU' is selected.
+14:55:10 INFO  : System reset is completed.
+14:55:13 INFO  : 'after 3000' command is executed.
+14:55:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}' command is executed.
+14:55:15 INFO  : Device configured successfully with "/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit"
+14:55:15 INFO  : Context for 'APU' is selected.
+14:55:16 INFO  : Hardware design and registers information is loaded from '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa'.
+14:55:16 INFO  : 'configparams force-mem-access 1' command is executed.
+14:55:16 INFO  : Context for 'APU' is selected.
+14:55:16 INFO  : Sourcing of '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl' is done.
+14:55:16 INFO  : 'ps7_init' command is executed.
+14:55:16 INFO  : 'ps7_post_config' command is executed.
+14:55:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:55:17 INFO  : The application '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:55:17 INFO  : 'configparams force-mem-access 0' command is executed.
+14:55:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "RealDigital Bla 887100000291A" && level==0 && jtag_device_ctx=="jsn1-13723093-0"}
+fpga -file /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/bitstream/larger_instance_support_final.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/hw/larger_instance_support_final.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/Accelerated_BCP_largeProblemVariation/Debug/Accelerated_BCP_largeProblemVariation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:26:35 INFO  : Disconnected from the channel tcfchan#6.
+14:41:41 DEBUG : Logs will be stored at '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/IDE.log'.
+14:41:41 INFO  : Launching XSCT server: xsct -n  -interactive /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/temp_xsdb_launch_script.tcl
+14:41:42 INFO  : XSCT server has started successfully.
+14:41:42 INFO  : Successfully done setting XSCT server connection channel  
+14:41:42 INFO  : plnx-install-location is set to ''
+14:41:42 INFO  : Successfully done setting workspace for the tool. 
+14:41:43 INFO  : Successfully done query RDI_DATADIR 
+14:41:43 INFO  : Platform repository initialization has completed.
+14:41:43 INFO  : Registering command handlers for Vitis TCF services
