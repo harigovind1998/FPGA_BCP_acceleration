@@ -6786,3 +6786,57 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-2: Launch
 
 !ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 19:40:11.817
 !MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-185
+!SESSION 2023-12-28 11:41:43.068 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-12-28 11:41:43.419
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-12-28 11:41:43.438
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-12-28 11:41:49.984
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-12-28 11:41:52.460
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-12-28 11:41:52.460
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-12-28 11:41:52.460
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.393
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.393
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.393
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-105
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.750
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.750
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.750
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-105
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.750
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.750
+!MESSAGE XSCT Command: [setws /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl], Thread: Thread-105
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.751
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2022.2/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-28 11:41:53.751
+!MESSAGE XSCT command with result: [setws /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl], Result: [null, ]. Thread: Thread-105

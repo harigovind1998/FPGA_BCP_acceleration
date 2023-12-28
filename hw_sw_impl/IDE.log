@@ -16724,3 +16724,12 @@ configparams force-mem-access 0
 ----------------End of Script----------------
 
 19:40:11 INFO  : Disconnected from the channel tcfchan#1.
+11:41:50 DEBUG : Logs will be stored at '/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/IDE.log'.
+11:41:51 INFO  : Launching XSCT server: xsct -n  -interactive /home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/temp_xsdb_launch_script.tcl
+11:41:53 INFO  : XSCT server has started successfully.
+11:41:53 INFO  : Registering command handlers for Vitis TCF services
+11:41:53 INFO  : Platform repository initialization has completed.
+11:41:53 INFO  : plnx-install-location is set to ''
+11:41:53 INFO  : Successfully done setting XSCT server connection channel  
+11:41:53 INFO  : Successfully done query RDI_DATADIR 
+11:41:53 INFO  : Successfully done setting workspace for the tool. 
