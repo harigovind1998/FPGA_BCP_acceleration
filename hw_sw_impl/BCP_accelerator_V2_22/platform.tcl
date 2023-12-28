@@ -25,3 +25,5 @@ platform active {BCP_accelerator_V2_22}
 platform generate -domains 
 platform clean
 platform generate
+platform generate
+platform generate

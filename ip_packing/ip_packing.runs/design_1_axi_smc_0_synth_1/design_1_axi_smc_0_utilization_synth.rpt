@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Mon Sep 11 16:51:57 2023
-| Host         : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.2 LTS
+| Date         : Sat Nov  4 20:15:38 2023
+| Host         : harigovind-MS-7C91 running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_utilization -file design_1_axi_smc_0_utilization_synth.rpt -pb design_1_axi_smc_0_utilization_synth.pb
 | Design       : design_1_axi_smc_0
 | Device       : xc7z007sclg400-1
@@ -31,15 +31,15 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                | 4391 |     0 |          0 |     14400 | 30.49 |
-|   LUT as Logic             | 3612 |     0 |          0 |     14400 | 25.08 |
-|   LUT as Memory            |  779 |     0 |          0 |      6000 | 12.98 |
-|     LUT as Distributed RAM |  406 |     0 |            |           |       |
-|     LUT as Shift Register  |  373 |     0 |            |           |       |
-| Slice Registers            | 4724 |     0 |          0 |     28800 | 16.40 |
-|   Register as Flip Flop    | 4724 |     0 |          0 |     28800 | 16.40 |
+| Slice LUTs*                | 4370 |     0 |          0 |     14400 | 30.35 |
+|   LUT as Logic             | 3611 |     0 |          0 |     14400 | 25.08 |
+|   LUT as Memory            |  759 |     0 |          0 |      6000 | 12.65 |
+|     LUT as Distributed RAM |  388 |     0 |            |           |       |
+|     LUT as Shift Register  |  371 |     0 |            |           |       |
+| Slice Registers            | 4733 |     0 |          0 |     28800 | 16.43 |
+|   Register as Flip Flop    | 4733 |     0 |          0 |     28800 | 16.43 |
 |   Register as Latch        |    0 |     0 |          0 |     28800 |  0.00 |
-| F7 Muxes                   |    4 |     0 |          0 |      8800 |  0.05 |
+| F7 Muxes                   |    5 |     0 |          0 |      8800 |  0.06 |
 | F8 Muxes                   |    0 |     0 |          0 |      4400 |  0.00 |
 +----------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -61,7 +61,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |          Set |
 | 105   |          Yes |           - |        Reset |
 | 254   |          Yes |         Set |            - |
-| 4365  |          Yes |       Reset |            - |
+| 4374  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -150,21 +150,21 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 4365 |        Flop & Latch |
-| LUT6     | 1464 |                 LUT |
-| LUT3     |  971 |                 LUT |
-| LUT5     |  787 |                 LUT |
-| LUT4     |  731 |                 LUT |
-| RAMD32   |  604 |  Distributed Memory |
-| LUT2     |  313 |                 LUT |
+| FDRE     | 4374 |        Flop & Latch |
+| LUT6     | 1424 |                 LUT |
+| LUT3     |  974 |                 LUT |
+| LUT5     |  829 |                 LUT |
+| LUT4     |  741 |                 LUT |
+| RAMD32   |  580 |  Distributed Memory |
+| LUT2     |  307 |                 LUT |
 | FDSE     |  254 |        Flop & Latch |
 | LUT1     |  225 |                 LUT |
-| RAMS32   |  198 |  Distributed Memory |
-| SRL16E   |  191 |  Distributed Memory |
+| RAMS32   |  192 |  Distributed Memory |
+| SRL16E   |  189 |  Distributed Memory |
 | SRLC32E  |  182 |  Distributed Memory |
 | FDCE     |  105 |        Flop & Latch |
 | CARRY4   |   21 |          CarryLogic |
-| MUXF7    |    4 |               MuxFx |
+| MUXF7    |    5 |               MuxFx |
 +----------+------+---------------------+
 
 

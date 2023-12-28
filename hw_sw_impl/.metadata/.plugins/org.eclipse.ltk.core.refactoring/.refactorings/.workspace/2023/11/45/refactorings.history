@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;63_224_106MHz_opt_FINAL&apos;" deleteContents="true" description="Delete resource &apos;63_224_106MHz_opt_FINAL&apos;" element1="/63_224_106MHz_opt_FINAL" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1699320985217"/>&#x0A;<refactoring comment="Delete resource &apos;larger_instance_support_final&apos;" deleteContents="true" description="Delete resource &apos;larger_instance_support_final&apos;" element1="/larger_instance_support_final" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1699323298344"/>
+</session>
