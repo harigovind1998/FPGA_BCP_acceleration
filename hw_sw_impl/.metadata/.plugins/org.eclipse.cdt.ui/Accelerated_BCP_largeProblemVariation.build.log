@@ -1,10 +1,55 @@
-14:49:35 **** Incremental Build of configuration Debug for project Accelerated_BCP_largeProblemVariation ****
+18:43:35 **** Incremental Build of configuration Debug for project Accelerated_BCP_largeProblemVariation ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+Building file: ../src/main.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/sw/larger_instance_support_final/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In member function 'void SATSolverDPLL::initialize()':
+../src/main.cpp:230:25: warning: unused variable 'tSpendInBCPStart' [-Wunused-variable]
+  230 |     XTime tStart, tEnd, tSpendInBCPStart, tSpendInBCPEnd, tUpdateStart, tUpdateEnd;
+      |                         ^~~~~~~~~~~~~~~~
+../src/main.cpp:230:43: warning: unused variable 'tSpendInBCPEnd' [-Wunused-variable]
+  230 |     XTime tStart, tEnd, tSpendInBCPStart, tSpendInBCPEnd, tUpdateStart, tUpdateEnd;
+      |                                           ^~~~~~~~~~~~~~
+../src/main.cpp:230:59: warning: unused variable 'tUpdateStart' [-Wunused-variable]
+  230 |     XTime tStart, tEnd, tSpendInBCPStart, tSpendInBCPEnd, tUpdateStart, tUpdateEnd;
+      |                                                           ^~~~~~~~~~~~
+../src/main.cpp:230:73: warning: unused variable 'tUpdateEnd' [-Wunused-variable]
+  230 |     XTime tStart, tEnd, tSpendInBCPStart, tSpendInBCPEnd, tUpdateStart, tUpdateEnd;
+      |                                                                         ^~~~~~~~~~
+../src/main.cpp: In member function 'int SATSolverDPLL::unit_propagate(Formula&, int, bool, std::vector<long unsigned int>&)':
+../src/main.cpp:600:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<bool>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  600 |         for (int i = 0; i < formula.satClauses.size(); i++)
+      |                         ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cpp:419:10: warning: variable 'added' set but not used [-Wunused-but-set-variable]
+  419 |     bool added = false;
+      |          ^~~~~
+../src/main.cpp: In member function 'void SATSolverDPLL::show_result(Formula&, int)':
+../src/main.cpp:746:29: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<Stat*>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  746 |     for (int stat = 0; stat < stats.size(); stat++)
+      |                        ~~~~~^~~~~~~~~~~~~~
+../src/main.cpp:757:22: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<subFormula*>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  757 |     for(int i = 0; i < subFormulas.size(); i++){
+      |                    ~~^~~~~~~~~~~~~~~~~~~~
+../src/main.cpp:767:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  767 |         for (int i = 0; i < f.literals.size(); i++)
+      |                         ~~^~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Accelerated_BCP_largeProblemVariation.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/harigovind/Documents/dev/thesis/FPGA_BCP_acceleration/hw_sw_impl/larger_instance_support_final/export/larger_instance_support_final/sw/larger_instance_support_final/standalone_domain/bsplib/lib -o "Accelerated_BCP_largeProblemVariation.elf" ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: Accelerated_BCP_largeProblemVariation.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Accelerated_BCP_largeProblemVariation.elf  |tee "Accelerated_BCP_largeProblemVariation.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 632427	   2832	421540292	422175551	1929e33f	Accelerated_BCP_largeProblemVariation.elf
+Finished building: Accelerated_BCP_largeProblemVariation.elf.size
+ 
 
-14:49:35 Build Finished (took 225ms)
+18:43:37 Build Finished (took 1s.359ms)
 

@@ -25,3 +25,9 @@ bsp reload
 platform generate
 platform active {larger_instance_support_final}
 platform generate
+platform generate
+platform generate
+platform generate
+platform generate
+platform clean
+platform generate

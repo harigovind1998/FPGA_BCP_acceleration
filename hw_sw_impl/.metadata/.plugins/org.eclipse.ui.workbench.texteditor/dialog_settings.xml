@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="solverTStart"/>
+		<item key="selection" value="getImplications"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="true"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="getImplications"/>
+			<item value=" stats.push_back"/>
+			<item value="numberOfClausesInSubFor"/>
+			<item value="subFormulas.size()"/>
+			<item value="tInBCPBlock"/>
+			<item value="tBCPBlock"/>
+			<item value="cout"/>
 			<item value="solverTStart"/>
 			<item value="variableMapping_cpuToFPGA"/>
 			<item value="SendClausesToAccelerator"/>
@@ -15,16 +22,10 @@
 			<item value="unit implication found"/>
 			<item value="lit"/>
 			<item value="apply"/>
-			<item value="subFormulas.size()"/>
 			<item value="exited"/>
-			<item value="it-&gt;first"/>
-			<item value="it"/>
-			<item value="sendDecisionsToAccelerator"/>
-			<item value="print"/>
-			<item value="cout"/>
-			<item value="for"/>
 		</list>
 		<list key="replacehistory">
+			<item value="numOfSubClauses"/>
 			<item value="solverTStart"/>
 		</list>
 	</section>
